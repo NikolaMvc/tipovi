@@ -39,21 +39,46 @@ class FootballDataClient:
         return data
 
     # ------------------------------------------------------------------ #
+    UPCOMING_STATUSES = {"SCHEDULED", "TIMED"}
+
     def list_upcoming(self, days: int = 3, competitions: Optional[list[str]] = None) -> list[dict]:
+        """Primary: the global /v4/matches endpoint (one request, every competition
+        in the plan). Falls back to per-competition calls if the global endpoint
+        returns nothing."""
         if not self.enabled:
             return []
         today = datetime.now(timezone.utc).date()
         date_from = today.isoformat()
         date_to = (today + timedelta(days=days)).isoformat()
+
+        # --- Global endpoint (single call, respects the 10 req/min limit best) ---
+        data = self._get("/matches", params={"dateFrom": date_from, "dateTo": date_to})
         out: list[dict] = []
-        for code in (competitions or DEFAULT_COMPETITIONS):
-            data = self._get(f"/competitions/{code}/matches",
-                             params={"status": "SCHEDULED", "dateFrom": date_from, "dateTo": date_to})
-            if data and "matches" in data:
-                out.extend(data["matches"])
-        log.info("football-data: %d upcoming fixtures across %d competitions",
-                 len(out), len(competitions or DEFAULT_COMPETITIONS))
+        if data and data.get("matches"):
+            out = [m for m in data["matches"] if m.get("status") in self.UPCOMING_STATUSES]
+            log.info("football-data /v4/matches: %d upcoming fixtures (%s..%s)",
+                     len(out), date_from, date_to)
+
+        # --- Fallback: per-competition scan ---
+        if not out:
+            for code in (competitions or DEFAULT_COMPETITIONS):
+                d = self._get(f"/competitions/{code}/matches",
+                              params={"status": "SCHEDULED", "dateFrom": date_from, "dateTo": date_to})
+                if d and d.get("matches"):
+                    out.extend(d["matches"])
+            log.info("football-data per-competition fallback: %d fixtures", len(out))
         return out
+
+    def finished_results(self, days_back: int = 3) -> list[dict]:
+        """Finished matches over the last N days (for settling tips)."""
+        if not self.enabled:
+            return []
+        today = datetime.now(timezone.utc).date()
+        date_from = (today - timedelta(days=days_back)).isoformat()
+        date_to = today.isoformat()
+        data = self._get("/matches", params={"dateFrom": date_from, "dateTo": date_to,
+                                             "status": "FINISHED"})
+        return data.get("matches", []) if data else []
 
     def standings(self, competition_code: str) -> Optional[dict]:
         if competition_code in self._standings_cache:
