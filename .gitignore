@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+*.log
+logs/*.log
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+.vite/
+
+# Env / secrets
+.env
+.env.local
+*.env
+!.env.example
+
+# DB
+*.sqlite3
+*.db
+
+# Deploy
+.vercel
+.railway
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Scrapling / Playwright cache
+.scrapling/
