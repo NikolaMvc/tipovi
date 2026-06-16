@@ -187,3 +187,55 @@ def settle_tips_for_match(db: Session, match: Match, hg: int, ag: int) -> None:
         if outcome in ("WON", "LOST"):
             tip.status = outcome
             tip.settled_at = datetime.now(timezone.utc)
+
+
+# --------------------------------------------------------------------------- #
+# Statistics (assumes a flat 1-unit stake per tip)
+# --------------------------------------------------------------------------- #
+def get_stats(db: Session) -> dict:
+    tips = get_tips(db)
+    total = len(tips)
+    won = [t for t in tips if t.status == "WON"]
+    lost = [t for t in tips if t.status == "LOST"]
+    pending = [t for t in tips if t.status == "PENDING"]
+    settled = len(won) + len(lost)
+
+    profit = sum((t.odds - 1.0) for t in won) - len(lost)
+    win_rate = (len(won) / settled * 100) if settled else 0.0
+    roi = (profit / settled * 100) if settled else 0.0
+
+    # Breakdown by market
+    markets: dict[str, dict] = {}
+    for t in tips:
+        mk = markets.setdefault(t.market, {"total": 0, "won": 0, "lost": 0, "profit": 0.0})
+        mk["total"] += 1
+        if t.status == "WON":
+            mk["won"] += 1
+            mk["profit"] += t.odds - 1.0
+        elif t.status == "LOST":
+            mk["lost"] += 1
+            mk["profit"] -= 1.0
+    for mk in markets.values():
+        s = mk["won"] + mk["lost"]
+        mk["win_rate"] = round(mk["won"] / s * 100, 1) if s else 0.0
+        mk["profit"] = round(mk["profit"], 2)
+
+    # Cumulative profit over time (settled tips, chronological)
+    timeline = []
+    cum = 0.0
+    for t in sorted([t for t in tips if t.settled_at], key=lambda x: x.settled_at):
+        cum += (t.odds - 1.0) if t.status == "WON" else (-1.0 if t.status == "LOST" else 0.0)
+        timeline.append({"date": t.settled_at.isoformat(), "profit": round(cum, 2)})
+
+    return {
+        "total_tips": total,
+        "won": len(won),
+        "lost": len(lost),
+        "pending": len(pending),
+        "settled": settled,
+        "win_rate": round(win_rate, 1),
+        "roi": round(roi, 1),
+        "profit": round(profit, 2),
+        "by_market": markets,
+        "timeline": timeline,
+    }
