@@ -21,7 +21,7 @@ function Section({ title, children, right }) {
 
 const OUTCOME_LABEL = { HOME_WIN: "Home Win", DRAW: "Draw", AWAY_WIN: "Away Win" };
 
-export default function MatchDetail({ detail, onBack, onAddTip }) {
+export default function MatchDetail({ detail, onBack }) {
   const m = detail.match;
   const p = detail.prediction;
   const b = detail.breakdown || {};
@@ -95,8 +95,8 @@ export default function MatchDetail({ detail, onBack, onAddTip }) {
           <H2HTimeline h2h={b.h2h} homeTeam={m.home_team} awayTeam={m.away_team} />
         </Section>
 
-        <Section title="Value Bets" right={<span className="text-[10px] text-muted">add to My Tips</span>}>
-          <ValueBets bets={detail.value_bets} onAddTip={(bet) => onAddTip(m, bet)} />
+        <Section title="Value Bets">
+          <ValueBets bets={detail.value_bets} />
         </Section>
 
         <Section title="Injuries / Missing">

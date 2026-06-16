@@ -6,16 +6,14 @@ export default function MatchList({ matches, loading, onSelect }) {
   if (!matches?.length)
     return (
       <Empty>
-        No upcoming matches in the database yet.
-        <div className="mt-1 text-xs">
-          The worker populates this every 6h — or search a fixture above to compute one on demand.
-        </div>
+        No matches for this day.
+        <div className="mt-1 text-xs">Run <span className="num text-accent">python run.py</span> to refresh the snapshot.</div>
       </Empty>
     );
   return (
     <div className="space-y-3">
       {matches.map((item) => (
-        <MatchCard key={item.match.id} item={item} onClick={() => onSelect(item.match.id)} />
+        <MatchCard key={item.match.id} item={item} onClick={() => onSelect(item)} />
       ))}
     </div>
   );

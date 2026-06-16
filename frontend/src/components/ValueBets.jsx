@@ -4,7 +4,7 @@ const RATING = {
   SLIGHT_VALUE: { c: "#FFB020", label: "SLIGHT" },
 };
 
-export default function ValueBets({ bets = [], onAddTip }) {
+export default function ValueBets({ bets = [] }) {
   if (!bets.length)
     return <div className="text-xs text-muted">No positive-value bets (or odds unavailable).</div>;
   return (
@@ -30,12 +30,6 @@ export default function ValueBets({ bets = [], onAddTip }) {
             </div>
             <div className="flex items-center gap-3">
               <span className="num text-sm font-semibold text-accent">{b.odds}</span>
-              <button
-                onClick={() => onAddTip(b)}
-                className="rounded-md border border-[#00B3FF55] px-2 py-1 text-[11px] font-medium text-accent transition-colors hover:bg-[#00B3FF1a]"
-              >
-                + Tip
-              </button>
             </div>
           </div>
         );

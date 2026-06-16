@@ -6,51 +6,59 @@ const STATUS = {
   PENDING: { c: "#FFB020", icon: "•" },
 };
 
-function TipPill({ tip, onDelete }) {
+function TipRow({ tip, rank }) {
   const s = STATUS[tip.status] || STATUS.PENDING;
   return (
     <div
       className="flex items-center justify-between rounded-card border bg-card p-3"
       style={{ borderColor: `${s.c}4d`, backgroundColor: `${s.c}0d` }}
     >
-      <div className="min-w-0">
-        <div className="truncate text-sm font-semibold text-[#E6EDF3]">
-          {tip.home_team} <span className="text-muted">v</span> {tip.away_team}
-        </div>
-        <div className="num mt-0.5 text-[11px] text-muted">
-          {tip.market} · <span className="text-[#E6EDF3]">{tip.pick}</span> @ {tip.odds}
-          {tip.value ? <span className="ml-1 text-accent">+{tip.value}%</span> : null}
+      <div className="flex min-w-0 items-center gap-3">
+        {rank != null && <span className="num w-5 text-center text-xs text-muted">{rank}</span>}
+        <div className="min-w-0">
+          <div className="truncate text-sm font-semibold text-[#E6EDF3]">
+            {tip.home_team} <span className="text-muted">v</span> {tip.away_team}
+          </div>
+          <div className="num mt-0.5 text-[11px] text-muted">
+            {tip.market} · <span className="text-[#E6EDF3]">{tip.pick}</span>
+            {tip.odds ? <span className="ml-1 text-accent">@ {tip.odds}</span> : null}
+            {tip.final_score ? <span className="ml-1 opacity-70">({tip.final_score})</span> : null}
+          </div>
         </div>
       </div>
       <div className="flex items-center gap-3">
-        <span className="num text-sm font-bold" style={{ color: s.c }}>{s.icon} {tip.status}</span>
-        <button onClick={() => onDelete(tip.id)} className="text-xs text-muted hover:text-away">✕</button>
+        <span className="num text-sm font-bold text-accent">{tip.probability}%</span>
+        <span className="num text-sm font-bold" style={{ color: s.c }}>{s.icon}</span>
       </div>
     </div>
   );
 }
 
-export default function MyTips({ tips, loading, onDelete }) {
-  if (loading) return <ListSkeleton n={3} />;
-  if (!tips || (!tips.active.length && !tips.settled.length))
-    return <Empty>No tips yet. Add value bets from a match's detail view.</Empty>;
+export default function MyTips({ tips, loading }) {
+  if (loading) return <ListSkeleton n={5} />;
+  if (!tips || !tips.length)
+    return <Empty>No tips yet. Run <span className="num text-accent">python run.py</span> to generate the day's top picks.</Empty>;
+
+  const active = tips.filter((t) => t.status === "PENDING").sort((a, b) => b.probability - a.probability);
+  const settled = tips.filter((t) => t.status !== "PENDING").sort((a, b) => b.probability - a.probability);
 
   return (
     <div className="space-y-6">
+      <div className="text-[11px] text-muted">
+        Auto-generated top picks (highest single-market probability per match).
+      </div>
       <div>
-        <h3 className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-muted">Active</h3>
+        <h3 className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-muted">Aktivni</h3>
         <div className="space-y-2">
-          {tips.active.length ? tips.active.map((t) => (
-            <TipPill key={t.id} tip={t} onDelete={onDelete} />
-          )) : <Empty>No pending tips.</Empty>}
+          {active.length ? active.map((t, i) => <TipRow key={`${t.match_id}-a${i}`} tip={t} rank={i + 1} />)
+            : <Empty>No pending tips.</Empty>}
         </div>
       </div>
       <div>
-        <h3 className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-muted">Settled</h3>
+        <h3 className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-muted">Riješeni</h3>
         <div className="space-y-2">
-          {tips.settled.length ? tips.settled.map((t) => (
-            <TipPill key={t.id} tip={t} onDelete={onDelete} />
-          )) : <Empty>No settled tips yet.</Empty>}
+          {settled.length ? settled.map((t, i) => <TipRow key={`${t.match_id}-s${i}`} tip={t} />)
+            : <Empty>No settled tips yet.</Empty>}
         </div>
       </div>
     </div>
