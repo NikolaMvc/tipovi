@@ -1,8 +1,7 @@
-# --- Web framework ---
-fastapi==0.115.6
-uvicorn[standard]==0.34.0
+# --- Config ---
 pydantic==2.10.4
 pydantic-settings==2.7.1
+python-dotenv==1.0.1
 
 # --- HTTP / scraping ---
 httpx==0.28.1
@@ -15,18 +14,6 @@ tenacity==9.0.0
 # --- Numerics ---
 numpy==2.2.1
 scipy==1.15.0
-
-# --- Database ---
-SQLAlchemy==2.0.36
-alembic==1.14.0
-psycopg2-binary==2.9.10
-
-# --- Scheduler / cache ---
-APScheduler==3.11.0
-redis==5.2.1
-
-# --- Utils ---
-python-dotenv==1.0.1
 
 # --- Tests ---
 pytest==8.3.4
