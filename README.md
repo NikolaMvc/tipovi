@@ -1,149 +1,117 @@
-# PredictAI — Football Match Prediction
+# PredictAI — Football Match Prediction (local → static)
 
-Professional football prediction web app. A background worker scrapes data,
-computes predictions with **Poisson + Dixon‑Coles + Monte Carlo**, and stores the
-finished results in PostgreSQL. The API only **reads** pre‑computed predictions, so
-the user **never waits** when opening the app.
+Football prediction app with a **fully local workflow**. You run **one command**; it
+scrapes fixtures, computes predictions (**Dixon‑Coles → Poisson 7×7 → Monte Carlo
+10 000 → value bets**), auto‑picks the day's safest tips, writes everything to
+**static JSON**, and pushes to GitHub. **Vercel rebuilds the static frontend** on
+every push. No server, no database, no Redis, no cron — free forever.
 
 ```
-WORKER (cron, every 6h):  scrape → λ → Poisson → Monte Carlo → store in DB
-API   (on request):       read finished prediction from DB → instant response
+python run.py   →   scrape → predict → write /frontend/public/data/*.json → git push
+                                                              ↓
+                                              Vercel rebuilds static frontend
 ```
+
+> Predictions refresh **only when you run the command**. The site shows the last
+> snapshot. That's the intended trade‑off (no 24/7 server).
 
 ---
 
-## ⚠️ Important note on data sources
+## Quick start
 
-The spec's primary source, **`api.sofascore.com`, is hard‑blocked** (HTTP 403
-`challenge`). This was verified exhaustively with Scrapling — plain `Fetcher`,
-`impersonate` (curl_cffi TLS), `StealthyFetcher`, Cloudflare solver, in‑page
-same‑origin `fetch`, `page.goto`, and full httpOnly cookie‑jar replay with a
-matching User‑Agent. Solving Cloudflare on `www.sofascore.com` yields **no
-`cf_clearance`** for the API subdomain, and the API never serves a solvable
-challenge page. No residential proxy is available to bypass it.
-
-The app therefore uses a **pluggable provider** with graceful degradation:
-
-| Source | Role | Needs key |
-|---|---|---|
-| **football-data.org** | Primary structured backbone — fixtures, standings (home/away split), form, H2H, results | ✅ free key (recommended) |
-| **FlashScore** | Fixtures/form via stealth‑browser DOM scraping (fallback when no key) | — |
-| **SofaScore** | Best‑effort xG enrichment via website `__NEXT_DATA__` (API attempted but usually blocked) | — |
-| **OpenWeatherMap** | Stadium weather → goal‑suppressing flag | ✅ free key (optional) |
-
-> **To get real data, add a free `FOOTBALL_DATA_API_KEY`** (sign up at
-> <https://www.football-data.org/client/register>). Without it the app falls back
-> to FlashScore (reduced data → lower confidence). Every missing field only lowers
-> the confidence score; nothing crashes.
-
----
-
-## Architecture
-
-```
-backend/
-  scraper/      data acquisition (footballdata, flashscore, sofascore, weather, provider)
-  predictor/    lambda_calc → poisson → montecarlo → engine → value
-  models/       SQLAlchemy ORM + Alembic migrations
-  worker/       APScheduler cron jobs (scrape/refresh/settle)
-  main.py       FastAPI — reads predictions from DB (instant)
-  store.py      persistence + tip settlement + stats
-  cache.py      graceful Redis cache (no‑op if Redis down)
-frontend/       React + Vite + Tailwind (3 tabs, dark/neon design)
-```
-
-### Prediction pipeline
-1. **λ (lambda_calc)** — Dixon‑Coles attack/defense strengths × league baselines,
-   modified by form (last‑5 weighted), xG correction, fatigue, injuries, weather.
-2. **Poisson (poisson)** — 7×7 scoreline matrix with the Dixon‑Coles low‑score
-   correction (ρ=‑0.13). Validated to sum to ~100 %.
-3. **Monte Carlo (montecarlo)** — 10,000 vectorised sims with red cards / penalties
-   / fatigue late goals. Seedable → reproducible.
-4. **Engine** — blends `(Poisson + Monte Carlo) / 2`, computes a confidence score
-   from how many of the 7 factors (form, H2H, xG, injuries, referee, weather,
-   fatigue) were available, and lists the missing ones.
-5. **Value bets** — `value = our_prob − implied_prob`, Kelly + half‑Kelly staking.
-
----
-
-## Local development
-
-### Prerequisites
-- Python 3.11+ (tested on 3.13), Node 18+, Docker (for the full stack).
-
-### Option A — full stack with Docker
 ```bash
-cp .env.example .env          # add FOOTBALL_DATA_API_KEY / OPENWEATHER_API_KEY
-make dev                      # Postgres + Redis + API + worker
-make frontend                 # separate terminal → http://localhost:3000
-```
-
-### Option B — backend without Docker (SQLite)
-```bash
+cp .env.example .env          # add FOOTBALL_DATA_API_KEY (free)
 pip install -r backend/requirements.txt
 python -c "from scrapling.cli import install; install.callback(force=False)"   # browsers
-export DATABASE_URL="sqlite:///./tipovi.db"
-make migrate                                  # or rely on init_db() at startup
-uvicorn backend.main:app --reload             # http://localhost:8000/docs
-python -m backend.worker.scheduler            # separate terminal (background jobs)
+
+make run-local                # scrape + predict + write JSON (no push) — inspect first
+make dev                      # http://localhost:3000 — preview the snapshot
+make run                      # same as run-local, then git commit + push → Vercel
 ```
 
-### Handy commands
-```bash
-make test          # pytest (predictor + footballdata + api)
-make predict-test  # full sample prediction payload
-make mc-test       # Monte Carlo sanity output
-make scrape-test   # SofaScore --debug (shows the 403 block + website fallback)
-make fd-test       # FlashScore DOM extraction
-```
+On Windows without `make`, run the underlying commands directly:
+`python run.py --no-push`, `python run.py`, `cd frontend && npm run dev`.
 
 ---
 
-## Environment variables
+## How it works
 
-| Variable | Used by | Notes |
+### `python run.py` (the only command you run)
+| Step | What |
+|---|---|
+| 1 SCRAPE | football‑data.org `/v4/matches` for today + next 2 days (+ FlashScore fallback) |
+| 2 PREDICT | per match: Dixon‑Coles λ → Poisson 7×7 (validated ~100 %) → Monte Carlo 10k → value bets |
+| 3 RESULTS | finished matches from the last 3 days |
+| 4 TIPS | auto **top‑20** safest picks/day, settled WON/LOST from results |
+| 5 CLEANUP | drop prediction/result/tip files older than 3 days (rolling window) |
+| 6 SAVE | write JSON + `index.json` into `frontend/public/data/` |
+| 7 GIT | commit + push to `main` (skipped with `--no-push`) |
+
+Flags: `--no-push` (local only), `--days N` (default 3), `--debug` (raw output).
+A failure on one match/step is logged and the run continues; a summary prints at the end.
+
+### Static data layout (`frontend/public/data/`, rolling 3 days)
+```
+predictions/<YYYY-MM-DD>.json   full prediction payloads for that day
+results/<YYYY-MM-DD>.json       finished scores (for settling tips)
+tips/<YYYY-MM-DD>.json          auto top‑20 tips for that day
+index.json                      available days + last‑run timestamp
+```
+
+### Frontend (3 tabs, static — reads JSON directly)
+- **Utakmice** — day selector (Danas/Sutra/Prekosutra) + match list; click → full detail
+  (Poisson heatmap, Monte Carlo histogram, form, H2H, value bets, injuries, referee,
+  weather, fatigue).
+- **Tipovi** — the auto top‑20 picks, ranked by probability. Coloured automatically
+  once results arrive: 🟢 WON · 🔴 LOST · 🟡 PENDING. No manual input.
+- **Statistika** — win rate, settled count, ROI (when odds exist), performance timeline,
+  by‑market breakdown — all computed from the tips files.
+
+---
+
+## Data sources
+
+| Source | Role | Key |
 |---|---|---|
-| `DATABASE_URL` | all | Postgres in prod, `sqlite:///./tipovi.db` locally. `postgres://` is auto‑normalized. |
-| `REDIS_URL` | API | Optional; caching disabled if unreachable. |
-| `FOOTBALL_DATA_API_KEY` | scraper/worker | **Recommended** — unlocks reliable data. |
-| `OPENWEATHER_API_KEY` | scraper | Optional weather factor. |
-| `CORS_ORIGINS` | API | Comma‑separated allowed origins. |
-| `MC_SIMULATIONS`, `MC_SEED` | predictor | Sim count / reproducible seed. |
-| `RUN_WORKER_IN_API` | API | `true` runs the scheduler in‑process (single‑dyno). |
-| `VITE_API_URL` | frontend | Backend base URL (set on Vercel). |
+| **football-data.org** | Primary — fixtures, standings (H/A split), form, H2H, results | ✅ free, **required for real data** |
+| **FlashScore** | Fallback fixtures/form (leagues football‑data doesn't cover) | — |
+| **SofaScore** | Best‑effort xG (its JSON API is blocked → graceful degradation) | — |
+| **OpenWeatherMap** | Stadium weather → goal‑suppressing flag | optional |
 
----
+Get the free key at <https://www.football-data.org/client/register> and put it in
+`.env` as `FOOTBALL_DATA_API_KEY`. Without it, fixtures fall back to FlashScore and
+predictions degrade to LOW confidence (every missing factor only lowers confidence —
+nothing crashes).
 
-## Deploy
-
-### Backend + Worker + DB + Redis → Railway
-1. `railway init` (or create a project in the dashboard) and link this repo.
-2. Add the **PostgreSQL** and **Redis** plugins → they provide `DATABASE_URL` and
-   `REDIS_URL` automatically.
-3. **Web service**: uses `railway.json` (Dockerfile build). It runs Alembic
-   migrations then `uvicorn`. Set vars `FOOTBALL_DATA_API_KEY`,
-   `OPENWEATHER_API_KEY`, `CORS_ORIGINS` (your Vercel URL).
-4. **Worker service**: add a second service from the same repo with start command
-   `python -m backend.worker.scheduler` (same env, same Dockerfile).
-   ```bash
-   railway up                       # deploy
-   railway variables --set FOOTBALL_DATA_API_KEY=xxxx
-   ```
-5. Grab the public web URL (e.g. `https://tipovi-production.up.railway.app`).
-
-### Frontend → Vercel
-```bash
-cd frontend
-vercel                       # link project, framework auto-detected (Vite)
-vercel env add VITE_API_URL  # → your Railway backend URL
-vercel --prod
+`.env`:
 ```
-Or in the Vercel dashboard: **Import repo → Root Directory `frontend` →
-Build `npm run build` → Output `dist`**, then add `VITE_API_URL`. `vercel.json`
-already configures the SPA rewrite.
+FOOTBALL_DATA_API_KEY=...
+OPENWEATHER_API_KEY=...      # optional
+```
 
 ---
+
+## Deploy (Vercel — static only, free)
+
+Already linked to the repo. Vercel just serves static files (frontend + the JSON
+snapshots), so there are **no backend env vars** to set.
+
+- Root Directory: `frontend`
+- Framework: **Vite** · Build: `npm run build` · Output: `dist`
+- `frontend/public/data/` is copied into the build automatically; `vercel.json`
+  keeps the SPA rewrite from touching `/data`.
+
+Every `python run.py` pushes new JSON → Vercel redeploys in ~1 min.
+
+---
+
+## Tests
+```bash
+make test          # predictor + football-data mapping + jsonstore (17 tests)
+make predict-test  # full sample prediction payload
+make mc-test       # Monte Carlo sanity
+```
 
 ## Tech stack
-FastAPI · SQLAlchemy 2 · Alembic · APScheduler · NumPy/SciPy · Scrapling
-(Camoufox stealth) · Playwright · Redis · React + Vite + Tailwind · recharts.
+NumPy/SciPy · Scrapling (Camoufox stealth) · Playwright · React + Vite + Tailwind ·
+recharts. Pure local Python pipeline → static JSON → Vercel.
