@@ -32,9 +32,18 @@ class DataProvider:
 
     # ------------------------------------------------------------------ #
     @staticmethod
-    def _key(m: MatchInput) -> tuple:
+    def _canon(name: str) -> str:
+        """Punctuation- and word-order-insensitive form so that naming variants
+        across sources collapse (e.g. 'Congo DR' == 'D.R. Congo')."""
+        import re as _re
+        n = normalize_team_name(name)
+        n = n.replace(".", "").replace("'", "").replace("’", "")  # keep "D.R." as "dr"
+        tokens = [t for t in _re.split(r"[^a-z0-9]+", n) if t]
+        return " ".join(sorted(tokens))
+
+    def _key(self, m: MatchInput) -> tuple:
         d = m.match_date.date().isoformat() if m.match_date else ""
-        return (normalize_team_name(m.home_team), normalize_team_name(m.away_team), d)
+        return (self._canon(m.home_team), self._canon(m.away_team), d)
 
     def collect_upcoming(self, days: int = 3, enrich_xg: bool = False) -> list[MatchInput]:
         """ALL matches for the window: football-data.org for the 12 covered leagues
