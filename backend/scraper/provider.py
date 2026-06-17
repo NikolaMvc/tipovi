@@ -85,7 +85,53 @@ class DataProvider:
         return matches
 
     # ------------------------------------------------------------------ #
+    @staticmethod
+    def _season_from_recent(entries):
+        from backend.schemas import TeamSeasonStats
+        s = TeamSeasonStats(matches_played=len(entries))
+        if not entries:
+            return s
+        home = [e for e in entries if e.is_home]
+        away = [e for e in entries if not e.is_home]
+
+        def avg(lst, attr):
+            return round(sum(getattr(e, attr) for e in lst) / len(lst), 3) if lst else None
+
+        ov_sc = avg(entries, "goals_for")
+        ov_co = avg(entries, "goals_against")
+        s.avg_scored_home = avg(home, "goals_for") if home else ov_sc
+        s.avg_scored_away = avg(away, "goals_for") if away else ov_sc
+        s.avg_conceded_home = avg(home, "goals_against") if home else ov_co
+        s.avg_conceded_away = avg(away, "goals_against") if away else ov_co
+        return s
+
+    def _enrich_flashscore(self, m: MatchInput) -> None:
+        """Populate form + H2H (and derive scoring strengths) for a FlashScore-only
+        match via its internal feed, so the prediction is differentiated."""
+        from backend.scraper.flashscore import fetch_form_h2h
+        h_recent, a_recent, h2h, h_last, a_last = fetch_form_h2h(
+            m.event_id, m.home_team, m.away_team)
+        if h_recent:
+            m.home.recent = h_recent
+            m.home.season = self._season_from_recent(h_recent)
+            m.home.last_match_date = h_last
+        if a_recent:
+            m.away.recent = a_recent
+            m.away.season = self._season_from_recent(a_recent)
+            m.away.last_match_date = a_last
+        if h2h and h2h.matches:
+            m.h2h = h2h
+        if (h_recent or a_recent) and "flashscore-feed" not in m.data_sources:
+            m.data_sources.append("flashscore-feed")
+
     def enrich(self, m: MatchInput, enrich_xg: bool = False) -> MatchInput:
+        # FlashScore-only matches: pull form + H2H from the data feed.
+        if m.event_id and "flashscore" in m.data_sources and "football-data.org" not in m.data_sources:
+            try:
+                self._enrich_flashscore(m)
+            except Exception as exc:  # noqa: BLE001
+                log.info("flashscore feed enrich skipped for %s: %s", m.home_team, exc)
+
         # Weather from the stadium/venue text (best-effort city resolution).
         if m.venue:
             w = get_weather(m.venue)

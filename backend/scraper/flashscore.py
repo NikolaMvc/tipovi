@@ -21,6 +21,9 @@ from backend.scraper.utils import fetch_browser, normalize_team_name, log
 
 WWW = "https://www.flashscore.com"
 FOOTBALL = f"{WWW}/football/"
+# Internal data feed (fast HTTP, no browser) — gives both teams' recent form + H2H.
+FEED = f"{WWW}/x/feed/"
+FSIGN = "SW9D1eZo"
 
 # League landing pages used by the per-league fallback helper.
 DEFAULT_LEAGUES = {
@@ -86,6 +89,8 @@ def _extract_grouped(resp) -> list[dict]:
                 continue
             hs = _first(node, ".event__score--home")
             as_ = _first(node, ".event__score--away")
+            row_id = (node.attrib.get("id") or "")  # e.g. "g_1_n9TEVLhA"
+            eid = row_id.split("g_1_", 1)[-1] if "g_1_" in row_id else ""
             out.append({
                 "home": home_name,
                 "away": away_name,
@@ -94,6 +99,7 @@ def _extract_grouped(resp) -> list[dict]:
                 "away_score": _text(as_),
                 "league": cur_league,
                 "country": cur_country,
+                "event_id": eid,
             })
         except Exception:
             continue
@@ -152,12 +158,129 @@ def all_matches(day_offset: int = 0) -> list[MatchInput]:
                           int(mt.group(1)), int(mt.group(2)), tzinfo=timezone.utc)
         matches.append(MatchInput(
             home_team=r["home"], away_team=r["away"], league=league or "Other",
-            match_date=md, venue="",
-            home=TeamData(name=r["home"]), away=TeamData(name=r["away"]),
+            match_date=md, venue="", event_id=r.get("event_id") or None,
+            home=TeamData(name=r["home"], team_id=r.get("event_id") or None),
+            away=TeamData(name=r["away"]),
             league_avgs=LeagueAverages(),
             data_sources=["flashscore"],
         ))
     return matches
+
+
+# --------------------------------------------------------------------------- #
+# Per-match enrichment via the internal H2H feed (form for both teams + H2H)
+# --------------------------------------------------------------------------- #
+def _feed_text(name: str) -> Optional[str]:
+    from scrapling.fetchers import Fetcher
+    try:
+        r = Fetcher.get(f"{FEED}{name}", headers={"x-fsign": FSIGN, "Referer": f"{WWW}/"},
+                        impersonate="chrome", timeout=15)
+        if r.status == 200 and r.body:
+            return r.body.decode("utf-8", "replace") if isinstance(r.body, bytes) else str(r.body)
+    except Exception as exc:  # noqa: BLE001
+        log.info("flashscore feed %s failed: %s", name, exc)
+    return None
+
+
+def fetch_form_h2h(event_id: str, home_name: str = "", away_name: str = ""):
+    """Return (home_entries, away_entries, H2HData, home_last_date, away_last_date)
+    parsed from the df_hh feed (Overall tab only). Empty/None on failure."""
+    from backend.schemas import H2HData
+    raw = _feed_text(f"df_hh_1_{event_id}")
+    if not raw:
+        return [], [], H2HData(), None, None
+
+    tab = None
+    form_sections: list[list[dict]] = []   # ordered: [home_form, away_form, ...]
+    h2h_records: list[dict] = []
+    cur_section = None      # "form" | "h2h" | None
+    rec = None
+
+    def push():
+        if rec and rec.get("KU") not in (None, ""):
+            if cur_section == "form" and form_sections:
+                form_sections[-1].append(dict(rec))
+            elif cur_section == "h2h":
+                h2h_records.append(dict(rec))
+
+    for f in raw.split("¬"):
+        if "÷" not in f:
+            continue
+        k, v = f.split("÷", 1)
+        if k == "~KA":
+            tab = v
+        elif k == "~KB":
+            push(); rec = None
+            if tab != "Overall":
+                cur_section = None
+                continue
+            if v.startswith("Last matches:"):
+                cur_section = "form"; form_sections.append([])
+            elif "Head-to-head" in v:
+                cur_section = "h2h"
+            else:
+                cur_section = None
+        elif k == "~KC":
+            push(); rec = {"ts": v} if cur_section else None
+        elif rec is not None and k in ("KJ", "KK", "KU", "KT", "KS", "WIS"):
+            rec[k] = v.lstrip("*")
+    push()
+
+    def to_entries(records):
+        from backend.schemas import FormEntry
+        entries, last = [], None
+        for m in records:
+            try:
+                ku, kt = int(m["KU"]), int(m["KT"])
+            except (ValueError, KeyError):
+                continue
+            is_home = m.get("KS") == "home"
+            gf, ga = (ku, kt) if is_home else (kt, ku)
+            opp = m.get("KK") if is_home else m.get("KJ")
+            entries.append(FormEntry(opponent=opp or "", is_home=is_home,
+                                     goals_for=gf, goals_against=ga, date=m.get("ts")))
+            try:
+                ts = int(m["ts"])
+                if last is None or ts > last:
+                    last = ts
+            except (ValueError, KeyError):
+                pass
+        from datetime import datetime, timezone
+        last_dt = datetime.fromtimestamp(last, timezone.utc) if last else None
+        return entries, last_dt
+
+    home_entries, home_last = to_entries(form_sections[0]) if len(form_sections) > 0 else ([], None)
+    away_entries, away_last = to_entries(form_sections[1]) if len(form_sections) > 1 else ([], None)
+
+    # H2H aggregates relative to the CURRENT fixture's home team (by name match).
+    from backend.scraper.utils import normalize_team_name
+    nh, na = normalize_team_name(home_name), normalize_team_name(away_name)
+    goals = []
+    hw = dw = aw = 0
+    for m in h2h_records:
+        try:
+            ku, kt = int(m["KU"]), int(m["KT"])
+        except (ValueError, KeyError):
+            continue
+        goals.append(ku + kt)
+        hist_home = normalize_team_name(m.get("KJ", ""))
+        # goals for the current home team in this historical meeting
+        if nh and hist_home == nh:
+            gf, ga = ku, kt
+        elif na and hist_home == na:
+            gf, ga = kt, ku
+        else:
+            # fall back to raw orientation if names don't line up
+            gf, ga = ku, kt
+        if gf > ga:
+            hw += 1
+        elif gf < ga:
+            aw += 1
+        else:
+            dw += 1
+    h2h = H2HData(home_wins=hw, draws=dw, away_wins=aw,
+                  matches=len(goals), avg_goals=round(sum(goals) / len(goals), 2) if goals else None)
+    return home_entries, away_entries, h2h, home_last, away_last
 
 
 def _extract_matches(resp) -> list[dict]:
