@@ -384,29 +384,74 @@ def team_xg_from_recent(entries, limit: int = 5):
 # --------------------------------------------------------------------------- #
 # Odds feed  ->  drop matches with no market
 # --------------------------------------------------------------------------- #
-def fetch_odds(event_id: str):
-    """Best-effort 1X2 / O-U 2.5 / BTTS odds from the df_dos feed. Returns an
-    OddsData (with whatever was found) or None when the match has no market.
+# FlashScore pre-match odds are served by a GraphQL endpoint (clean JSON, fast HTTP,
+# no browser, no x-fsign). The same FlashScore event id is the GraphQL eventId.
+ODDS_API = "https://global.ds.lsapp.eu/odds/pq_graphql"
+ODDS_HASH = "ope2"
+# Try a few common bookmakers; use the first that quotes the match.
+ODDS_BOOKMAKERS = [16, 417, 5, 15, 2, 18, 3]
 
-    NOTE: validated structurally; pre-match price coverage is sparse out of
-    season, so this commonly returns None until leagues resume."""
-    from backend.schemas import OddsData
-    import re as _re
-    raw = _feed_text(f"df_dos_1_{event_id}_")
-    if not raw or raw.strip() == "0":
+
+def _odds_query(event_id: str, bet_type: str, bookmaker: int):
+    import json
+    from scrapling.fetchers import Fetcher
+    try:
+        r = Fetcher.get(ODDS_API, params={
+            "_hash": ODDS_HASH, "eventId": event_id, "bookmakerId": bookmaker,
+            "betType": bet_type, "betScope": "FULL_TIME",
+        }, impersonate="chrome", timeout=12)
+        if r.status != 200:
+            return None
+        body = r.body.decode("utf-8", "replace") if isinstance(r.body, bytes) else str(r.body)
+        return (json.loads(body).get("data") or {}).get("findPrematchOddsForBookmaker")
+    except Exception:  # noqa: BLE001
         return None
-    # 1X2 average odds appear as a triplet of decimals in the home/draw/away block.
-    # We look for the average-odds row; bookmaker rows use OD/ODA/ODB-style keys.
-    decs = _re.findall(r"÷([0-9]+\.[0-9]{2})(?=¬|$)", raw)
+
+
+def _fval(item):
+    try:
+        return float(item["value"]) if item and item.get("value") else None
+    except (ValueError, TypeError, KeyError):
+        return None
+
+
+def fetch_odds(event_id: str):
+    """Pre-match 1X2 / O-U 2.5 / BTTS odds via FlashScore's GraphQL odds API.
+    Returns an OddsData or None when no bookmaker quotes the match."""
+    from backend.schemas import OddsData
+    if not event_id:
+        return None
     odds = OddsData()
-    if len(decs) >= 3:
-        try:
-            odds.home, odds.draw, odds.away = float(decs[0]), float(decs[1]), float(decs[2])
-        except ValueError:
-            pass
-    has_any = any(v is not None for v in (odds.home, odds.draw, odds.away,
-                                          odds.over_2_5, odds.btts_yes))
-    return odds if has_any else None
+
+    # 1X2 — find the first bookmaker that quotes this match.
+    bk_used = None
+    for bk in ODDS_BOOKMAKERS:
+        d = _odds_query(event_id, "HOME_DRAW_AWAY", bk)
+        if d and _fval(d.get("home")):
+            odds.home = _fval(d.get("home"))
+            odds.draw = _fval(d.get("draw"))
+            odds.away = _fval(d.get("away"))
+            bk_used = bk
+            break
+    if bk_used is None:
+        return None
+
+    # Over/Under — pick the 2.5 line.
+    ou = _odds_query(event_id, "OVER_UNDER", bk_used)
+    if ou:
+        for opp in ou.get("opportunities", []):
+            if (opp.get("handicap") or {}).get("value") in ("2.5", "2.50"):
+                odds.over_2_5 = _fval(opp.get("over"))
+                odds.under_2_5 = _fval(opp.get("under"))
+                break
+
+    # Both teams to score.
+    bt = _odds_query(event_id, "BOTH_TEAMS_TO_SCORE", bk_used)
+    if bt:
+        odds.btts_yes = _fval(bt.get("yes"))
+        odds.btts_no = _fval(bt.get("no"))
+
+    return odds if odds.home else None
 
 
 def _extract_matches(resp) -> list[dict]:
