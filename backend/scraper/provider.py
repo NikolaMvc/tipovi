@@ -15,7 +15,7 @@ from typing import Optional
 
 from backend.schemas import MatchInput, TeamData, LeagueAverages
 from backend.scraper.footballdata import FootballDataClient
-from backend.scraper.flashscore import list_upcoming as fs_list_upcoming
+from backend.scraper.flashscore import all_matches as fs_all_matches
 from backend.scraper.weather import get_weather
 from backend.scraper.sofascore import SofaScoreClient
 from backend.scraper.utils import normalize_team_name, log
@@ -31,14 +31,43 @@ class DataProvider:
         return "football-data.org" if self.fd.enabled else "flashscore"
 
     # ------------------------------------------------------------------ #
-    def collect_upcoming(self, days: int = 3, enrich_xg: bool = False) -> list[MatchInput]:
-        if self.fd.enabled:
-            fixtures = self.fd.list_upcoming(days=days)
-            matches = [self.fd.build_match_input(f) for f in fixtures]
-        else:
-            log.info("No football-data key -> using FlashScore fixtures (reduced data).")
-            matches = fs_list_upcoming()
+    @staticmethod
+    def _key(m: MatchInput) -> tuple:
+        d = m.match_date.date().isoformat() if m.match_date else ""
+        return (normalize_team_name(m.home_team), normalize_team_name(m.away_team), d)
 
+    def collect_upcoming(self, days: int = 3, enrich_xg: bool = False) -> list[MatchInput]:
+        """ALL matches for the window: football-data.org for the 12 covered leagues
+        (rich data) PLUS FlashScore's independent all-leagues discovery for every
+        other competition. Deduplicated; football-data wins on overlap."""
+        matches: list[MatchInput] = []
+        seen: set[tuple] = set()
+
+        # 1) football-data.org — rich data for the covered leagues.
+        if self.fd.enabled:
+            for f in self.fd.list_upcoming(days=days):
+                m = self.fd.build_match_input(f)
+                k = self._key(m)
+                if k not in seen:
+                    seen.add(k)
+                    matches.append(m)
+            log.info("football-data contributed %d matches", len(matches))
+
+        # 2) FlashScore — independently discover EVERY other league for each day.
+        fd_count = len(matches)
+        for offset in range(days):
+            try:
+                for m in fs_all_matches(offset):
+                    k = self._key(m)
+                    if k in seen:
+                        continue  # already covered (richer) by football-data
+                    seen.add(k)
+                    matches.append(m)
+            except Exception as exc:  # noqa: BLE001
+                log.warning("flashscore all_matches(day+%d) failed: %s", offset, exc)
+        log.info("flashscore added %d extra matches across all leagues", len(matches) - fd_count)
+
+        # 3) Enrich everything (weather + best-effort xG); never raises.
         for m in matches:
             try:
                 self.enrich(m, enrich_xg=enrich_xg)

@@ -1,22 +1,28 @@
 """FlashScore scraper (no public API -> stealth-browser DOM scraping).
 
-FlashScore renders match rows as ``.event__match`` elements. This module extracts
-upcoming fixtures and recent team form from the rendered HTML. Parsing is
-best-effort and resilient: anything it cannot read is simply omitted so the
-pipeline degrades gracefully.
+Two jobs:
+  * ``all_matches(day_offset)`` — independently discover EVERY scheduled match for a
+    day across ALL leagues FlashScore shows (the main /football/ page, grouped by
+    ``.headerLeague``). This is what fills leagues football-data.org doesn't cover.
+  * ``list_upcoming`` / ``team_form`` — the older per-league helpers, kept as fallback.
+
+Parsing is best-effort and resilient: anything it cannot read is simply omitted so
+the pipeline degrades gracefully.
 """
 from __future__ import annotations
 
 import argparse
-from datetime import datetime, timezone
+import re
+from datetime import datetime, timedelta, timezone
 from typing import Optional
 
 from backend.schemas import MatchInput, TeamData, FormEntry, LeagueAverages
 from backend.scraper.utils import fetch_browser, normalize_team_name, log
 
 WWW = "https://www.flashscore.com"
+FOOTBALL = f"{WWW}/football/"
 
-# League landing pages used to discover fixtures when no API key is configured.
+# League landing pages used by the per-league fallback helper.
 DEFAULT_LEAGUES = {
     "Premier League": "/football/england/premier-league/fixtures/",
     "LaLiga": "/football/spain/laliga/fixtures/",
@@ -25,12 +31,129 @@ DEFAULT_LEAGUES = {
     "Ligue 1": "/football/france/ligue-1/fixtures/",
 }
 
+_TIME_RE = re.compile(r"^\d{1,2}:\d{2}$")
+
 
 def _text(node) -> str:
     try:
         return node.get_all_text(strip=True)
     except Exception:
         return ""
+
+
+def _first(node, sel: str):
+    try:
+        els = node.css(sel)
+        return els[0] if els else None
+    except Exception:
+        return None
+
+
+def _has_class(node, name: str) -> bool:
+    try:
+        cls = node.attrib.get("class", "")
+    except Exception:
+        cls = ""
+    return name in cls.split()
+
+
+def _extract_grouped(resp) -> list[dict]:
+    """Walk the page in document order, tracking the current league header so each
+    match row is tagged with its league + country. Returns ALL rows (any status)."""
+    out: list[dict] = []
+    if not resp:
+        return out
+    try:
+        nodes = resp.css(".headerLeague, .event__match")
+    except Exception:
+        return out
+
+    cur_league = ""
+    cur_country = ""
+    for node in nodes:
+        if _has_class(node, "headerLeague"):
+            cat = _first(node, ".headerLeague__category-text")
+            title = _first(node, ".headerLeague__title-text")
+            cur_country = _text(cat)
+            cur_league = _text(title)
+            continue
+        # event__match row
+        try:
+            home = _first(node, ".event__participant--home") or _first(node, ".event__homeParticipant")
+            away = _first(node, ".event__participant--away") or _first(node, ".event__awayParticipant")
+            home_name, away_name = _text(home), _text(away)
+            if not home_name or not away_name:
+                continue
+            hs = _first(node, ".event__score--home")
+            as_ = _first(node, ".event__score--away")
+            out.append({
+                "home": home_name,
+                "away": away_name,
+                "time": _text(_first(node, ".event__time")),
+                "home_score": _text(hs),
+                "away_score": _text(as_),
+                "league": cur_league,
+                "country": cur_country,
+            })
+        except Exception:
+            continue
+    return out
+
+
+def _is_scheduled(row: dict) -> bool:
+    """Not started yet: no score and a HH:MM kickoff label."""
+    if row.get("home_score") or row.get("away_score"):
+        return False
+    t = (row.get("time") or "").strip()
+    # FlashScore prefixes a date for non-today days, e.g. "18.06. 20:00"
+    return bool(_TIME_RE.match(t)) or bool(re.search(r"\d{1,2}:\d{2}$", t))
+
+
+def all_matches(day_offset: int = 0) -> list[MatchInput]:
+    """Every scheduled match for (today + day_offset) across ALL leagues."""
+    target_date = (datetime.now(timezone.utc).date() + timedelta(days=day_offset))
+
+    def nav(page):
+        # Advance the date bar `day_offset` days using the forward arrow.
+        for _ in range(day_offset):
+            try:
+                page.locator('[data-testid="wcl-icon-action-navigation-arrow-right"]').first.click(timeout=8000)
+                page.wait_for_timeout(1800)
+            except Exception:
+                break
+        try:
+            page.wait_for_selector(".event__match", timeout=15000)
+        except Exception:
+            pass
+        return page
+
+    resp = fetch_browser(
+        FOOTBALL, network_idle=True, wait=2500, timeout=60000,
+        wait_selector=".event__match" if day_offset == 0 else None,
+        page_action=nav if day_offset > 0 else None,
+    )
+    rows = _extract_grouped(resp)
+    scheduled = [r for r in rows if _is_scheduled(r)]
+    log.info("flashscore all-leagues day+%d: %d rows, %d scheduled across leagues",
+             day_offset, len(rows), len(scheduled))
+
+    matches: list[MatchInput] = []
+    for r in scheduled:
+        league = f"{r['country']}: {r['league']}".strip(": ") if r.get("country") else r.get("league", "")
+        # build a naive datetime on the target day from the HH:MM label
+        md = None
+        mt = re.search(r"(\d{1,2}):(\d{2})$", r.get("time", ""))
+        if mt:
+            md = datetime(target_date.year, target_date.month, target_date.day,
+                          int(mt.group(1)), int(mt.group(2)), tzinfo=timezone.utc)
+        matches.append(MatchInput(
+            home_team=r["home"], away_team=r["away"], league=league or "Other",
+            match_date=md, venue="",
+            home=TeamData(name=r["home"]), away=TeamData(name=r["away"]),
+            league_avgs=LeagueAverages(),
+            data_sources=["flashscore"],
+        ))
+    return matches
 
 
 def _extract_matches(resp) -> list[dict]:
@@ -44,16 +167,16 @@ def _extract_matches(resp) -> list[dict]:
         rows = []
     for row in rows:
         try:
-            home = row.css_first(".event__participant--home") or row.css_first(".event__homeParticipant")
-            away = row.css_first(".event__participant--away") or row.css_first(".event__awayParticipant")
-            time_node = row.css_first(".event__time")
+            home = _first(row, ".event__participant--home") or _first(row, ".event__homeParticipant")
+            away = _first(row, ".event__participant--away") or _first(row, ".event__awayParticipant")
+            time_node = _first(row, ".event__time")
             home_name = _text(home)
             away_name = _text(away)
             if not home_name or not away_name:
                 continue
             # scores (present for finished matches)
-            hs = row.css_first(".event__score--home")
-            as_ = row.css_first(".event__score--away")
+            hs = _first(row, ".event__score--home")
+            as_ = _first(row, ".event__score--away")
             out.append({
                 "home": home_name,
                 "away": away_name,
