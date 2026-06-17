@@ -36,6 +36,7 @@ class FormEntry:
     is_home: bool = True
     goals_for: int = 0
     goals_against: int = 0
+    match_id: Optional[str] = None  # source match id (for fetching shot/xG stats)
 
     @property
     def result(self) -> str:
@@ -56,6 +57,8 @@ class TeamData:
     missing_players: list[dict] = field(default_factory=list)  # {name, reason, key}
     lineup_known: bool = False  # True once lineups/injuries were actually scraped
     last_match_date: Optional[datetime] = None
+    # xG provenance: None | "real" (FlashScore xG) | "proxy" (from shots) | "goals"
+    xg_source: Optional[str] = None
 
     def last_n_results(self, n: int = 5) -> list[str]:
         return [e.result for e in self.recent[:n]]

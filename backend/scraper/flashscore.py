@@ -222,7 +222,7 @@ def fetch_form_h2h(event_id: str, home_name: str = "", away_name: str = ""):
                 cur_section = None
         elif k == "~KC":
             push(); rec = {"ts": v} if cur_section else None
-        elif rec is not None and k in ("KJ", "KK", "KU", "KT", "KS", "WIS"):
+        elif rec is not None and k in ("KP", "KJ", "KK", "KU", "KT", "KS", "WIS"):
             rec[k] = v.lstrip("*")
     push()
 
@@ -238,7 +238,8 @@ def fetch_form_h2h(event_id: str, home_name: str = "", away_name: str = ""):
             gf, ga = (ku, kt) if is_home else (kt, ku)
             opp = m.get("KK") if is_home else m.get("KJ")
             entries.append(FormEntry(opponent=opp or "", is_home=is_home,
-                                     goals_for=gf, goals_against=ga, date=m.get("ts")))
+                                     goals_for=gf, goals_against=ga, date=m.get("ts"),
+                                     match_id=m.get("KP")))
             try:
                 ts = int(m["ts"])
                 if last is None or ts > last:
@@ -281,6 +282,131 @@ def fetch_form_h2h(event_id: str, home_name: str = "", away_name: str = ""):
     h2h = H2HData(home_wins=hw, draws=dw, away_wins=aw,
                   matches=len(goals), avg_goals=round(sum(goals) / len(goals), 2) if goals else None)
     return home_entries, away_entries, h2h, home_last, away_last
+
+
+# --------------------------------------------------------------------------- #
+# Match statistics feed  ->  real xG / shot-based proxy xG
+# --------------------------------------------------------------------------- #
+_STATS_CACHE: dict[str, dict] = {}
+
+
+def fetch_match_stats(match_id: str) -> dict:
+    """Parse the df_st feed for one match -> {xg_home, xg_away, shots_*, sot_*,
+    corners_*}. Values are None when the match has no such stat. Cached."""
+    if not match_id:
+        return {}
+    if match_id in _STATS_CACHE:
+        return _STATS_CACHE[match_id]
+    raw = _feed_text(f"df_st_1_{match_id}")
+    out: dict = {}
+    if raw:
+        name = None
+        for f in raw.split("¬"):
+            if f.startswith("SG÷"):
+                name = f[3:]
+            elif f.startswith("SH÷") and name:
+                out[(name, "h")] = f[3:]
+            elif f.startswith("SI÷") and name:
+                out[(name, "a")] = f[3:]
+
+        def num(label, side, integer=False):
+            v = out.get((label, side))
+            if v is None:
+                return None
+            v = v.replace("%", "").split("(")[0].strip()
+            try:
+                return int(v) if integer else float(v)
+            except ValueError:
+                return None
+
+        result = {
+            "xg_home": num("Expected goals (xG)", "h"),
+            "xg_away": num("Expected goals (xG)", "a"),
+            "shots_home": num("Total shots", "h", True),
+            "shots_away": num("Total shots", "a", True),
+            "sot_home": num("Shots on target", "h", True),
+            "sot_away": num("Shots on target", "a", True),
+            "corners_home": num("Corner kicks", "h", True),
+            "corners_away": num("Corner kicks", "a", True),
+        }
+    else:
+        result = {}
+    _STATS_CACHE[match_id] = result
+    return result
+
+
+def _proxy_xg(shots, sot, corners) -> Optional[float]:
+    """Shot-based xG proxy, calibrated so a typical match (~4 SoT) ~ 1.3 xG."""
+    if sot is None and shots is None:
+        return None
+    sot = sot or 0
+    shots = shots or 0
+    corners = corners or 0
+    off_target = max(0, shots - sot)
+    return round(max(0.0, 0.34 * sot + 0.03 * off_target + 0.025 * corners), 3)
+
+
+def team_xg_from_recent(entries, limit: int = 5):
+    """Average a team's xG-for / xG-against over its recent matches.
+
+    Per match: use FlashScore real xG when present, else a shot-based proxy, else
+    fall back to the goals scored/conceded. Returns (avg_xg, avg_xga, source) where
+    source is 'real' | 'proxy' | 'goals' | None."""
+    xf_list, xa_list = [], []
+    n_real = n_proxy = n_goals = 0
+    for e in entries[:limit]:
+        st = fetch_match_stats(e.match_id) if e.match_id else {}
+        if st.get("xg_home") is not None and st.get("xg_away") is not None:
+            xf, xa = (st["xg_home"], st["xg_away"]) if e.is_home else (st["xg_away"], st["xg_home"])
+            n_real += 1
+        elif st.get("shots_home") is not None or st.get("sot_home") is not None:
+            ph = _proxy_xg(st.get("shots_home"), st.get("sot_home"), st.get("corners_home"))
+            pa = _proxy_xg(st.get("shots_away"), st.get("sot_away"), st.get("corners_away"))
+            xf, xa = (ph, pa) if e.is_home else (pa, ph)
+            n_proxy += 1
+        else:
+            xf, xa = float(e.goals_for), float(e.goals_against)
+            n_goals += 1
+        if xf is not None and xa is not None:
+            xf_list.append(xf); xa_list.append(xa)
+    if not xf_list:
+        return None, None, None
+    avg = lambda L: round(sum(L) / len(L), 3)
+    if n_real >= max(n_proxy, n_goals) and n_real > 0:
+        source = "real"
+    elif n_proxy > 0:
+        source = "proxy"
+    else:
+        source = "goals"
+    return avg(xf_list), avg(xa_list), source
+
+
+# --------------------------------------------------------------------------- #
+# Odds feed  ->  drop matches with no market
+# --------------------------------------------------------------------------- #
+def fetch_odds(event_id: str):
+    """Best-effort 1X2 / O-U 2.5 / BTTS odds from the df_dos feed. Returns an
+    OddsData (with whatever was found) or None when the match has no market.
+
+    NOTE: validated structurally; pre-match price coverage is sparse out of
+    season, so this commonly returns None until leagues resume."""
+    from backend.schemas import OddsData
+    import re as _re
+    raw = _feed_text(f"df_dos_1_{event_id}_")
+    if not raw or raw.strip() == "0":
+        return None
+    # 1X2 average odds appear as a triplet of decimals in the home/draw/away block.
+    # We look for the average-odds row; bookmaker rows use OD/ODA/ODB-style keys.
+    decs = _re.findall(r"÷([0-9]+\.[0-9]{2})(?=¬|$)", raw)
+    odds = OddsData()
+    if len(decs) >= 3:
+        try:
+            odds.home, odds.draw, odds.away = float(decs[0]), float(decs[1]), float(decs[2])
+        except ValueError:
+            pass
+    has_any = any(v is not None for v in (odds.home, odds.draw, odds.away,
+                                          odds.over_2_5, odds.btts_yes))
+    return odds if has_any else None
 
 
 def _extract_matches(resp) -> list[dict]:

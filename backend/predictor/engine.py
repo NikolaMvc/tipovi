@@ -12,19 +12,30 @@ from backend.predictor.montecarlo import simulate
 from backend.predictor.value import find_value_bets
 
 
-def _confidence(available: set) -> tuple[str, int]:
-    n = len(available & set(CONFIDENCE_FACTORS))
-    if n >= 7:
-        return "HIGH", 88
-    if n == 6:
-        return "MEDIUM", 72
-    if n == 5:
-        return "MEDIUM", 60
-    if n == 4:
-        return "LOW", 46
-    if n == 3:
-        return "LOW", 38
-    return "LOW", max(15, n * 10)
+# Weighted confidence: the genuinely predictive factors (form, xG, H2H, fatigue)
+# carry most of the weight; the hard-to-get real facts (injuries/referee/weather)
+# only refine it. A proxy xG is discounted so it can never fake a HIGH badge.
+_FACTOR_WEIGHTS = {
+    "form": 0.24, "xg": 0.24, "h2h": 0.16, "fatigue": 0.12,
+    "injuries": 0.10, "referee": 0.07, "weather": 0.07,
+}
+_XG_PROXY_DISCOUNT = 0.6
+
+
+def _confidence(available: set, xg_proxy: bool = False) -> tuple[str, int]:
+    score = 0.0
+    for f in CONFIDENCE_FACTORS:
+        if f in available:
+            w = _FACTOR_WEIGHTS.get(f, 0.0)
+            if f == "xg" and xg_proxy:
+                w *= _XG_PROXY_DISCOUNT
+            score += w
+    pct = round(score * 100)
+    if pct >= 72:
+        return "HIGH", pct
+    if pct >= 48:
+        return "MEDIUM", pct
+    return "LOW", max(10, pct)
 
 
 def _fatigue_status(rest_days):
@@ -76,7 +87,8 @@ def predict(m: MatchInput) -> dict:
     outcomes = {"HOME_WIN": home_win, "DRAW": draw, "AWAY_WIN": away_win}
     predicted_outcome = max(outcomes, key=outcomes.get)
 
-    confidence, confidence_score = _confidence(lam.available)
+    xg_proxy = m.home.xg_source in ("proxy", "goals") or m.away.xg_source in ("proxy", "goals")
+    confidence, confidence_score = _confidence(lam.available, xg_proxy=xg_proxy)
 
     markets_probs = {
         "home_win": home_win, "draw": draw, "away_win": away_win,
@@ -104,6 +116,8 @@ def predict(m: MatchInput) -> dict:
             "confidence": confidence,
             "confidence_score": confidence_score,
             "missing_data": lam.missing,
+            "proxy_factors": (["xg"] if (m.home.xg_source in ("proxy", "goals")
+                                         or m.away.xg_source in ("proxy", "goals")) else []),
             "lambda": {"home": lam.lambda_home, "away": lam.lambda_away},
             "predicted_goals": {"home": mc.mean_home_goals, "away": mc.mean_away_goals},
             "most_likely_scores": pois.most_likely_scores,
@@ -141,6 +155,11 @@ def predict(m: MatchInput) -> dict:
                 "home_xga": m.home.season.avg_xga,
                 "away_xg": m.away.season.avg_xg,
                 "away_xga": m.away.season.avg_xga,
+                # provenance: "real" (FlashScore xG) | "proxy" (from shots) | "goals"
+                "home_source": m.home.xg_source,
+                "away_source": m.away.xg_source,
+                "is_proxy": (m.home.xg_source in ("proxy", "goals")
+                             or m.away.xg_source in ("proxy", "goals")),
             },
             "standings": {
                 "home_pos": m.home.season.position,

@@ -45,10 +45,14 @@ class DataProvider:
         d = m.match_date.date().isoformat() if m.match_date else ""
         return (self._canon(m.home_team), self._canon(m.away_team), d)
 
-    def collect_upcoming(self, days: int = 3, enrich_xg: bool = False) -> list[MatchInput]:
+    def collect_upcoming(self, days: int = 3, enrich_xg: bool = False,
+                         require_odds: bool = True) -> list[MatchInput]:
         """ALL matches for the window: football-data.org for the 12 covered leagues
         (rich data) PLUS FlashScore's independent all-leagues discovery for every
-        other competition. Deduplicated; football-data wins on overlap."""
+        other competition. Deduplicated; football-data wins on overlap.
+
+        With ``require_odds`` (default), matches without a betting market on any
+        source are dropped from the whole pipeline."""
         matches: list[MatchInput] = []
         seen: set[tuple] = set()
 
@@ -76,12 +80,27 @@ class DataProvider:
                 log.warning("flashscore all_matches(day+%d) failed: %s", offset, exc)
         log.info("flashscore added %d extra matches across all leagues", len(matches) - fd_count)
 
-        # 3) Enrich everything (weather + best-effort xG); never raises.
+        # 3) Enrich form/H2H/odds (NOT xG yet); never raises.
         for m in matches:
             try:
                 self.enrich(m, enrich_xg=enrich_xg)
             except Exception as exc:  # noqa: BLE001
                 log.warning("enrich failed for %s vs %s: %s", m.home_team, m.away_team, exc)
+
+        # 4) ODDS FILTER — keep only matches with a betting market on some source.
+        if require_odds:
+            before = len(matches)
+            matches = [m for m in matches if m.odds is not None]
+            log.info("odds filter: %d -> %d matches (dropped %d without odds)",
+                     before, len(matches), before - len(matches))
+
+        # 5) xG enrichment only on the matches we keep (expensive: per-match stats).
+        for m in matches:
+            if "flashscore" in m.data_sources and "football-data.org" not in m.data_sources:
+                try:
+                    self._enrich_xg(m)
+                except Exception as exc:  # noqa: BLE001
+                    log.info("xg enrich skipped for %s: %s", m.home_team, exc)
         return matches
 
     # ------------------------------------------------------------------ #
@@ -106,9 +125,16 @@ class DataProvider:
         return s
 
     def _enrich_flashscore(self, m: MatchInput) -> None:
-        """Populate form + H2H (and derive scoring strengths) for a FlashScore-only
-        match via its internal feed, so the prediction is differentiated."""
-        from backend.scraper.flashscore import fetch_form_h2h
+        """Populate form + H2H + odds for a FlashScore-only match via its internal
+        feeds (xG is added later, only for matches that survive the odds filter)."""
+        from backend.scraper.flashscore import fetch_form_h2h, fetch_odds
+
+        odds = fetch_odds(m.event_id)
+        if odds:
+            m.odds = odds
+            if "flashscore-odds" not in m.data_sources:
+                m.data_sources.append("flashscore-odds")
+
         h_recent, a_recent, h2h, h_last, a_last = fetch_form_h2h(
             m.event_id, m.home_team, m.away_team)
         if h_recent:
@@ -123,6 +149,22 @@ class DataProvider:
             m.h2h = h2h
         if (h_recent or a_recent) and "flashscore-feed" not in m.data_sources:
             m.data_sources.append("flashscore-feed")
+
+    def _enrich_xg(self, m: MatchInput) -> None:
+        """Real FlashScore xG -> shot-based proxy -> goals (marked by source)."""
+        from backend.scraper.flashscore import team_xg_from_recent
+        if m.home.recent:
+            xg, xga, src = team_xg_from_recent(m.home.recent)
+            if xg is not None:
+                m.home.season.avg_xg, m.home.season.avg_xga = xg, xga
+                m.home.xg_source = src
+        if m.away.recent:
+            xg, xga, src = team_xg_from_recent(m.away.recent)
+            if xg is not None:
+                m.away.season.avg_xg, m.away.season.avg_xga = xg, xga
+                m.away.xg_source = src
+        if (m.home.xg_source or m.away.xg_source) and "flashscore-stats" not in m.data_sources:
+            m.data_sources.append("flashscore-stats")
 
     def enrich(self, m: MatchInput, enrich_xg: bool = False) -> MatchInput:
         # FlashScore-only matches: pull form + H2H from the data feed.
