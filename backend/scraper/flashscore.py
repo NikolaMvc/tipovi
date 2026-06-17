@@ -101,12 +101,16 @@ def _extract_grouped(resp) -> list[dict]:
 
 
 def _is_scheduled(row: dict) -> bool:
-    """Not started yet: no score and a HH:MM kickoff label."""
-    if row.get("home_score") or row.get("away_score"):
+    """Not started yet. FlashScore shows a dash placeholder ("-") in the score
+    cells of upcoming matches, so a match counts as *played* only when a score
+    cell actually contains a digit; upcoming matches still carry a HH:MM kickoff."""
+    hs = (row.get("home_score") or "").strip()
+    as_ = (row.get("away_score") or "").strip()
+    if any(c.isdigit() for c in hs) or any(c.isdigit() for c in as_):
         return False
     t = (row.get("time") or "").strip()
-    # FlashScore prefixes a date for non-today days, e.g. "18.06. 20:00"
-    return bool(_TIME_RE.match(t)) or bool(re.search(r"\d{1,2}:\d{2}$", t))
+    # kickoff label like "19:45" (today) or "18.06. 20:00" (future day)
+    return bool(re.search(r"\d{1,2}:\d{2}", t))
 
 
 def all_matches(day_offset: int = 0) -> list[MatchInput]:
