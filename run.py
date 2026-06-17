@@ -45,7 +45,7 @@ def step_scrape(days: int, debug: bool) -> list:
     provider = DataProvider()
     print(f"  primary source: {provider.primary_source}")
     try:
-        matches = provider.collect_upcoming(days=days)
+        matches = provider.collect_upcoming(days=days, require_odds=settings.REQUIRE_ODDS)
     except Exception as exc:  # noqa: BLE001
         ERRORS.append(f"scrape: {exc}")
         matches = []

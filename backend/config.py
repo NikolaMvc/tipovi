@@ -40,6 +40,9 @@ class Settings(BaseSettings):
     LOOKAHEAD_DAYS: int = 3          # today + next 2 days
     ROLLING_DAYS: int = 3            # keep the last N days of predictions/results/tips
     TIP_COUNT: int = 20             # auto top-N tips per day
+    # Drop matches with no betting market on any source. True = only bettable
+    # matches (empties the app out of season); False = keep all matches.
+    REQUIRE_ODDS: bool = True
 
     # --- Monte Carlo ---
     MC_SIMULATIONS: int = 10000
