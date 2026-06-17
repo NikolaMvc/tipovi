@@ -1,0 +1,77 @@
+{
+  "date": "2026-06-18",
+  "tips": [
+    {
+      "match_id": "537329",
+      "home_team": "Czechia",
+      "away_team": "South Africa",
+      "league": "FIFA World Cup",
+      "date": "2026-06-18T16:00:00+00:00",
+      "market": "O/U 2.5",
+      "pick": "Under 2.5",
+      "probability": 60.37,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "537335",
+      "home_team": "Switzerland",
+      "away_team": "Bosnia-Herzegovina",
+      "league": "FIFA World Cup",
+      "date": "2026-06-18T19:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 54.03,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "537404",
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia",
+      "league": "FIFA World Cup",
+      "date": "2026-06-18T02:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 54.02,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "2026-06-18-czech-republic-vs-south-africa",
+      "home_team": "Czech Republic",
+      "away_team": "South Africa",
+      "league": "WORLD: World Championship",
+      "date": "2026-06-18T18:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 53.74,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "2026-06-18-ghana-vs-panama",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "league": "WORLD: World Championship",
+      "date": "2026-06-18T01:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 53.51,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "537336",
+      "home_team": "Canada",
+      "away_team": "Qatar",
+      "league": "FIFA World Cup",
+      "date": "2026-06-18T22:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 53.25,
+      "odds": null,
+      "status": "PENDING"
+    }
+  ]
+}

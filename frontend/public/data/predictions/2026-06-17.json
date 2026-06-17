@@ -1,0 +1,780 @@
+{
+  "date": "2026-06-17",
+  "generated_at": "2026-06-17T04:50:37.912314+00:00",
+  "count": 3,
+  "matches": [
+    {
+      "match": {
+        "home_team": "Portugal",
+        "away_team": "Congo DR",
+        "league": "FIFA World Cup",
+        "date": "2026-06-17T17:00:00+00:00",
+        "venue": "",
+        "status": "UPCOMING",
+        "event_id": "537403",
+        "id": "537403"
+      },
+      "prediction": {
+        "home_win_prob": 44.72,
+        "draw_prob": 26.84,
+        "away_win_prob": 28.44,
+        "predicted_outcome": "HOME_WIN",
+        "confidence": "LOW",
+        "confidence_score": 15,
+        "missing_data": [
+          "form",
+          "h2h",
+          "xg",
+          "injuries",
+          "referee",
+          "weather",
+          "fatigue"
+        ],
+        "lambda": {
+          "home": 1.5,
+          "away": 1.15
+        },
+        "predicted_goals": {
+          "home": 1.51,
+          "away": 1.156
+        },
+        "most_likely_scores": [
+          {
+            "score": "1-1",
+            "prob": 13.77
+          },
+          {
+            "score": "2-1",
+            "prob": 9.14
+          },
+          {
+            "score": "1-0",
+            "prob": 9.01
+          },
+          {
+            "score": "0-0",
+            "prob": 8.65
+          },
+          {
+            "score": "2-0",
+            "prob": 7.95
+          }
+        ],
+        "monte_carlo": {
+          "simulations": 10000,
+          "home_win": 45.76,
+          "draw": 24.88,
+          "away_win": 29.36,
+          "confidence_interval": "±1.0%",
+          "histogram": {
+            "0": 6.3,
+            "1": 18.92,
+            "2": 25.3,
+            "3": 22.14,
+            "4": 14.27,
+            "5": 7.7,
+            "6": 3.3,
+            "7": 1.47,
+            "8": 0.6
+          },
+          "top_scores": [
+            {
+              "score": "1-1",
+              "prob": 12.24
+            },
+            {
+              "score": "1-0",
+              "prob": 10.62
+            },
+            {
+              "score": "2-1",
+              "prob": 9.27
+            },
+            {
+              "score": "0-1",
+              "prob": 8.3
+            },
+            {
+              "score": "2-0",
+              "prob": 8.21
+            }
+          ]
+        }
+      },
+      "markets": {
+        "over_under_2_5": {
+          "over": 49.44,
+          "under": 50.56
+        },
+        "btts": {
+          "yes": 54.07,
+          "no": 45.93
+        }
+      },
+      "value_bets": [],
+      "breakdown": {
+        "form": {
+          "home_last5": [],
+          "away_last5": [],
+          "home_form_score": null,
+          "away_form_score": null
+        },
+        "h2h": {
+          "home_wins": 0,
+          "draws": 0,
+          "away_wins": 0,
+          "avg_goals": null,
+          "matches": 0
+        },
+        "xg": {
+          "home_xg": null,
+          "home_xga": null,
+          "away_xg": null,
+          "away_xga": null
+        },
+        "standings": {
+          "home_pos": null,
+          "away_pos": null,
+          "points_diff": null
+        },
+        "injuries": {
+          "home_missing": [],
+          "away_missing": []
+        },
+        "referee": null,
+        "fatigue": {
+          "home_rest_days": null,
+          "away_rest_days": null,
+          "home_status": "UNKNOWN",
+          "away_status": "UNKNOWN"
+        },
+        "weather": null,
+        "factors_used": {
+          "base": {
+            "home_attack": 1.0,
+            "away_attack": 1.0,
+            "home_defense": 1.0,
+            "away_defense": 1.0,
+            "lambda_home": 1.5,
+            "lambda_away": 1.15
+          },
+          "form": {
+            "home_form_score": null,
+            "away_form_score": null,
+            "home_mult": 1.0,
+            "away_mult": 1.0
+          },
+          "xg": {
+            "home_mult": 1.0,
+            "away_mult": 1.0
+          },
+          "fatigue": {
+            "home_rest_days": null,
+            "away_rest_days": null,
+            "home_mult": 1.0,
+            "away_mult": 1.0
+          },
+          "injuries": {
+            "home_attack_mult": 1.0,
+            "away_attack_mult": 1.0,
+            "home_concede_mult": 1.0,
+            "away_concede_mult": 1.0
+          }
+        },
+        "notes": [
+          "No season scoring stats; using league baselines (strength=1.0)."
+        ]
+      },
+      "poisson_matrix": [
+        [
+          8.649,
+          6.541,
+          4.672,
+          1.791,
+          0.515,
+          0.118,
+          0.027
+        ],
+        [
+          9.013,
+          13.772,
+          7.008,
+          2.686,
+          0.772,
+          0.178,
+          0.041
+        ],
+        [
+          7.948,
+          9.141,
+          5.256,
+          2.015,
+          0.579,
+          0.133,
+          0.03
+        ],
+        [
+          3.974,
+          4.57,
+          2.628,
+          1.007,
+          0.29,
+          0.067,
+          0.015
+        ],
+        [
+          1.49,
+          1.714,
+          0.985,
+          0.378,
+          0.109,
+          0.025,
+          0.006
+        ],
+        [
+          0.447,
+          0.514,
+          0.296,
+          0.113,
+          0.033,
+          0.007,
+          0.002
+        ],
+        [
+          0.141,
+          0.162,
+          0.093,
+          0.036,
+          0.01,
+          0.002,
+          0.001
+        ]
+      ],
+      "poisson_matrix_sum": 100.0,
+      "implied_probs": {
+        "home": null,
+        "draw": null,
+        "away": null
+      },
+      "data_sources": [
+        "football-data.org"
+      ],
+      "computed_at": "2026-06-17T04:50:30.428143+00:00"
+    },
+    {
+      "match": {
+        "home_team": "England",
+        "away_team": "Croatia",
+        "league": "FIFA World Cup",
+        "date": "2026-06-17T20:00:00+00:00",
+        "venue": "",
+        "status": "UPCOMING",
+        "event_id": "537409",
+        "id": "537409"
+      },
+      "prediction": {
+        "home_win_prob": 43.81,
+        "draw_prob": 27.3,
+        "away_win_prob": 28.89,
+        "predicted_outcome": "HOME_WIN",
+        "confidence": "LOW",
+        "confidence_score": 15,
+        "missing_data": [
+          "form",
+          "xg",
+          "injuries",
+          "referee",
+          "weather",
+          "fatigue"
+        ],
+        "lambda": {
+          "home": 1.5,
+          "away": 1.15
+        },
+        "predicted_goals": {
+          "home": 1.482,
+          "away": 1.166
+        },
+        "most_likely_scores": [
+          {
+            "score": "1-1",
+            "prob": 13.77
+          },
+          {
+            "score": "2-1",
+            "prob": 9.14
+          },
+          {
+            "score": "1-0",
+            "prob": 9.01
+          },
+          {
+            "score": "0-0",
+            "prob": 8.65
+          },
+          {
+            "score": "2-0",
+            "prob": 7.95
+          }
+        ],
+        "monte_carlo": {
+          "simulations": 10000,
+          "home_win": 43.93,
+          "draw": 25.8,
+          "away_win": 30.27,
+          "confidence_interval": "±1.0%",
+          "histogram": {
+            "0": 6.93,
+            "1": 18.72,
+            "2": 25.17,
+            "3": 21.98,
+            "4": 14.49,
+            "5": 7.42,
+            "6": 3.26,
+            "7": 1.4,
+            "8": 0.63
+          },
+          "top_scores": [
+            {
+              "score": "1-1",
+              "prob": 12.38
+            },
+            {
+              "score": "1-0",
+              "prob": 10.26
+            },
+            {
+              "score": "2-1",
+              "prob": 9.14
+            },
+            {
+              "score": "0-1",
+              "prob": 8.46
+            },
+            {
+              "score": "2-0",
+              "prob": 7.54
+            }
+          ]
+        }
+      },
+      "markets": {
+        "over_under_2_5": {
+          "over": 49.29,
+          "under": 50.71
+        },
+        "btts": {
+          "yes": 53.86,
+          "no": 46.14
+        }
+      },
+      "value_bets": [],
+      "breakdown": {
+        "form": {
+          "home_last5": [],
+          "away_last5": [],
+          "home_form_score": null,
+          "away_form_score": null
+        },
+        "h2h": {
+          "home_wins": 0,
+          "draws": 0,
+          "away_wins": 0,
+          "avg_goals": null,
+          "matches": 3
+        },
+        "xg": {
+          "home_xg": null,
+          "home_xga": null,
+          "away_xg": null,
+          "away_xga": null
+        },
+        "standings": {
+          "home_pos": 1,
+          "away_pos": 1,
+          "points_diff": 0
+        },
+        "injuries": {
+          "home_missing": [],
+          "away_missing": []
+        },
+        "referee": null,
+        "fatigue": {
+          "home_rest_days": null,
+          "away_rest_days": null,
+          "home_status": "UNKNOWN",
+          "away_status": "UNKNOWN"
+        },
+        "weather": null,
+        "factors_used": {
+          "base": {
+            "home_attack": 1.0,
+            "away_attack": 1.0,
+            "home_defense": 1.0,
+            "away_defense": 1.0,
+            "lambda_home": 1.5,
+            "lambda_away": 1.15
+          },
+          "form": {
+            "home_form_score": null,
+            "away_form_score": null,
+            "home_mult": 1.0,
+            "away_mult": 1.0
+          },
+          "xg": {
+            "home_mult": 1.0,
+            "away_mult": 1.0
+          },
+          "fatigue": {
+            "home_rest_days": null,
+            "away_rest_days": null,
+            "home_mult": 1.0,
+            "away_mult": 1.0
+          },
+          "injuries": {
+            "home_attack_mult": 1.0,
+            "away_attack_mult": 1.0,
+            "home_concede_mult": 1.0,
+            "away_concede_mult": 1.0
+          }
+        },
+        "notes": [
+          "No season scoring stats; using league baselines (strength=1.0)."
+        ]
+      },
+      "poisson_matrix": [
+        [
+          8.649,
+          6.541,
+          4.672,
+          1.791,
+          0.515,
+          0.118,
+          0.027
+        ],
+        [
+          9.013,
+          13.772,
+          7.008,
+          2.686,
+          0.772,
+          0.178,
+          0.041
+        ],
+        [
+          7.948,
+          9.141,
+          5.256,
+          2.015,
+          0.579,
+          0.133,
+          0.03
+        ],
+        [
+          3.974,
+          4.57,
+          2.628,
+          1.007,
+          0.29,
+          0.067,
+          0.015
+        ],
+        [
+          1.49,
+          1.714,
+          0.985,
+          0.378,
+          0.109,
+          0.025,
+          0.006
+        ],
+        [
+          0.447,
+          0.514,
+          0.296,
+          0.113,
+          0.033,
+          0.007,
+          0.002
+        ],
+        [
+          0.141,
+          0.162,
+          0.093,
+          0.036,
+          0.01,
+          0.002,
+          0.001
+        ]
+      ],
+      "poisson_matrix_sum": 100.0,
+      "implied_probs": {
+        "home": null,
+        "draw": null,
+        "away": null
+      },
+      "data_sources": [
+        "football-data.org"
+      ],
+      "computed_at": "2026-06-17T04:50:30.432553+00:00"
+    },
+    {
+      "match": {
+        "home_team": "Ghana",
+        "away_team": "Panama",
+        "league": "FIFA World Cup",
+        "date": "2026-06-17T23:00:00+00:00",
+        "venue": "",
+        "status": "UPCOMING",
+        "event_id": "537410",
+        "id": "537410"
+      },
+      "prediction": {
+        "home_win_prob": 44.58,
+        "draw_prob": 27.25,
+        "away_win_prob": 28.17,
+        "predicted_outcome": "HOME_WIN",
+        "confidence": "LOW",
+        "confidence_score": 15,
+        "missing_data": [
+          "form",
+          "h2h",
+          "xg",
+          "injuries",
+          "referee",
+          "weather",
+          "fatigue"
+        ],
+        "lambda": {
+          "home": 1.5,
+          "away": 1.15
+        },
+        "predicted_goals": {
+          "home": 1.49,
+          "away": 1.135
+        },
+        "most_likely_scores": [
+          {
+            "score": "1-1",
+            "prob": 13.77
+          },
+          {
+            "score": "2-1",
+            "prob": 9.14
+          },
+          {
+            "score": "1-0",
+            "prob": 9.01
+          },
+          {
+            "score": "0-0",
+            "prob": 8.65
+          },
+          {
+            "score": "2-0",
+            "prob": 7.95
+          }
+        ],
+        "monte_carlo": {
+          "simulations": 10000,
+          "home_win": 45.48,
+          "draw": 25.69,
+          "away_win": 28.83,
+          "confidence_interval": "±1.0%",
+          "histogram": {
+            "0": 7.46,
+            "1": 18.35,
+            "2": 25.07,
+            "3": 22.46,
+            "4": 14.38,
+            "5": 7.37,
+            "6": 3.12,
+            "7": 1.23,
+            "8": 0.56
+          },
+          "top_scores": [
+            {
+              "score": "1-1",
+              "prob": 12.1
+            },
+            {
+              "score": "1-0",
+              "prob": 10.54
+            },
+            {
+              "score": "2-1",
+              "prob": 9.59
+            },
+            {
+              "score": "2-0",
+              "prob": 8.3
+            },
+            {
+              "score": "0-1",
+              "prob": 7.81
+            }
+          ]
+        }
+      },
+      "markets": {
+        "over_under_2_5": {
+          "over": 49.26,
+          "under": 50.74
+        },
+        "btts": {
+          "yes": 53.74,
+          "no": 46.26
+        }
+      },
+      "value_bets": [],
+      "breakdown": {
+        "form": {
+          "home_last5": [],
+          "away_last5": [],
+          "home_form_score": null,
+          "away_form_score": null
+        },
+        "h2h": {
+          "home_wins": 0,
+          "draws": 0,
+          "away_wins": 0,
+          "avg_goals": null,
+          "matches": 0
+        },
+        "xg": {
+          "home_xg": null,
+          "home_xga": null,
+          "away_xg": null,
+          "away_xga": null
+        },
+        "standings": {
+          "home_pos": 1,
+          "away_pos": 1,
+          "points_diff": 0
+        },
+        "injuries": {
+          "home_missing": [],
+          "away_missing": []
+        },
+        "referee": null,
+        "fatigue": {
+          "home_rest_days": null,
+          "away_rest_days": null,
+          "home_status": "UNKNOWN",
+          "away_status": "UNKNOWN"
+        },
+        "weather": null,
+        "factors_used": {
+          "base": {
+            "home_attack": 1.0,
+            "away_attack": 1.0,
+            "home_defense": 1.0,
+            "away_defense": 1.0,
+            "lambda_home": 1.5,
+            "lambda_away": 1.15
+          },
+          "form": {
+            "home_form_score": null,
+            "away_form_score": null,
+            "home_mult": 1.0,
+            "away_mult": 1.0
+          },
+          "xg": {
+            "home_mult": 1.0,
+            "away_mult": 1.0
+          },
+          "fatigue": {
+            "home_rest_days": null,
+            "away_rest_days": null,
+            "home_mult": 1.0,
+            "away_mult": 1.0
+          },
+          "injuries": {
+            "home_attack_mult": 1.0,
+            "away_attack_mult": 1.0,
+            "home_concede_mult": 1.0,
+            "away_concede_mult": 1.0
+          }
+        },
+        "notes": [
+          "No season scoring stats; using league baselines (strength=1.0)."
+        ]
+      },
+      "poisson_matrix": [
+        [
+          8.649,
+          6.541,
+          4.672,
+          1.791,
+          0.515,
+          0.118,
+          0.027
+        ],
+        [
+          9.013,
+          13.772,
+          7.008,
+          2.686,
+          0.772,
+          0.178,
+          0.041
+        ],
+        [
+          7.948,
+          9.141,
+          5.256,
+          2.015,
+          0.579,
+          0.133,
+          0.03
+        ],
+        [
+          3.974,
+          4.57,
+          2.628,
+          1.007,
+          0.29,
+          0.067,
+          0.015
+        ],
+        [
+          1.49,
+          1.714,
+          0.985,
+          0.378,
+          0.109,
+          0.025,
+          0.006
+        ],
+        [
+          0.447,
+          0.514,
+          0.296,
+          0.113,
+          0.033,
+          0.007,
+          0.002
+        ],
+        [
+          0.141,
+          0.162,
+          0.093,
+          0.036,
+          0.01,
+          0.002,
+          0.001
+        ]
+      ],
+      "poisson_matrix_sum": 100.0,
+      "implied_probs": {
+        "home": null,
+        "draw": null,
+        "away": null
+      },
+      "data_sources": [
+        "football-data.org"
+      ],
+      "computed_at": "2026-06-17T04:50:30.436781+00:00"
+    }
+  ]
+}

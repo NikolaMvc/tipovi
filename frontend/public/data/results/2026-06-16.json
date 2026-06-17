@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-16",
+  "results": [
+    {
+      "id": "537364",
+      "home_team": "Iran",
+      "away_team": "New Zealand",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537391",
+      "home_team": "France",
+      "away_team": "Senegal",
+      "home_goals": 3,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537392",
+      "home_team": "Iraq",
+      "away_team": "Norway",
+      "home_goals": 1,
+      "away_goals": 4,
+      "status": "FINISHED"
+    }
+  ]
+}

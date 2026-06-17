@@ -1,0 +1,65 @@
+{
+  "date": "2026-06-19",
+  "tips": [
+    {
+      "match_id": "537330",
+      "home_team": "Mexico",
+      "away_team": "South Korea",
+      "league": "FIFA World Cup",
+      "date": "2026-06-19T01:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 61.85,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "537348",
+      "home_team": "United States",
+      "away_team": "Australia",
+      "league": "FIFA World Cup",
+      "date": "2026-06-19T19:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 60.62,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "537342",
+      "home_team": "Scotland",
+      "away_team": "Morocco",
+      "league": "FIFA World Cup",
+      "date": "2026-06-19T22:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 56.78,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "2026-06-19-canada-vs-qatar",
+      "home_team": "Canada",
+      "away_team": "Qatar",
+      "league": "WORLD: World Championship",
+      "date": "2026-06-19T00:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 54.33,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "2026-06-19-usa-vs-australia",
+      "home_team": "USA",
+      "away_team": "Australia",
+      "league": "WORLD: World Championship",
+      "date": "2026-06-19T21:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 54.08,
+      "odds": null,
+      "status": "PENDING"
+    }
+  ]
+}

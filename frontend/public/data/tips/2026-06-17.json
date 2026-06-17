@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-17",
+  "tips": [
+    {
+      "match_id": "537403",
+      "home_team": "Portugal",
+      "away_team": "Congo DR",
+      "league": "FIFA World Cup",
+      "date": "2026-06-17T17:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 54.07,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "537409",
+      "home_team": "England",
+      "away_team": "Croatia",
+      "league": "FIFA World Cup",
+      "date": "2026-06-17T20:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 53.86,
+      "odds": null,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "537410",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "league": "FIFA World Cup",
+      "date": "2026-06-17T23:00:00+00:00",
+      "market": "BTTS",
+      "pick": "Yes",
+      "probability": 53.74,
+      "odds": null,
+      "status": "PENDING"
+    }
+  ]
+}

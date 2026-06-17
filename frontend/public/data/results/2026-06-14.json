@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-14",
+  "results": [
+    {
+      "id": "537340",
+      "home_team": "Haiti",
+      "away_team": "Scotland",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537346",
+      "home_team": "Australia",
+      "away_team": "Turkey",
+      "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537351",
+      "home_team": "Germany",
+      "away_team": "Curaçao",
+      "home_goals": 7,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537357",
+      "home_team": "Netherlands",
+      "away_team": "Japan",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537352",
+      "home_team": "Ivory Coast",
+      "away_team": "Ecuador",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    }
+  ]
+}
