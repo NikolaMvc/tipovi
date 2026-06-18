@@ -6,6 +6,7 @@ import FormGuide from "./FormGuide.jsx";
 import H2HTimeline from "./H2HTimeline.jsx";
 import ValueBets from "./ValueBets.jsx";
 import InjuryReport from "./InjuryReport.jsx";
+import FactorBreakdown from "./FactorBreakdown.jsx";
 
 function Section({ title, children, right }) {
   return (
@@ -56,6 +57,8 @@ export default function MatchDetail({ detail, onBack }) {
           </div>
         )}
       </div>
+
+      <FactorBreakdown detail={detail} />
 
       <div className="grid gap-4 md:grid-cols-2">
         <Section title="Most Likely Scores">
