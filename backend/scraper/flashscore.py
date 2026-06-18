@@ -73,12 +73,15 @@ def _extract_grouped(resp) -> list[dict]:
 
     cur_league = ""
     cur_country = ""
+    cur_url = ""
     for node in nodes:
         if _has_class(node, "headerLeague"):
             cat = _first(node, ".headerLeague__category-text")
             title = _first(node, ".headerLeague__title-text")
+            link = _first(node, "a")
             cur_country = _text(cat)
             cur_league = _text(title)
+            cur_url = (link.attrib.get("href") if link is not None else "") or ""
             continue
         # event__match row
         try:
@@ -99,6 +102,7 @@ def _extract_grouped(resp) -> list[dict]:
                 "away_score": _text(as_),
                 "league": cur_league,
                 "country": cur_country,
+                "league_url": cur_url,
                 "event_id": eid,
             })
         except Exception:
@@ -149,7 +153,13 @@ def all_matches(day_offset: int = 0) -> list[MatchInput]:
 
     matches: list[MatchInput] = []
     for r in scheduled:
-        league = f"{r['country']}: {r['league']}".strip(": ") if r.get("country") else r.get("league", "")
+        country = r.get("country", "")
+        league_name = r.get("league", "")
+        league = f"{country}: {league_name}".strip(": ") if country else league_name
+        url = r.get("league_url", "")
+        is_national = country.upper() in ("WORLD", "EUROPE", "AFRICA", "SOUTH AMERICA",
+                                          "NORTH & CENTRAL AMERICA", "ASIA", "OCEANIA")
+        is_friendly = "friendly" in league_name.lower() or "club friendly" in league.lower()
         # build a naive datetime on the target day from the HH:MM label
         md = None
         mt = re.search(r"(\d{1,2}):(\d{2})$", r.get("time", ""))
@@ -159,12 +169,46 @@ def all_matches(day_offset: int = 0) -> list[MatchInput]:
         matches.append(MatchInput(
             home_team=r["home"], away_team=r["away"], league=league or "Other",
             match_date=md, venue="", event_id=r.get("event_id") or None,
+            league_url=url, is_national=is_national, is_friendly=is_friendly,
             home=TeamData(name=r["home"], team_id=r.get("event_id") or None),
             away=TeamData(name=r["away"]),
             league_avgs=LeagueAverages(),
             data_sources=["flashscore"],
         ))
     return matches
+
+
+# --------------------------------------------------------------------------- #
+# League standings (current table positions) — rendered DOM, cached per league
+# --------------------------------------------------------------------------- #
+_STANDINGS_CACHE: dict[str, dict] = {}
+
+
+def fetch_standings(league_url: str) -> dict:
+    """Return {normalized_team_name: position} for a league. Cached. Empty when the
+    competition has no table (e.g. knockout / friendlies)."""
+    if not league_url:
+        return {}
+    if league_url in _STANDINGS_CACHE:
+        return _STANDINGS_CACHE[league_url]
+    url = f"{WWW}{league_url.rstrip('/')}/standings/"
+    table: dict = {}
+    resp = fetch_browser(url, network_idle=True, wait=2500,
+                         wait_selector=".ui-table__row", timeout=30000)
+    if resp:
+        try:
+            for row in resp.css(".ui-table__row"):
+                rank = _first(row, ".tableCellRank") or _first(row, ".table__cell--rank")
+                name = _first(row, ".tableCellParticipant") or _first(row, ".table__cell--participant")
+                pos = _text(rank).strip(". ")
+                nm = normalize_team_name(_text(name))
+                if pos.isdigit() and nm:
+                    table[nm] = int(pos)
+        except Exception as exc:  # noqa: BLE001
+            log.info("standings parse failed for %s: %s", league_url, exc)
+    log.info("standings %s -> %d teams", league_url, len(table))
+    _STANDINGS_CACHE[league_url] = table
+    return table
 
 
 # --------------------------------------------------------------------------- #
@@ -222,7 +266,7 @@ def fetch_form_h2h(event_id: str, home_name: str = "", away_name: str = ""):
                 cur_section = None
         elif k == "~KC":
             push(); rec = {"ts": v} if cur_section else None
-        elif rec is not None and k in ("KP", "KJ", "KK", "KU", "KT", "KS", "WIS"):
+        elif rec is not None and k in ("KP", "KF", "KJ", "KK", "KU", "KT", "KS", "WIS"):
             rec[k] = v.lstrip("*")
     push()
 
@@ -239,7 +283,7 @@ def fetch_form_h2h(event_id: str, home_name: str = "", away_name: str = ""):
             opp = m.get("KK") if is_home else m.get("KJ")
             entries.append(FormEntry(opponent=opp or "", is_home=is_home,
                                      goals_for=gf, goals_against=ga, date=m.get("ts"),
-                                     match_id=m.get("KP")))
+                                     match_id=m.get("KP"), competition=m.get("KF", "")))
             try:
                 ts = int(m["ts"])
                 if last is None or ts > last:

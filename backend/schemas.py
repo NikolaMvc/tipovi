@@ -134,6 +134,9 @@ class MatchInput:
     match_date: Optional[datetime] = None
     venue: str = ""
     event_id: Optional[str] = None
+    league_url: str = ""            # FlashScore league path (for standings lookup)
+    is_national: bool = False      # national-team fixture
+    is_friendly: bool = False      # friendly (skipped from the pipeline)
 
     home: TeamData = field(default_factory=TeamData)
     away: TeamData = field(default_factory=TeamData)

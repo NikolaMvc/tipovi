@@ -192,6 +192,7 @@ def predict(m: MatchInput) -> dict:
                 "gol_suppressing": m.weather.gol_suppressing,
             } if m.weather else None,
             "factors_used": lam.factors,
+            "positions_estimated": lam.positions_estimated,
             "notes": lam.notes,
         },
         "poisson_matrix": pois.matrix,

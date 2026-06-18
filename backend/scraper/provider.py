@@ -68,9 +68,13 @@ class DataProvider:
 
         # 2) FlashScore — independently discover EVERY other league for each day.
         fd_count = len(matches)
+        friendlies = 0
         for offset in range(days):
             try:
                 for m in fs_all_matches(offset):
+                    if m.is_friendly:
+                        friendlies += 1
+                        continue  # friendlies are skipped entirely (spec)
                     k = self._key(m)
                     if k in seen:
                         continue  # already covered (richer) by football-data
@@ -78,7 +82,8 @@ class DataProvider:
                     matches.append(m)
             except Exception as exc:  # noqa: BLE001
                 log.warning("flashscore all_matches(day+%d) failed: %s", offset, exc)
-        log.info("flashscore added %d extra matches across all leagues", len(matches) - fd_count)
+        log.info("flashscore added %d extra matches across all leagues (skipped %d friendlies)",
+                 len(matches) - fd_count, friendlies)
 
         # 3) Enrich form/H2H/odds (NOT xG yet); never raises.
         for m in matches:
@@ -149,6 +154,24 @@ class DataProvider:
             m.h2h = h2h
         if (h_recent or a_recent) and "flashscore-feed" not in m.data_sources:
             m.data_sources.append("flashscore-feed")
+
+        # Opponent current table positions for form scoring. Group-stage / league
+        # competitions have a table; knockout / friendly return empty -> mid-table.
+        self._apply_positions(m)
+
+    def _apply_positions(self, m: MatchInput) -> None:
+        """Set each form entry's opponent_position from the league table; mark
+        league matches (opponent present in the table) and flag estimates."""
+        from backend.scraper.flashscore import fetch_standings
+        table = fetch_standings(m.league_url)
+        if "flashscore-standings" not in m.data_sources and table:
+            m.data_sources.append("flashscore-standings")
+        for team in (m.home, m.away):
+            for e in team.recent:
+                pos = table.get(normalize_team_name(e.opponent)) if table else None
+                e.opponent_position = pos
+                e.is_league = pos is not None
+                e.position_estimated = pos is None
 
     def _enrich_xg(self, m: MatchInput) -> None:
         """Real FlashScore xG -> shot-based proxy -> goals (marked by source)."""
