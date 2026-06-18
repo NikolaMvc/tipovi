@@ -51,14 +51,19 @@ export default function App() {
   const loadTips = useCallback(async () => {
     if (!index) return;
     setLoadingTips(true);
-    const days = index.tip_days || [];
+    // Only upcoming days (today + future) — excludes older tip files (which may be
+    // in the previous, non-1X2 format) — then keep the single best 20 overall.
+    const now = new Date();
+    const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+    const days = (index.tip_days || []).filter((d) => d >= todayStr);
     const all = [];
     for (const d of days) {
       const t = await data.tips(d);
       if (t?.tips) all.push(...t.tips);
     }
-    setTips(all);
-    setStats(computeStats(all));
+    const top20 = [...all].sort((a, b) => b.probability - a.probability).slice(0, 20);
+    setTips(top20);
+    setStats(computeStats(top20));
     setLoadingTips(false);
   }, [index]);
 
