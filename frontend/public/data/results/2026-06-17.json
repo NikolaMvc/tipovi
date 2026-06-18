@@ -2,113 +2,41 @@
   "date": "2026-06-17",
   "results": [
     {
-      "id": "rcQFoci5",
-      "home_team": "Gold Coast Knights U23",
-      "away_team": "Queensland Lions U23",
-      "home_goals": 1,
+      "id": "537397",
+      "home_team": "Argentina",
+      "away_team": "Algeria",
+      "home_goals": 3,
       "away_goals": 0,
       "status": "FINISHED"
     },
     {
-      "id": "Aqxp0KF7",
-      "home_team": "Gambia Ports",
-      "away_team": "Team Rhino",
-      "home_goals": 4,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "2wPVNN7E",
-      "home_team": "Medina United",
-      "away_team": "Dutch Lions",
-      "home_goals": 2,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "j5eXPbsI",
-      "home_team": "Nomme Utd",
-      "away_team": "Levadia",
-      "home_goals": 1,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "A3SwM1xR",
-      "home_team": "Samger",
-      "away_team": "Bombada",
-      "home_goals": 2,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "EaHHEJU0",
-      "home_team": "Hart Academy",
-      "away_team": "Brikama U.",
+      "id": "537398",
+      "home_team": "Austria",
+      "away_team": "Jordan",
       "home_goals": 3,
       "away_goals": 1,
       "status": "FINISHED"
     },
     {
-      "id": "4nZy2toe",
-      "home_team": "Fortune",
-      "away_team": "Real Banjul",
+      "id": "537403",
+      "home_team": "Portugal",
+      "away_team": "Congo DR",
       "home_goals": 1,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "On2aDBTH",
-      "home_team": "Black Bulls",
-      "away_team": "Ferroviario Beira",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "nXltOxCU",
-      "home_team": "Kalju",
-      "away_team": "Tammeka",
-      "home_goals": 1,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "biOFOUwA",
-      "home_team": "Gimnasia Jujuy",
-      "away_team": "Nueva Chicago",
-      "home_goals": 4,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "EaqsF5xf",
-      "home_team": "Ragsved",
-      "away_team": "Enkoping SK",
-      "home_goals": 0,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "EkmSHYSO",
-      "home_team": "Djurgarden W",
-      "away_team": "Malmo FF W",
-      "home_goals": 0,
       "away_goals": 1,
       "status": "FINISHED"
     },
     {
-      "id": "QTGpzGrg",
-      "home_team": "Hammarby W",
-      "away_team": "AIK W",
+      "id": "537409",
+      "home_team": "England",
+      "away_team": "Croatia",
       "home_goals": 4,
-      "away_goals": 1,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
-      "id": "YTjaDYdl",
-      "home_team": "Gnistan",
-      "away_team": "Lahti",
+      "id": "537410",
+      "home_team": "Ghana",
+      "away_team": "Panama",
       "home_goals": 1,
       "away_goals": 0,
       "status": "FINISHED"
