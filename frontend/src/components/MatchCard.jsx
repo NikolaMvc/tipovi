@@ -36,7 +36,7 @@ export default function MatchCard({ item, onClick }) {
       </div>
 
       {p ? (
-        <ProbabilityBar home={p.home_win_prob} draw={p.draw_prob} away={p.away_win_prob} />
+        <ProbabilityBar home={p.home_win_prob} draw={p.draw_prob} away={p.away_win_prob} odds={item.odds} />
       ) : (
         <div className="text-xs text-muted">Prediction pending…</div>
       )}

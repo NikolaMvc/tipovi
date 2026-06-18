@@ -99,6 +99,12 @@ def _candidate_picks(resp: dict) -> list[dict]:
 
 
 def _odds_for(resp: dict, market: str, pick: str) -> Optional[float]:
+    # Prefer the raw odds for the 1X2 pick (so favourites, which aren't value bets,
+    # still show a price); fall back to the value-bet odds.
+    o = resp.get("odds") or {}
+    by_pick = {"Home Win": o.get("home"), "Draw": o.get("draw"), "Away Win": o.get("away")}
+    if by_pick.get(pick) is not None:
+        return by_pick[pick]
     for vb in resp.get("value_bets", []):
         if vb.get("market") == market and vb.get("pick") == pick:
             return vb.get("odds")

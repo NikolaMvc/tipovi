@@ -8,6 +8,10 @@ run:
 run-local:
 	python run.py --no-push
 
+# Fast pass: colour tips WON/LOST from finished results + push (no scrape/predict)
+settle:
+	python run.py --settle-only
+
 # --- Frontend ---
 dev:
 	cd frontend && npm install && npm run dev

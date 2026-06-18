@@ -43,10 +43,12 @@ export default function MatchDetail({ detail, onBack }) {
           <span className="flex-1 text-right text-base font-bold text-[#E6EDF3]">{m.away_team}</span>
         </div>
         {m.venue && <div className="mb-3 text-center text-[11px] text-muted">{m.venue}</div>}
-        {p && <ProbabilityBar home={p.home_win_prob} draw={p.draw_prob} away={p.away_win_prob} />}
+        {p && <ProbabilityBar home={p.home_win_prob} draw={p.draw_prob} away={p.away_win_prob} odds={detail.odds} />}
         {p && (
           <div className="num mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[11px] text-muted">
-            <span>Pick: <span className="font-semibold text-accent">{OUTCOME_LABEL[p.predicted_outcome]}</span></span>
+            <span>Pick: <span className="font-semibold text-accent">{OUTCOME_LABEL[p.predicted_outcome]}</span>
+              {(() => { const o = detail.odds; const k = { HOME_WIN: "home", DRAW: "draw", AWAY_WIN: "away" }[p.predicted_outcome]; return o && o[k] != null ? <span className="ml-1 text-accent">@{o[k]}</span> : null; })()}
+            </span>
             <span>λ {p.lambda?.home} – {p.lambda?.away}</span>
             <span>xGoals {p.predicted_goals?.home} – {p.predicted_goals?.away}</span>
           </div>
@@ -74,8 +76,8 @@ export default function MatchDetail({ detail, onBack }) {
 
         <Section title="Markets">
           <div className="num space-y-2 text-sm">
-            <Row label="Over 2.5" a={detail.markets?.over_under_2_5?.over} b={detail.markets?.over_under_2_5?.under} la="O" lb="U" />
-            <Row label="BTTS" a={detail.markets?.btts?.yes} b={detail.markets?.btts?.no} la="Yes" lb="No" />
+            <Row label="Over 2.5" a={detail.markets?.over_under_2_5?.over} b={detail.markets?.over_under_2_5?.under} la="O" lb="U" oa={detail.odds?.over_2_5} ob={detail.odds?.under_2_5} />
+            <Row label="BTTS" a={detail.markets?.btts?.yes} b={detail.markets?.btts?.no} la="Yes" lb="No" oa={detail.odds?.btts_yes} ob={detail.odds?.btts_no} />
           </div>
         </Section>
 
@@ -148,14 +150,14 @@ export default function MatchDetail({ detail, onBack }) {
   );
 }
 
-function Row({ label, a, b, la, lb }) {
+function Row({ label, a, b, la, lb, oa, ob }) {
   return (
     <div className="flex items-center justify-between rounded-lg border border-hair bg-[#0A0E14] px-3 py-2">
       <span className="text-muted">{label}</span>
       <span>
-        <span className="text-accent">{la} {a ?? "—"}%</span>
+        <span className="text-accent">{la} {a ?? "—"}%{oa != null ? <span className="opacity-70"> @{oa}</span> : null}</span>
         <span className="mx-2 text-muted">/</span>
-        <span className="text-[#E6EDF3]">{lb} {b ?? "—"}%</span>
+        <span className="text-[#E6EDF3]">{lb} {b ?? "—"}%{ob != null ? <span className="opacity-70"> @{ob}</span> : null}</span>
       </span>
     </div>
   );

@@ -127,6 +127,30 @@ _NATIONAL_AREAS = {"WORLD", "EUROPE", "AFRICA", "SOUTH AMERICA",
                    "NORTH & CENTRAL AMERICA", "ASIA", "OCEANIA"}
 
 
+def finished_results(day_offset: int = 0) -> dict:
+    """Finished matches for (today + day_offset) from the full-day feed ->
+    {event_id: {"home_goals": int, "away_goals": int}}. Fast HTTP."""
+    raw = _feed_text(f"f_1_{day_offset}_2_en_1")
+    out: dict = {}
+    if not raw:
+        return out
+    cur = None
+    for f in raw.split("¬"):
+        if "÷" not in f:
+            continue
+        k, v = f.split("÷", 1)
+        if k == "~AA":
+            cur = {"AA": v}
+        elif cur is not None and k in ("AC", "AG", "AH"):
+            cur[k] = v
+            if k == "AH" and cur.get("AC") == "3":  # finished, both scores present
+                try:
+                    out[cur["AA"]] = {"home_goals": int(cur["AG"]), "away_goals": int(cur["AH"])}
+                except (ValueError, KeyError):
+                    pass
+    return out
+
+
 def all_matches(day_offset: int = 0) -> list[MatchInput]:
     """Every scheduled match for (today + day_offset) across ALL leagues, read from
     FlashScore's full-day fixtures feed (f_1_<day>_2_en_1). Fast HTTP, complete —

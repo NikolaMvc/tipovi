@@ -197,6 +197,11 @@ def predict(m: MatchInput) -> dict:
         },
         "poisson_matrix": pois.matrix,
         "poisson_matrix_sum": pois.matrix_sum,
+        "odds": {
+            "home": m.odds.home, "draw": m.odds.draw, "away": m.odds.away,
+            "over_2_5": m.odds.over_2_5, "under_2_5": m.odds.under_2_5,
+            "btts_yes": m.odds.btts_yes, "btts_no": m.odds.btts_no,
+        } if m.odds else None,
         "implied_probs": {
             "home": implied(m.odds.home) if m.odds else None,
             "draw": implied(m.odds.draw) if m.odds else None,

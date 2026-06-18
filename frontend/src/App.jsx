@@ -21,6 +21,7 @@ export default function App() {
   const [tips, setTips] = useState(null);
   const [loadingTips, setLoadingTips] = useState(false);
   const [stats, setStats] = useState(null);
+  const [tipScope, setTipScope] = useState("ukupno");  // "ukupno" or a day string
 
   // Load index once.
   useEffect(() => {
@@ -51,13 +52,12 @@ export default function App() {
   const loadTips = useCallback(async () => {
     if (!index) return;
     setLoadingTips(true);
-    // Only upcoming days (today + future) — excludes older tip files (which may be
-    // in the previous, non-1X2 format) — then keep the single best 20 overall.
-    const now = new Date();
-    const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
-    const days = (index.tip_days || []).filter((d) => d >= todayStr);
+    // Upcoming days only (today + future): "ukupno" = best 20 across all of them,
+    // otherwise the best 20 of the chosen day.
+    const upDays = index.prediction_days || [];  // already filtered to upcoming
     const all = [];
-    for (const d of days) {
+    const sources = tipScope === "ukupno" ? upDays : [tipScope];
+    for (const d of sources) {
       const t = await data.tips(d);
       if (t?.tips) all.push(...t.tips);
     }
@@ -65,7 +65,7 @@ export default function App() {
     setTips(top20);
     setStats(computeStats(top20));
     setLoadingTips(false);
-  }, [index]);
+  }, [index, tipScope]);
 
   useEffect(() => { if ((tab === "tips" || tab === "stats") && index) loadTips(); }, [tab, index, loadTips]);
 
@@ -114,7 +114,17 @@ export default function App() {
               </div>
             )}
 
-            {tab === "tips" && <MyTips tips={tips} loading={loadingTips} onSelect={openTipDetail} />}
+            {tab === "tips" && (
+              <div className="space-y-4">
+                <DayTabs
+                  days={[...(index?.prediction_days || []), "ukupno"]}
+                  active={tipScope}
+                  onChange={(d) => setTipScope(d)}
+                  label={(d) => (d === "ukupno" ? "Ukupno" : dayLabel(d))}
+                />
+                <MyTips tips={tips} loading={loadingTips} onSelect={openTipDetail} />
+              </div>
+            )}
 
             {tab === "stats" && <StatsPanel stats={stats} loading={loadingTips} />}
           </>

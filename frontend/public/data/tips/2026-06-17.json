@@ -11,7 +11,8 @@
       "pick": "Over 2.5",
       "probability": 99.02,
       "odds": 1.18,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "1-0"
     },
     {
       "match_id": "UoUWf3Dj",
@@ -47,7 +48,8 @@
       "pick": "Under 2.5",
       "probability": 92.18,
       "odds": 1.38,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "4-0"
     },
     {
       "match_id": "2wPVNN7E",
@@ -59,7 +61,8 @@
       "pick": "Under 2.5",
       "probability": 91.56,
       "odds": 1.42,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "2-1"
     },
     {
       "match_id": "j5eXPbsI",
@@ -71,7 +74,8 @@
       "pick": "Over 2.5",
       "probability": 91.09,
       "odds": 1.21,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "1-2"
     },
     {
       "match_id": "KGhFX5ln",
@@ -119,7 +123,8 @@
       "pick": "Under 2.5",
       "probability": 86.22,
       "odds": 1.41,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "2-1"
     },
     {
       "match_id": "EaHHEJU0",
@@ -131,7 +136,8 @@
       "pick": "Under 2.5",
       "probability": 85.16,
       "odds": 1.46,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "3-1"
     },
     {
       "match_id": "4nZy2toe",
@@ -143,7 +149,8 @@
       "pick": "Under 2.5",
       "probability": 82.27,
       "odds": 1.52,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "1-0"
     },
     {
       "match_id": "On2aDBTH",
@@ -155,7 +162,8 @@
       "pick": "No",
       "probability": 79.97,
       "odds": 1.37,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "0-0"
     },
     {
       "match_id": "nXltOxCU",
@@ -167,7 +175,8 @@
       "pick": "Over 2.5",
       "probability": 79.39,
       "odds": 1.37,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "1-2"
     },
     {
       "match_id": "biOFOUwA",
@@ -179,7 +188,8 @@
       "pick": "Under 2.5",
       "probability": 79.2,
       "odds": 1.67,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "4-0"
     },
     {
       "match_id": "EaqsF5xf",
@@ -191,7 +201,8 @@
       "pick": "Over 2.5",
       "probability": 78.85,
       "odds": 1.48,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "0-2"
     },
     {
       "match_id": "EkmSHYSO",
@@ -203,7 +214,8 @@
       "pick": "Over 2.5",
       "probability": 76.83,
       "odds": 1.65,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "0-1"
     },
     {
       "match_id": "MR9cFOYH",
@@ -227,7 +239,8 @@
       "pick": "Over 2.5",
       "probability": 76.26,
       "odds": 1.47,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "4-1"
     },
     {
       "match_id": "YTjaDYdl",
@@ -239,7 +252,8 @@
       "pick": "Over 2.5",
       "probability": 75.37,
       "odds": 1.8,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "1-0"
     }
   ]
 }

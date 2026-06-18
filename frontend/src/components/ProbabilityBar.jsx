@@ -1,8 +1,9 @@
-export default function ProbabilityBar({ home = 0, draw = 0, away = 0 }) {
+export default function ProbabilityBar({ home = 0, draw = 0, away = 0, odds = null }) {
   const total = home + draw + away || 1;
   const h = (home / total) * 100;
   const d = (draw / total) * 100;
   const a = (away / total) * 100;
+  const o = (v) => (v != null ? ` @${v}` : "");
 
   return (
     <div>
@@ -12,9 +13,9 @@ export default function ProbabilityBar({ home = 0, draw = 0, away = 0 }) {
         <div style={{ width: `${a}%`, backgroundColor: "#FF4757" }} />
       </div>
       <div className="num mt-2 flex justify-between text-xs">
-        <span style={{ color: "#00B3FF" }}>1 {home.toFixed(0)}%</span>
-        <span style={{ color: "#8A93A2" }}>X {draw.toFixed(0)}%</span>
-        <span style={{ color: "#FF4757" }}>2 {away.toFixed(0)}%</span>
+        <span style={{ color: "#00B3FF" }}>1 {home.toFixed(0)}%<span className="opacity-70">{o(odds?.home)}</span></span>
+        <span style={{ color: "#8A93A2" }}>X {draw.toFixed(0)}%<span className="opacity-70">{o(odds?.draw)}</span></span>
+        <span style={{ color: "#FF4757" }}>2 {away.toFixed(0)}%<span className="opacity-70">{o(odds?.away)}</span></span>
       </div>
     </div>
   );
