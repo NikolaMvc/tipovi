@@ -184,28 +184,49 @@ def all_matches(day_offset: int = 0) -> list[MatchInput]:
 _STANDINGS_CACHE: dict[str, dict] = {}
 
 
+_TID_RE = re.compile(r'tournamentId"?\s*[:=]\s*"([A-Za-z0-9]+)"')
+_SID_RE = re.compile(r'tournamentStageId"?\s*[:=]\s*"([A-Za-z0-9]+)"')
+
+
 def fetch_standings(league_url: str) -> dict:
     """Return {normalized_team_name: position} for a league. Cached. Empty when the
-    competition has no table (e.g. knockout / friendlies)."""
+    competition has no table (knockout / friendlies).
+
+    Fast path (no browser): GET the standings page HTML to read the tournament +
+    stage ids, then read the ``to_<tid>_<sid>_1`` feed (rank=~TR, name=TN)."""
     if not league_url:
         return {}
     if league_url in _STANDINGS_CACHE:
         return _STANDINGS_CACHE[league_url]
-    url = f"{WWW}{league_url.rstrip('/')}/standings/"
+
+    from scrapling.fetchers import Fetcher
     table: dict = {}
-    resp = fetch_browser(url, network_idle=True, wait=2500,
-                         wait_selector=".ui-table__row", timeout=30000)
-    if resp:
-        try:
-            for row in resp.css(".ui-table__row"):
-                rank = _first(row, ".tableCellRank") or _first(row, ".table__cell--rank")
-                name = _first(row, ".tableCellParticipant") or _first(row, ".table__cell--participant")
-                pos = _text(rank).strip(". ")
-                nm = normalize_team_name(_text(name))
-                if pos.isdigit() and nm:
-                    table[nm] = int(pos)
-        except Exception as exc:  # noqa: BLE001
-            log.info("standings parse failed for %s: %s", league_url, exc)
+    url = f"{WWW}{league_url.rstrip('/')}/standings/"
+    try:
+        r = Fetcher.get(url, impersonate="chrome", timeout=18)
+        html = r.body.decode("utf-8", "replace") if isinstance(r.body, bytes) else str(r.body)
+    except Exception:  # noqa: BLE001
+        html = ""
+    tid = _TID_RE.search(html)
+    sid = _SID_RE.search(html)
+    if tid and sid:
+        raw = _feed_text(f"to_{tid.group(1)}_{sid.group(1)}_1")
+        if raw:
+            cur_rank = None
+            for f in raw.split("¬"):
+                if "÷" not in f:
+                    continue
+                k, v = f.split("÷", 1)
+                if k == "~TR":
+                    try:
+                        cur_rank = int(v)
+                    except ValueError:
+                        cur_rank = None
+                elif k == "TN" and cur_rank is not None:
+                    nm = normalize_team_name(v)
+                    if nm:
+                        table[nm] = cur_rank
+                    cur_rank = None
     log.info("standings %s -> %d teams", league_url, len(table))
     _STANDINGS_CACHE[league_url] = table
     return table

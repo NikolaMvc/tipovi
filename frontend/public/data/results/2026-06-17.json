@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-17",
+  "results": [
+    {
+      "id": "537397",
+      "home_team": "Argentina",
+      "away_team": "Algeria",
+      "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537398",
+      "home_team": "Austria",
+      "away_team": "Jordan",
+      "home_goals": 3,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537403",
+      "home_team": "Portugal",
+      "away_team": "Congo DR",
+      "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537409",
+      "home_team": "England",
+      "away_team": "Croatia",
+      "home_goals": 4,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537410",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    }
+  ]
+}
