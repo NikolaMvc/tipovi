@@ -37,6 +37,10 @@ class FormEntry:
     goals_for: int = 0
     goals_against: int = 0
     match_id: Optional[str] = None  # source match id (for fetching shot/xG stats)
+    competition: str = ""          # competition of this historical match (league/cup/friendly)
+    is_league: bool = True         # True for league matches (used for form gathering)
+    opponent_position: Optional[int] = None   # opponent's CURRENT table position
+    position_estimated: bool = False          # True when we fell back to mid-table
 
     @property
     def result(self) -> str:
