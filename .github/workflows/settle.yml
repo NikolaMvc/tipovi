@@ -1,0 +1,44 @@
+name: Settle (colour finished tips)
+
+# Local times are CEST (UTC+2, summer). GitHub cron is UTC.
+#   08:00 CEST -> 06:00 UTC
+#   17:30 CEST -> 15:30 UTC
+#   23:55 CEST -> 21:55 UTC
+# NOTE: GitHub cron has no DST; in winter (CET=UTC+1) these fire 1h earlier local.
+on:
+  schedule:
+    - cron: "0 6 * * *"    # 08:00 CEST
+    - cron: "30 15 * * *"  # 17:30 CEST
+    - cron: "55 21 * * *"  # 23:55 CEST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: predictai-data
+  cancel-in-progress: false
+
+jobs:
+  settle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r backend/requirements.txt
+
+      - name: Settle finished tips (colour + push)
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python run.py --settle-only

@@ -1,0 +1,44 @@
+name: Full run (scrape + predict + push)
+
+# Local times are CEST (UTC+2, summer). GitHub cron is UTC.
+#   00:00 CEST -> 22:00 UTC (previous day)
+#   12:00 CEST -> 10:00 UTC
+# NOTE: GitHub cron has no DST; in winter (CET=UTC+1) these fire 1h earlier local.
+on:
+  schedule:
+    - cron: "0 22 * * *"   # 00:00 CEST
+    - cron: "0 10 * * *"   # 12:00 CEST
+  workflow_dispatch: {}     # allow manual run from the Actions tab
+
+permissions:
+  contents: write
+
+# Serialize with the settle workflow so they never push at the same time.
+concurrency:
+  group: predictai-data
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r backend/requirements.txt
+
+      - name: Run pipeline (scrape + predict + commit + push)
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python run.py
