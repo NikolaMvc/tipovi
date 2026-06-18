@@ -123,58 +123,72 @@ def _is_scheduled(row: dict) -> bool:
     return bool(re.search(r"\d{1,2}:\d{2}", t))
 
 
+_NATIONAL_AREAS = {"WORLD", "EUROPE", "AFRICA", "SOUTH AMERICA",
+                   "NORTH & CENTRAL AMERICA", "ASIA", "OCEANIA"}
+
+
 def all_matches(day_offset: int = 0) -> list[MatchInput]:
-    """Every scheduled match for (today + day_offset) across ALL leagues."""
-    target_date = (datetime.now(timezone.utc).date() + timedelta(days=day_offset))
-
-    def nav(page):
-        # Advance the date bar `day_offset` days using the forward arrow.
-        for _ in range(day_offset):
-            try:
-                page.locator('[data-testid="wcl-icon-action-navigation-arrow-right"]').first.click(timeout=8000)
-                page.wait_for_timeout(1800)
-            except Exception:
-                break
-        try:
-            page.wait_for_selector(".event__match", timeout=15000)
-        except Exception:
-            pass
-        return page
-
-    resp = fetch_browser(
-        FOOTBALL, network_idle=True, wait=2500, timeout=60000,
-        wait_selector=".event__match" if day_offset == 0 else None,
-        page_action=nav if day_offset > 0 else None,
-    )
-    rows = _extract_grouped(resp)
-    scheduled = [r for r in rows if _is_scheduled(r)]
-    log.info("flashscore all-leagues day+%d: %d rows, %d scheduled across leagues",
-             day_offset, len(rows), len(scheduled))
+    """Every scheduled match for (today + day_offset) across ALL leagues, read from
+    FlashScore's full-day fixtures feed (f_1_<day>_2_en_1). Fast HTTP, complete —
+    the rendered page only shows a partial subset, the feed has the whole schedule."""
+    raw = _feed_text(f"f_1_{day_offset}_2_en_1")
+    if not raw:
+        log.warning("flashscore matches feed empty for day+%d", day_offset)
+        return []
 
     matches: list[MatchInput] = []
-    for r in scheduled:
-        country = r.get("country", "")
-        league_name = r.get("league", "")
-        league = f"{country}: {league_name}".strip(": ") if country else league_name
-        url = r.get("league_url", "")
-        is_national = country.upper() in ("WORLD", "EUROPE", "AFRICA", "SOUTH AMERICA",
-                                          "NORTH & CENTRAL AMERICA", "ASIA", "OCEANIA")
-        is_friendly = "friendly" in league_name.lower() or "club friendly" in league.lower()
-        # build a naive datetime on the target day from the HH:MM label
+    cur_league = cur_country = cur_url = ""
+    rec: dict | None = None
+    total = scheduled = 0
+
+    def flush(r):
+        nonlocal scheduled
+        if not r:
+            return
+        if r.get("AC") != "1":          # AC==1 => scheduled / not started
+            return
+        home, away = r.get("AE", ""), r.get("AF", "")
+        if not home or not away:
+            return
+        scheduled += 1
+        country, league_name, url = r["country"], r["league"], r["url"]
+        league = league_name or country  # ~ZA already formatted as "COUNTRY: League"
+        is_national = country.upper() in _NATIONAL_AREAS
+        is_friendly = "friendly" in league_name.lower()
         md = None
-        mt = re.search(r"(\d{1,2}):(\d{2})$", r.get("time", ""))
-        if mt:
-            md = datetime(target_date.year, target_date.month, target_date.day,
-                          int(mt.group(1)), int(mt.group(2)), tzinfo=timezone.utc)
+        try:
+            md = datetime.fromtimestamp(int(r["AD"]), timezone.utc)
+        except (ValueError, KeyError, TypeError):
+            pass
+        eid = r.get("AA") or None
         matches.append(MatchInput(
-            home_team=r["home"], away_team=r["away"], league=league or "Other",
-            match_date=md, venue="", event_id=r.get("event_id") or None,
+            home_team=home, away_team=away, league=league or "Other",
+            match_date=md, venue="", event_id=eid,
             league_url=url, is_national=is_national, is_friendly=is_friendly,
-            home=TeamData(name=r["home"], team_id=r.get("event_id") or None),
-            away=TeamData(name=r["away"]),
-            league_avgs=LeagueAverages(),
-            data_sources=["flashscore"],
+            home=TeamData(name=home, team_id=eid), away=TeamData(name=away),
+            league_avgs=LeagueAverages(), data_sources=["flashscore"],
         ))
+
+    for f in raw.split("¬"):
+        if "÷" not in f:
+            continue
+        k, v = f.split("÷", 1)
+        if k == "~ZA":
+            flush(rec); rec = None
+            cur_league = v
+        elif k == "ZY":
+            cur_country = v
+        elif k == "ZL":
+            cur_url = v
+        elif k == "~AA":
+            flush(rec); total += 1
+            rec = {"AA": v, "league": cur_league, "country": cur_country, "url": cur_url}
+        elif rec is not None and k in ("AC", "AD", "AE", "AF"):
+            rec[k] = v
+    flush(rec)
+
+    log.info("flashscore feed day+%d: %d total, %d scheduled across leagues",
+             day_offset, total, scheduled)
     return matches
 
 
@@ -411,7 +425,7 @@ def _proxy_xg(shots, sot, corners) -> Optional[float]:
     return round(max(0.0, 0.34 * sot + 0.03 * off_target + 0.025 * corners), 3)
 
 
-def team_xg_from_recent(entries, limit: int = 5):
+def team_xg_from_recent(entries, limit: int = 3):
     """Average a team's xG-for / xG-against over its recent matches.
 
     Per match: use FlashScore real xG when present, else a shot-based proxy, else
@@ -453,8 +467,9 @@ def team_xg_from_recent(entries, limit: int = 5):
 # no browser, no x-fsign). The same FlashScore event id is the GraphQL eventId.
 ODDS_API = "https://global.ds.lsapp.eu/odds/pq_graphql"
 ODDS_HASH = "ope2"
-# Try a few common bookmakers; use the first that quotes the match.
-ODDS_BOOKMAKERS = [16, 417, 5, 15, 2, 18, 3]
+# Try a few common bookmakers; use the first that quotes the match. Kept short so
+# matches without odds don't cost many requests.
+ODDS_BOOKMAKERS = [16, 417, 5, 2]
 
 
 def _odds_query(event_id: str, bet_type: str, bookmaker: int):

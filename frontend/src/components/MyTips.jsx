@@ -6,11 +6,12 @@ const STATUS = {
   PENDING: { c: "#FFB020", icon: "•" },
 };
 
-function TipRow({ tip, rank }) {
+function TipRow({ tip, rank, onSelect }) {
   const s = STATUS[tip.status] || STATUS.PENDING;
   return (
-    <div
-      className="flex items-center justify-between rounded-card border bg-card p-3"
+    <button
+      onClick={() => onSelect?.(tip)}
+      className="flex w-full items-center justify-between rounded-card border bg-card p-3 text-left transition-colors hover:border-[#00B3FF55]"
       style={{ borderColor: `${s.c}4d`, backgroundColor: `${s.c}0d` }}
     >
       <div className="flex min-w-0 items-center gap-3">
@@ -30,11 +31,11 @@ function TipRow({ tip, rank }) {
         <span className="num text-sm font-bold text-accent">{tip.probability}%</span>
         <span className="num text-sm font-bold" style={{ color: s.c }}>{s.icon}</span>
       </div>
-    </div>
+    </button>
   );
 }
 
-export default function MyTips({ tips, loading }) {
+export default function MyTips({ tips, loading, onSelect }) {
   if (loading) return <ListSkeleton n={5} />;
   if (!tips || !tips.length)
     return <Empty>No tips yet. Run <span className="num text-accent">python run.py</span> to generate the day's top picks.</Empty>;
@@ -45,19 +46,19 @@ export default function MyTips({ tips, loading }) {
   return (
     <div className="space-y-6">
       <div className="text-[11px] text-muted">
-        Auto-generated top picks (highest single-market probability per match).
+        Top-20 tipova po najvećoj vjerovatnoći za 1 / X / 2. Klikni tip za pun detalj (O/U, BTTS, breakdown).
       </div>
       <div>
         <h3 className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-muted">Aktivni</h3>
         <div className="space-y-2">
-          {active.length ? active.map((t, i) => <TipRow key={`${t.match_id}-a${i}`} tip={t} rank={i + 1} />)
+          {active.length ? active.map((t, i) => <TipRow key={`${t.match_id}-a${i}`} tip={t} rank={i + 1} onSelect={onSelect} />)
             : <Empty>No pending tips.</Empty>}
         </div>
       </div>
       <div>
         <h3 className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-muted">Riješeni</h3>
         <div className="space-y-2">
-          {settled.length ? settled.map((t, i) => <TipRow key={`${t.match_id}-s${i}`} tip={t} />)
+          {settled.length ? settled.map((t, i) => <TipRow key={`${t.match_id}-s${i}`} tip={t} onSelect={onSelect} />)
             : <Empty>No settled tips yet.</Empty>}
         </div>
       </div>

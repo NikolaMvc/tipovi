@@ -23,10 +23,12 @@ def test_generate_top_tips_ranks_by_probability():
     ]
     tips = js.generate_top_tips(responses, n=2)
     assert len(tips) == 2
-    assert tips[0]["probability"] == 80 and tips[0]["pick"] == "Over 2.5"
-    assert tips[1]["probability"] == 70 and tips[1]["pick"] == "Home Win"
+    # 1X2-only: highest of home/draw/away per match, ranked
+    assert tips[0]["probability"] == 70 and tips[0]["pick"] == "Home Win"  # match 1
+    assert tips[1]["probability"] == 40 and tips[1]["pick"] == "Away Win"  # match 2
+    assert all(t["market"] == "1X2" for t in tips)
     # odds picked up from value_bets where available
-    assert tips[1]["odds"] == 1.5
+    assert tips[0]["odds"] == 1.5
 
 
 def test_tip_outcome_all_markets():

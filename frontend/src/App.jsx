@@ -64,6 +64,14 @@ export default function App() {
 
   useEffect(() => { if ((tab === "tips" || tab === "stats") && index) loadTips(); }, [tab, index, loadTips]);
 
+  // Open the full match detail for a tip (loads that day's prediction).
+  async function openTipDetail(tip) {
+    const day = (tip.date || "").slice(0, 10);
+    const p = await data.predictions(day);
+    const match = p?.matches?.find((m) => String(m.match.id) === String(tip.match_id));
+    if (match) setDetail(match);
+  }
+
   return (
     <div className="mx-auto min-h-screen max-w-2xl px-4 pb-16 pt-5">
       <header className="mb-5 flex items-center justify-between">
@@ -78,32 +86,34 @@ export default function App() {
       <TabNav active={tab} onChange={(t) => { setTab(t); setDetail(null); }} />
 
       <div className="mt-4">
-        {tab === "matches" && (
-          detail ? (
-            <MatchDetail detail={detail} onBack={() => setDetail(null)} />
-          ) : (
-            <div className="space-y-4">
-              <DayTabs
-                days={index?.prediction_days || []}
-                active={day}
-                onChange={(d) => setDay(d)}
-                label={dayLabel}
-              />
-              {!online ? (
-                <Empty>
-                  No data yet. Run <span className="num text-accent">python run.py</span> to
-                  generate predictions, then refresh.
-                </Empty>
-              ) : (
-                <MatchList matches={matches} loading={loadingMatches} onSelect={(m) => setDetail(m)} />
-              )}
-            </div>
-          )
+        {detail ? (
+          <MatchDetail detail={detail} onBack={() => setDetail(null)} />
+        ) : (
+          <>
+            {tab === "matches" && (
+              <div className="space-y-4">
+                <DayTabs
+                  days={index?.prediction_days || []}
+                  active={day}
+                  onChange={(d) => setDay(d)}
+                  label={dayLabel}
+                />
+                {!online ? (
+                  <Empty>
+                    No data yet. Run <span className="num text-accent">python run.py</span> to
+                    generate predictions, then refresh.
+                  </Empty>
+                ) : (
+                  <MatchList matches={matches} loading={loadingMatches} onSelect={(m) => setDetail(m)} />
+                )}
+              </div>
+            )}
+
+            {tab === "tips" && <MyTips tips={tips} loading={loadingTips} onSelect={openTipDetail} />}
+
+            {tab === "stats" && <StatsPanel stats={stats} loading={loadingTips} />}
+          </>
         )}
-
-        {tab === "tips" && <MyTips tips={tips} loading={loadingTips} />}
-
-        {tab === "stats" && <StatsPanel stats={stats} loading={loadingTips} />}
       </div>
 
       {index?.last_run && (

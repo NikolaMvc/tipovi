@@ -87,18 +87,13 @@ def save_tips(date_str: str, tips: list[dict]) -> None:
 # Tip generation (auto top-N by highest single-market probability)
 # --------------------------------------------------------------------------- #
 def _candidate_picks(resp: dict) -> list[dict]:
+    # Tips are 1X2 only — the single highest-probability outcome (1 / X / 2).
+    # O/U and BTTS are still shown in the match detail, just not picked as tips.
     p = resp.get("prediction", {})
-    markets = resp.get("markets", {})
-    ou = markets.get("over_under_2_5", {})
-    btts = markets.get("btts", {})
     cands = [
         ("1X2", "Home Win", p.get("home_win_prob")),
         ("1X2", "Draw", p.get("draw_prob")),
         ("1X2", "Away Win", p.get("away_win_prob")),
-        ("O/U 2.5", "Over 2.5", ou.get("over")),
-        ("O/U 2.5", "Under 2.5", ou.get("under")),
-        ("BTTS", "Yes", btts.get("yes")),
-        ("BTTS", "No", btts.get("no")),
     ]
     return [{"market": m, "pick": pk, "probability": pr} for m, pk, pr in cands if pr is not None]
 
