@@ -7,8 +7,8 @@ python-dotenv==1.0.1
 httpx==0.28.1
 beautifulsoup4==4.12.3
 lxml>=6.1.0
-scrapling==0.4.8
-playwright==1.49.1
+# [fetchers] extra pulls curl_cffi etc. needed by scrapling's HTTP Fetcher.
+scrapling[fetchers]==0.4.8
 tenacity==9.0.0
 
 # --- Numerics ---
