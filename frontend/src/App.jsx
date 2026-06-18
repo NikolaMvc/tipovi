@@ -27,8 +27,12 @@ export default function App() {
     (async () => {
       const idx = await data.index();
       if (!idx) { setOnline(false); setLoadingMatches(false); return; }
+      // Day tabs show only today + future (danas / sutra / prekosutra) — drop past days.
+      const now = new Date();
+      const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+      idx.prediction_days = (idx.prediction_days || []).filter((d) => d >= todayStr);
       setIndex(idx);
-      setDay(idx.prediction_days?.[0] || null);
+      setDay(idx.prediction_days[0] || null);
     })();
   }, []);
 
