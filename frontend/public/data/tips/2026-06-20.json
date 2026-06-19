@@ -2,6 +2,18 @@
   "date": "2026-06-20",
   "tips": [
     {
+      "match_id": "dC9fUAtP",
+      "home_team": "Galway United W",
+      "away_team": "Waterford W",
+      "league": "IRELAND: National League Women",
+      "date": "2026-06-20T16:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 61.1,
+      "odds": 1.11,
+      "status": "PENDING"
+    },
+    {
       "match_id": "remLLOue",
       "home_team": "Zenit W",
       "away_team": "Ryazan W",
@@ -9,20 +21,8 @@
       "date": "2026-06-20T13:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 60.12,
+      "probability": 60.37,
       "odds": 1.02,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "8I0cNwrB",
-      "home_team": "Maykop",
-      "away_team": "FK Chayka 2",
-      "league": "RUSSIA: FNL 2 - Division B - Group 1",
-      "date": "2026-06-20T14:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 59.71,
-      "odds": 1.22,
       "status": "PENDING"
     },
     {
@@ -33,8 +33,20 @@
       "date": "2026-06-20T05:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 59.01,
+      "probability": 59.22,
       "odds": 1.03,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "8I0cNwrB",
+      "home_team": "Maykop",
+      "away_team": "FK Chayka 2",
+      "league": "RUSSIA: FNL 2 - Division B - Group 1",
+      "date": "2026-06-20T14:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 59.17,
+      "odds": 1.22,
       "status": "PENDING"
     },
     {
@@ -45,20 +57,8 @@
       "date": "2026-06-20T09:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 58.09,
-      "odds": 1.35,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "r3sTb3Yb",
-      "home_team": "Shao Jiang",
-      "away_team": "University of Macau",
-      "league": "MACAO: Elite League",
-      "date": "2026-06-20T11:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 56.95,
-      "odds": 1.01,
+      "probability": 58.2,
+      "odds": 1.3,
       "status": "PENDING"
     },
     {
@@ -69,8 +69,20 @@
       "date": "2026-06-20T05:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 56.84,
-      "odds": 1.58,
+      "probability": 57.7,
+      "odds": 1.55,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "r3sTb3Yb",
+      "home_team": "Shao Jiang",
+      "away_team": "University of Macau",
+      "league": "MACAO: Elite League",
+      "date": "2026-06-20T11:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 57.52,
+      "odds": 1.01,
       "status": "PENDING"
     },
     {
@@ -81,8 +93,8 @@
       "date": "2026-06-20T02:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 56.11,
-      "odds": 1.48,
+      "probability": 55.84,
+      "odds": 1.45,
       "status": "PENDING"
     },
     {
@@ -93,8 +105,32 @@
       "date": "2026-06-20T07:45:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 55.34,
-      "odds": 1.01,
+      "probability": 55.53,
+      "odds": 1.02,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "d2ywrS3T",
+      "home_team": "North Carolina FC U23",
+      "away_team": "Port City",
+      "league": "USA: USL League Two",
+      "date": "2026-06-20T22:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 54.98,
+      "odds": 1.15,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "UsNRLRx8",
+      "home_team": "Aalesund W",
+      "away_team": "Bodo/Glimt W",
+      "league": "NORWAY: Toppserien Women",
+      "date": "2026-06-20T10:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 54.62,
+      "odds": 1.0,
       "status": "PENDING"
     },
     {
@@ -105,8 +141,32 @@
       "date": "2026-06-20T05:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 54.25,
-      "odds": 1.88,
+      "probability": 54.44,
+      "odds": 2.04,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "zykvZbAs",
+      "home_team": "Daejeon Korail",
+      "away_team": "Jeonbuk 2",
+      "league": "SOUTH KOREA: K3 League",
+      "date": "2026-06-20T10:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 54.04,
+      "odds": 1.41,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "bXYZzgjn",
+      "home_team": "Kalamazoo FC",
+      "away_team": "Ann Arbor",
+      "league": "USA: USL League Two",
+      "date": "2026-06-20T21:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 54.04,
+      "odds": 1.72,
       "status": "PENDING"
     },
     {
@@ -117,44 +177,8 @@
       "date": "2026-06-20T07:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 53.8,
-      "odds": 1.59,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "OhDHA0b5",
-      "home_team": "FK Pobeda",
-      "away_team": "PSK Dinskoy rayon",
-      "league": "RUSSIA: FNL 2 - Division B - Group 1",
-      "date": "2026-06-20T13:30:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 53.72,
-      "odds": 2.14,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "MV9Z9e03",
-      "home_team": "Tuggeranong Utd",
-      "away_team": "Canberra White Eagles",
-      "league": "AUSTRALIA: NPL ACT",
-      "date": "2026-06-20T05:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 53.08,
-      "odds": 1.32,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "OpTKQunJ",
-      "home_team": "Volna Nizhegorodskaya",
-      "away_team": "Kursk",
-      "league": "RUSSIA: FNL 2 - Division B - Group 3",
-      "date": "2026-06-20T12:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 53.02,
-      "odds": 1.4,
+      "probability": 53.62,
+      "odds": 1.57,
       "status": "PENDING"
     },
     {
@@ -165,8 +189,20 @@
       "date": "2026-06-20T19:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 53.0,
+      "probability": 53.5,
       "odds": 2.2,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "jF6nWWBC",
+      "home_team": "Shelbourne W",
+      "away_team": "Sligo Rovers W",
+      "league": "IRELAND: National League Women",
+      "date": "2026-06-20T15:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 53.27,
+      "odds": 1.17,
       "status": "PENDING"
     },
     {
@@ -177,68 +213,32 @@
       "date": "2026-06-20T13:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 52.77,
-      "odds": 1.47,
+      "probability": 53.16,
+      "odds": 1.36,
       "status": "PENDING"
     },
     {
-      "match_id": "6uMcpmBL",
-      "home_team": "Cumberland Utd.",
-      "away_team": "South Adelaide",
-      "league": "AUSTRALIA: SA State League",
-      "date": "2026-06-20T05:30:00+00:00",
+      "match_id": "OpTKQunJ",
+      "home_team": "Volna Nizhegorodskaya",
+      "away_team": "Kursk",
+      "league": "RUSSIA: FNL 2 - Division B - Group 3",
+      "date": "2026-06-20T12:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 52.42,
-      "odds": 1.35,
+      "probability": 53.07,
+      "odds": 1.4,
       "status": "PENDING"
     },
     {
-      "match_id": "bugCSqCk",
-      "home_team": "Coquimbo",
-      "away_team": "Deportes Iquique",
-      "league": "CHILE: Copa Chile",
-      "date": "2026-06-20T16:30:00+00:00",
+      "match_id": "MV9Z9e03",
+      "home_team": "Tuggeranong Utd",
+      "away_team": "Canberra White Eagles",
+      "league": "AUSTRALIA: NPL ACT",
+      "date": "2026-06-20T05:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 51.97,
-      "odds": 1.44,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "WtUuP9eC",
-      "home_team": "Boca Juniors W",
-      "away_team": "Union de Santa Fe W",
-      "league": "ARGENTINA: Primera A Women - Apertura",
-      "date": "2026-06-20T14:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 51.96,
-      "odds": 1.05,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "l8K4WsO9",
-      "home_team": "Nedlands",
-      "away_team": "Gwelup Croatia",
-      "league": "AUSTRALIA: WA State League",
-      "date": "2026-06-20T07:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 51.89,
-      "odds": 1.34,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "KnzI8QB4",
-      "home_team": "NSI Runavik",
-      "away_team": "Toftir",
-      "league": "FAROE ISLANDS: Premier League",
-      "date": "2026-06-20T18:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 51.76,
-      "odds": 1.16,
+      "probability": 53.01,
+      "odds": 1.39,
       "status": "PENDING"
     }
   ]
