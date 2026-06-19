@@ -2,11 +2,35 @@
   "date": "2026-06-18",
   "results": [
     {
-      "id": "x6hH6z2b",
-      "home_team": "Galvez U20",
-      "away_team": "Independencia U20",
+      "id": "537404",
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia",
       "home_goals": 1,
-      "away_goals": 4,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537329",
+      "home_team": "Czechia",
+      "away_team": "South Africa",
+      "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537335",
+      "home_team": "Switzerland",
+      "away_team": "Bosnia-Herzegovina",
+      "home_goals": 4,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537336",
+      "home_team": "Canada",
+      "away_team": "Qatar",
+      "home_goals": 6,
+      "away_goals": 0,
       "status": "FINISHED"
     }
   ]

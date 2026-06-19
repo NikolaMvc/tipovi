@@ -9,8 +9,8 @@
       "date": "2026-06-20T16:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 61.1,
-      "odds": 1.11,
+      "probability": 60.64,
+      "odds": 1.02,
       "status": "PENDING"
     },
     {
@@ -21,32 +21,8 @@
       "date": "2026-06-20T13:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 60.37,
+      "probability": 60.36,
       "odds": 1.02,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "2JGXbMqC",
-      "home_team": "Gold Coast Knights U23",
-      "away_team": "Magic United U23",
-      "league": "AUSTRALIA: NPL Queensland U23",
-      "date": "2026-06-20T05:30:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 59.22,
-      "odds": 1.03,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "8I0cNwrB",
-      "home_team": "Maykop",
-      "away_team": "FK Chayka 2",
-      "league": "RUSSIA: FNL 2 - Division B - Group 1",
-      "date": "2026-06-20T14:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 59.17,
-      "odds": 1.22,
       "status": "PENDING"
     },
     {
@@ -57,20 +33,56 @@
       "date": "2026-06-20T09:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 58.2,
-      "odds": 1.3,
+      "probability": 59.28,
+      "odds": 1.35,
       "status": "PENDING"
     },
     {
-      "match_id": "CWMDXjaC",
-      "home_team": "South Melbourne W",
-      "away_team": "Melbourne Victory U20 W",
-      "league": "AUSTRALIA: NPL Victoria Women",
+      "match_id": "8I0cNwrB",
+      "home_team": "Maykop",
+      "away_team": "FK Chayka 2",
+      "league": "RUSSIA: FNL 2 - Division B - Group 1",
+      "date": "2026-06-20T14:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 59.23,
+      "odds": 1.22,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "2JGXbMqC",
+      "home_team": "Gold Coast Knights U23",
+      "away_team": "Magic United U23",
+      "league": "AUSTRALIA: NPL Queensland U23",
       "date": "2026-06-20T05:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 57.7,
-      "odds": 1.55,
+      "probability": 58.86,
+      "odds": 1.03,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "QTLDv6JP",
+      "home_team": "Sporting Cristal W",
+      "away_team": "FBC Melgar W",
+      "league": "PERU: Liga Women - Apertura - Play Offs",
+      "date": "2026-06-20T18:15:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 57.83,
+      "odds": 1.0,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "MRXEl5z3",
+      "home_team": "Legiao U20",
+      "away_team": "Candango U20",
+      "league": "BRAZIL: Brasiliense U20",
+      "date": "2026-06-20T18:30:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 57.65,
+      "odds": 1.3,
       "status": "PENDING"
     },
     {
@@ -81,8 +93,20 @@
       "date": "2026-06-20T11:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 57.52,
+      "probability": 57.2,
       "odds": 1.01,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "CWMDXjaC",
+      "home_team": "South Melbourne W",
+      "away_team": "Melbourne Victory U20 W",
+      "league": "AUSTRALIA: NPL Victoria Women",
+      "date": "2026-06-20T05:30:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 56.66,
+      "odds": 1.59,
       "status": "PENDING"
     },
     {
@@ -93,8 +117,8 @@
       "date": "2026-06-20T02:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 55.84,
-      "odds": 1.45,
+      "probability": 55.99,
+      "odds": 1.36,
       "status": "PENDING"
     },
     {
@@ -105,7 +129,7 @@
       "date": "2026-06-20T07:45:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 55.53,
+      "probability": 55.43,
       "odds": 1.02,
       "status": "PENDING"
     },
@@ -117,7 +141,7 @@
       "date": "2026-06-20T22:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 54.98,
+      "probability": 55.3,
       "odds": 1.15,
       "status": "PENDING"
     },
@@ -129,7 +153,7 @@
       "date": "2026-06-20T10:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 54.62,
+      "probability": 54.81,
       "odds": 1.0,
       "status": "PENDING"
     },
@@ -141,8 +165,20 @@
       "date": "2026-06-20T05:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 54.44,
-      "odds": 2.04,
+      "probability": 54.41,
+      "odds": 2.07,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "n1l9WwyP",
+      "home_team": "Hills United",
+      "away_team": "Prospect United",
+      "league": "AUSTRALIA: NSW League One",
+      "date": "2026-06-20T07:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 54.28,
+      "odds": 1.59,
       "status": "PENDING"
     },
     {
@@ -153,7 +189,7 @@
       "date": "2026-06-20T10:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 54.04,
+      "probability": 54.17,
       "odds": 1.41,
       "status": "PENDING"
     },
@@ -165,32 +201,32 @@
       "date": "2026-06-20T21:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 54.04,
-      "odds": 1.72,
+      "probability": 53.78,
+      "odds": 1.63,
       "status": "PENDING"
     },
     {
-      "match_id": "n1l9WwyP",
-      "home_team": "Hills United",
-      "away_team": "Prospect United",
-      "league": "AUSTRALIA: NSW League One",
-      "date": "2026-06-20T07:00:00+00:00",
+      "match_id": "p6IdEVdk",
+      "home_team": "Quixada U20",
+      "away_team": "Tirol U20",
+      "league": "BRAZIL: Cearense U20",
+      "date": "2026-06-20T18:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 53.62,
-      "odds": 1.57,
+      "probability": 53.45,
+      "odds": 2.94,
       "status": "PENDING"
     },
     {
-      "match_id": "IRYaYErB",
-      "home_team": "Cobreloa",
-      "away_team": "Cobresal",
-      "league": "CHILE: Copa Chile",
-      "date": "2026-06-20T19:00:00+00:00",
+      "match_id": "WtUuP9eC",
+      "home_team": "Boca Juniors W",
+      "away_team": "Union de Santa Fe W",
+      "league": "ARGENTINA: Primera A Women - Apertura",
+      "date": "2026-06-20T14:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 53.5,
-      "odds": 2.2,
+      "probability": 53.42,
+      "odds": 1.05,
       "status": "PENDING"
     },
     {
@@ -201,44 +237,8 @@
       "date": "2026-06-20T15:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 53.27,
-      "odds": 1.17,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "juWwWm7E",
-      "home_team": "Spjelkavik",
-      "away_team": "Orkla",
-      "league": "NORWAY: Division 3 - Group 2",
-      "date": "2026-06-20T13:30:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 53.16,
-      "odds": 1.36,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "OpTKQunJ",
-      "home_team": "Volna Nizhegorodskaya",
-      "away_team": "Kursk",
-      "league": "RUSSIA: FNL 2 - Division B - Group 3",
-      "date": "2026-06-20T12:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 53.07,
-      "odds": 1.4,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "MV9Z9e03",
-      "home_team": "Tuggeranong Utd",
-      "away_team": "Canberra White Eagles",
-      "league": "AUSTRALIA: NPL ACT",
-      "date": "2026-06-20T05:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 53.01,
-      "odds": 1.39,
+      "probability": 53.26,
+      "odds": 1.12,
       "status": "PENDING"
     }
   ]
