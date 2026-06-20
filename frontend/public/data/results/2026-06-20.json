@@ -2,19 +2,67 @@
   "date": "2026-06-20",
   "results": [
     {
-      "id": "46J5ZCUa",
-      "home_team": "Avondale FC W",
-      "away_team": "Keilor Park W",
+      "id": "remLLOue",
+      "home_team": "Zenit W",
+      "away_team": "Ryazan W",
+      "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "8I0cNwrB",
+      "home_team": "Maykop",
+      "away_team": "FK Chayka 2",
+      "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "WtUuP9eC",
+      "home_team": "Boca Juniors W",
+      "away_team": "Union de Santa Fe W",
+      "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "OpTKQunJ",
+      "home_team": "Volna Nizhegorodskaya",
+      "away_team": "Kursk",
       "home_goals": 2,
       "away_goals": 0,
       "status": "FINISHED"
     },
     {
-      "id": "KWDAO5l2",
-      "home_team": "Adelaide Olympic",
-      "away_team": "Cove FC",
+      "id": "juWwWm7E",
+      "home_team": "Spjelkavik",
+      "away_team": "Orkla",
+      "home_goals": 0,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "xz5KNm8e",
+      "home_team": "Stabaek W",
+      "away_team": "Roa W",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "tATILD4F",
+      "home_team": "Ceara U20",
+      "away_team": "Atletico-CE U20",
       "home_goals": 2,
-      "away_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "bF3CKeJ7",
+      "home_team": "Soligorsk",
+      "away_team": "Ostrovets",
+      "home_goals": 4,
+      "away_goals": 1,
       "status": "FINISHED"
     }
   ]
