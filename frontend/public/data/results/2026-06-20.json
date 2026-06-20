@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-20",
+  "results": [
+    {
+      "id": "46J5ZCUa",
+      "home_team": "Avondale FC W",
+      "away_team": "Keilor Park W",
+      "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "KWDAO5l2",
+      "home_team": "Adelaide Olympic",
+      "away_team": "Cove FC",
+      "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    }
+  ]
+}
