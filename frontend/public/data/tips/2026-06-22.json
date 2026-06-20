@@ -2,18 +2,6 @@
   "date": "2026-06-22",
   "tips": [
     {
-      "match_id": "KMRMTaNM",
-      "home_team": "France",
-      "away_team": "Iraq",
-      "league": "WORLD: World Championship",
-      "date": "2026-06-22T21:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 52.08,
-      "odds": 1.08,
-      "status": "PENDING"
-    },
-    {
       "match_id": "2uRJMqU0",
       "home_team": "Aalesund 2",
       "away_team": "Ranheim 2",
@@ -21,7 +9,7 @@
       "date": "2026-06-22T15:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 50.58,
+      "probability": 51.05,
       "odds": 1.8,
       "status": "PENDING"
     },
@@ -33,7 +21,7 @@
       "date": "2026-06-22T15:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 50.16,
+      "probability": 50.59,
       "odds": 1.1,
       "status": "PENDING"
     },
@@ -45,7 +33,7 @@
       "date": "2026-06-22T18:45:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 50.13,
+      "probability": 50.05,
       "odds": 1.84,
       "status": "PENDING"
     },
@@ -57,7 +45,7 @@
       "date": "2026-06-22T16:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 49.73,
+      "probability": 49.8,
       "odds": 2.01,
       "status": "PENDING"
     },
@@ -69,20 +57,8 @@
       "date": "2026-06-22T12:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 49.18,
+      "probability": 49.3,
       "odds": 2.23,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "zRhX3gU8",
-      "home_team": "Melbourne Victory U21",
-      "away_team": "Brunswick City",
-      "league": "AUSTRALIA: Victoria Premier League",
-      "date": "2026-06-22T10:15:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 48.86,
-      "odds": 1.82,
       "status": "PENDING"
     },
     {
@@ -93,7 +69,7 @@
       "date": "2026-06-22T17:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 48.66,
+      "probability": 48.91,
       "odds": 2.24,
       "status": "PENDING"
     },
@@ -105,44 +81,20 @@
       "date": "2026-06-22T00:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 48.36,
-      "odds": 1.33,
+      "probability": 48.16,
+      "odds": 1.3,
       "status": "PENDING"
     },
     {
-      "match_id": "8x1Bq3EM",
-      "home_team": "Real Banjul",
-      "away_team": "Greater Tomorrow",
-      "league": "GAMBIA: GFA League",
-      "date": "2026-06-22T16:30:00+00:00",
+      "match_id": "zRhX3gU8",
+      "home_team": "Melbourne Victory U21",
+      "away_team": "Brunswick City",
+      "league": "AUSTRALIA: Victoria Premier League",
+      "date": "2026-06-22T10:15:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 48.24,
-      "odds": 1.74,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "Cpq2Y2FE",
-      "home_team": "Argentina",
-      "away_team": "Austria",
-      "league": "WORLD: World Championship",
-      "date": "2026-06-22T17:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 47.63,
-      "odds": 1.57,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "hfMXhxh3",
-      "home_team": "Al Salmiya",
-      "away_team": "Al-Fahaheel",
-      "league": "KUWAIT: Premier League - Championship Group",
-      "date": "2026-06-22T16:05:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 47.44,
-      "odds": 1.74,
+      "probability": 48.07,
+      "odds": 1.82,
       "status": "PENDING"
     },
     {
@@ -153,8 +105,32 @@
       "date": "2026-06-22T22:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 47.32,
-      "odds": 1.82,
+      "probability": 47.82,
+      "odds": 1.58,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "hfMXhxh3",
+      "home_team": "Al Salmiya",
+      "away_team": "Al-Fahaheel",
+      "league": "KUWAIT: Premier League - Championship Group",
+      "date": "2026-06-22T16:05:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 47.52,
+      "odds": 1.74,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "8x1Bq3EM",
+      "home_team": "Real Banjul",
+      "away_team": "Greater Tomorrow",
+      "league": "GAMBIA: GFA League",
+      "date": "2026-06-22T16:30:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 47.47,
+      "odds": 1.74,
       "status": "PENDING"
     },
     {
@@ -165,7 +141,7 @@
       "date": "2026-06-22T17:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 47.3,
+      "probability": 47.37,
       "odds": 1.8,
       "status": "PENDING"
     },
@@ -177,20 +153,8 @@
       "date": "2026-06-22T17:45:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 46.89,
+      "probability": 46.94,
       "odds": 1.74,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "I7MBeWXq",
-      "home_team": "Tallinna Kalev U21",
-      "away_team": "Narva U21",
-      "league": "ESTONIA: Esiliiga B",
-      "date": "2026-06-22T16:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 46.53,
-      "odds": 3.25,
       "status": "PENDING"
     },
     {
@@ -201,20 +165,20 @@
       "date": "2026-06-22T19:15:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 45.65,
+      "probability": 46.17,
       "odds": 1.43,
       "status": "PENDING"
     },
     {
-      "match_id": "2whypbwh",
-      "home_team": "Tacoma Defiance",
-      "away_team": "Real Monarchs",
-      "league": "USA: MLS Next Pro",
-      "date": "2026-06-22T02:00:00+00:00",
+      "match_id": "I7MBeWXq",
+      "home_team": "Tallinna Kalev U21",
+      "away_team": "Narva U21",
+      "league": "ESTONIA: Esiliiga B",
+      "date": "2026-06-22T16:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 45.37,
-      "odds": 2.43,
+      "probability": 45.89,
+      "odds": 3.25,
       "status": "PENDING"
     },
     {
@@ -225,8 +189,44 @@
       "date": "2026-06-22T12:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 45.32,
+      "probability": 45.34,
       "odds": 2.32,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "2whypbwh",
+      "home_team": "Tacoma Defiance",
+      "away_team": "Real Monarchs",
+      "league": "USA: MLS Next Pro",
+      "date": "2026-06-22T02:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 45.34,
+      "odds": 2.12,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "S8pQBxz2",
+      "home_team": "AHFC Royals",
+      "away_team": "San Antonio FC 2",
+      "league": "USA: USL League Two",
+      "date": "2026-06-22T00:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 45.19,
+      "odds": 1.57,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "YqJmUzNr",
+      "home_team": "Shamrock Rovers",
+      "away_team": "Derry City",
+      "league": "IRELAND: Premier Division",
+      "date": "2026-06-22T19:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 44.96,
+      "odds": 1.83,
       "status": "PENDING"
     },
     {
@@ -237,7 +237,7 @@
       "date": "2026-06-22T16:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 45.03,
+      "probability": 44.67,
       "odds": 1.86,
       "status": "PENDING"
     }

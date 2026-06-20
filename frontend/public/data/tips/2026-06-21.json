@@ -9,7 +9,7 @@
       "date": "2026-06-21T11:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 60.55,
+      "probability": 60.89,
       "odds": 1.03,
       "status": "PENDING"
     },
@@ -21,8 +21,8 @@
       "date": "2026-06-21T00:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 59.8,
-      "odds": 1.03,
+      "probability": 59.69,
+      "odds": 1.04,
       "status": "PENDING"
     },
     {
@@ -33,8 +33,20 @@
       "date": "2026-06-21T14:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 57.46,
-      "odds": 1.5,
+      "probability": 57.39,
+      "odds": 2.32,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "rDqo9lg2",
+      "home_team": "Brann W",
+      "away_team": "LSK Kvinner W",
+      "league": "NORWAY: Toppserien Women",
+      "date": "2026-06-21T12:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 56.77,
+      "odds": 1.04,
       "status": "PENDING"
     },
     {
@@ -45,8 +57,8 @@
       "date": "2026-06-21T14:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 56.56,
-      "odds": 1.23,
+      "probability": 56.52,
+      "odds": 1.14,
       "status": "PENDING"
     },
     {
@@ -57,8 +69,8 @@
       "date": "2026-06-21T07:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 55.75,
-      "odds": 1.16,
+      "probability": 55.83,
+      "odds": 1.11,
       "status": "PENDING"
     },
     {
@@ -69,8 +81,8 @@
       "date": "2026-06-21T00:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 55.5,
-      "odds": 1.41,
+      "probability": 55.77,
+      "odds": 1.29,
       "status": "PENDING"
     },
     {
@@ -81,32 +93,8 @@
       "date": "2026-06-21T04:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 55.32,
+      "probability": 54.83,
       "odds": 1.03,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "hdZEkaeo",
-      "home_team": "Chiba",
-      "away_team": "Artilheiros",
-      "league": "MACAO: Elite League",
-      "date": "2026-06-21T13:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 53.19,
-      "odds": 1.06,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "IwcMiGOi",
-      "home_team": "Riga FC",
-      "away_team": "FK Liepaja",
-      "league": "LATVIA: Virsliga",
-      "date": "2026-06-21T15:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 52.98,
-      "odds": 1.37,
       "status": "PENDING"
     },
     {
@@ -117,8 +105,32 @@
       "date": "2026-06-21T06:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 52.66,
-      "odds": 1.58,
+      "probability": 53.28,
+      "odds": 1.61,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "hdZEkaeo",
+      "home_team": "Chiba",
+      "away_team": "Artilheiros",
+      "league": "MACAO: Elite League",
+      "date": "2026-06-21T13:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 53.11,
+      "odds": 1.04,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "IwcMiGOi",
+      "home_team": "Riga FC",
+      "away_team": "FK Liepaja",
+      "league": "LATVIA: Virsliga",
+      "date": "2026-06-21T15:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 53.02,
+      "odds": 1.38,
       "status": "PENDING"
     },
     {
@@ -129,7 +141,7 @@
       "date": "2026-06-21T16:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 52.56,
+      "probability": 52.48,
       "odds": 1.25,
       "status": "PENDING"
     },
@@ -141,8 +153,20 @@
       "date": "2026-06-21T12:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 52.2,
+      "probability": 52.06,
       "odds": 1.32,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "hSx2gYAN",
+      "home_team": "Enskede W",
+      "away_team": "Sandviken W",
+      "league": "SWEDEN: Elitettan Women",
+      "date": "2026-06-21T11:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 52.03,
+      "odds": 1.59,
       "status": "PENDING"
     },
     {
@@ -153,32 +177,20 @@
       "date": "2026-06-21T13:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 51.73,
+      "probability": 52.0,
       "odds": 1.37,
       "status": "PENDING"
     },
     {
-      "match_id": "6PnEn53L",
-      "home_team": "Deportes Temuco",
-      "away_team": "D. Concepcion",
-      "league": "CHILE: Copa Chile",
-      "date": "2026-06-21T19:00:00+00:00",
+      "match_id": "GnhvLtDF",
+      "home_team": "Long Island",
+      "away_team": "Westchester Flames",
+      "league": "USA: USL League Two",
+      "date": "2026-06-21T21:30:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 51.43,
-      "odds": 2.5,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "IR0ta1Ns",
-      "home_team": "Luki-Energiya",
-      "away_team": "Tver",
-      "league": "RUSSIA: FNL 2 - Division B - Group 2",
-      "date": "2026-06-21T13:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 51.14,
-      "odds": 1.43,
+      "probability": 51.31,
+      "odds": 1.13,
       "status": "PENDING"
     },
     {
@@ -189,8 +201,20 @@
       "date": "2026-06-21T18:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 50.89,
+      "probability": 51.25,
       "odds": 1.33,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "6PnEn53L",
+      "home_team": "Deportes Temuco",
+      "away_team": "D. Concepcion",
+      "league": "CHILE: Copa Chile",
+      "date": "2026-06-21T19:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 51.12,
+      "odds": 2.5,
       "status": "PENDING"
     },
     {
@@ -201,44 +225,20 @@
       "date": "2026-06-21T14:00:00+00:00",
       "market": "1X2",
       "pick": "Home Win",
-      "probability": 50.84,
-      "odds": 1.67,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "00L5Ab06",
-      "home_team": "Tartu Welco",
-      "away_team": "Nomme Utd U21",
-      "league": "ESTONIA: Esiliiga",
-      "date": "2026-06-21T16:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 50.5,
-      "odds": 1.29,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "QTF4DLb5",
-      "home_team": "Queensland Lions U23",
-      "away_team": "Rochedale U23",
-      "league": "AUSTRALIA: NPL Queensland U23",
-      "date": "2026-06-21T04:45:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 50.08,
-      "odds": 2.08,
-      "status": "PENDING"
-    },
-    {
-      "match_id": "8Iq9tPWa",
-      "home_team": "New England Revolution II",
-      "away_team": "Chicago Fire II",
-      "league": "USA: MLS Next Pro",
-      "date": "2026-06-21T15:00:00+00:00",
-      "market": "1X2",
-      "pick": "Home Win",
-      "probability": 49.96,
+      "probability": 50.87,
       "odds": 1.79,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "IR0ta1Ns",
+      "home_team": "Luki-Energiya",
+      "away_team": "Tver",
+      "league": "RUSSIA: FNL 2 - Division B - Group 2",
+      "date": "2026-06-21T13:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 50.81,
+      "odds": 1.43,
       "status": "PENDING"
     }
   ]
