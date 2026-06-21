@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
-import { data, dayLabel, computeStats } from "./data.js";
+import { data, dayLabel, computeStats, todayStr, dayOffset } from "./data.js";
 import TabNav from "./components/TabNav.jsx";
 import DayTabs from "./components/DayTabs.jsx";
 import MatchList from "./components/MatchList.jsx";
@@ -28,12 +28,10 @@ export default function App() {
     (async () => {
       const idx = await data.index();
       if (!idx) { setOnline(false); setLoadingMatches(false); return; }
-      // Day tabs show only today + future (danas / sutra / prekosutra) — drop past days.
-      const now = new Date();
-      const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
-      idx.prediction_days = (idx.prediction_days || []).filter((d) => d >= todayStr);
       setIndex(idx);
-      setDay(idx.prediction_days[0] || null);
+      // Matches: default to first upcoming day (today onwards).
+      const up = (idx.prediction_days || []).filter((d) => d >= todayStr());
+      setDay(up[0] || null);
     })();
   }, []);
 
@@ -48,15 +46,14 @@ export default function App() {
 
   useEffect(() => { if (day) loadMatches(day); }, [day, loadMatches]);
 
-  // Merge tips across all available tip days.
   const loadTips = useCallback(async () => {
     if (!index) return;
     setLoadingTips(true);
-    // Upcoming days only (today + future): "ukupno" = best 20 across all of them,
-    // otherwise the best 20 of the chosen day.
-    const upDays = index.prediction_days || [];  // already filtered to upcoming
+    // "ukupno" = best 20 across the upcoming days (today + next 2); a specific day
+    // (incl. past) = that day's 20 tips exactly (so settled colours stay).
+    const upcoming = (index.tip_days || []).filter((d) => d >= todayStr());
+    const sources = tipScope === "ukupno" ? upcoming : [tipScope];
     const all = [];
-    const sources = tipScope === "ukupno" ? upDays : [tipScope];
     for (const d of sources) {
       const t = await data.tips(d);
       if (t?.tips) all.push(...t.tips);
@@ -98,7 +95,7 @@ export default function App() {
             {tab === "matches" && (
               <div className="space-y-4">
                 <DayTabs
-                  days={index?.prediction_days || []}
+                  days={(index?.prediction_days || []).filter((d) => d >= todayStr())}
                   active={day}
                   onChange={(d) => setDay(d)}
                   label={dayLabel}
@@ -117,7 +114,10 @@ export default function App() {
             {tab === "tips" && (
               <div className="space-y-4">
                 <DayTabs
-                  days={[...(index?.prediction_days || []), "ukupno"]}
+                  days={[
+                    ...(index?.tip_days || []).filter((d) => dayOffset(d) >= -2 && dayOffset(d) <= 2),
+                    "ukupno",
+                  ]}
                   active={tipScope}
                   onChange={(d) => setTipScope(d)}
                   label={(d) => (d === "ukupno" ? "Ukupno" : dayLabel(d))}

@@ -22,13 +22,28 @@ export const data = {
 
 // --- Day labels (Danas / Sutra / Prekosutra / date) ---
 export function dayLabel(dateStr) {
+  if (dateStr === "ukupno") return "Ukupno";
   const today = new Date();
   const t = new Date(dateStr + "T00:00:00");
   const diff = Math.round((t - new Date(today.toDateString())) / 86400000);
   if (diff === 0) return "Danas";
   if (diff === 1) return "Sutra";
   if (diff === 2) return "Prekosutra";
+  if (diff === -1) return "Juče";
+  if (diff === -2) return "Prekjuče";
   return t.toLocaleDateString(undefined, { weekday: "short", day: "numeric", month: "short" });
+}
+
+// today's date as YYYY-MM-DD (local)
+export function todayStr() {
+  const n = new Date();
+  return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, "0")}-${String(n.getDate()).padStart(2, "0")}`;
+}
+
+export function dayOffset(dateStr) {
+  const today = new Date();
+  const t = new Date(dateStr + "T00:00:00");
+  return Math.round((t - new Date(today.toDateString())) / 86400000);
 }
 
 // --- Client-side stats from merged tips (auto top-N) ---

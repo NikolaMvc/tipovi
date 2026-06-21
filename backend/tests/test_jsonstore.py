@@ -62,11 +62,13 @@ def test_save_cleanup_and_index(tmp_path, monkeypatch):
     monkeypatch.setattr(js, "TIPS_DIR", tmp_path / "tips")
     monkeypatch.setattr(js, "INDEX_FILE", tmp_path / "index.json")
 
-    js.save_predictions("2026-06-16", [_resp("A", "B", 70, 20, 10, 55, 60, mid="1")])
+    from datetime import date, timedelta
+    recent = (date.today() - timedelta(days=1)).isoformat()  # within the 3-day window
+    js.save_predictions(recent, [_resp("A", "B", 70, 20, 10, 55, 60, mid="1")])
     js.save_predictions("2020-01-01", [_resp("Old", "Match", 50, 30, 20, 50, 50, mid="9")])
     removed = js.cleanup_old(rolling_days=3)
     assert removed == 1  # the 2020 file is gone
-    assert (tmp_path / "predictions" / "2026-06-16.json").exists()
+    assert (tmp_path / "predictions" / f"{recent}.json").exists()
     idx = js.write_index()
-    assert "2026-06-16" in idx["prediction_days"]
+    assert recent in idx["prediction_days"]
     assert "2020-01-01" not in idx["prediction_days"]

@@ -118,10 +118,18 @@ def step_save_and_tips(preds_by_day, results_by_day, debug):
 
     for d, responses in preds_by_day.items():
         js.save_predictions(d, responses)  # assigns match ids
-        tips = js.generate_top_tips(responses)
+        # FREEZE: once a day's tips exist, keep that list (preserve WON/LOST colours);
+        # only generate the first time the day appears. Always (re)settle.
+        existing = (js._read(js.TIPS_DIR / f"{d}.json") or {}).get("tips")
+        if existing:
+            tips = existing
+            note = "kept"
+        else:
+            tips = js.generate_top_tips(responses)
+            note = "generated"
         settled = js.settle_tips(tips, results_by_id)
         js.save_tips(d, tips)
-        print(f"  {d}: {len(responses)} predictions, {len(tips)} tips ({settled} settled)")
+        print(f"  {d}: {len(responses)} predictions, {len(tips)} tips {note} ({settled} settled)")
 
     # Also settle/re-save tips for prior days now that new results arrived.
     for f in js.TIPS_DIR.glob("*.json") if js.TIPS_DIR.exists() else []:
