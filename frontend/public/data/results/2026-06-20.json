@@ -2,19 +2,35 @@
   "date": "2026-06-20",
   "results": [
     {
-      "id": "EiZpKGGb",
-      "home_team": "Sport Sinop U20",
-      "away_team": "Sorriso EC U20",
-      "home_goals": 2,
-      "away_goals": 2,
+      "id": "537341",
+      "home_team": "Brazil",
+      "away_team": "Haiti",
+      "home_goals": 3,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
-      "id": "vkcKCM9a",
-      "home_team": "Provincial",
-      "away_team": "Atletico Pilar",
-      "home_goals": 1,
-      "away_goals": 0,
+      "id": "537347",
+      "home_team": "Turkey",
+      "away_team": "Paraguay",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537359",
+      "home_team": "Netherlands",
+      "away_team": "Sweden",
+      "home_goals": 5,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537353",
+      "home_team": "Germany",
+      "away_team": "Ivory Coast",
+      "home_goals": 2,
+      "away_goals": 1,
       "status": "FINISHED"
     }
   ]
