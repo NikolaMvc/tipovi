@@ -6,6 +6,16 @@ const STATUS = {
   PENDING: { c: "#FFB020", icon: "•" },
 };
 
+function fmtDT(s) {
+  if (!s) return "";
+  try {
+    const d = new Date(s);
+    return d.toLocaleString(undefined, { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" });
+  } catch {
+    return "";
+  }
+}
+
 function TipRow({ tip, rank, onSelect }) {
   const s = STATUS[tip.status] || STATUS.PENDING;
   return (
@@ -21,7 +31,8 @@ function TipRow({ tip, rank, onSelect }) {
             {tip.home_team} <span className="text-muted">v</span> {tip.away_team}
           </div>
           <div className="num mt-0.5 text-[11px] text-muted">
-            {tip.market} · <span className="text-[#E6EDF3]">{tip.pick}</span>
+            <span className="text-[#8A93A2]">{fmtDT(tip.date)}</span> · {tip.market} ·{" "}
+            <span className="text-[#E6EDF3]">{tip.pick}</span>
             {tip.odds ? <span className="ml-1 text-accent">@ {tip.odds}</span> : null}
             {tip.final_score ? <span className="ml-1 opacity-70">({tip.final_score})</span> : null}
           </div>

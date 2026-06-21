@@ -175,17 +175,29 @@ def step_git(no_push: bool):
         print(f"  git step failed: {exc}")
 
 
+def _merged_finished() -> dict:
+    """Merge FlashScore finished results across a window of day-feeds into a single
+    {event_id: result}. This is timezone-robust: a 23:30 UTC match can be grouped
+    into the next *local* day's feed, so we union several offsets and match by id."""
+    from backend.scraper.flashscore import finished_results
+    merged: dict = {}
+    for off in range(-4, 2):   # past few days .. tomorrow
+        try:
+            merged.update(finished_results(off))
+        except Exception:  # noqa: BLE001
+            pass
+    return merged
+
+
 def step_settle(no_push: bool):
     """Fast pass: colour pending tips WON/LOST from FlashScore finished results.
     No scraping/predicting — just results + tip colours + push (~1-2 min)."""
-    from datetime import date
-    from backend.scraper.flashscore import finished_results
     print("\n[SETTLE] checking finished matches and colouring tips…")
-    today = date.today()
-    results_cache: dict[int, dict] = {}
-    total_settled = 0
     if not js.TIPS_DIR.exists():
         print("  no tips yet."); return
+    merged = _merged_finished()
+    print(f"  merged {len(merged)} finished results across day feeds")
+    total_settled = 0
     for f in sorted(js.TIPS_DIR.glob("*.json")):
         day = f.stem
         data = js._read(f) or {}
@@ -193,17 +205,9 @@ def step_settle(no_push: bool):
         pending = [t for t in tips if t.get("status") == "PENDING"]
         if not pending:
             continue
-        try:
-            offset = (date.fromisoformat(day) - today).days
-        except ValueError:
-            continue
-        if offset not in results_cache:
-            results_cache[offset] = finished_results(offset)
-        res = results_cache[offset]
         settled = 0
-        day_results = []
         for t in pending:
-            r = res.get(str(t.get("match_id")))
+            r = merged.get(str(t.get("match_id")))
             if not r:
                 continue
             outcome = js.tip_outcome(t["pick"], t["market"], r["home_goals"], r["away_goals"])
@@ -211,13 +215,8 @@ def step_settle(no_push: bool):
                 t["status"] = outcome
                 t["final_score"] = f"{r['home_goals']}-{r['away_goals']}"
                 settled += 1
-                day_results.append({"id": str(t["match_id"]), "home_team": t.get("home_team"),
-                                    "away_team": t.get("away_team"), "home_goals": r["home_goals"],
-                                    "away_goals": r["away_goals"], "status": "FINISHED"})
         if settled:
             js.save_tips(day, tips)
-            if day_results:
-                js.save_results(day, day_results)
             total_settled += settled
         print(f"  {day}: settled {settled}/{len(pending)} pending")
     js.write_index()
