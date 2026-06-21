@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-21",
+  "results": [
+    {
+      "id": "rqcpaajd",
+      "home_team": "Charlottesville Blues",
+      "away_team": "Virginia Marauders",
+      "home_goals": 4,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "fgRGCw9K",
+      "home_team": "Little Rock Rangers",
+      "away_team": "Mississippi Brilla",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "S4ybGzde",
+      "home_team": "Queensland Lions",
+      "away_team": "Rochedale",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "G41CEVw0",
+      "home_team": "Miyazaki W",
+      "away_team": "Vonds I. W",
+      "home_goals": 3,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "pCwr2HgL",
+      "home_team": "Sydney Utd U20",
+      "away_team": "SD Raiders U20",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    }
+  ]
+}
