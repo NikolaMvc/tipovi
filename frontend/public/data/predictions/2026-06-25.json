@@ -1,8 +1,444 @@
 {
   "date": "2026-06-25",
-  "generated_at": "2026-06-22T23:36:34.118959+00:00",
-  "count": 41,
+  "generated_at": "2026-06-23T12:52:19.386511+00:00",
+  "count": 39,
   "matches": [
+    {
+      "match": {
+        "home_team": "Araioses",
+        "away_team": "Expressinho",
+        "league": "BRAZIL: Maranhense 2",
+        "date": "2026-06-25T18:30:00+00:00",
+        "venue": "",
+        "status": "UPCOMING",
+        "event_id": "GG9TCs0L",
+        "id": "GG9TCs0L"
+      },
+      "prediction": {
+        "home_win_prob": 57.55,
+        "draw_prob": 23.79,
+        "away_win_prob": 18.66,
+        "predicted_outcome": "HOME_WIN",
+        "confidence": "MEDIUM",
+        "confidence_score": 50,
+        "missing_data": [
+          "h2h",
+          "injuries",
+          "referee",
+          "weather"
+        ],
+        "proxy_factors": [
+          "xg"
+        ],
+        "lambda": {
+          "home": 1.8952,
+          "away": 0.9859
+        },
+        "predicted_goals": {
+          "home": 1.901,
+          "away": 1.01
+        },
+        "most_likely_scores": [
+          {
+            "score": "1-1",
+            "prob": 11.84
+          },
+          {
+            "score": "2-0",
+            "prob": 10.07
+          },
+          {
+            "score": "2-1",
+            "prob": 9.93
+          },
+          {
+            "score": "1-0",
+            "prob": 9.26
+          },
+          {
+            "score": "0-0",
+            "prob": 6.97
+          }
+        ],
+        "monte_carlo": {
+          "simulations": 10000,
+          "home_win": 57.82,
+          "draw": 22.72,
+          "away_win": 19.46,
+          "confidence_interval": "±1.0%",
+          "histogram": {
+            "0": 5.77,
+            "1": 15.62,
+            "2": 22.81,
+            "3": 22.42,
+            "4": 16.1,
+            "5": 9.78,
+            "6": 4.58,
+            "7": 1.91,
+            "8": 1.01
+          },
+          "top_scores": [
+            {
+              "score": "1-0",
+              "prob": 10.44
+            },
+            {
+              "score": "1-1",
+              "prob": 10.39
+            },
+            {
+              "score": "2-1",
+              "prob": 10.0
+            },
+            {
+              "score": "2-0",
+              "prob": 9.58
+            },
+            {
+              "score": "3-0",
+              "prob": 6.12
+            }
+          ]
+        }
+      },
+      "markets": {
+        "over_under_2_5": {
+          "over": 55.38,
+          "under": 44.62
+        },
+        "btts": {
+          "yes": 54.53,
+          "no": 45.47
+        }
+      },
+      "value_bets": [
+        {
+          "market": "1X2",
+          "pick": "Away Win",
+          "our_prob": 18.66,
+          "implied_prob": 10.64,
+          "value": 8.02,
+          "kelly_pct": 8.98,
+          "half_kelly_pct": 4.49,
+          "rating": "GOOD_VALUE",
+          "odds": 9.4
+        },
+        {
+          "market": "1X2",
+          "pick": "Draw",
+          "our_prob": 23.79,
+          "implied_prob": 19.61,
+          "value": 4.18,
+          "kelly_pct": 5.2,
+          "half_kelly_pct": 2.6,
+          "rating": "SLIGHT_VALUE",
+          "odds": 5.1
+        }
+      ],
+      "breakdown": {
+        "form": {
+          "home_last5": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away_last5": [
+            "L",
+            "L",
+            "W",
+            "L",
+            "L"
+          ],
+          "home_form_score": 100,
+          "away_form_score": 20
+        },
+        "h2h": {
+          "home_wins": 0,
+          "draws": 0,
+          "away_wins": 0,
+          "avg_goals": null,
+          "matches": 0
+        },
+        "xg": {
+          "home_xg": 1.667,
+          "home_xga": 0.0,
+          "away_xg": 1.0,
+          "away_xga": 1.333,
+          "home_source": "goals",
+          "away_source": "goals",
+          "is_proxy": true
+        },
+        "standings": {
+          "home_pos": null,
+          "away_pos": null,
+          "points_diff": null
+        },
+        "injuries": {
+          "home_missing": [],
+          "away_missing": []
+        },
+        "referee": null,
+        "fatigue": {
+          "home_rest_days": 8,
+          "away_rest_days": 5,
+          "home_status": "FRESH",
+          "away_status": "FRESH"
+        },
+        "weather": null,
+        "factors_used": {
+          "weights": {
+            "form": 0.45,
+            "xg": 0.2,
+            "attack_defense": 0.18,
+            "home": 0.07,
+            "h2h": 0.05,
+            "fatigue": 0.05
+          },
+          "form": {
+            "home_form_score": 2.667,
+            "away_form_score": 1.2,
+            "home_matches": [
+              {
+                "opponent": "Sao Luis",
+                "position": 2,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "1-0",
+                "points": 3
+              },
+              {
+                "opponent": "Americano Bacabal",
+                "position": 6,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "3-0",
+                "points": 2
+              },
+              {
+                "opponent": "Sao Jose MA",
+                "position": 5,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "1-0",
+                "points": 3
+              }
+            ],
+            "away_matches": [
+              {
+                "opponent": "Tupan",
+                "position": 3,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "L",
+                "score": "0-1",
+                "points": 1
+              },
+              {
+                "opponent": "Sao Luis",
+                "position": 2,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "L",
+                "score": "2-3",
+                "points": 1
+              },
+              {
+                "opponent": "Americano Bacabal",
+                "position": 6,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "1-0",
+                "points": 3
+              },
+              {
+                "opponent": "Americano Bacabal",
+                "position": 6,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "L",
+                "score": "1-3",
+                "points": 1
+              },
+              {
+                "opponent": "Tupan",
+                "position": 3,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "L",
+                "score": "1-4",
+                "points": 0
+              }
+            ]
+          },
+          "home_factors": {
+            "form": {
+              "weight": 0.45,
+              "weight_norm": 0.474,
+              "mult": 1.233,
+              "contribution": 0.166
+            },
+            "xg": {
+              "weight": 0.2,
+              "weight_norm": 0.211,
+              "mult": 1.111,
+              "contribution": 0.035
+            },
+            "attack_defense": {
+              "weight": 0.18,
+              "weight_norm": 0.189,
+              "mult": 1.6,
+              "contribution": 0.171
+            },
+            "home": {
+              "weight": 0.07,
+              "weight_norm": 0.074,
+              "mult": 1.2,
+              "contribution": 0.022
+            },
+            "fatigue": {
+              "weight": 0.05,
+              "weight_norm": 0.053,
+              "mult": 1.02,
+              "contribution": 0.002
+            }
+          },
+          "away_factors": {
+            "form": {
+              "weight": 0.45,
+              "weight_norm": 0.474,
+              "mult": 0.94,
+              "contribution": -0.033
+            },
+            "xg": {
+              "weight": 0.2,
+              "weight_norm": 0.211,
+              "mult": 0.87,
+              "contribution": -0.032
+            },
+            "attack_defense": {
+              "weight": 0.18,
+              "weight_norm": 0.189,
+              "mult": 0.6,
+              "contribution": -0.087
+            },
+            "home": {
+              "weight": 0.07,
+              "weight_norm": 0.074,
+              "mult": 0.85,
+              "contribution": -0.013
+            },
+            "fatigue": {
+              "weight": 0.05,
+              "weight_norm": 0.053,
+              "mult": 1.0,
+              "contribution": 0.0
+            }
+          },
+          "base": {
+            "home_goals": 1.5,
+            "away_goals": 1.15
+          },
+          "lambda": {
+            "home": 1.895,
+            "away": 0.986
+          }
+        },
+        "positions_estimated": 0,
+        "notes": []
+      },
+      "poisson_matrix": [
+        [
+          6.969,
+          4.166,
+          2.725,
+          0.896,
+          0.221,
+          0.044,
+          0.008
+        ],
+        [
+          9.265,
+          11.839,
+          5.165,
+          1.697,
+          0.418,
+          0.082,
+          0.016
+        ],
+        [
+          10.07,
+          9.928,
+          4.894,
+          1.608,
+          0.396,
+          0.078,
+          0.015
+        ],
+        [
+          6.362,
+          6.272,
+          3.092,
+          1.016,
+          0.25,
+          0.049,
+          0.009
+        ],
+        [
+          3.014,
+          2.972,
+          1.465,
+          0.481,
+          0.119,
+          0.023,
+          0.004
+        ],
+        [
+          1.142,
+          1.126,
+          0.555,
+          0.182,
+          0.045,
+          0.009,
+          0.002
+        ],
+        [
+          0.488,
+          0.481,
+          0.237,
+          0.078,
+          0.019,
+          0.004,
+          0.001
+        ]
+      ],
+      "poisson_matrix_sum": 100.0,
+      "odds": {
+        "home": 1.27,
+        "draw": 5.1,
+        "away": 9.4,
+        "over_2_5": null,
+        "under_2_5": null,
+        "btts_yes": null,
+        "btts_no": null
+      },
+      "implied_probs": {
+        "home": 78.74,
+        "draw": 19.61,
+        "away": 10.64
+      },
+      "data_sources": [
+        "flashscore",
+        "flashscore-odds",
+        "flashscore-feed",
+        "flashscore-standings",
+        "flashscore-stats"
+      ],
+      "computed_at": "2026-06-23T12:52:11.766975+00:00"
+    },
     {
       "match": {
         "home_team": "Corinthians U20",
@@ -15,9 +451,9 @@
         "id": "GIdDbo9b"
       },
       "prediction": {
-        "home_win_prob": 48.09,
-        "draw_prob": 25.52,
-        "away_win_prob": 26.38,
+        "home_win_prob": 47.8,
+        "draw_prob": 25.49,
+        "away_win_prob": 26.71,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -34,8 +470,8 @@
           "away": 1.2024
         },
         "predicted_goals": {
-          "home": 1.678,
-          "away": 1.193
+          "home": 1.691,
+          "away": 1.216
         },
         "most_likely_scores": [
           {
@@ -61,68 +497,56 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 48.82,
-          "draw": 24.13,
-          "away_win": 27.05,
+          "home_win": 48.23,
+          "draw": 24.06,
+          "away_win": 27.71,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 5.6,
-            "1": 16.12,
-            "2": 23.47,
-            "3": 22.73,
-            "4": 15.92,
-            "5": 8.92,
-            "6": 4.3,
-            "7": 2.07,
-            "8": 0.87
+            "0": 5.18,
+            "1": 15.78,
+            "2": 23.77,
+            "3": 22.32,
+            "4": 16.09,
+            "5": 9.52,
+            "6": 4.55,
+            "7": 1.75,
+            "8": 1.04
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 11.64
-            },
-            {
-              "score": "1-0",
-              "prob": 9.67
+              "prob": 11.92
             },
             {
               "score": "2-1",
-              "prob": 9.61
+              "prob": 9.29
+            },
+            {
+              "score": "1-0",
+              "prob": 8.99
             },
             {
               "score": "2-0",
-              "prob": 7.83
+              "prob": 7.81
             },
             {
               "score": "1-2",
-              "prob": 6.77
+              "prob": 6.82
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 55.04,
-          "under": 44.96
+          "over": 55.26,
+          "under": 44.74
         },
         "btts": {
-          "yes": 57.69,
-          "no": 42.31
+          "yes": 58.05,
+          "no": 41.95
         }
       },
-      "value_bets": [
-        {
-          "market": "1X2",
-          "pick": "Home Win",
-          "our_prob": 48.09,
-          "implied_prob": 43.86,
-          "value": 4.23,
-          "kelly_pct": 7.54,
-          "half_kelly_pct": 3.77,
-          "rating": "SLIGHT_VALUE",
-          "odds": 2.28
-        }
-      ],
+      "value_bets": [],
       "breakdown": {
         "form": {
           "home_last5": [
@@ -437,18 +861,18 @@
       ],
       "poisson_matrix_sum": 100.0,
       "odds": {
-        "home": 2.28,
-        "draw": 3.4,
-        "away": 2.6,
-        "over_2_5": 1.57,
+        "home": 1.9,
+        "draw": 3.9,
+        "away": 3.41,
+        "over_2_5": 1.62,
         "under_2_5": 2.16,
-        "btts_yes": 1.48,
-        "btts_no": 2.35
+        "btts_yes": 1.58,
+        "btts_no": 2.26
       },
       "implied_probs": {
-        "home": 43.86,
-        "draw": 29.41,
-        "away": 38.46
+        "home": 52.63,
+        "draw": 25.64,
+        "away": 29.33
       },
       "data_sources": [
         "flashscore",
@@ -457,7 +881,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.033131+00:00"
+      "computed_at": "2026-06-23T12:52:11.774440+00:00"
     },
     {
       "match": {
@@ -471,9 +895,9 @@
         "id": "vy4Yo8Ph"
       },
       "prediction": {
-        "home_win_prob": 33.34,
-        "draw_prob": 27.47,
-        "away_win_prob": 39.2,
+        "home_win_prob": 33.59,
+        "draw_prob": 27.41,
+        "away_win_prob": 39.01,
         "predicted_outcome": "AWAY_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -490,8 +914,8 @@
           "away": 1.4059
         },
         "predicted_goals": {
-          "home": 1.275,
-          "away": 1.422
+          "home": 1.272,
+          "away": 1.388
         },
         "most_likely_scores": [
           {
@@ -517,77 +941,99 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 34.02,
-          "draw": 25.92,
-          "away_win": 40.06,
+          "home_win": 34.52,
+          "draw": 25.8,
+          "away_win": 39.68,
           "confidence_interval": "±0.9%",
           "histogram": {
-            "0": 6.73,
-            "1": 18.0,
-            "2": 24.9,
-            "3": 21.54,
-            "4": 15.45,
-            "5": 7.6,
-            "6": 3.72,
-            "7": 1.55,
-            "8": 0.51
+            "0": 7.2,
+            "1": 18.73,
+            "2": 24.25,
+            "3": 21.8,
+            "4": 14.76,
+            "5": 8.18,
+            "6": 3.11,
+            "7": 1.32,
+            "8": 0.65
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.22
+              "prob": 12.05
             },
             {
               "score": "0-1",
-              "prob": 9.05
+              "prob": 9.86
             },
             {
               "score": "1-0",
-              "prob": 8.95
+              "prob": 8.87
             },
             {
               "score": "1-2",
-              "prob": 8.48
+              "prob": 8.3
             },
             {
               "score": "2-1",
-              "prob": 7.7
+              "prob": 7.88
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 50.36,
-          "under": 49.64
+          "over": 50.08,
+          "under": 49.92
         },
         "btts": {
-          "yes": 55.32,
-          "no": 44.68
+          "yes": 54.9,
+          "no": 45.1
         }
       },
       "value_bets": [
         {
-          "market": "1X2",
-          "pick": "Home Win",
-          "our_prob": 33.34,
-          "implied_prob": 31.25,
-          "value": 2.09,
-          "kelly_pct": 3.04,
-          "half_kelly_pct": 1.52,
-          "rating": "SLIGHT_VALUE",
-          "odds": 3.2
-        },
-        {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 49.64,
-          "implied_prob": 49.02,
-          "value": 0.62,
-          "kelly_pct": 1.22,
-          "half_kelly_pct": 0.61,
+          "our_prob": 49.92,
+          "implied_prob": 37.74,
+          "value": 12.18,
+          "kelly_pct": 19.57,
+          "half_kelly_pct": 9.78,
+          "rating": "STRONG_VALUE",
+          "odds": 2.65
+        },
+        {
+          "market": "BTTS",
+          "pick": "No",
+          "our_prob": 45.1,
+          "implied_prob": 37.74,
+          "value": 7.36,
+          "kelly_pct": 11.83,
+          "half_kelly_pct": 5.91,
+          "rating": "GOOD_VALUE",
+          "odds": 2.65
+        },
+        {
+          "market": "1X2",
+          "pick": "Home Win",
+          "our_prob": 33.59,
+          "implied_prob": 28.57,
+          "value": 5.02,
+          "kelly_pct": 7.03,
+          "half_kelly_pct": 3.51,
+          "rating": "GOOD_VALUE",
+          "odds": 3.5
+        },
+        {
+          "market": "1X2",
+          "pick": "Draw",
+          "our_prob": 27.41,
+          "implied_prob": 23.81,
+          "value": 3.6,
+          "kelly_pct": 4.73,
+          "half_kelly_pct": 2.36,
           "rating": "SLIGHT_VALUE",
-          "odds": 2.04
+          "odds": 4.2
         }
       ],
       "breakdown": {
@@ -904,18 +1350,18 @@
       ],
       "poisson_matrix_sum": 100.0,
       "odds": {
-        "home": 3.2,
-        "draw": 3.4,
-        "away": 1.95,
-        "over_2_5": 1.64,
-        "under_2_5": 2.04,
-        "btts_yes": 1.54,
-        "btts_no": 2.23
+        "home": 3.5,
+        "draw": 4.2,
+        "away": 1.81,
+        "over_2_5": 1.43,
+        "under_2_5": 2.65,
+        "btts_yes": 1.43,
+        "btts_no": 2.65
       },
       "implied_probs": {
-        "home": 31.25,
-        "draw": 29.41,
-        "away": 51.28
+        "home": 28.57,
+        "draw": 23.81,
+        "away": 55.25
       },
       "data_sources": [
         "flashscore",
@@ -924,7 +1370,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.040571+00:00"
+      "computed_at": "2026-06-23T12:52:11.781885+00:00"
     },
     {
       "match": {
@@ -938,9 +1384,9 @@
         "id": "MFaLdPwB"
       },
       "prediction": {
-        "home_win_prob": 48.54,
-        "draw_prob": 24.91,
-        "away_win_prob": 26.55,
+        "home_win_prob": 48.91,
+        "draw_prob": 24.39,
+        "away_win_prob": 26.71,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -957,8 +1403,8 @@
           "away": 1.2468
         },
         "predicted_goals": {
-          "home": 1.748,
-          "away": 1.244
+          "home": 1.753,
+          "away": 1.242
         },
         "most_likely_scores": [
           {
@@ -984,53 +1430,53 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 49.09,
-          "draw": 23.56,
-          "away_win": 27.35,
+          "home_win": 49.82,
+          "draw": 22.51,
+          "away_win": 27.67,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 4.99,
-            "1": 15.2,
-            "2": 22.08,
-            "3": 22.95,
-            "4": 16.92,
-            "5": 9.37,
-            "6": 5.17,
-            "7": 1.91,
-            "8": 1.41
+            "0": 5.09,
+            "1": 15.51,
+            "2": 21.47,
+            "3": 22.81,
+            "4": 16.9,
+            "5": 9.62,
+            "6": 5.25,
+            "7": 2.07,
+            "8": 1.28
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 11.01
+              "prob": 10.11
             },
             {
               "score": "2-1",
-              "prob": 9.46
+              "prob": 9.66
             },
             {
               "score": "1-0",
-              "prob": 8.88
-            },
-            {
-              "score": "1-2",
-              "prob": 7.27
+              "prob": 9.0
             },
             {
               "score": "2-0",
-              "prob": 7.19
+              "prob": 7.48
+            },
+            {
+              "score": "1-2",
+              "prob": 7.06
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 57.76,
-          "under": 42.24
+          "over": 57.86,
+          "under": 42.14
         },
         "btts": {
-          "yes": 59.8,
-          "no": 40.2
+          "yes": 59.29,
+          "no": 40.71
         }
       },
       "value_bets": [],
@@ -1348,18 +1794,18 @@
       ],
       "poisson_matrix_sum": 100.0,
       "odds": {
-        "home": 2.06,
-        "draw": 3.3,
-        "away": 2.95,
-        "over_2_5": 1.62,
-        "under_2_5": 2.08,
-        "btts_yes": 1.52,
-        "btts_no": 2.28
+        "home": 2.02,
+        "draw": 3.9,
+        "away": 3.11,
+        "over_2_5": 1.6,
+        "under_2_5": 2.2,
+        "btts_yes": 1.55,
+        "btts_no": 2.33
       },
       "implied_probs": {
-        "home": 48.54,
-        "draw": 30.3,
-        "away": 33.9
+        "home": 49.5,
+        "draw": 25.64,
+        "away": 32.15
       },
       "data_sources": [
         "flashscore",
@@ -1368,7 +1814,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.048102+00:00"
+      "computed_at": "2026-06-23T12:52:11.789314+00:00"
     },
     {
       "match": {
@@ -1382,9 +1828,9 @@
         "id": "QBlaksWp"
       },
       "prediction": {
-        "home_win_prob": 49.36,
-        "draw_prob": 28.42,
-        "away_win_prob": 22.21,
+        "home_win_prob": 49.48,
+        "draw_prob": 28.32,
+        "away_win_prob": 22.2,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 50,
@@ -1402,8 +1848,8 @@
           "away": 0.8748
         },
         "predicted_goals": {
-          "home": 1.434,
-          "away": 0.879
+          "home": 1.43,
+          "away": 0.877
         },
         "most_likely_scores": [
           {
@@ -1429,74 +1875,74 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 50.17,
-          "draw": 26.72,
-          "away_win": 23.11,
+          "home_win": 50.42,
+          "draw": 26.51,
+          "away_win": 23.07,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 9.4,
-            "1": 23.57,
-            "2": 26.5,
-            "3": 20.03,
-            "4": 12.13,
-            "5": 5.49,
-            "6": 1.95,
+            "0": 9.79,
+            "1": 23.23,
+            "2": 26.37,
+            "3": 20.61,
+            "4": 11.39,
+            "5": 5.5,
+            "6": 2.23,
             "7": 0.65,
-            "8": 0.28
+            "8": 0.23
           },
           "top_scores": [
             {
               "score": "1-0",
-              "prob": 14.61
+              "prob": 14.47
             },
             {
               "score": "1-1",
-              "prob": 12.32
+              "prob": 12.4
             },
             {
               "score": "2-0",
-              "prob": 10.3
+              "prob": 10.41
             },
             {
               "score": "0-0",
-              "prob": 9.4
+              "prob": 9.79
             },
             {
-              "score": "0-1",
-              "prob": 8.96
+              "score": "2-1",
+              "prob": 9.18
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 40.6,
-          "under": 59.4
+          "over": 40.64,
+          "under": 59.36
         },
         "btts": {
-          "yes": 45.25,
-          "no": 54.75
+          "yes": 45.2,
+          "no": 54.8
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 59.4,
+          "our_prob": 59.36,
           "implied_prob": 48.31,
-          "value": 11.09,
-          "kelly_pct": 21.46,
-          "half_kelly_pct": 10.73,
+          "value": 11.05,
+          "kelly_pct": 21.38,
+          "half_kelly_pct": 10.69,
           "rating": "STRONG_VALUE",
           "odds": 2.07
         },
         {
           "market": "1X2",
           "pick": "Away Win",
-          "our_prob": 22.21,
+          "our_prob": 22.2,
           "implied_prob": 18.18,
-          "value": 4.03,
-          "kelly_pct": 4.92,
+          "value": 4.02,
+          "kelly_pct": 4.91,
           "half_kelly_pct": 2.46,
           "rating": "SLIGHT_VALUE",
           "odds": 5.5
@@ -1504,22 +1950,22 @@
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 28.42,
+          "our_prob": 28.32,
           "implied_prob": 25.32,
-          "value": 3.1,
-          "kelly_pct": 4.16,
-          "half_kelly_pct": 2.08,
+          "value": 3.0,
+          "kelly_pct": 4.02,
+          "half_kelly_pct": 2.01,
           "rating": "SLIGHT_VALUE",
           "odds": 3.95
         },
         {
           "market": "BTTS",
           "pick": "No",
-          "our_prob": 54.75,
+          "our_prob": 54.8,
           "implied_prob": 52.08,
-          "value": 2.67,
-          "kelly_pct": 5.57,
-          "half_kelly_pct": 2.78,
+          "value": 2.72,
+          "kelly_pct": 5.67,
+          "half_kelly_pct": 2.83,
           "rating": "SLIGHT_VALUE",
           "odds": 1.92
         }
@@ -1846,7 +2292,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.055448+00:00"
+      "computed_at": "2026-06-23T12:52:11.796845+00:00"
     },
     {
       "match": {
@@ -1860,9 +2306,9 @@
         "id": "A3hr2Oon"
       },
       "prediction": {
-        "home_win_prob": 40.51,
-        "draw_prob": 25.81,
-        "away_win_prob": 33.67,
+        "home_win_prob": 40.53,
+        "draw_prob": 25.84,
+        "away_win_prob": 33.62,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -1879,8 +2325,8 @@
           "away": 1.4175
         },
         "predicted_goals": {
-          "home": 1.554,
-          "away": 1.408
+          "home": 1.594,
+          "away": 1.42
         },
         "most_likely_scores": [
           {
@@ -1906,76 +2352,76 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 41.34,
-          "draw": 24.41,
-          "away_win": 34.25,
+          "home_win": 41.38,
+          "draw": 24.47,
+          "away_win": 34.15,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 5.58,
-            "1": 15.05,
-            "2": 22.47,
-            "3": 22.28,
-            "4": 16.75,
-            "5": 9.67,
-            "6": 5.03,
-            "7": 2.02,
-            "8": 1.15
+            "0": 5.22,
+            "1": 14.27,
+            "2": 22.27,
+            "3": 22.56,
+            "4": 16.94,
+            "5": 10.48,
+            "6": 4.79,
+            "7": 2.3,
+            "8": 1.17
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 10.9
+              "prob": 11.11
             },
             {
               "score": "2-1",
-              "prob": 8.85
-            },
-            {
-              "score": "1-0",
-              "prob": 8.12
+              "prob": 8.99
             },
             {
               "score": "1-2",
-              "prob": 7.8
+              "prob": 8.11
+            },
+            {
+              "score": "1-0",
+              "prob": 7.33
             },
             {
               "score": "0-1",
-              "prob": 6.93
+              "prob": 6.94
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 57.11,
-          "under": 42.89
+          "over": 57.78,
+          "under": 42.22
         },
         "btts": {
-          "yes": 60.43,
-          "no": 39.57
+          "yes": 61.01,
+          "no": 38.99
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 40.51,
+          "our_prob": 40.53,
           "implied_prob": 27.78,
-          "value": 12.73,
-          "kelly_pct": 17.63,
-          "half_kelly_pct": 8.81,
+          "value": 12.75,
+          "kelly_pct": 17.66,
+          "half_kelly_pct": 8.83,
           "rating": "STRONG_VALUE",
           "odds": 3.6
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 42.89,
+          "our_prob": 42.22,
           "implied_prob": 37.74,
-          "value": 5.15,
-          "kelly_pct": 8.28,
-          "half_kelly_pct": 4.14,
-          "rating": "GOOD_VALUE",
+          "value": 4.48,
+          "kelly_pct": 7.2,
+          "half_kelly_pct": 3.6,
+          "rating": "SLIGHT_VALUE",
           "odds": 2.65
         }
       ],
@@ -2313,7 +2759,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.078079+00:00"
+      "computed_at": "2026-06-23T12:52:11.819999+00:00"
     },
     {
       "match": {
@@ -2327,9 +2773,9 @@
         "id": "ITej02Gb"
       },
       "prediction": {
-        "home_win_prob": 49.3,
-        "draw_prob": 25.52,
-        "away_win_prob": 25.17,
+        "home_win_prob": 49.51,
+        "draw_prob": 25.13,
+        "away_win_prob": 25.36,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -2346,8 +2792,8 @@
           "away": 1.1546
         },
         "predicted_goals": {
-          "home": 1.71,
-          "away": 1.161
+          "home": 1.688,
+          "away": 1.14
         },
         "most_likely_scores": [
           {
@@ -2373,75 +2819,75 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 49.91,
-          "draw": 24.14,
-          "away_win": 25.95,
+          "home_win": 50.32,
+          "draw": 23.36,
+          "away_win": 26.32,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 5.86,
-            "1": 16.11,
-            "2": 23.46,
+            "0": 5.65,
+            "1": 17.39,
+            "2": 23.45,
             "3": 22.37,
-            "4": 15.76,
-            "5": 9.16,
-            "6": 4.56,
-            "7": 1.62,
-            "8": 1.1
+            "4": 15.19,
+            "5": 8.89,
+            "6": 4.46,
+            "7": 1.76,
+            "8": 0.84
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 11.1
-            },
-            {
-              "score": "2-1",
-              "prob": 9.53
+              "prob": 11.3
             },
             {
               "score": "1-0",
-              "prob": 9.26
+              "prob": 10.1
+            },
+            {
+              "score": "2-1",
+              "prob": 9.66
             },
             {
               "score": "2-0",
-              "prob": 8.49
+              "prob": 8.16
             },
             {
               "score": "0-1",
-              "prob": 6.85
+              "prob": 7.29
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 54.48,
-          "under": 45.52
+          "over": 53.95,
+          "under": 46.05
         },
         "btts": {
-          "yes": 56.63,
-          "no": 43.37
+          "yes": 56.29,
+          "no": 43.71
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 45.52,
+          "our_prob": 46.05,
           "implied_prob": 28.17,
-          "value": 17.35,
-          "kelly_pct": 24.16,
-          "half_kelly_pct": 12.08,
+          "value": 17.88,
+          "kelly_pct": 24.89,
+          "half_kelly_pct": 12.45,
           "rating": "STRONG_VALUE",
           "odds": 3.55
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 25.52,
+          "our_prob": 25.13,
           "implied_prob": 25.0,
-          "value": 0.52,
-          "kelly_pct": 0.69,
-          "half_kelly_pct": 0.35,
+          "value": 0.13,
+          "kelly_pct": 0.17,
+          "half_kelly_pct": 0.09,
           "rating": "SLIGHT_VALUE",
           "odds": 4.0
         }
@@ -2780,7 +3226,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.085622+00:00"
+      "computed_at": "2026-06-23T12:52:11.827473+00:00"
     },
     {
       "match": {
@@ -2794,9 +3240,9 @@
         "id": "dQvnjsup"
       },
       "prediction": {
-        "home_win_prob": 36.29,
-        "draw_prob": 25.76,
-        "away_win_prob": 37.95,
+        "home_win_prob": 36.46,
+        "draw_prob": 25.65,
+        "away_win_prob": 37.89,
         "predicted_outcome": "AWAY_WIN",
         "confidence": "HIGH",
         "confidence_score": 76,
@@ -2811,8 +3257,8 @@
           "away": 1.5076
         },
         "predicted_goals": {
-          "home": 1.472,
-          "away": 1.495
+          "home": 1.478,
+          "away": 1.51
         },
         "most_likely_scores": [
           {
@@ -2838,99 +3284,99 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 37.01,
-          "draw": 24.19,
-          "away_win": 38.8,
+          "home_win": 37.35,
+          "draw": 23.98,
+          "away_win": 38.67,
           "confidence_interval": "±0.9%",
           "histogram": {
-            "0": 5.44,
-            "1": 15.47,
-            "2": 22.34,
-            "3": 22.19,
-            "4": 16.03,
-            "5": 10.34,
-            "6": 5.0,
-            "7": 1.98,
-            "8": 1.21
+            "0": 5.24,
+            "1": 14.97,
+            "2": 22.24,
+            "3": 22.4,
+            "4": 16.85,
+            "5": 10.01,
+            "6": 5.17,
+            "7": 1.93,
+            "8": 1.19
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 11.18
-            },
-            {
-              "score": "1-2",
-              "prob": 8.65
+              "prob": 10.97
             },
             {
               "score": "2-1",
-              "prob": 8.18
+              "prob": 8.68
+            },
+            {
+              "score": "1-2",
+              "prob": 8.37
             },
             {
               "score": "0-1",
-              "prob": 7.99
+              "prob": 7.6
             },
             {
               "score": "1-0",
-              "prob": 7.48
+              "prob": 7.37
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 57.0,
-          "under": 43.0
+          "over": 57.4,
+          "under": 42.6
         },
         "btts": {
-          "yes": 60.54,
-          "no": 39.46
+          "yes": 60.92,
+          "no": 39.08
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 36.29,
-          "implied_prob": 21.51,
-          "value": 14.78,
-          "kelly_pct": 18.84,
-          "half_kelly_pct": 9.42,
+          "our_prob": 36.46,
+          "implied_prob": 23.26,
+          "value": 13.2,
+          "kelly_pct": 17.21,
+          "half_kelly_pct": 8.6,
           "rating": "STRONG_VALUE",
-          "odds": 4.65
+          "odds": 4.3
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 43.0,
-          "implied_prob": 33.67,
-          "value": 9.33,
-          "kelly_pct": 14.07,
-          "half_kelly_pct": 7.03,
-          "rating": "GOOD_VALUE",
-          "odds": 2.97
+          "our_prob": 42.6,
+          "implied_prob": 31.85,
+          "value": 10.75,
+          "kelly_pct": 15.78,
+          "half_kelly_pct": 7.89,
+          "rating": "STRONG_VALUE",
+          "odds": 3.14
         },
         {
           "market": "BTTS",
           "pick": "No",
-          "our_prob": 39.46,
+          "our_prob": 39.08,
           "implied_prob": 36.1,
-          "value": 3.36,
-          "kelly_pct": 5.26,
-          "half_kelly_pct": 2.63,
+          "value": 2.98,
+          "kelly_pct": 4.66,
+          "half_kelly_pct": 2.33,
           "rating": "SLIGHT_VALUE",
           "odds": 2.77
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 25.76,
-          "implied_prob": 22.47,
-          "value": 3.29,
-          "kelly_pct": 4.24,
-          "half_kelly_pct": 2.12,
+          "our_prob": 25.65,
+          "implied_prob": 22.73,
+          "value": 2.92,
+          "kelly_pct": 3.78,
+          "half_kelly_pct": 1.89,
           "rating": "SLIGHT_VALUE",
-          "odds": 4.45
+          "odds": 4.4
         }
       ],
       "breakdown": {
@@ -3247,18 +3693,18 @@
       ],
       "poisson_matrix_sum": 100.0,
       "odds": {
-        "home": 4.65,
-        "draw": 4.45,
-        "away": 1.58,
-        "over_2_5": 1.3,
-        "under_2_5": 2.97,
+        "home": 4.3,
+        "draw": 4.4,
+        "away": 1.63,
+        "over_2_5": 1.27,
+        "under_2_5": 3.14,
         "btts_yes": 1.39,
         "btts_no": 2.77
       },
       "implied_probs": {
-        "home": 21.51,
-        "draw": 22.47,
-        "away": 63.29
+        "home": 23.26,
+        "draw": 22.73,
+        "away": 61.35
       },
       "data_sources": [
         "flashscore",
@@ -3267,7 +3713,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.093230+00:00"
+      "computed_at": "2026-06-23T12:52:11.834983+00:00"
     },
     {
       "match": {
@@ -3281,9 +3727,9 @@
         "id": "2mEJqYEk"
       },
       "prediction": {
-        "home_win_prob": 39.11,
-        "draw_prob": 29.47,
-        "away_win_prob": 31.42,
+        "home_win_prob": 39.35,
+        "draw_prob": 29.3,
+        "away_win_prob": 31.35,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -3300,8 +3746,8 @@
           "away": 1.1028
         },
         "predicted_goals": {
-          "home": 1.262,
-          "away": 1.102
+          "home": 1.278,
+          "away": 1.104
         },
         "most_likely_scores": [
           {
@@ -3327,86 +3773,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 40.04,
-          "draw": 27.71,
-          "away_win": 32.25,
+          "home_win": 40.51,
+          "draw": 27.38,
+          "away_win": 32.11,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 9.59,
-            "1": 22.49,
-            "2": 25.54,
-            "3": 20.86,
-            "4": 12.33,
-            "5": 5.69,
-            "6": 2.47,
-            "7": 0.67,
-            "8": 0.36
+            "0": 9.09,
+            "1": 21.85,
+            "2": 26.23,
+            "3": 21.3,
+            "4": 12.6,
+            "5": 5.73,
+            "6": 2.09,
+            "7": 0.66,
+            "8": 0.45
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.68
+              "prob": 12.91
             },
             {
               "score": "1-0",
-              "prob": 12.03
+              "prob": 11.74
             },
             {
               "score": "0-1",
-              "prob": 10.46
+              "prob": 10.11
             },
             {
               "score": "0-0",
-              "prob": 9.59
+              "prob": 9.09
             },
             {
               "score": "2-1",
-              "prob": 8.07
+              "prob": 8.52
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 42.2,
-          "under": 57.8
+          "over": 42.42,
+          "under": 57.58
         },
         "btts": {
-          "yes": 48.37,
-          "no": 51.63
+          "yes": 48.81,
+          "no": 51.19
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 39.11,
+          "our_prob": 39.35,
           "implied_prob": 22.73,
-          "value": 16.38,
-          "kelly_pct": 21.2,
-          "half_kelly_pct": 10.6,
+          "value": 16.62,
+          "kelly_pct": 21.51,
+          "half_kelly_pct": 10.76,
           "rating": "STRONG_VALUE",
           "odds": 4.4
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 57.8,
+          "our_prob": 57.58,
           "implied_prob": 50.51,
-          "value": 7.29,
-          "kelly_pct": 14.74,
-          "half_kelly_pct": 7.37,
+          "value": 7.07,
+          "kelly_pct": 14.29,
+          "half_kelly_pct": 7.15,
           "rating": "GOOD_VALUE",
           "odds": 1.98
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 29.47,
+          "our_prob": 29.3,
           "implied_prob": 27.78,
-          "value": 1.69,
-          "kelly_pct": 2.34,
-          "half_kelly_pct": 1.17,
+          "value": 1.52,
+          "kelly_pct": 2.11,
+          "half_kelly_pct": 1.05,
           "rating": "SLIGHT_VALUE",
           "odds": 3.6
         }
@@ -3745,7 +4191,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.100790+00:00"
+      "computed_at": "2026-06-23T12:52:11.842546+00:00"
     },
     {
       "match": {
@@ -3759,9 +4205,9 @@
         "id": "0KPuiGMF"
       },
       "prediction": {
-        "home_win_prob": 53.56,
-        "draw_prob": 25.55,
-        "away_win_prob": 20.89,
+        "home_win_prob": 52.89,
+        "draw_prob": 25.6,
+        "away_win_prob": 21.52,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -3778,8 +4224,8 @@
           "away": 0.9731
         },
         "predicted_goals": {
-          "home": 1.684,
-          "away": 0.964
+          "home": 1.673,
+          "away": 0.984
         },
         "most_likely_scores": [
           {
@@ -3805,86 +4251,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 54.85,
-          "draw": 23.81,
-          "away_win": 21.34,
+          "home_win": 53.51,
+          "draw": 23.9,
+          "away_win": 22.59,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 7.08,
-            "1": 18.74,
-            "2": 25.0,
-            "3": 22.15,
-            "4": 14.08,
-            "5": 7.32,
-            "6": 3.49,
-            "7": 1.53,
-            "8": 0.61
+            "0": 6.63,
+            "1": 18.8,
+            "2": 25.08,
+            "3": 21.97,
+            "4": 14.89,
+            "5": 7.24,
+            "6": 3.29,
+            "7": 1.55,
+            "8": 0.55
           },
           "top_scores": [
             {
-              "score": "1-0",
-              "prob": 12.14
-            },
-            {
               "score": "1-1",
-              "prob": 11.51
+              "prob": 11.75
             },
             {
-              "score": "2-1",
-              "prob": 10.32
+              "score": "1-0",
+              "prob": 11.67
             },
             {
               "score": "2-0",
-              "prob": 9.92
+              "prob": 9.91
             },
             {
-              "score": "0-0",
-              "prob": 7.08
+              "score": "2-1",
+              "prob": 9.4
+            },
+            {
+              "score": "0-1",
+              "prob": 7.13
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 49.23,
-          "under": 50.77
+          "over": 49.39,
+          "under": 50.61
         },
         "btts": {
-          "yes": 51.39,
-          "no": 48.61
+          "yes": 51.32,
+          "no": 48.68
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 50.77,
+          "our_prob": 50.61,
           "implied_prob": 44.84,
-          "value": 5.93,
-          "kelly_pct": 10.75,
-          "half_kelly_pct": 5.37,
+          "value": 5.77,
+          "kelly_pct": 10.46,
+          "half_kelly_pct": 5.23,
           "rating": "GOOD_VALUE",
           "odds": 2.23
         },
         {
           "market": "1X2",
           "pick": "Away Win",
-          "our_prob": 20.89,
+          "our_prob": 21.52,
           "implied_prob": 19.05,
-          "value": 1.84,
-          "kelly_pct": 2.28,
-          "half_kelly_pct": 1.14,
+          "value": 2.47,
+          "kelly_pct": 3.05,
+          "half_kelly_pct": 1.53,
           "rating": "SLIGHT_VALUE",
           "odds": 5.25
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 25.55,
+          "our_prob": 25.6,
           "implied_prob": 25.0,
-          "value": 0.55,
-          "kelly_pct": 0.73,
-          "half_kelly_pct": 0.37,
+          "value": 0.6,
+          "kelly_pct": 0.8,
+          "half_kelly_pct": 0.4,
           "rating": "SLIGHT_VALUE",
           "odds": 4.0
         }
@@ -4223,7 +4669,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.108244+00:00"
+      "computed_at": "2026-06-23T12:52:11.850039+00:00"
     },
     {
       "match": {
@@ -4237,9 +4683,9 @@
         "id": "6HSmkfiS"
       },
       "prediction": {
-        "home_win_prob": 39.37,
-        "draw_prob": 27.77,
-        "away_win_prob": 32.86,
+        "home_win_prob": 39.79,
+        "draw_prob": 27.59,
+        "away_win_prob": 32.62,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -4256,8 +4702,8 @@
           "away": 1.249
         },
         "predicted_goals": {
-          "home": 1.376,
-          "away": 1.26
+          "home": 1.395,
+          "away": 1.236
         },
         "most_likely_scores": [
           {
@@ -4283,64 +4729,64 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 39.98,
-          "draw": 26.28,
-          "away_win": 33.74,
+          "home_win": 40.82,
+          "draw": 25.91,
+          "away_win": 33.27,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 7.33,
-            "1": 18.74,
-            "2": 24.56,
-            "3": 21.93,
-            "4": 14.53,
-            "5": 8.0,
-            "6": 3.09,
-            "7": 1.34,
-            "8": 0.48
+            "0": 7.11,
+            "1": 19.2,
+            "2": 24.22,
+            "3": 22.46,
+            "4": 14.77,
+            "5": 7.21,
+            "6": 3.15,
+            "7": 1.3,
+            "8": 0.58
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.45
+              "prob": 12.1
             },
             {
               "score": "1-0",
-              "prob": 10.38
-            },
-            {
-              "score": "2-1",
-              "prob": 8.65
+              "prob": 10.45
             },
             {
               "score": "0-1",
-              "prob": 8.36
+              "prob": 8.75
+            },
+            {
+              "score": "2-1",
+              "prob": 8.56
             },
             {
               "score": "1-2",
-              "prob": 7.81
+              "prob": 8.12
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 49.32,
-          "under": 50.68
+          "over": 49.36,
+          "under": 50.64
         },
         "btts": {
-          "yes": 54.52,
-          "no": 45.48
+          "yes": 54.2,
+          "no": 45.8
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 39.37,
+          "our_prob": 39.79,
           "implied_prob": 32.26,
-          "value": 7.11,
-          "kelly_pct": 10.5,
-          "half_kelly_pct": 5.25,
+          "value": 7.53,
+          "kelly_pct": 11.12,
+          "half_kelly_pct": 5.56,
           "rating": "GOOD_VALUE",
           "odds": 3.1
         }
@@ -4679,7 +5125,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.115634+00:00"
+      "computed_at": "2026-06-23T12:52:11.857487+00:00"
     },
     {
       "match": {
@@ -4693,9 +5139,9 @@
         "id": "jPGqnChT"
       },
       "prediction": {
-        "home_win_prob": 38.0,
-        "draw_prob": 28.3,
-        "away_win_prob": 33.69,
+        "home_win_prob": 38.05,
+        "draw_prob": 28.84,
+        "away_win_prob": 33.11,
         "predicted_outcome": "HOME_WIN",
         "confidence": "HIGH",
         "confidence_score": 76,
@@ -4710,8 +5156,8 @@
           "away": 1.1993
         },
         "predicted_goals": {
-          "home": 1.288,
-          "away": 1.197
+          "home": 1.313,
+          "away": 1.209
         },
         "most_likely_scores": [
           {
@@ -4737,86 +5183,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 38.75,
-          "draw": 26.32,
-          "away_win": 34.93,
+          "home_win": 38.84,
+          "draw": 27.38,
+          "away_win": 33.78,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 8.12,
-            "1": 20.77,
-            "2": 26.27,
-            "3": 21.2,
-            "4": 12.73,
-            "5": 6.66,
-            "6": 2.89,
-            "7": 0.92,
-            "8": 0.44
+            "0": 7.86,
+            "1": 19.95,
+            "2": 26.42,
+            "3": 21.01,
+            "4": 13.61,
+            "5": 6.87,
+            "6": 2.87,
+            "7": 1.02,
+            "8": 0.39
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.68
+              "prob": 13.26
             },
             {
               "score": "1-0",
-              "prob": 10.46
+              "prob": 10.2
             },
             {
               "score": "0-1",
-              "prob": 10.31
-            },
-            {
-              "score": "0-0",
-              "prob": 8.12
+              "prob": 9.75
             },
             {
               "score": "2-1",
-              "prob": 7.87
+              "prob": 8.46
+            },
+            {
+              "score": "0-0",
+              "prob": 7.86
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 45.22,
-          "under": 54.78
+          "over": 45.69,
+          "under": 54.31
         },
         "btts": {
-          "yes": 50.96,
-          "no": 49.04
+          "yes": 52.08,
+          "no": 47.92
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 38.0,
+          "our_prob": 38.05,
           "implied_prob": 21.83,
-          "value": 16.17,
-          "kelly_pct": 20.68,
-          "half_kelly_pct": 10.34,
+          "value": 16.22,
+          "kelly_pct": 20.75,
+          "half_kelly_pct": 10.37,
           "rating": "STRONG_VALUE",
           "odds": 4.58
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 54.78,
+          "our_prob": 54.31,
           "implied_prob": 50.0,
-          "value": 4.78,
-          "kelly_pct": 9.56,
-          "half_kelly_pct": 4.78,
+          "value": 4.31,
+          "kelly_pct": 8.62,
+          "half_kelly_pct": 4.31,
           "rating": "SLIGHT_VALUE",
           "odds": 2.0
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 28.3,
+          "our_prob": 28.84,
           "implied_prob": 26.88,
-          "value": 1.42,
-          "kelly_pct": 1.94,
-          "half_kelly_pct": 0.97,
+          "value": 1.96,
+          "kelly_pct": 2.68,
+          "half_kelly_pct": 1.34,
           "rating": "SLIGHT_VALUE",
           "odds": 3.72
         }
@@ -5155,7 +5601,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.123101+00:00"
+      "computed_at": "2026-06-23T12:52:11.865010+00:00"
     },
     {
       "match": {
@@ -5169,9 +5615,9 @@
         "id": "raDylYNG"
       },
       "prediction": {
-        "home_win_prob": 38.28,
-        "draw_prob": 26.93,
-        "away_win_prob": 34.8,
+        "home_win_prob": 37.41,
+        "draw_prob": 27.46,
+        "away_win_prob": 35.12,
         "predicted_outcome": "HOME_WIN",
         "confidence": "HIGH",
         "confidence_score": 76,
@@ -5186,8 +5632,8 @@
           "away": 1.3059
         },
         "predicted_goals": {
-          "home": 1.391,
-          "away": 1.296
+          "home": 1.371,
+          "away": 1.32
         },
         "most_likely_scores": [
           {
@@ -5213,86 +5659,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 39.66,
-          "draw": 24.71,
-          "away_win": 35.63,
+          "home_win": 37.93,
+          "draw": 25.79,
+          "away_win": 36.28,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 6.68,
-            "1": 18.37,
-            "2": 24.36,
-            "3": 22.21,
-            "4": 14.96,
-            "5": 8.11,
-            "6": 3.32,
-            "7": 1.47,
-            "8": 0.52
+            "0": 6.62,
+            "1": 18.16,
+            "2": 24.82,
+            "3": 21.77,
+            "4": 15.34,
+            "5": 8.03,
+            "6": 3.31,
+            "7": 1.25,
+            "8": 0.7
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 11.69
-            },
-            {
-              "score": "1-0",
-              "prob": 9.55
+              "prob": 12.24
             },
             {
               "score": "0-1",
-              "prob": 8.82
+              "prob": 9.29
+            },
+            {
+              "score": "1-0",
+              "prob": 8.87
             },
             {
               "score": "2-1",
-              "prob": 8.46
+              "prob": 8.47
             },
             {
               "score": "1-2",
-              "prob": 8.0
+              "prob": 8.04
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 50.31,
-          "under": 49.69
+          "over": 50.22,
+          "under": 49.78
         },
         "btts": {
-          "yes": 54.97,
-          "no": 45.03
+          "yes": 55.35,
+          "no": 44.65
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 38.28,
+          "our_prob": 37.41,
           "implied_prob": 13.89,
-          "value": 24.39,
-          "kelly_pct": 28.33,
-          "half_kelly_pct": 14.16,
+          "value": 23.52,
+          "kelly_pct": 27.31,
+          "half_kelly_pct": 13.66,
           "rating": "STRONG_VALUE",
           "odds": 7.2
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 49.69,
+          "our_prob": 49.78,
           "implied_prob": 44.84,
-          "value": 4.85,
-          "kelly_pct": 8.79,
-          "half_kelly_pct": 4.39,
+          "value": 4.94,
+          "kelly_pct": 8.95,
+          "half_kelly_pct": 4.48,
           "rating": "SLIGHT_VALUE",
           "odds": 2.23
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 26.93,
+          "our_prob": 27.46,
           "implied_prob": 23.26,
-          "value": 3.67,
-          "kelly_pct": 4.79,
-          "half_kelly_pct": 2.39,
+          "value": 4.2,
+          "kelly_pct": 5.48,
+          "half_kelly_pct": 2.74,
           "rating": "SLIGHT_VALUE",
           "odds": 4.3
         }
@@ -5631,7 +6077,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.130563+00:00"
+      "computed_at": "2026-06-23T12:52:11.872412+00:00"
     },
     {
       "match": {
@@ -5645,9 +6091,9 @@
         "id": "M77FtjGj"
       },
       "prediction": {
-        "home_win_prob": 41.42,
-        "draw_prob": 29.27,
-        "away_win_prob": 29.3,
+        "home_win_prob": 41.72,
+        "draw_prob": 29.28,
+        "away_win_prob": 28.98,
         "predicted_outcome": "HOME_WIN",
         "confidence": "HIGH",
         "confidence_score": 76,
@@ -5662,8 +6108,8 @@
           "away": 1.0403
         },
         "predicted_goals": {
-          "home": 1.287,
-          "away": 1.047
+          "home": 1.294,
+          "away": 1.037
         },
         "most_likely_scores": [
           {
@@ -5689,75 +6135,75 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 42.31,
-          "draw": 27.3,
-          "away_win": 30.39,
+          "home_win": 42.91,
+          "draw": 27.33,
+          "away_win": 29.76,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 9.88,
-            "1": 22.95,
-            "2": 25.9,
-            "3": 20.13,
-            "4": 12.15,
-            "5": 5.73,
-            "6": 2.22,
-            "7": 0.74,
-            "8": 0.3
+            "0": 9.65,
+            "1": 22.94,
+            "2": 26.2,
+            "3": 20.94,
+            "4": 11.33,
+            "5": 5.64,
+            "6": 2.16,
+            "7": 0.78,
+            "8": 0.36
           },
           "top_scores": [
             {
               "score": "1-0",
-              "prob": 12.54
+              "prob": 12.91
             },
             {
               "score": "1-1",
-              "prob": 12.32
+              "prob": 12.88
             },
             {
               "score": "0-1",
-              "prob": 10.41
+              "prob": 10.03
             },
             {
               "score": "0-0",
-              "prob": 9.88
+              "prob": 9.65
             },
             {
-              "score": "2-0",
-              "prob": 8.25
+              "score": "2-1",
+              "prob": 8.71
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 41.26,
-          "under": 58.74
+          "over": 41.23,
+          "under": 58.77
         },
         "btts": {
-          "yes": 47.5,
-          "no": 52.5
+          "yes": 47.54,
+          "no": 52.46
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 58.74,
+          "our_prob": 58.77,
           "implied_prob": 55.56,
-          "value": 3.18,
-          "kelly_pct": 7.17,
-          "half_kelly_pct": 3.58,
+          "value": 3.21,
+          "kelly_pct": 7.23,
+          "half_kelly_pct": 3.62,
           "rating": "SLIGHT_VALUE",
           "odds": 1.8
         },
         {
           "market": "BTTS",
           "pick": "No",
-          "our_prob": 52.5,
+          "our_prob": 52.46,
           "implied_prob": 49.75,
-          "value": 2.75,
-          "kelly_pct": 5.47,
-          "half_kelly_pct": 2.74,
+          "value": 2.71,
+          "kelly_pct": 5.39,
+          "half_kelly_pct": 2.7,
           "rating": "SLIGHT_VALUE",
           "odds": 2.01
         }
@@ -6096,7 +6542,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.138056+00:00"
+      "computed_at": "2026-06-23T12:52:11.879931+00:00"
     },
     {
       "match": {
@@ -6110,9 +6556,9 @@
         "id": "6Rvfqrwq"
       },
       "prediction": {
-        "home_win_prob": 57.39,
-        "draw_prob": 24.16,
-        "away_win_prob": 18.45,
+        "home_win_prob": 57.25,
+        "draw_prob": 24.32,
+        "away_win_prob": 18.43,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -6129,8 +6575,8 @@
           "away": 0.9464
         },
         "predicted_goals": {
-          "home": 1.813,
-          "away": 0.941
+          "home": 1.83,
+          "away": 0.93
         },
         "most_likely_scores": [
           {
@@ -6156,86 +6602,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 58.27,
-          "draw": 22.71,
-          "away_win": 19.02,
+          "home_win": 58.0,
+          "draw": 23.03,
+          "away_win": 18.97,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 6.36,
-            "1": 17.39,
-            "2": 24.25,
-            "3": 22.24,
-            "4": 15.39,
-            "5": 8.16,
-            "6": 4.04,
-            "7": 1.42,
-            "8": 0.75
+            "0": 6.62,
+            "1": 16.92,
+            "2": 24.43,
+            "3": 21.97,
+            "4": 15.32,
+            "5": 8.81,
+            "6": 3.82,
+            "7": 1.24,
+            "8": 0.87
           },
           "top_scores": [
             {
-              "score": "1-0",
-              "prob": 11.36
+              "score": "1-1",
+              "prob": 11.02
             },
             {
-              "score": "1-1",
-              "prob": 10.87
+              "score": "1-0",
+              "prob": 10.94
             },
             {
               "score": "2-0",
-              "prob": 10.62
+              "prob": 10.47
             },
             {
               "score": "2-1",
-              "prob": 10.01
+              "prob": 9.67
             },
             {
-              "score": "3-0",
-              "prob": 6.38
+              "score": "0-0",
+              "prob": 6.62
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 52.12,
-          "under": 47.88
+          "over": 52.14,
+          "under": 47.86
         },
         "btts": {
-          "yes": 51.89,
-          "no": 48.11
+          "yes": 51.72,
+          "no": 48.28
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Away Win",
-          "our_prob": 18.45,
+          "our_prob": 18.43,
           "implied_prob": 9.35,
-          "value": 9.1,
-          "kelly_pct": 10.04,
-          "half_kelly_pct": 5.02,
+          "value": 9.08,
+          "kelly_pct": 10.02,
+          "half_kelly_pct": 5.01,
           "rating": "GOOD_VALUE",
           "odds": 10.7
         },
         {
           "market": "BTTS",
           "pick": "Yes",
-          "our_prob": 51.89,
+          "our_prob": 51.72,
           "implied_prob": 44.44,
-          "value": 7.45,
-          "kelly_pct": 13.4,
-          "half_kelly_pct": 6.7,
+          "value": 7.28,
+          "kelly_pct": 13.1,
+          "half_kelly_pct": 6.55,
           "rating": "GOOD_VALUE",
           "odds": 2.25
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 24.16,
+          "our_prob": 24.32,
           "implied_prob": 22.22,
-          "value": 1.94,
-          "kelly_pct": 2.49,
-          "half_kelly_pct": 1.25,
+          "value": 2.1,
+          "kelly_pct": 2.7,
+          "half_kelly_pct": 1.35,
           "rating": "SLIGHT_VALUE",
           "odds": 4.5
         }
@@ -6574,7 +7020,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.145427+00:00"
+      "computed_at": "2026-06-23T12:52:11.887313+00:00"
     },
     {
       "match": {
@@ -6588,9 +7034,9 @@
         "id": "vHfFjQp9"
       },
       "prediction": {
-        "home_win_prob": 45.76,
-        "draw_prob": 28.46,
-        "away_win_prob": 25.78,
+        "home_win_prob": 45.45,
+        "draw_prob": 28.22,
+        "away_win_prob": 26.34,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -6607,8 +7053,8 @@
           "away": 1.0176
         },
         "predicted_goals": {
-          "home": 1.442,
-          "away": 1.008
+          "home": 1.424,
+          "away": 1.03
         },
         "most_likely_scores": [
           {
@@ -6634,77 +7080,77 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 46.91,
-          "draw": 26.91,
-          "away_win": 26.18,
+          "home_win": 46.28,
+          "draw": 26.42,
+          "away_win": 27.3,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 8.79,
-            "1": 21.18,
-            "2": 25.43,
-            "3": 21.55,
-            "4": 12.95,
-            "5": 6.16,
+            "0": 8.45,
+            "1": 21.43,
+            "2": 25.56,
+            "3": 21.1,
+            "4": 13.55,
+            "5": 6.06,
             "6": 2.5,
-            "7": 1.01,
-            "8": 0.43
+            "7": 0.97,
+            "8": 0.38
           },
           "top_scores": [
             {
-              "score": "1-1",
-              "prob": 12.48
-            },
-            {
               "score": "1-0",
-              "prob": 12.35
+              "prob": 12.52
             },
             {
-              "score": "2-1",
-              "prob": 9.27
+              "score": "1-1",
+              "prob": 12.2
             },
             {
               "score": "0-1",
-              "prob": 8.83
+              "prob": 8.91
             },
             {
-              "score": "0-0",
-              "prob": 8.79
+              "score": "2-1",
+              "prob": 8.89
+            },
+            {
+              "score": "2-0",
+              "prob": 8.84
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 44.3,
-          "under": 55.7
+          "over": 44.28,
+          "under": 55.72
         },
         "btts": {
-          "yes": 49.38,
-          "no": 50.62
+          "yes": 49.18,
+          "no": 50.82
         }
       },
       "value_bets": [
         {
-          "market": "1X2",
-          "pick": "Home Win",
-          "our_prob": 45.76,
-          "implied_prob": 45.25,
-          "value": 0.51,
-          "kelly_pct": 0.93,
-          "half_kelly_pct": 0.47,
-          "rating": "SLIGHT_VALUE",
-          "odds": 2.21
-        },
-        {
           "market": "O/U 2.5",
           "pick": "Over 2.5",
-          "our_prob": 44.3,
+          "our_prob": 44.28,
           "implied_prob": 44.05,
-          "value": 0.25,
-          "kelly_pct": 0.44,
-          "half_kelly_pct": 0.22,
+          "value": 0.23,
+          "kelly_pct": 0.41,
+          "half_kelly_pct": 0.2,
           "rating": "SLIGHT_VALUE",
           "odds": 2.27
+        },
+        {
+          "market": "1X2",
+          "pick": "Home Win",
+          "our_prob": 45.45,
+          "implied_prob": 45.25,
+          "value": 0.2,
+          "kelly_pct": 0.37,
+          "half_kelly_pct": 0.18,
+          "rating": "SLIGHT_VALUE",
+          "odds": 2.21
         }
       ],
       "breakdown": {
@@ -7041,7 +7487,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.152824+00:00"
+      "computed_at": "2026-06-23T12:52:11.894620+00:00"
     },
     {
       "match": {
@@ -7055,9 +7501,9 @@
         "id": "6BP4O1L6"
       },
       "prediction": {
-        "home_win_prob": 42.41,
-        "draw_prob": 29.2,
-        "away_win_prob": 28.39,
+        "home_win_prob": 42.43,
+        "draw_prob": 29.19,
+        "away_win_prob": 28.38,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -7074,8 +7520,8 @@
           "away": 1.0391
         },
         "predicted_goals": {
-          "home": 1.325,
-          "away": 1.042
+          "home": 1.335,
+          "away": 1.034
         },
         "most_likely_scores": [
           {
@@ -7101,64 +7547,64 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 43.0,
-          "draw": 27.6,
-          "away_win": 29.4,
+          "home_win": 43.04,
+          "draw": 27.57,
+          "away_win": 29.39,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 9.26,
-            "1": 22.51,
-            "2": 26.04,
-            "3": 20.73,
-            "4": 12.3,
-            "5": 5.8,
-            "6": 2.21,
-            "7": 0.8,
-            "8": 0.35
+            "0": 9.27,
+            "1": 22.14,
+            "2": 26.49,
+            "3": 20.62,
+            "4": 12.22,
+            "5": 5.87,
+            "6": 2.35,
+            "7": 0.81,
+            "8": 0.23
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 13.06
+              "prob": 12.96
             },
             {
               "score": "1-0",
-              "prob": 12.64
+              "prob": 12.28
             },
             {
               "score": "0-1",
-              "prob": 9.87
+              "prob": 9.86
             },
             {
               "score": "0-0",
-              "prob": 9.26
+              "prob": 9.27
             },
             {
-              "score": "2-1",
-              "prob": 8.71
+              "score": "2-0",
+              "prob": 8.53
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 42.29,
-          "under": 57.71
+          "over": 42.24,
+          "under": 57.76
         },
         "btts": {
-          "yes": 48.68,
-          "no": 51.32
+          "yes": 48.23,
+          "no": 51.77
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 42.41,
+          "our_prob": 42.43,
           "implied_prob": 40.82,
-          "value": 1.59,
-          "kelly_pct": 2.69,
-          "half_kelly_pct": 1.35,
+          "value": 1.61,
+          "kelly_pct": 2.73,
+          "half_kelly_pct": 1.36,
           "rating": "SLIGHT_VALUE",
           "odds": 2.45
         }
@@ -7497,7 +7943,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.160155+00:00"
+      "computed_at": "2026-06-23T12:52:11.901921+00:00"
     },
     {
       "match": {
@@ -7511,9 +7957,9 @@
         "id": "UmNJX5bK"
       },
       "prediction": {
-        "home_win_prob": 38.18,
-        "draw_prob": 30.91,
-        "away_win_prob": 30.91,
+        "home_win_prob": 39.04,
+        "draw_prob": 30.3,
+        "away_win_prob": 30.66,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -7530,8 +7976,8 @@
           "away": 1.0382
         },
         "predicted_goals": {
-          "home": 1.18,
-          "away": 1.037
+          "home": 1.194,
+          "away": 1.033
         },
         "most_likely_scores": [
           {
@@ -7557,53 +8003,53 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 38.44,
-          "draw": 29.65,
-          "away_win": 31.91,
+          "home_win": 40.16,
+          "draw": 28.42,
+          "away_win": 31.42,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 11.46,
-            "1": 23.67,
-            "2": 26.67,
-            "3": 19.61,
-            "4": 10.95,
-            "5": 5.0,
-            "6": 1.75,
-            "7": 0.63,
-            "8": 0.26
+            "0": 10.86,
+            "1": 24.5,
+            "2": 26.4,
+            "3": 19.54,
+            "4": 11.1,
+            "5": 4.69,
+            "6": 1.86,
+            "7": 0.73,
+            "8": 0.32
           },
           "top_scores": [
             {
-              "score": "1-1",
-              "prob": 13.57
-            },
-            {
               "score": "1-0",
-              "prob": 12.32
+              "prob": 13.06
             },
             {
-              "score": "0-0",
-              "prob": 11.46
+              "score": "1-1",
+              "prob": 12.77
             },
             {
               "score": "0-1",
-              "prob": 11.35
+              "prob": 11.44
             },
             {
-              "score": "2-0",
-              "prob": 7.6
+              "score": "0-0",
+              "prob": 10.86
+            },
+            {
+              "score": "2-1",
+              "prob": 8.24
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 38.46,
-          "under": 61.54
+          "over": 38.48,
+          "under": 61.52
         },
         "btts": {
-          "yes": 45.92,
-          "no": 54.08
+          "yes": 45.6,
+          "no": 54.4
         }
       },
       "value_bets": [],
@@ -7941,7 +8387,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.167565+00:00"
+      "computed_at": "2026-06-23T12:52:11.909274+00:00"
     },
     {
       "match": {
@@ -7955,9 +8401,9 @@
         "id": "UTWPBOy1"
       },
       "prediction": {
-        "home_win_prob": 37.42,
-        "draw_prob": 29.32,
-        "away_win_prob": 33.27,
+        "home_win_prob": 37.87,
+        "draw_prob": 28.74,
+        "away_win_prob": 33.39,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -7974,8 +8420,8 @@
           "away": 1.1646
         },
         "predicted_goals": {
-          "home": 1.255,
-          "away": 1.175
+          "home": 1.243,
+          "away": 1.144
         },
         "most_likely_scores": [
           {
@@ -8001,53 +8447,53 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 38.24,
-          "draw": 27.71,
-          "away_win": 34.05,
+          "home_win": 39.14,
+          "draw": 26.56,
+          "away_win": 34.3,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 8.82,
-            "1": 21.38,
-            "2": 26.38,
-            "3": 20.7,
-            "4": 12.58,
-            "5": 6.21,
-            "6": 2.69,
-            "7": 0.89,
-            "8": 0.35
+            "0": 8.96,
+            "1": 22.43,
+            "2": 25.59,
+            "3": 21.25,
+            "4": 12.53,
+            "5": 5.83,
+            "6": 2.29,
+            "7": 0.78,
+            "8": 0.34
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.93
+              "prob": 12.17
             },
             {
               "score": "1-0",
-              "prob": 11.4
+              "prob": 11.47
             },
             {
               "score": "0-1",
-              "prob": 9.98
+              "prob": 10.96
             },
             {
               "score": "0-0",
-              "prob": 8.82
+              "prob": 8.96
             },
             {
               "score": "2-1",
-              "prob": 8.02
+              "prob": 8.28
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 43.41,
-          "under": 56.59
+          "over": 43.21,
+          "under": 56.79
         },
         "btts": {
-          "yes": 50.12,
-          "no": 49.88
+          "yes": 49.21,
+          "no": 50.79
         }
       },
       "value_bets": [],
@@ -8385,7 +8831,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.175003+00:00"
+      "computed_at": "2026-06-23T12:52:11.916586+00:00"
     },
     {
       "match": {
@@ -8399,9 +8845,9 @@
         "id": "0WDkSqMs"
       },
       "prediction": {
-        "home_win_prob": 38.69,
-        "draw_prob": 28.76,
-        "away_win_prob": 32.55,
+        "home_win_prob": 38.8,
+        "draw_prob": 28.98,
+        "away_win_prob": 32.22,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -8418,8 +8864,8 @@
           "away": 1.1432
         },
         "predicted_goals": {
-          "home": 1.283,
-          "away": 1.148
+          "home": 1.28,
+          "away": 1.131
         },
         "most_likely_scores": [
           {
@@ -8445,64 +8891,64 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 39.63,
-          "draw": 26.67,
-          "away_win": 33.7,
+          "home_win": 39.85,
+          "draw": 27.12,
+          "away_win": 33.03,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 8.7,
-            "1": 21.88,
-            "2": 25.4,
-            "3": 21.53,
-            "4": 12.3,
-            "5": 6.24,
-            "6": 2.64,
-            "7": 0.93,
-            "8": 0.38
+            "0": 8.49,
+            "1": 21.95,
+            "2": 26.58,
+            "3": 20.83,
+            "4": 12.38,
+            "5": 6.06,
+            "6": 2.61,
+            "7": 0.83,
+            "8": 0.27
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.92
+              "prob": 13.4
             },
             {
               "score": "1-0",
-              "prob": 11.52
+              "prob": 11.75
             },
             {
               "score": "0-1",
-              "prob": 10.36
+              "prob": 10.2
             },
             {
               "score": "0-0",
-              "prob": 8.7
+              "prob": 8.49
             },
             {
               "score": "2-1",
-              "prob": 7.98
+              "prob": 8.35
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 43.76,
-          "under": 56.24
+          "over": 43.24,
+          "under": 56.76
         },
         "btts": {
-          "yes": 49.91,
-          "no": 50.09
+          "yes": 50.02,
+          "no": 49.98
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Over 2.5",
-          "our_prob": 43.76,
+          "our_prob": 43.24,
           "implied_prob": 42.02,
-          "value": 1.74,
-          "kelly_pct": 3.01,
-          "half_kelly_pct": 1.5,
+          "value": 1.22,
+          "kelly_pct": 2.11,
+          "half_kelly_pct": 1.05,
           "rating": "SLIGHT_VALUE",
           "odds": 2.38
         }
@@ -8841,7 +9287,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.182437+00:00"
+      "computed_at": "2026-06-23T12:52:11.924009+00:00"
     },
     {
       "match": {
@@ -8855,9 +9301,9 @@
         "id": "2sVX926D"
       },
       "prediction": {
-        "home_win_prob": 42.39,
-        "draw_prob": 29.49,
-        "away_win_prob": 28.11,
+        "home_win_prob": 42.16,
+        "draw_prob": 29.7,
+        "away_win_prob": 28.14,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -8874,8 +9320,8 @@
           "away": 1.0178
         },
         "predicted_goals": {
-          "home": 1.294,
-          "away": 1.022
+          "home": 1.291,
+          "away": 1.01
         },
         "most_likely_scores": [
           {
@@ -8901,75 +9347,75 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 43.31,
-          "draw": 27.79,
-          "away_win": 28.9,
+          "home_win": 42.85,
+          "draw": 28.19,
+          "away_win": 28.96,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 9.84,
-            "1": 23.27,
-            "2": 26.21,
-            "3": 20.2,
-            "4": 11.64,
-            "5": 5.77,
-            "6": 2.0,
-            "7": 0.68,
-            "8": 0.39
+            "0": 10.02,
+            "1": 23.47,
+            "2": 26.32,
+            "3": 20.02,
+            "4": 11.63,
+            "5": 5.39,
+            "6": 2.13,
+            "7": 0.66,
+            "8": 0.36
           },
           "top_scores": [
             {
               "score": "1-0",
-              "prob": 13.29
+              "prob": 13.46
             },
             {
               "score": "1-1",
-              "prob": 12.73
-            },
-            {
-              "score": "0-1",
-              "prob": 9.98
+              "prob": 13.14
             },
             {
               "score": "0-0",
-              "prob": 9.84
+              "prob": 10.02
+            },
+            {
+              "score": "0-1",
+              "prob": 10.01
             },
             {
               "score": "2-1",
-              "prob": 8.74
+              "prob": 8.1
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 40.86,
-          "under": 59.14
+          "over": 40.61,
+          "under": 59.39
         },
         "btts": {
-          "yes": 47.29,
-          "no": 52.71
+          "yes": 47.18,
+          "no": 52.82
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 42.39,
+          "our_prob": 42.16,
           "implied_prob": 35.71,
-          "value": 6.68,
-          "kelly_pct": 10.38,
-          "half_kelly_pct": 5.19,
+          "value": 6.45,
+          "kelly_pct": 10.03,
+          "half_kelly_pct": 5.01,
           "rating": "GOOD_VALUE",
           "odds": 2.8
         },
         {
           "market": "O/U 2.5",
           "pick": "Over 2.5",
-          "our_prob": 40.86,
+          "our_prob": 40.61,
           "implied_prob": 40.32,
-          "value": 0.54,
-          "kelly_pct": 0.9,
-          "half_kelly_pct": 0.45,
+          "value": 0.29,
+          "kelly_pct": 0.48,
+          "half_kelly_pct": 0.24,
           "rating": "SLIGHT_VALUE",
           "odds": 2.48
         }
@@ -9308,7 +9754,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.189809+00:00"
+      "computed_at": "2026-06-23T12:52:11.931442+00:00"
     },
     {
       "match": {
@@ -9322,9 +9768,9 @@
         "id": "EyTCMujJ"
       },
       "prediction": {
-        "home_win_prob": 45.13,
-        "draw_prob": 28.55,
-        "away_win_prob": 26.32,
+        "home_win_prob": 45.09,
+        "draw_prob": 29.05,
+        "away_win_prob": 25.86,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -9341,8 +9787,8 @@
           "away": 1.0011
         },
         "predicted_goals": {
-          "home": 1.39,
-          "away": 0.991
+          "home": 1.389,
+          "away": 0.984
         },
         "most_likely_scores": [
           {
@@ -9368,53 +9814,53 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 46.37,
-          "draw": 26.6,
-          "away_win": 27.03,
+          "home_win": 46.28,
+          "draw": 27.61,
+          "away_win": 26.11,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 8.96,
-            "1": 22.01,
-            "2": 26.19,
-            "3": 21.51,
-            "4": 12.31,
-            "5": 5.53,
-            "6": 2.42,
-            "7": 0.83,
-            "8": 0.24
+            "0": 9.32,
+            "1": 22.37,
+            "2": 26.23,
+            "3": 20.22,
+            "4": 12.27,
+            "5": 6.09,
+            "6": 2.5,
+            "7": 0.72,
+            "8": 0.28
           },
           "top_scores": [
             {
-              "score": "1-0",
-              "prob": 12.94
-            },
-            {
               "score": "1-1",
-              "prob": 12.53
+              "prob": 13.33
             },
             {
-              "score": "2-0",
-              "prob": 9.39
-            },
-            {
-              "score": "0-1",
-              "prob": 9.07
+              "score": "1-0",
+              "prob": 13.29
             },
             {
               "score": "0-0",
-              "prob": 8.96
+              "prob": 9.32
+            },
+            {
+              "score": "0-1",
+              "prob": 9.08
+            },
+            {
+              "score": "2-0",
+              "prob": 8.65
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 42.68,
-          "under": 57.32
+          "over": 42.3,
+          "under": 57.7
         },
         "btts": {
-          "yes": 48.2,
-          "no": 51.8
+          "yes": 47.95,
+          "no": 52.05
         }
       },
       "value_bets": [],
@@ -9752,7 +10198,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.197190+00:00"
+      "computed_at": "2026-06-23T12:52:11.938837+00:00"
     },
     {
       "match": {
@@ -9766,9 +10212,9 @@
         "id": "YqCcQNjf"
       },
       "prediction": {
-        "home_win_prob": 38.91,
-        "draw_prob": 28.46,
-        "away_win_prob": 32.63,
+        "home_win_prob": 38.59,
+        "draw_prob": 28.84,
+        "away_win_prob": 32.58,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -9785,8 +10231,8 @@
           "away": 1.1812
         },
         "predicted_goals": {
-          "home": 1.301,
-          "away": 1.171
+          "home": 1.3,
+          "away": 1.173
         },
         "most_likely_scores": [
           {
@@ -9812,86 +10258,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 39.99,
-          "draw": 26.57,
-          "away_win": 33.44,
+          "home_win": 39.35,
+          "draw": 27.32,
+          "away_win": 33.33,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 8.18,
-            "1": 21.33,
-            "2": 26.04,
-            "3": 20.96,
-            "4": 12.88,
-            "5": 6.38,
-            "6": 2.73,
-            "7": 1.08,
-            "8": 0.42
+            "0": 8.62,
+            "1": 20.39,
+            "2": 25.4,
+            "3": 22.31,
+            "4": 12.93,
+            "5": 6.36,
+            "6": 2.8,
+            "7": 0.83,
+            "8": 0.36
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.8
+              "prob": 12.83
             },
             {
               "score": "1-0",
-              "prob": 11.31
+              "prob": 10.51
             },
             {
               "score": "0-1",
-              "prob": 10.02
+              "prob": 9.88
             },
             {
               "score": "2-1",
-              "prob": 8.38
+              "prob": 8.86
             },
             {
               "score": "0-0",
-              "prob": 8.18
+              "prob": 8.62
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 44.89,
-          "under": 55.11
+          "over": 45.46,
+          "under": 54.54
         },
         "btts": {
-          "yes": 51.12,
-          "no": 48.88
+          "yes": 51.3,
+          "no": 48.7
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Away Win",
-          "our_prob": 32.63,
+          "our_prob": 32.58,
           "implied_prob": 21.28,
-          "value": 11.35,
-          "kelly_pct": 14.42,
-          "half_kelly_pct": 7.21,
+          "value": 11.3,
+          "kelly_pct": 14.36,
+          "half_kelly_pct": 7.18,
           "rating": "STRONG_VALUE",
           "odds": 4.7
         },
         {
           "market": "BTTS",
           "pick": "Yes",
-          "our_prob": 51.12,
+          "our_prob": 51.3,
           "implied_prob": 47.62,
-          "value": 3.5,
-          "kelly_pct": 6.68,
-          "half_kelly_pct": 3.34,
+          "value": 3.68,
+          "kelly_pct": 7.03,
+          "half_kelly_pct": 3.51,
           "rating": "SLIGHT_VALUE",
           "odds": 2.1
         },
         {
           "market": "O/U 2.5",
           "pick": "Over 2.5",
-          "our_prob": 44.89,
+          "our_prob": 45.46,
           "implied_prob": 43.86,
-          "value": 1.03,
-          "kelly_pct": 1.84,
-          "half_kelly_pct": 0.92,
+          "value": 1.6,
+          "kelly_pct": 2.85,
+          "half_kelly_pct": 1.43,
           "rating": "SLIGHT_VALUE",
           "odds": 2.28
         }
@@ -10230,7 +10676,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.204587+00:00"
+      "computed_at": "2026-06-23T12:52:11.946295+00:00"
     },
     {
       "match": {
@@ -10244,9 +10690,9 @@
         "id": "OWTHDp7l"
       },
       "prediction": {
-        "home_win_prob": 36.7,
-        "draw_prob": 28.93,
-        "away_win_prob": 34.36,
+        "home_win_prob": 36.93,
+        "draw_prob": 28.54,
+        "away_win_prob": 34.53,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -10263,8 +10709,8 @@
           "away": 1.2031
         },
         "predicted_goals": {
-          "home": 1.258,
-          "away": 1.215
+          "home": 1.263,
+          "away": 1.219
         },
         "most_likely_scores": [
           {
@@ -10290,64 +10736,64 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 37.46,
-          "draw": 27.24,
-          "away_win": 35.3,
-          "confidence_interval": "±0.9%",
+          "home_win": 37.91,
+          "draw": 26.46,
+          "away_win": 35.63,
+          "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 8.43,
-            "1": 20.61,
-            "2": 25.62,
-            "3": 21.62,
-            "4": 13.43,
-            "5": 6.55,
-            "6": 2.6,
-            "7": 0.72,
-            "8": 0.42
+            "0": 8.12,
+            "1": 20.83,
+            "2": 25.9,
+            "3": 21.37,
+            "4": 13.32,
+            "5": 6.59,
+            "6": 2.57,
+            "7": 0.89,
+            "8": 0.41
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.95
+              "prob": 12.71
             },
             {
               "score": "1-0",
-              "prob": 10.48
+              "prob": 10.78
             },
             {
               "score": "0-1",
-              "prob": 10.13
-            },
-            {
-              "score": "0-0",
-              "prob": 8.43
+              "prob": 10.05
             },
             {
               "score": "2-1",
-              "prob": 8.33
+              "prob": 8.37
+            },
+            {
+              "score": "0-0",
+              "prob": 8.12
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 44.94,
-          "under": 55.06
+          "over": 44.85,
+          "under": 55.15
         },
         "btts": {
-          "yes": 51.24,
-          "no": 48.76
+          "yes": 51.1,
+          "no": 48.9
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 36.7,
+          "our_prob": 36.93,
           "implied_prob": 25.0,
-          "value": 11.7,
-          "kelly_pct": 15.6,
-          "half_kelly_pct": 7.8,
+          "value": 11.93,
+          "kelly_pct": 15.91,
+          "half_kelly_pct": 7.95,
           "rating": "STRONG_VALUE",
           "odds": 4.0
         }
@@ -10686,7 +11132,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.212049+00:00"
+      "computed_at": "2026-06-23T12:52:11.953701+00:00"
     },
     {
       "match": {
@@ -10700,9 +11146,9 @@
         "id": "08dKKbmg"
       },
       "prediction": {
-        "home_win_prob": 39.47,
-        "draw_prob": 26.51,
-        "away_win_prob": 34.02,
+        "home_win_prob": 39.55,
+        "draw_prob": 26.61,
+        "away_win_prob": 33.84,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 50,
@@ -10720,8 +11166,8 @@
           "away": 1.354
         },
         "predicted_goals": {
-          "home": 1.476,
-          "away": 1.361
+          "home": 1.482,
+          "away": 1.348
         },
         "most_likely_scores": [
           {
@@ -10747,86 +11193,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 40.4,
-          "draw": 24.84,
-          "away_win": 34.76,
+          "home_win": 40.57,
+          "draw": 25.03,
+          "away_win": 34.4,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 5.85,
-            "1": 16.89,
-            "2": 23.57,
-            "3": 21.94,
-            "4": 15.9,
-            "5": 8.67,
-            "6": 4.48,
-            "7": 1.89,
-            "8": 0.81
+            "0": 5.95,
+            "1": 16.38,
+            "2": 23.66,
+            "3": 22.66,
+            "4": 15.57,
+            "5": 9.13,
+            "6": 4.25,
+            "7": 1.71,
+            "8": 0.69
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 11.44
-            },
-            {
-              "score": "1-0",
-              "prob": 8.95
+              "prob": 11.8
             },
             {
               "score": "2-1",
-              "prob": 8.6
+              "prob": 8.92
+            },
+            {
+              "score": "1-0",
+              "prob": 8.4
             },
             {
               "score": "0-1",
-              "prob": 7.94
+              "prob": 7.98
             },
             {
               "score": "1-2",
-              "prob": 7.92
+              "prob": 7.76
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 53.66,
-          "under": 46.34
+          "over": 53.82,
+          "under": 46.18
         },
         "btts": {
-          "yes": 57.88,
-          "no": 42.12
+          "yes": 57.92,
+          "no": 42.08
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 46.34,
+          "our_prob": 46.18,
           "implied_prob": 29.41,
-          "value": 16.93,
-          "kelly_pct": 23.98,
-          "half_kelly_pct": 11.99,
+          "value": 16.77,
+          "kelly_pct": 23.76,
+          "half_kelly_pct": 11.88,
           "rating": "STRONG_VALUE",
           "odds": 3.4
         },
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 39.47,
+          "our_prob": 39.55,
           "implied_prob": 27.78,
-          "value": 11.69,
-          "kelly_pct": 16.19,
-          "half_kelly_pct": 8.09,
+          "value": 11.77,
+          "kelly_pct": 16.3,
+          "half_kelly_pct": 8.15,
           "rating": "STRONG_VALUE",
           "odds": 3.6
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 26.51,
+          "our_prob": 26.61,
           "implied_prob": 25.0,
-          "value": 1.51,
-          "kelly_pct": 2.01,
-          "half_kelly_pct": 1.01,
+          "value": 1.61,
+          "kelly_pct": 2.15,
+          "half_kelly_pct": 1.07,
           "rating": "SLIGHT_VALUE",
           "odds": 4.0
         }
@@ -11153,7 +11599,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.219525+00:00"
+      "computed_at": "2026-06-23T12:52:11.961149+00:00"
     },
     {
       "match": {
@@ -11168,8 +11614,8 @@
       },
       "prediction": {
         "home_win_prob": 44.28,
-        "draw_prob": 25.19,
-        "away_win_prob": 30.54,
+        "draw_prob": 25.09,
+        "away_win_prob": 30.63,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -11186,8 +11632,8 @@
           "away": 1.3645
         },
         "predicted_goals": {
-          "home": 1.689,
-          "away": 1.387
+          "home": 1.687,
+          "away": 1.357
         },
         "most_likely_scores": [
           {
@@ -11214,63 +11660,63 @@
         "monte_carlo": {
           "simulations": 10000,
           "home_win": 44.96,
-          "draw": 23.77,
-          "away_win": 31.27,
+          "draw": 23.58,
+          "away_win": 31.46,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 4.64,
-            "1": 14.19,
-            "2": 21.89,
-            "3": 22.19,
-            "4": 16.91,
-            "5": 11.01,
-            "6": 5.49,
-            "7": 2.46,
-            "8": 1.22
+            "0": 4.99,
+            "1": 14.48,
+            "2": 22.1,
+            "3": 22.07,
+            "4": 16.5,
+            "5": 11.04,
+            "6": 5.25,
+            "7": 2.28,
+            "8": 1.29
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 11.3
+              "prob": 10.9
             },
             {
               "score": "2-1",
-              "prob": 8.76
+              "prob": 8.96
             },
             {
               "score": "1-0",
-              "prob": 8.09
+              "prob": 7.67
             },
             {
               "score": "1-2",
-              "prob": 7.43
+              "prob": 7.36
             },
             {
-              "score": "2-0",
-              "prob": 6.57
+              "score": "0-1",
+              "prob": 6.81
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 59.0,
-          "under": 41.0
+          "over": 58.57,
+          "under": 41.43
         },
         "btts": {
-          "yes": 61.67,
-          "no": 38.33
+          "yes": 61.12,
+          "no": 38.88
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 41.0,
+          "our_prob": 41.43,
           "implied_prob": 29.85,
-          "value": 11.15,
-          "kelly_pct": 15.89,
-          "half_kelly_pct": 7.95,
+          "value": 11.58,
+          "kelly_pct": 16.51,
+          "half_kelly_pct": 8.25,
           "rating": "STRONG_VALUE",
           "odds": 3.35
         },
@@ -11620,7 +12066,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.227099+00:00"
+      "computed_at": "2026-06-23T12:52:11.968643+00:00"
     },
     {
       "match": {
@@ -11634,9 +12080,9 @@
         "id": "fNZeGRBD"
       },
       "prediction": {
-        "home_win_prob": 42.84,
-        "draw_prob": 25.46,
-        "away_win_prob": 31.7,
+        "home_win_prob": 42.9,
+        "draw_prob": 25.34,
+        "away_win_prob": 31.77,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -11653,8 +12099,8 @@
           "away": 1.3731
         },
         "predicted_goals": {
-          "home": 1.649,
-          "away": 1.38
+          "home": 1.632,
+          "away": 1.359
         },
         "most_likely_scores": [
           {
@@ -11680,86 +12126,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 43.67,
-          "draw": 23.92,
-          "away_win": 32.41,
+          "home_win": 43.77,
+          "draw": 23.67,
+          "away_win": 32.56,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 4.45,
-            "1": 15.41,
-            "2": 22.0,
-            "3": 22.11,
-            "4": 17.04,
-            "5": 10.17,
-            "6": 5.15,
-            "7": 2.52,
-            "8": 1.15
+            "0": 4.89,
+            "1": 15.23,
+            "2": 22.19,
+            "3": 22.55,
+            "4": 16.66,
+            "5": 10.32,
+            "6": 5.02,
+            "7": 1.95,
+            "8": 1.19
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 10.99
+              "prob": 10.93
             },
             {
               "score": "2-1",
-              "prob": 8.65
+              "prob": 8.91
             },
             {
               "score": "1-0",
-              "prob": 8.44
+              "prob": 7.99
             },
             {
               "score": "1-2",
-              "prob": 7.63
+              "prob": 7.92
             },
             {
               "score": "0-1",
-              "prob": 6.97
+              "prob": 7.24
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 57.89,
-          "under": 42.11
+          "over": 57.66,
+          "under": 42.34
         },
         "btts": {
-          "yes": 60.84,
-          "no": 39.16
+          "yes": 60.52,
+          "no": 39.48
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 42.11,
+          "our_prob": 42.34,
           "implied_prob": 24.39,
-          "value": 17.72,
-          "kelly_pct": 23.44,
-          "half_kelly_pct": 11.72,
+          "value": 17.95,
+          "kelly_pct": 23.74,
+          "half_kelly_pct": 11.87,
           "rating": "STRONG_VALUE",
           "odds": 4.1
         },
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 42.84,
+          "our_prob": 42.9,
           "implied_prob": 28.17,
-          "value": 14.67,
-          "kelly_pct": 20.42,
-          "half_kelly_pct": 10.21,
+          "value": 14.73,
+          "kelly_pct": 20.51,
+          "half_kelly_pct": 10.25,
           "rating": "STRONG_VALUE",
           "odds": 3.55
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 25.46,
+          "our_prob": 25.34,
           "implied_prob": 23.81,
-          "value": 1.65,
-          "kelly_pct": 2.17,
-          "half_kelly_pct": 1.08,
+          "value": 1.53,
+          "kelly_pct": 2.01,
+          "half_kelly_pct": 1.0,
           "rating": "SLIGHT_VALUE",
           "odds": 4.2
         }
@@ -12098,7 +12544,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.235149+00:00"
+      "computed_at": "2026-06-23T12:52:11.976299+00:00"
     },
     {
       "match": {
@@ -12112,9 +12558,9 @@
         "id": "E9Pgh5qL"
       },
       "prediction": {
-        "home_win_prob": 39.89,
-        "draw_prob": 26.76,
-        "away_win_prob": 33.35,
+        "home_win_prob": 39.39,
+        "draw_prob": 26.8,
+        "away_win_prob": 33.81,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 50,
@@ -12132,8 +12578,8 @@
           "away": 1.3322
         },
         "predicted_goals": {
-          "home": 1.473,
-          "away": 1.325
+          "home": 1.45,
+          "away": 1.33
         },
         "most_likely_scores": [
           {
@@ -12159,86 +12605,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 40.8,
-          "draw": 25.23,
-          "away_win": 33.97,
+          "home_win": 39.8,
+          "draw": 25.3,
+          "away_win": 34.9,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 6.54,
-            "1": 17.01,
-            "2": 22.6,
-            "3": 22.97,
-            "4": 15.57,
-            "5": 8.84,
-            "6": 4.03,
-            "7": 1.75,
-            "8": 0.69
+            "0": 6.19,
+            "1": 17.32,
+            "2": 23.79,
+            "3": 22.58,
+            "4": 14.95,
+            "5": 9.01,
+            "6": 3.84,
+            "7": 1.59,
+            "8": 0.73
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 11.42
-            },
-            {
-              "score": "2-1",
-              "prob": 9.24
+              "prob": 12.13
             },
             {
               "score": "1-0",
-              "prob": 8.99
+              "prob": 8.92
+            },
+            {
+              "score": "2-1",
+              "prob": 8.67
             },
             {
               "score": "0-1",
-              "prob": 8.02
+              "prob": 8.4
             },
             {
               "score": "1-2",
-              "prob": 7.76
+              "prob": 8.36
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 53.48,
-          "under": 46.52
+          "over": 52.9,
+          "under": 47.1
         },
         "btts": {
-          "yes": 57.42,
-          "no": 42.58
+          "yes": 57.47,
+          "no": 42.53
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 39.89,
+          "our_prob": 39.39,
           "implied_prob": 23.81,
-          "value": 16.08,
-          "kelly_pct": 21.11,
-          "half_kelly_pct": 10.55,
+          "value": 15.58,
+          "kelly_pct": 20.45,
+          "half_kelly_pct": 10.22,
           "rating": "STRONG_VALUE",
           "odds": 4.2
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 46.52,
+          "our_prob": 47.1,
           "implied_prob": 35.71,
-          "value": 10.81,
-          "kelly_pct": 16.81,
-          "half_kelly_pct": 8.4,
+          "value": 11.39,
+          "kelly_pct": 17.71,
+          "half_kelly_pct": 8.86,
           "rating": "STRONG_VALUE",
           "odds": 2.8
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 26.76,
+          "our_prob": 26.8,
           "implied_prob": 25.0,
-          "value": 1.76,
-          "kelly_pct": 2.35,
-          "half_kelly_pct": 1.17,
+          "value": 1.8,
+          "kelly_pct": 2.4,
+          "half_kelly_pct": 1.2,
           "rating": "SLIGHT_VALUE",
           "odds": 4.0
         }
@@ -12565,7 +13011,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.242630+00:00"
+      "computed_at": "2026-06-23T12:52:11.983854+00:00"
     },
     {
       "match": {
@@ -12579,9 +13025,9 @@
         "id": "bs1Qnq7r"
       },
       "prediction": {
-        "home_win_prob": 43.34,
-        "draw_prob": 26.84,
-        "away_win_prob": 29.82,
+        "home_win_prob": 43.37,
+        "draw_prob": 26.57,
+        "away_win_prob": 30.06,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -12598,7 +13044,7 @@
           "away": 1.2218
         },
         "predicted_goals": {
-          "home": 1.52,
+          "home": 1.53,
           "away": 1.222
         },
         "most_likely_scores": [
@@ -12625,86 +13071,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 44.18,
-          "draw": 25.26,
-          "away_win": 30.56,
+          "home_win": 44.25,
+          "draw": 24.71,
+          "away_win": 31.04,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 6.37,
-            "1": 17.93,
-            "2": 24.09,
-            "3": 22.42,
-            "4": 14.54,
-            "5": 8.6,
-            "6": 3.77,
-            "7": 1.48,
-            "8": 0.8
+            "0": 6.35,
+            "1": 17.89,
+            "2": 23.91,
+            "3": 21.61,
+            "4": 15.49,
+            "5": 8.86,
+            "6": 3.84,
+            "7": 1.33,
+            "8": 0.72
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.13
+              "prob": 11.7
             },
             {
               "score": "1-0",
-              "prob": 9.91
+              "prob": 9.79
             },
             {
               "score": "2-1",
-              "prob": 9.25
+              "prob": 8.59
             },
             {
               "score": "0-1",
-              "prob": 8.02
+              "prob": 8.1
             },
             {
-              "score": "1-2",
-              "prob": 7.4
+              "score": "2-0",
+              "prob": 7.27
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 51.58,
-          "under": 48.42
+          "over": 51.7,
+          "under": 48.3
         },
         "btts": {
-          "yes": 56.0,
-          "no": 44.0
+          "yes": 55.55,
+          "no": 44.45
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 43.34,
+          "our_prob": 43.37,
           "implied_prob": 18.87,
-          "value": 24.47,
-          "kelly_pct": 30.16,
-          "half_kelly_pct": 15.08,
+          "value": 24.5,
+          "kelly_pct": 30.2,
+          "half_kelly_pct": 15.1,
           "rating": "STRONG_VALUE",
           "odds": 5.3
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 48.42,
+          "our_prob": 48.3,
           "implied_prob": 32.79,
-          "value": 15.63,
-          "kelly_pct": 23.26,
-          "half_kelly_pct": 11.63,
+          "value": 15.51,
+          "kelly_pct": 23.08,
+          "half_kelly_pct": 11.54,
           "rating": "STRONG_VALUE",
           "odds": 3.05
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 26.84,
+          "our_prob": 26.57,
           "implied_prob": 22.73,
-          "value": 4.11,
-          "kelly_pct": 5.32,
-          "half_kelly_pct": 2.66,
+          "value": 3.84,
+          "kelly_pct": 4.97,
+          "half_kelly_pct": 2.49,
           "rating": "SLIGHT_VALUE",
           "odds": 4.4
         }
@@ -13043,7 +13489,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.250171+00:00"
+      "computed_at": "2026-06-23T12:52:11.991249+00:00"
     },
     {
       "match": {
@@ -13057,9 +13503,9 @@
         "id": "27RLd0oo"
       },
       "prediction": {
-        "home_win_prob": 43.88,
-        "draw_prob": 28.34,
-        "away_win_prob": 27.78,
+        "home_win_prob": 43.56,
+        "draw_prob": 28.45,
+        "away_win_prob": 27.98,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -13076,8 +13522,8 @@
           "away": 1.0798
         },
         "predicted_goals": {
-          "home": 1.41,
-          "away": 1.079
+          "home": 1.408,
+          "away": 1.084
         },
         "most_likely_scores": [
           {
@@ -13103,77 +13549,77 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 44.72,
-          "draw": 26.84,
-          "away_win": 28.44,
+          "home_win": 44.1,
+          "draw": 27.05,
+          "away_win": 28.85,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 7.94,
-            "1": 20.42,
-            "2": 26.64,
-            "3": 21.14,
-            "4": 13.27,
-            "5": 6.42,
-            "6": 2.92,
-            "7": 0.93,
-            "8": 0.32
+            "0": 8.4,
+            "1": 20.35,
+            "2": 25.92,
+            "3": 21.29,
+            "4": 13.19,
+            "5": 6.69,
+            "6": 2.76,
+            "7": 0.92,
+            "8": 0.48
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 13.22
+              "prob": 13.16
             },
             {
               "score": "1-0",
-              "prob": 12.17
-            },
-            {
-              "score": "2-1",
-              "prob": 8.57
-            },
-            {
-              "score": "2-0",
-              "prob": 8.31
+              "prob": 11.41
             },
             {
               "score": "0-1",
-              "prob": 8.25
+              "prob": 8.94
+            },
+            {
+              "score": "2-1",
+              "prob": 8.74
+            },
+            {
+              "score": "0-0",
+              "prob": 8.4
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 45.24,
-          "under": 54.76
+          "over": 45.4,
+          "under": 54.6
         },
         "btts": {
-          "yes": 50.86,
-          "no": 49.14
+          "yes": 50.87,
+          "no": 49.13
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Over 2.5",
-          "our_prob": 45.24,
-          "implied_prob": 40.32,
-          "value": 4.92,
-          "kelly_pct": 8.24,
-          "half_kelly_pct": 4.12,
+          "our_prob": 45.4,
+          "implied_prob": 41.15,
+          "value": 4.25,
+          "kelly_pct": 7.22,
+          "half_kelly_pct": 3.61,
           "rating": "SLIGHT_VALUE",
-          "odds": 2.48
+          "odds": 2.43
         },
         {
           "market": "1X2",
           "pick": "Away Win",
-          "our_prob": 27.78,
-          "implied_prob": 25.32,
-          "value": 2.46,
-          "kelly_pct": 3.3,
-          "half_kelly_pct": 1.65,
+          "our_prob": 27.98,
+          "implied_prob": 25.64,
+          "value": 2.34,
+          "kelly_pct": 3.15,
+          "half_kelly_pct": 1.57,
           "rating": "SLIGHT_VALUE",
-          "odds": 3.95
+          "odds": 3.9
         }
       ],
       "breakdown": {
@@ -13492,16 +13938,16 @@
       "odds": {
         "home": 1.9,
         "draw": 2.95,
-        "away": 3.95,
-        "over_2_5": 2.48,
-        "under_2_5": 1.44,
+        "away": 3.9,
+        "over_2_5": 2.43,
+        "under_2_5": 1.46,
         "btts_yes": null,
         "btts_no": null
       },
       "implied_probs": {
         "home": 52.63,
         "draw": 33.9,
-        "away": 25.32
+        "away": 25.64
       },
       "data_sources": [
         "flashscore",
@@ -13510,7 +13956,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.257500+00:00"
+      "computed_at": "2026-06-23T12:52:11.998555+00:00"
     },
     {
       "match": {
@@ -13524,9 +13970,9 @@
         "id": "6J2Ud47D"
       },
       "prediction": {
-        "home_win_prob": 40.67,
-        "draw_prob": 27.7,
-        "away_win_prob": 31.62,
+        "home_win_prob": 41.23,
+        "draw_prob": 27.22,
+        "away_win_prob": 31.55,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -13543,8 +13989,8 @@
           "away": 1.2423
         },
         "predicted_goals": {
-          "home": 1.436,
-          "away": 1.238
+          "home": 1.442,
+          "away": 1.223
         },
         "most_likely_scores": [
           {
@@ -13570,88 +14016,99 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 41.03,
-          "draw": 26.52,
-          "away_win": 32.45,
+          "home_win": 42.13,
+          "draw": 25.56,
+          "away_win": 32.31,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 7.45,
-            "1": 18.41,
-            "2": 24.0,
-            "3": 21.83,
-            "4": 14.58,
-            "5": 8.14,
-            "6": 3.56,
-            "7": 1.32,
-            "8": 0.71
+            "0": 7.32,
+            "1": 18.49,
+            "2": 23.96,
+            "3": 22.03,
+            "4": 15.02,
+            "5": 7.66,
+            "6": 3.65,
+            "7": 1.31,
+            "8": 0.56
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.18
+              "prob": 11.56
             },
             {
               "score": "1-0",
-              "prob": 9.8
-            },
-            {
-              "score": "0-1",
-              "prob": 8.61
+              "prob": 9.72
             },
             {
               "score": "2-1",
-              "prob": 8.35
+              "prob": 8.85
+            },
+            {
+              "score": "0-1",
+              "prob": 8.77
             },
             {
               "score": "1-2",
-              "prob": 7.92
+              "prob": 7.75
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 50.28,
-          "under": 49.72
+          "over": 50.32,
+          "under": 49.68
         },
         "btts": {
-          "yes": 55.16,
-          "no": 44.84
+          "yes": 54.84,
+          "no": 45.16
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Away Win",
-          "our_prob": 31.62,
+          "our_prob": 31.55,
           "implied_prob": 16.21,
-          "value": 15.41,
-          "kelly_pct": 18.39,
-          "half_kelly_pct": 9.2,
+          "value": 15.34,
+          "kelly_pct": 18.31,
+          "half_kelly_pct": 9.16,
           "rating": "STRONG_VALUE",
           "odds": 6.17
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 49.72,
+          "our_prob": 49.68,
           "implied_prob": 36.5,
-          "value": 13.22,
-          "kelly_pct": 20.82,
-          "half_kelly_pct": 10.41,
+          "value": 13.18,
+          "kelly_pct": 20.76,
+          "half_kelly_pct": 10.38,
           "rating": "STRONG_VALUE",
           "odds": 2.74
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 27.7,
+          "our_prob": 27.22,
           "implied_prob": 21.28,
-          "value": 6.42,
-          "kelly_pct": 8.16,
-          "half_kelly_pct": 4.08,
+          "value": 5.94,
+          "kelly_pct": 7.55,
+          "half_kelly_pct": 3.77,
           "rating": "GOOD_VALUE",
           "odds": 4.7
+        },
+        {
+          "market": "BTTS",
+          "pick": "No",
+          "our_prob": 45.16,
+          "implied_prob": 44.84,
+          "value": 0.32,
+          "kelly_pct": 0.57,
+          "half_kelly_pct": 0.29,
+          "rating": "SLIGHT_VALUE",
+          "odds": 2.23
         }
       ],
       "breakdown": {
@@ -13988,7 +14445,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.265195+00:00"
+      "computed_at": "2026-06-23T12:52:12.006165+00:00"
     },
     {
       "match": {
@@ -14002,9 +14459,9 @@
         "id": "AP4yPttp"
       },
       "prediction": {
-        "home_win_prob": 49.39,
-        "draw_prob": 26.98,
-        "away_win_prob": 23.62,
+        "home_win_prob": 48.96,
+        "draw_prob": 27.06,
+        "away_win_prob": 23.98,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -14021,8 +14478,8 @@
           "away": 1.0215
         },
         "predicted_goals": {
-          "home": 1.579,
-          "away": 1.002
+          "home": 1.555,
+          "away": 1.023
         },
         "most_likely_scores": [
           {
@@ -14048,86 +14505,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 50.44,
-          "draw": 25.51,
-          "away_win": 24.05,
+          "home_win": 49.58,
+          "draw": 25.66,
+          "away_win": 24.76,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 7.74,
-            "1": 19.89,
-            "2": 24.76,
-            "3": 21.59,
-            "4": 13.83,
-            "5": 7.2,
-            "6": 3.18,
-            "7": 1.21,
-            "8": 0.6
+            "0": 7.45,
+            "1": 19.48,
+            "2": 25.98,
+            "3": 20.88,
+            "4": 14.24,
+            "5": 7.33,
+            "6": 3.05,
+            "7": 1.07,
+            "8": 0.52
           },
           "top_scores": [
             {
-              "score": "1-0",
-              "prob": 12.19
-            },
-            {
               "score": "1-1",
-              "prob": 11.84
+              "prob": 12.44
             },
             {
-              "score": "2-1",
-              "prob": 9.16
+              "score": "1-0",
+              "prob": 11.57
             },
             {
               "score": "2-0",
-              "prob": 9.04
+              "prob": 9.45
             },
             {
-              "score": "0-0",
-              "prob": 7.74
+              "score": "2-1",
+              "prob": 9.08
+            },
+            {
+              "score": "0-1",
+              "prob": 7.91
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 47.7,
-          "under": 52.3
+          "over": 47.44,
+          "under": 52.56
         },
         "btts": {
-          "yes": 51.06,
-          "no": 48.94
+          "yes": 51.29,
+          "no": 48.71
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 52.3,
+          "our_prob": 52.56,
           "implied_prob": 39.22,
-          "value": 13.08,
-          "kelly_pct": 21.53,
-          "half_kelly_pct": 10.76,
+          "value": 13.34,
+          "kelly_pct": 21.95,
+          "half_kelly_pct": 10.98,
           "rating": "STRONG_VALUE",
           "odds": 2.55
         },
         {
           "market": "BTTS",
           "pick": "No",
-          "our_prob": 48.94,
+          "our_prob": 48.71,
           "implied_prob": 39.22,
-          "value": 9.72,
-          "kelly_pct": 16.0,
-          "half_kelly_pct": 8.0,
+          "value": 9.49,
+          "kelly_pct": 15.62,
+          "half_kelly_pct": 7.81,
           "rating": "GOOD_VALUE",
           "odds": 2.55
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 26.98,
+          "our_prob": 27.06,
           "implied_prob": 25.64,
-          "value": 1.34,
-          "kelly_pct": 1.8,
-          "half_kelly_pct": 0.9,
+          "value": 1.42,
+          "kelly_pct": 1.91,
+          "half_kelly_pct": 0.95,
           "rating": "SLIGHT_VALUE",
           "odds": 3.9
         }
@@ -14466,7 +14923,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.272585+00:00"
+      "computed_at": "2026-06-23T12:52:12.013609+00:00"
     },
     {
       "match": {
@@ -14480,9 +14937,9 @@
         "id": "v7RO3z9b"
       },
       "prediction": {
-        "home_win_prob": 42.73,
-        "draw_prob": 26.34,
-        "away_win_prob": 30.94,
+        "home_win_prob": 42.8,
+        "draw_prob": 26.01,
+        "away_win_prob": 31.2,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -14499,8 +14956,8 @@
           "away": 1.3328
         },
         "predicted_goals": {
-          "home": 1.6,
-          "away": 1.345
+          "home": 1.59,
+          "away": 1.329
         },
         "most_likely_scores": [
           {
@@ -14526,75 +14983,75 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 43.1,
-          "draw": 25.37,
-          "away_win": 31.53,
+          "home_win": 43.23,
+          "draw": 24.71,
+          "away_win": 32.06,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 5.3,
-            "1": 15.41,
-            "2": 22.73,
-            "3": 21.95,
-            "4": 17.41,
-            "5": 9.53,
-            "6": 4.65,
-            "7": 1.98,
-            "8": 1.04
+            "0": 5.5,
+            "1": 15.26,
+            "2": 23.88,
+            "3": 22.37,
+            "4": 15.77,
+            "5": 9.49,
+            "6": 4.67,
+            "7": 1.78,
+            "8": 1.28
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 11.91
+              "prob": 11.99
             },
             {
               "score": "2-1",
-              "prob": 8.97
+              "prob": 9.07
             },
             {
               "score": "1-0",
-              "prob": 8.27
+              "prob": 8.34
             },
             {
               "score": "1-2",
-              "prob": 7.39
+              "prob": 7.89
             },
             {
-              "score": "0-1",
-              "prob": 7.14
+              "score": "2-0",
+              "prob": 7.08
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 56.41,
-          "under": 43.59
+          "over": 55.81,
+          "under": 44.19
         },
         "btts": {
-          "yes": 60.24,
-          "no": 39.76
+          "yes": 59.76,
+          "no": 40.24
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 43.59,
+          "our_prob": 44.19,
           "implied_prob": 35.46,
-          "value": 8.13,
-          "kelly_pct": 12.6,
-          "half_kelly_pct": 6.3,
+          "value": 8.73,
+          "kelly_pct": 13.53,
+          "half_kelly_pct": 6.76,
           "rating": "GOOD_VALUE",
           "odds": 2.82
         },
         {
           "market": "BTTS",
           "pick": "No",
-          "our_prob": 39.76,
+          "our_prob": 40.24,
           "implied_prob": 34.48,
-          "value": 5.28,
-          "kelly_pct": 8.05,
-          "half_kelly_pct": 4.03,
+          "value": 5.76,
+          "kelly_pct": 8.79,
+          "half_kelly_pct": 4.39,
           "rating": "GOOD_VALUE",
           "odds": 2.9
         }
@@ -14933,7 +15390,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.280112+00:00"
+      "computed_at": "2026-06-23T12:52:12.021071+00:00"
     },
     {
       "match": {
@@ -14947,9 +15404,9 @@
         "id": "x2sg1hsh"
       },
       "prediction": {
-        "home_win_prob": 31.92,
-        "draw_prob": 27.62,
-        "away_win_prob": 40.47,
+        "home_win_prob": 32.08,
+        "draw_prob": 28.02,
+        "away_win_prob": 39.9,
         "predicted_outcome": "AWAY_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 66,
@@ -14966,8 +15423,8 @@
           "away": 1.4105
         },
         "predicted_goals": {
-          "home": 1.211,
-          "away": 1.403
+          "home": 1.223,
+          "away": 1.402
         },
         "most_likely_scores": [
           {
@@ -14993,86 +15450,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 32.66,
-          "draw": 25.98,
-          "away_win": 41.36,
+          "home_win": 32.98,
+          "draw": 26.79,
+          "away_win": 40.23,
           "confidence_interval": "±0.9%",
           "histogram": {
-            "0": 7.32,
-            "1": 19.72,
-            "2": 24.5,
-            "3": 21.6,
-            "4": 14.28,
-            "5": 7.47,
-            "6": 3.2,
-            "7": 1.4,
-            "8": 0.51
+            "0": 6.96,
+            "1": 19.03,
+            "2": 25.7,
+            "3": 21.55,
+            "4": 14.19,
+            "5": 7.36,
+            "6": 3.36,
+            "7": 1.29,
+            "8": 0.56
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 12.36
+              "prob": 13.08
             },
             {
               "score": "0-1",
-              "prob": 10.36
+              "prob": 9.52
             },
             {
               "score": "1-0",
-              "prob": 9.36
+              "prob": 9.51
             },
             {
               "score": "1-2",
-              "prob": 8.73
+              "prob": 8.54
             },
             {
               "score": "2-1",
-              "prob": 7.47
+              "prob": 7.52
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 48.82,
-          "under": 51.18
+          "over": 48.74,
+          "under": 51.26
         },
         "btts": {
-          "yes": 53.99,
-          "no": 46.01
+          "yes": 54.2,
+          "no": 45.8
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 31.92,
+          "our_prob": 32.08,
           "implied_prob": 17.36,
-          "value": 14.56,
-          "kelly_pct": 17.62,
-          "half_kelly_pct": 8.81,
+          "value": 14.72,
+          "kelly_pct": 17.81,
+          "half_kelly_pct": 8.91,
           "rating": "STRONG_VALUE",
           "odds": 5.76
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 51.18,
+          "our_prob": 51.26,
           "implied_prob": 45.66,
-          "value": 5.52,
-          "kelly_pct": 10.15,
-          "half_kelly_pct": 5.08,
+          "value": 5.6,
+          "kelly_pct": 10.3,
+          "half_kelly_pct": 5.15,
           "rating": "GOOD_VALUE",
           "odds": 2.19
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 27.62,
+          "our_prob": 28.02,
           "implied_prob": 23.81,
-          "value": 3.81,
-          "kelly_pct": 5.0,
-          "half_kelly_pct": 2.5,
+          "value": 4.21,
+          "kelly_pct": 5.53,
+          "half_kelly_pct": 2.76,
           "rating": "SLIGHT_VALUE",
           "odds": 4.2
         }
@@ -15411,7 +15868,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.287515+00:00"
+      "computed_at": "2026-06-23T12:52:12.028600+00:00"
     },
     {
       "match": {
@@ -15425,9 +15882,9 @@
         "id": "GAs6Kl34"
       },
       "prediction": {
-        "home_win_prob": 46.38,
-        "draw_prob": 28.38,
-        "away_win_prob": 25.24,
+        "home_win_prob": 46.1,
+        "draw_prob": 28.32,
+        "away_win_prob": 25.57,
         "predicted_outcome": "HOME_WIN",
         "confidence": "HIGH",
         "confidence_score": 76,
@@ -15442,8 +15899,8 @@
           "away": 0.9893
         },
         "predicted_goals": {
-          "home": 1.41,
-          "away": 0.97
+          "home": 1.409,
+          "away": 0.994
         },
         "most_likely_scores": [
           {
@@ -15469,86 +15926,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 47.38,
-          "draw": 26.71,
-          "away_win": 25.91,
+          "home_win": 46.83,
+          "draw": 26.59,
+          "away_win": 26.58,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 9.68,
-            "1": 22.23,
-            "2": 25.37,
-            "3": 20.48,
+            "0": 8.99,
+            "1": 22.04,
+            "2": 26.18,
+            "3": 20.55,
             "4": 12.65,
-            "5": 6.14,
-            "6": 2.31,
-            "7": 0.82,
-            "8": 0.32
+            "5": 5.92,
+            "6": 2.34,
+            "7": 0.81,
+            "8": 0.52
           },
           "top_scores": [
             {
               "score": "1-0",
-              "prob": 13.19
+              "prob": 12.9
             },
             {
               "score": "1-1",
-              "prob": 12.19
-            },
-            {
-              "score": "0-0",
-              "prob": 9.68
-            },
-            {
-              "score": "2-1",
-              "prob": 9.09
+              "prob": 12.54
             },
             {
               "score": "0-1",
-              "prob": 9.04
+              "prob": 9.14
+            },
+            {
+              "score": "0-0",
+              "prob": 8.99
+            },
+            {
+              "score": "2-1",
+              "prob": 8.89
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 43.03,
-          "under": 56.97
+          "over": 43.06,
+          "under": 56.94
         },
         "btts": {
-          "yes": 47.94,
-          "no": 52.06
+          "yes": 48.08,
+          "no": 51.92
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 56.97,
-          "implied_prob": 53.48,
-          "value": 3.49,
-          "kelly_pct": 7.51,
-          "half_kelly_pct": 3.76,
+          "our_prob": 56.94,
+          "implied_prob": 53.19,
+          "value": 3.75,
+          "kelly_pct": 8.01,
+          "half_kelly_pct": 4.0,
           "rating": "SLIGHT_VALUE",
-          "odds": 1.87
+          "odds": 1.88
         },
         {
           "market": "1X2",
           "pick": "Away Win",
-          "our_prob": 25.24,
+          "our_prob": 25.57,
           "implied_prob": 22.37,
-          "value": 2.87,
-          "kelly_pct": 3.7,
-          "half_kelly_pct": 1.85,
+          "value": 3.2,
+          "kelly_pct": 4.12,
+          "half_kelly_pct": 2.06,
           "rating": "SLIGHT_VALUE",
           "odds": 4.47
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 28.38,
+          "our_prob": 28.32,
           "implied_prob": 27.4,
-          "value": 0.98,
-          "kelly_pct": 1.35,
-          "half_kelly_pct": 0.68,
+          "value": 0.92,
+          "kelly_pct": 1.27,
+          "half_kelly_pct": 0.64,
           "rating": "SLIGHT_VALUE",
           "odds": 3.65
         }
@@ -15870,8 +16327,8 @@
         "home": 1.66,
         "draw": 3.65,
         "away": 4.47,
-        "over_2_5": 1.83,
-        "under_2_5": 1.87,
+        "over_2_5": 1.82,
+        "under_2_5": 1.88,
         "btts_yes": 1.77,
         "btts_no": 1.92
       },
@@ -15887,7 +16344,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.309769+00:00"
+      "computed_at": "2026-06-23T12:52:12.051118+00:00"
     },
     {
       "match": {
@@ -15901,9 +16358,9 @@
         "id": "vcxDRyXg"
       },
       "prediction": {
-        "home_win_prob": 43.95,
-        "draw_prob": 25.27,
-        "away_win_prob": 30.77,
+        "home_win_prob": 44.34,
+        "draw_prob": 25.21,
+        "away_win_prob": 30.45,
         "predicted_outcome": "HOME_WIN",
         "confidence": "HIGH",
         "confidence_score": 76,
@@ -15918,8 +16375,8 @@
           "away": 1.3652
         },
         "predicted_goals": {
-          "home": 1.649,
-          "away": 1.363
+          "home": 1.71,
+          "away": 1.375
         },
         "most_likely_scores": [
           {
@@ -15945,75 +16402,75 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 44.15,
-          "draw": 24.0,
-          "away_win": 31.85,
+          "home_win": 44.93,
+          "draw": 23.87,
+          "away_win": 31.2,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 5.17,
-            "1": 14.79,
-            "2": 22.16,
-            "3": 22.21,
-            "4": 16.8,
-            "5": 10.47,
-            "6": 5.06,
-            "7": 1.94,
-            "8": 1.4
+            "0": 4.37,
+            "1": 14.49,
+            "2": 21.91,
+            "3": 22.37,
+            "4": 16.7,
+            "5": 10.58,
+            "6": 5.67,
+            "7": 2.53,
+            "8": 1.38
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 10.84
+              "prob": 11.31
             },
             {
               "score": "2-1",
-              "prob": 8.98
+              "prob": 8.94
             },
             {
               "score": "1-0",
-              "prob": 8.17
+              "prob": 7.82
             },
             {
               "score": "1-2",
-              "prob": 7.79
+              "prob": 7.59
             },
             {
-              "score": "2-0",
-              "prob": 6.79
+              "score": "0-1",
+              "prob": 6.67
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 58.38,
-          "under": 41.62
+          "over": 59.06,
+          "under": 40.94
         },
         "btts": {
-          "yes": 61.06,
-          "no": 38.94
+          "yes": 61.7,
+          "no": 38.3
         }
       },
       "value_bets": [
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 41.62,
+          "our_prob": 40.94,
           "implied_prob": 32.79,
-          "value": 8.83,
-          "kelly_pct": 13.14,
-          "half_kelly_pct": 6.57,
+          "value": 8.15,
+          "kelly_pct": 12.13,
+          "half_kelly_pct": 6.07,
           "rating": "GOOD_VALUE",
           "odds": 3.05
         },
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 43.95,
+          "our_prob": 44.34,
           "implied_prob": 42.02,
-          "value": 1.93,
-          "kelly_pct": 3.33,
-          "half_kelly_pct": 1.67,
+          "value": 2.32,
+          "kelly_pct": 4.01,
+          "half_kelly_pct": 2.0,
           "rating": "SLIGHT_VALUE",
           "odds": 2.38
         }
@@ -16352,7 +16809,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.317262+00:00"
+      "computed_at": "2026-06-23T12:52:12.058579+00:00"
     },
     {
       "match": {
@@ -16366,9 +16823,9 @@
         "id": "WYT0TwL0"
       },
       "prediction": {
-        "home_win_prob": 48.84,
-        "draw_prob": 26.03,
-        "away_win_prob": 25.13,
+        "home_win_prob": 48.8,
+        "draw_prob": 26.18,
+        "away_win_prob": 25.02,
         "predicted_outcome": "HOME_WIN",
         "confidence": "MEDIUM",
         "confidence_score": 60,
@@ -16384,8 +16841,8 @@
           "away": 1.1007
         },
         "predicted_goals": {
-          "home": 1.626,
-          "away": 1.091
+          "home": 1.627,
+          "away": 1.107
         },
         "most_likely_scores": [
           {
@@ -16411,86 +16868,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 49.97,
-          "draw": 24.21,
-          "away_win": 25.82,
+          "home_win": 49.9,
+          "draw": 24.51,
+          "away_win": 25.59,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 6.96,
-            "1": 17.69,
-            "2": 24.11,
-            "3": 21.92,
-            "4": 15.19,
-            "5": 8.39,
-            "6": 3.71,
-            "7": 1.47,
-            "8": 0.56
+            "0": 6.2,
+            "1": 18.05,
+            "2": 24.34,
+            "3": 21.9,
+            "4": 15.39,
+            "5": 8.42,
+            "6": 3.69,
+            "7": 1.28,
+            "8": 0.73
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 10.93
+              "prob": 11.65
             },
             {
               "score": "1-0",
-              "prob": 10.86
-            },
-            {
-              "score": "2-0",
-              "prob": 8.97
+              "prob": 10.81
             },
             {
               "score": "2-1",
-              "prob": 8.83
+              "prob": 9.6
             },
             {
-              "score": "0-0",
-              "prob": 6.96
+              "score": "2-0",
+              "prob": 8.84
+            },
+            {
+              "score": "0-1",
+              "prob": 7.24
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 51.1,
-          "under": 48.9
+          "over": 51.18,
+          "under": 48.82
         },
         "btts": {
-          "yes": 53.66,
-          "no": 46.34
+          "yes": 54.29,
+          "no": 45.71
         }
       },
       "value_bets": [
         {
           "market": "BTTS",
           "pick": "No",
-          "our_prob": 46.34,
+          "our_prob": 45.71,
           "implied_prob": 40.82,
-          "value": 5.52,
-          "kelly_pct": 9.33,
-          "half_kelly_pct": 4.67,
-          "rating": "GOOD_VALUE",
+          "value": 4.89,
+          "kelly_pct": 8.27,
+          "half_kelly_pct": 4.13,
+          "rating": "SLIGHT_VALUE",
           "odds": 2.45
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 48.9,
+          "our_prob": 48.82,
           "implied_prob": 44.84,
-          "value": 4.06,
-          "kelly_pct": 7.36,
-          "half_kelly_pct": 3.68,
+          "value": 3.98,
+          "kelly_pct": 7.21,
+          "half_kelly_pct": 3.61,
           "rating": "SLIGHT_VALUE",
           "odds": 2.23
         },
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 48.84,
+          "our_prob": 48.8,
           "implied_prob": 45.87,
-          "value": 2.97,
-          "kelly_pct": 5.48,
-          "half_kelly_pct": 2.74,
+          "value": 2.93,
+          "kelly_pct": 5.41,
+          "half_kelly_pct": 2.71,
           "rating": "SLIGHT_VALUE",
           "odds": 2.18
         }
@@ -16817,7 +17274,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.332218+00:00"
+      "computed_at": "2026-06-23T12:52:12.073430+00:00"
     },
     {
       "match": {
@@ -16831,9 +17288,9 @@
         "id": "jw1Rqa5s"
       },
       "prediction": {
-        "home_win_prob": 49.11,
-        "draw_prob": 26.32,
-        "away_win_prob": 24.57,
+        "home_win_prob": 48.92,
+        "draw_prob": 26.65,
+        "away_win_prob": 24.42,
         "predicted_outcome": "HOME_WIN",
         "confidence": "HIGH",
         "confidence_score": 76,
@@ -16848,8 +17305,8 @@
           "away": 1.0555
         },
         "predicted_goals": {
-          "home": 1.585,
-          "away": 1.069
+          "home": 1.588,
+          "away": 1.058
         },
         "most_likely_scores": [
           {
@@ -16875,86 +17332,86 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 50.09,
-          "draw": 24.47,
-          "away_win": 25.44,
+          "home_win": 49.73,
+          "draw": 25.12,
+          "away_win": 25.15,
           "confidence_interval": "±1.0%",
           "histogram": {
             "0": 7.15,
-            "1": 18.99,
-            "2": 24.18,
-            "3": 22.52,
-            "4": 13.7,
-            "5": 7.89,
-            "6": 3.67,
-            "7": 1.29,
-            "8": 0.61
+            "1": 18.78,
+            "2": 25.24,
+            "3": 21.62,
+            "4": 14.1,
+            "5": 7.68,
+            "6": 3.42,
+            "7": 1.27,
+            "8": 0.74
           },
           "top_scores": [
             {
               "score": "1-1",
-              "prob": 11.53
+              "prob": 11.98
             },
             {
               "score": "1-0",
-              "prob": 11.49
+              "prob": 11.55
             },
             {
               "score": "2-1",
-              "prob": 9.97
+              "prob": 9.5
             },
             {
               "score": "2-0",
-              "prob": 8.77
+              "prob": 9.14
             },
             {
               "score": "0-1",
-              "prob": 7.5
+              "prob": 7.23
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 49.44,
-          "under": 50.56
+          "over": 49.02,
+          "under": 50.98
         },
         "btts": {
-          "yes": 52.54,
-          "no": 47.46
+          "yes": 52.8,
+          "no": 47.2
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Away Win",
-          "our_prob": 24.57,
+          "our_prob": 24.42,
           "implied_prob": 18.87,
-          "value": 5.7,
-          "kelly_pct": 7.03,
-          "half_kelly_pct": 3.51,
+          "value": 5.55,
+          "kelly_pct": 6.84,
+          "half_kelly_pct": 3.42,
           "rating": "GOOD_VALUE",
           "odds": 5.3
         },
         {
           "market": "O/U 2.5",
           "pick": "Under 2.5",
-          "our_prob": 50.56,
+          "our_prob": 50.98,
           "implied_prob": 45.45,
-          "value": 5.11,
-          "kelly_pct": 9.36,
-          "half_kelly_pct": 4.68,
+          "value": 5.53,
+          "kelly_pct": 10.13,
+          "half_kelly_pct": 5.06,
           "rating": "GOOD_VALUE",
           "odds": 2.2
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 26.32,
+          "our_prob": 26.65,
           "implied_prob": 24.39,
-          "value": 1.93,
-          "kelly_pct": 2.55,
-          "half_kelly_pct": 1.28,
+          "value": 2.26,
+          "kelly_pct": 2.99,
+          "half_kelly_pct": 1.49,
           "rating": "SLIGHT_VALUE",
           "odds": 4.1
         }
@@ -17293,7 +17750,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.339850+00:00"
+      "computed_at": "2026-06-23T12:52:12.080797+00:00"
     },
     {
       "match": {
@@ -17307,9 +17764,9 @@
         "id": "GCoIA5bf"
       },
       "prediction": {
-        "home_win_prob": 46.09,
-        "draw_prob": 28.39,
-        "away_win_prob": 25.51,
+        "home_win_prob": 45.42,
+        "draw_prob": 28.8,
+        "away_win_prob": 25.77,
         "predicted_outcome": "HOME_WIN",
         "confidence": "HIGH",
         "confidence_score": 76,
@@ -17324,8 +17781,8 @@
           "away": 0.9748
         },
         "predicted_goals": {
-          "home": 1.421,
-          "away": 0.974
+          "home": 1.381,
+          "away": 0.991
         },
         "most_likely_scores": [
           {
@@ -17351,20 +17808,20 @@
         ],
         "monte_carlo": {
           "simulations": 10000,
-          "home_win": 47.39,
-          "draw": 26.32,
-          "away_win": 26.29,
+          "home_win": 46.05,
+          "draw": 27.14,
+          "away_win": 26.81,
           "confidence_interval": "±1.0%",
           "histogram": {
-            "0": 9.07,
-            "1": 22.27,
-            "2": 25.78,
-            "3": 20.77,
-            "4": 12.55,
-            "5": 5.93,
-            "6": 2.47,
-            "7": 0.8,
-            "8": 0.36
+            "0": 9.34,
+            "1": 22.0,
+            "2": 26.32,
+            "3": 21.01,
+            "4": 12.19,
+            "5": 5.68,
+            "6": 2.24,
+            "7": 0.89,
+            "8": 0.33
           },
           "top_scores": [
             {
@@ -17373,55 +17830,55 @@
             },
             {
               "score": "1-1",
-              "prob": 12.25
-            },
-            {
-              "score": "2-0",
-              "prob": 9.21
-            },
-            {
-              "score": "0-1",
-              "prob": 9.15
+              "prob": 12.73
             },
             {
               "score": "0-0",
-              "prob": 9.07
+              "prob": 9.34
+            },
+            {
+              "score": "2-1",
+              "prob": 8.99
+            },
+            {
+              "score": "2-0",
+              "prob": 8.98
             }
           ]
         }
       },
       "markets": {
         "over_under_2_5": {
-          "over": 42.48,
-          "under": 57.52
+          "over": 42.22,
+          "under": 57.78
         },
         "btts": {
-          "yes": 47.55,
-          "no": 52.45
+          "yes": 47.74,
+          "no": 52.26
         }
       },
       "value_bets": [
         {
           "market": "1X2",
           "pick": "Home Win",
-          "our_prob": 46.09,
-          "implied_prob": 27.78,
-          "value": 18.31,
-          "kelly_pct": 25.36,
-          "half_kelly_pct": 12.68,
+          "our_prob": 45.42,
+          "implied_prob": 28.57,
+          "value": 16.85,
+          "kelly_pct": 23.59,
+          "half_kelly_pct": 11.79,
           "rating": "STRONG_VALUE",
-          "odds": 3.6
+          "odds": 3.5
         },
         {
           "market": "1X2",
           "pick": "Draw",
-          "our_prob": 28.39,
-          "implied_prob": 25.0,
-          "value": 3.39,
-          "kelly_pct": 4.52,
-          "half_kelly_pct": 2.26,
+          "our_prob": 28.8,
+          "implied_prob": 25.64,
+          "value": 3.16,
+          "kelly_pct": 4.25,
+          "half_kelly_pct": 2.12,
           "rating": "SLIGHT_VALUE",
-          "odds": 4.0
+          "odds": 3.9
         }
       ],
       "breakdown": {
@@ -17740,1366 +18197,17 @@
       ],
       "poisson_matrix_sum": 100.0,
       "odds": {
-        "home": 3.6,
-        "draw": 4.0,
-        "away": 1.91,
+        "home": 3.5,
+        "draw": 3.9,
+        "away": 1.95,
         "over_2_5": 2.1,
         "under_2_5": 1.73,
         "btts_yes": 1.95,
         "btts_no": 1.8
       },
       "implied_probs": {
-        "home": 27.78,
-        "draw": 25.0,
-        "away": 52.36
-      },
-      "data_sources": [
-        "flashscore",
-        "flashscore-odds",
-        "flashscore-feed",
-        "flashscore-standings",
-        "flashscore-stats"
-      ],
-      "computed_at": "2026-06-22T23:36:25.347357+00:00"
-    },
-    {
-      "match": {
-        "home_team": "South Africa",
-        "away_team": "South Korea",
-        "league": "WORLD: World Championship",
-        "date": "2026-06-25T01:00:00+00:00",
-        "venue": "",
-        "status": "UPCOMING",
-        "event_id": "4rr4ngNc",
-        "id": "4rr4ngNc"
-      },
-      "prediction": {
-        "home_win_prob": 37.19,
-        "draw_prob": 30.77,
-        "away_win_prob": 32.04,
-        "predicted_outcome": "HOME_WIN",
-        "confidence": "MEDIUM",
-        "confidence_score": 60,
-        "missing_data": [
-          "h2h",
-          "injuries",
-          "referee",
-          "weather"
-        ],
-        "proxy_factors": [],
-        "lambda": {
-          "home": 1.1589,
-          "away": 1.0506
-        },
-        "predicted_goals": {
-          "home": 1.158,
-          "away": 1.051
-        },
-        "most_likely_scores": [
-          {
-            "score": "1-1",
-            "prob": 15.1
-          },
-          {
-            "score": "0-0",
-            "prob": 12.71
-          },
-          {
-            "score": "1-0",
-            "prob": 10.98
-          },
-          {
-            "score": "0-1",
-            "prob": 9.79
-          },
-          {
-            "score": "2-1",
-            "prob": 7.74
-          }
-        ],
-        "monte_carlo": {
-          "simulations": 10000,
-          "home_win": 37.9,
-          "draw": 29.06,
-          "away_win": 33.04,
-          "confidence_interval": "±1.0%",
-          "histogram": {
-            "0": 10.86,
-            "1": 24.63,
-            "2": 26.76,
-            "3": 19.56,
-            "4": 10.76,
-            "5": 4.64,
-            "6": 1.94,
-            "7": 0.64,
-            "8": 0.21
-          },
-          "top_scores": [
-            {
-              "score": "1-1",
-              "prob": 13.57
-            },
-            {
-              "score": "1-0",
-              "prob": 12.88
-            },
-            {
-              "score": "0-1",
-              "prob": 11.75
-            },
-            {
-              "score": "0-0",
-              "prob": 10.86
-            },
-            {
-              "score": "1-2",
-              "prob": 7.36
-            }
-          ]
-        }
-      },
-      "markets": {
-        "over_under_2_5": {
-          "over": 37.86,
-          "under": 62.14
-        },
-        "btts": {
-          "yes": 45.56,
-          "no": 54.44
-        }
-      },
-      "value_bets": [
-        {
-          "market": "1X2",
-          "pick": "Home Win",
-          "our_prob": 37.19,
-          "implied_prob": 19.05,
-          "value": 18.14,
-          "kelly_pct": 22.41,
-          "half_kelly_pct": 11.21,
-          "rating": "STRONG_VALUE",
-          "odds": 5.25
-        },
-        {
-          "market": "1X2",
-          "pick": "Draw",
-          "our_prob": 30.77,
-          "implied_prob": 26.32,
-          "value": 4.45,
-          "kelly_pct": 6.04,
-          "half_kelly_pct": 3.02,
-          "rating": "SLIGHT_VALUE",
-          "odds": 3.8
-        },
-        {
-          "market": "O/U 2.5",
-          "pick": "Under 2.5",
-          "our_prob": 62.14,
-          "implied_prob": 57.8,
-          "value": 4.34,
-          "kelly_pct": 10.28,
-          "half_kelly_pct": 5.14,
-          "rating": "SLIGHT_VALUE",
-          "odds": 1.73
-        }
-      ],
-      "breakdown": {
-        "form": {
-          "home_last5": [
-            "D",
-            "L",
-            "D",
-            "D",
-            "L"
-          ],
-          "away_last5": [
-            "L",
-            "W",
-            "W",
-            "W",
-            "L"
-          ],
-          "home_form_score": 33,
-          "away_form_score": 60
-        },
-        "h2h": {
-          "home_wins": 0,
-          "draws": 0,
-          "away_wins": 0,
-          "avg_goals": null,
-          "matches": 0
-        },
-        "xg": {
-          "home_xg": 0.727,
-          "home_xga": 0.793,
-          "away_xg": 0.977,
-          "away_xga": 0.32,
-          "home_source": "real",
-          "away_source": "real",
-          "is_proxy": false
-        },
-        "standings": {
-          "home_pos": null,
-          "away_pos": null,
-          "points_diff": null
-        },
-        "injuries": {
-          "home_missing": [],
-          "away_missing": []
-        },
-        "referee": null,
-        "fatigue": {
-          "home_rest_days": 7,
-          "away_rest_days": 6,
-          "home_status": "FRESH",
-          "away_status": "FRESH"
-        },
-        "weather": null,
-        "factors_used": {
-          "weights": {
-            "form": 0.45,
-            "xg": 0.2,
-            "attack_defense": 0.18,
-            "home": 0.07,
-            "h2h": 0.05,
-            "fatigue": 0.05
-          },
-          "form": {
-            "home_form_score": 0.4,
-            "away_form_score": 0.8,
-            "home_matches": [
-              {
-                "opponent": "Czech Republic",
-                "position": 10,
-                "position_estimated": true,
-                "venue": "away",
-                "outcome": "D",
-                "score": "1-1",
-                "points": 1
-              },
-              {
-                "opponent": "Mexico",
-                "position": 10,
-                "position_estimated": true,
-                "venue": "away",
-                "outcome": "L",
-                "score": "0-2",
-                "points": 0
-              },
-              {
-                "opponent": "Jamaica",
-                "position": 10,
-                "position_estimated": true,
-                "venue": "away",
-                "outcome": "D",
-                "score": "1-1",
-                "points": 1
-              },
-              {
-                "opponent": "Nicaragua",
-                "position": 10,
-                "position_estimated": true,
-                "venue": "home",
-                "outcome": "D",
-                "score": "0-0",
-                "points": 0
-              },
-              {
-                "opponent": "Panama",
-                "position": 10,
-                "position_estimated": true,
-                "venue": "home",
-                "outcome": "L",
-                "score": "1-2",
-                "points": 0
-              }
-            ],
-            "away_matches": [
-              {
-                "opponent": "Bolivia",
-                "position": 7,
-                "position_estimated": false,
-                "venue": "home",
-                "outcome": "W",
-                "score": "2-0",
-                "points": 2
-              },
-              {
-                "opponent": "Paraguay",
-                "position": 6,
-                "position_estimated": false,
-                "venue": "home",
-                "outcome": "W",
-                "score": "2-0",
-                "points": 2
-              },
-              {
-                "opponent": "Brazil",
-                "position": 5,
-                "position_estimated": false,
-                "venue": "home",
-                "outcome": "L",
-                "score": "0-5",
-                "points": 0
-              },
-              {
-                "opponent": "Peru",
-                "position": 9,
-                "position_estimated": false,
-                "venue": "home",
-                "outcome": "L",
-                "score": "0-1",
-                "points": 0
-              },
-              {
-                "opponent": "Uruguay",
-                "position": 4,
-                "position_estimated": false,
-                "venue": "home",
-                "outcome": "L",
-                "score": "1-2",
-                "points": 0
-              }
-            ]
-          },
-          "home_factors": {
-            "form": {
-              "weight": 0.45,
-              "weight_norm": 0.474,
-              "mult": 0.78,
-              "contribution": -0.156
-            },
-            "xg": {
-              "weight": 0.2,
-              "weight_norm": 0.211,
-              "mult": 0.7,
-              "contribution": -0.095
-            },
-            "attack_defense": {
-              "weight": 0.18,
-              "weight_norm": 0.189,
-              "mult": 0.6,
-              "contribution": -0.114
-            },
-            "home": {
-              "weight": 0.07,
-              "weight_norm": 0.074,
-              "mult": 1.2,
-              "contribution": 0.022
-            },
-            "fatigue": {
-              "weight": 0.05,
-              "weight_norm": 0.053,
-              "mult": 1.02,
-              "contribution": 0.002
-            }
-          },
-          "away_factors": {
-            "form": {
-              "weight": 0.45,
-              "weight_norm": 0.474,
-              "mult": 0.86,
-              "contribution": -0.076
-            },
-            "xg": {
-              "weight": 0.2,
-              "weight_norm": 0.211,
-              "mult": 0.85,
-              "contribution": -0.036
-            },
-            "attack_defense": {
-              "weight": 0.18,
-              "weight_norm": 0.189,
-              "mult": 1.119,
-              "contribution": 0.026
-            },
-            "home": {
-              "weight": 0.07,
-              "weight_norm": 0.074,
-              "mult": 0.85,
-              "contribution": -0.013
-            },
-            "fatigue": {
-              "weight": 0.05,
-              "weight_norm": 0.053,
-              "mult": 1.0,
-              "contribution": 0.0
-            }
-          },
-          "base": {
-            "home_goals": 1.5,
-            "away_goals": 1.15
-          },
-          "lambda": {
-            "home": 1.159,
-            "away": 1.051
-          }
-        },
-        "positions_estimated": 5,
-        "notes": [
-          "5 opponent position(s) unknown -> mid-table estimate."
-        ]
-      },
-      "poisson_matrix": [
-        [
-          12.713,
-          9.794,
-          6.057,
-          2.121,
-          0.557,
-          0.117,
-          0.024
-        ],
-        [
-          10.982,
-          15.1,
-          7.02,
-          2.458,
-          0.646,
-          0.136,
-          0.028
-        ],
-        [
-          7.37,
-          7.743,
-          4.068,
-          1.424,
-          0.374,
-          0.079,
-          0.016
-        ],
-        [
-          2.847,
-          2.991,
-          1.571,
-          0.55,
-          0.145,
-          0.03,
-          0.006
-        ],
-        [
-          0.825,
-          0.867,
-          0.455,
-          0.159,
-          0.042,
-          0.009,
-          0.002
-        ],
-        [
-          0.191,
-          0.201,
-          0.106,
-          0.037,
-          0.01,
-          0.002,
-          0.0
-        ],
-        [
-          0.044,
-          0.046,
-          0.024,
-          0.009,
-          0.002,
-          0.0,
-          0.0
-        ]
-      ],
-      "poisson_matrix_sum": 100.0,
-      "odds": {
-        "home": 5.25,
-        "draw": 3.8,
-        "away": 1.65,
-        "over_2_5": 2.1,
-        "under_2_5": 1.73,
-        "btts_yes": 2.0,
-        "btts_no": 1.75
-      },
-      "implied_probs": {
-        "home": 19.05,
-        "draw": 26.32,
-        "away": 60.61
-      },
-      "data_sources": [
-        "flashscore",
-        "flashscore-odds",
-        "flashscore-feed",
-        "flashscore-standings",
-        "flashscore-stats"
-      ],
-      "computed_at": "2026-06-22T23:36:25.354772+00:00"
-    },
-    {
-      "match": {
-        "home_team": "Curacao",
-        "away_team": "Ivory Coast",
-        "league": "WORLD: World Championship",
-        "date": "2026-06-25T20:00:00+00:00",
-        "venue": "",
-        "status": "UPCOMING",
-        "event_id": "d2S1vysC",
-        "id": "d2S1vysC"
-      },
-      "prediction": {
-        "home_win_prob": 38.9,
-        "draw_prob": 28.12,
-        "away_win_prob": 32.98,
-        "predicted_outcome": "HOME_WIN",
-        "confidence": "MEDIUM",
-        "confidence_score": 60,
-        "missing_data": [
-          "h2h",
-          "injuries",
-          "referee",
-          "weather"
-        ],
-        "proxy_factors": [],
-        "lambda": {
-          "home": 1.3532,
-          "away": 1.232
-        },
-        "predicted_goals": {
-          "home": 1.359,
-          "away": 1.221
-        },
-        "most_likely_scores": [
-          {
-            "score": "1-1",
-            "prob": 14.2
-          },
-          {
-            "score": "0-0",
-            "prob": 9.17
-          },
-          {
-            "score": "1-0",
-            "prob": 8.57
-          },
-          {
-            "score": "2-1",
-            "prob": 8.5
-          },
-          {
-            "score": "1-2",
-            "prob": 7.74
-          }
-        ],
-        "monte_carlo": {
-          "simulations": 10000,
-          "home_win": 39.8,
-          "draw": 26.56,
-          "away_win": 33.64,
-          "confidence_interval": "±1.0%",
-          "histogram": {
-            "0": 7.68,
-            "1": 19.69,
-            "2": 24.92,
-            "3": 21.9,
-            "4": 13.58,
-            "5": 7.45,
-            "6": 3.08,
-            "7": 1.1,
-            "8": 0.6
-          },
-          "top_scores": [
-            {
-              "score": "1-1",
-              "prob": 12.69
-            },
-            {
-              "score": "1-0",
-              "prob": 10.21
-            },
-            {
-              "score": "0-1",
-              "prob": 9.48
-            },
-            {
-              "score": "2-1",
-              "prob": 8.71
-            },
-            {
-              "score": "0-0",
-              "prob": 7.68
-            }
-          ]
-        }
-      },
-      "markets": {
-        "over_under_2_5": {
-          "over": 47.74,
-          "under": 52.26
-        },
-        "btts": {
-          "yes": 53.28,
-          "no": 46.72
-        }
-      },
-      "value_bets": [
-        {
-          "market": "1X2",
-          "pick": "Home Win",
-          "our_prob": 38.9,
-          "implied_prob": 6.67,
-          "value": 32.23,
-          "kelly_pct": 34.54,
-          "half_kelly_pct": 17.27,
-          "rating": "STRONG_VALUE",
-          "odds": 15.0
-        },
-        {
-          "market": "1X2",
-          "pick": "Draw",
-          "our_prob": 28.12,
-          "implied_prob": 12.5,
-          "value": 15.62,
-          "kelly_pct": 17.85,
-          "half_kelly_pct": 8.93,
-          "rating": "STRONG_VALUE",
-          "odds": 8.0
-        },
-        {
-          "market": "O/U 2.5",
-          "pick": "Under 2.5",
-          "our_prob": 52.26,
-          "implied_prob": 38.02,
-          "value": 14.24,
-          "kelly_pct": 22.97,
-          "half_kelly_pct": 11.49,
-          "rating": "STRONG_VALUE",
-          "odds": 2.63
-        },
-        {
-          "market": "BTTS",
-          "pick": "Yes",
-          "our_prob": 53.28,
-          "implied_prob": 42.02,
-          "value": 11.26,
-          "kelly_pct": 19.42,
-          "half_kelly_pct": 9.71,
-          "rating": "STRONG_VALUE",
-          "odds": 2.38
-        }
-      ],
-      "breakdown": {
-        "form": {
-          "home_last5": [
-            "D",
-            "L",
-            "W",
-            "L",
-            "L"
-          ],
-          "away_last5": [
-            "L",
-            "W",
-            "W",
-            "W",
-            "W"
-          ],
-          "home_form_score": 37,
-          "away_form_score": 67
-        },
-        "h2h": {
-          "home_wins": 0,
-          "draws": 0,
-          "away_wins": 0,
-          "avg_goals": null,
-          "matches": 0
-        },
-        "xg": {
-          "home_xg": 0.187,
-          "home_xga": 1.173,
-          "away_xg": 0.43,
-          "away_xga": 0.587,
-          "home_source": "real",
-          "away_source": "real",
-          "is_proxy": false
-        },
-        "standings": {
-          "home_pos": null,
-          "away_pos": null,
-          "points_diff": null
-        },
-        "injuries": {
-          "home_missing": [],
-          "away_missing": []
-        },
-        "referee": null,
-        "fatigue": {
-          "home_rest_days": 4,
-          "away_rest_days": 5,
-          "home_status": "NORMAL",
-          "away_status": "FRESH"
-        },
-        "weather": null,
-        "factors_used": {
-          "weights": {
-            "form": 0.45,
-            "xg": 0.2,
-            "attack_defense": 0.18,
-            "home": 0.07,
-            "h2h": 0.05,
-            "fatigue": 0.05
-          },
-          "form": {
-            "home_form_score": 1.5,
-            "away_form_score": 3.0,
-            "home_matches": [
-              {
-                "opponent": "Ecuador",
-                "position": 2,
-                "position_estimated": false,
-                "venue": "away",
-                "outcome": "D",
-                "score": "0-0",
-                "points": 2
-              },
-              {
-                "opponent": "Argentina",
-                "position": 1,
-                "position_estimated": false,
-                "venue": "away",
-                "outcome": "L",
-                "score": "0-7",
-                "points": 1
-              }
-            ],
-            "away_matches": [
-              {
-                "opponent": "Ecuador",
-                "position": 2,
-                "position_estimated": false,
-                "venue": "home",
-                "outcome": "W",
-                "score": "1-0",
-                "points": 3
-              },
-              {
-                "opponent": "Uruguay",
-                "position": 4,
-                "position_estimated": false,
-                "venue": "away",
-                "outcome": "W",
-                "score": "2-1",
-                "points": 3
-              }
-            ]
-          },
-          "home_factors": {
-            "form": {
-              "weight": 0.45,
-              "weight_norm": 0.474,
-              "mult": 1.0,
-              "contribution": 0.0
-            },
-            "xg": {
-              "weight": 0.2,
-              "weight_norm": 0.211,
-              "mult": 0.7,
-              "contribution": -0.095
-            },
-            "attack_defense": {
-              "weight": 0.18,
-              "weight_norm": 0.189,
-              "mult": 0.739,
-              "contribution": -0.074
-            },
-            "home": {
-              "weight": 0.07,
-              "weight_norm": 0.074,
-              "mult": 1.2,
-              "contribution": 0.022
-            },
-            "fatigue": {
-              "weight": 0.05,
-              "weight_norm": 0.053,
-              "mult": 1.0,
-              "contribution": 0.0
-            }
-          },
-          "away_factors": {
-            "form": {
-              "weight": 0.45,
-              "weight_norm": 0.474,
-              "mult": 1.3,
-              "contribution": 0.163
-            },
-            "xg": {
-              "weight": 0.2,
-              "weight_norm": 0.211,
-              "mult": 0.7,
-              "contribution": -0.073
-            },
-            "attack_defense": {
-              "weight": 0.18,
-              "weight_norm": 0.189,
-              "mult": 1.018,
-              "contribution": 0.004
-            },
-            "home": {
-              "weight": 0.07,
-              "weight_norm": 0.074,
-              "mult": 0.85,
-              "contribution": -0.013
-            },
-            "fatigue": {
-              "weight": 0.05,
-              "weight_norm": 0.053,
-              "mult": 1.0,
-              "contribution": 0.0
-            }
-          },
-          "base": {
-            "home_goals": 1.5,
-            "away_goals": 1.15
-          },
-          "lambda": {
-            "home": 1.353,
-            "away": 1.232
-          }
-        },
-        "positions_estimated": 0,
-        "notes": []
-      },
-      "poisson_matrix": [
-        [
-          9.172,
-          7.653,
-          5.721,
-          2.349,
-          0.724,
-          0.178,
-          0.044
-        ],
-        [
-          8.567,
-          14.201,
-          7.741,
-          3.179,
-          0.979,
-          0.241,
-          0.06
-        ],
-        [
-          6.902,
-          8.503,
-          5.238,
-          2.151,
-          0.663,
-          0.163,
-          0.04
-        ],
-        [
-          3.113,
-          3.835,
-          2.363,
-          0.97,
-          0.299,
-          0.074,
-          0.018
-        ],
-        [
-          1.053,
-          1.298,
-          0.799,
-          0.328,
-          0.101,
-          0.025,
-          0.006
-        ],
-        [
-          0.285,
-          0.351,
-          0.216,
-          0.089,
-          0.027,
-          0.007,
-          0.002
-        ],
-        [
-          0.079,
-          0.098,
-          0.06,
-          0.025,
-          0.008,
-          0.002,
-          0.0
-        ]
-      ],
-      "poisson_matrix_sum": 100.0,
-      "odds": {
-        "home": 15.0,
-        "draw": 8.0,
-        "away": 1.17,
-        "over_2_5": 1.5,
-        "under_2_5": 2.63,
-        "btts_yes": 2.38,
-        "btts_no": 1.53
-      },
-      "implied_probs": {
-        "home": 6.67,
-        "draw": 12.5,
-        "away": 85.47
-      },
-      "data_sources": [
-        "flashscore",
-        "flashscore-odds",
-        "flashscore-feed",
-        "flashscore-standings",
-        "flashscore-stats"
-      ],
-      "computed_at": "2026-06-22T23:36:25.362200+00:00"
-    },
-    {
-      "match": {
-        "home_team": "Ecuador",
-        "away_team": "Germany",
-        "league": "WORLD: World Championship",
-        "date": "2026-06-25T20:00:00+00:00",
-        "venue": "",
-        "status": "UPCOMING",
-        "event_id": "zmvgtcCa",
-        "id": "zmvgtcCa"
-      },
-      "prediction": {
-        "home_win_prob": 42.86,
-        "draw_prob": 29.23,
-        "away_win_prob": 27.92,
-        "predicted_outcome": "HOME_WIN",
-        "confidence": "HIGH",
-        "confidence_score": 76,
-        "missing_data": [
-          "injuries",
-          "referee",
-          "weather"
-        ],
-        "proxy_factors": [],
-        "lambda": {
-          "home": 1.3551,
-          "away": 1.0346
-        },
-        "predicted_goals": {
-          "home": 1.335,
-          "away": 1.044
-        },
-        "most_likely_scores": [
-          {
-            "score": "1-1",
-            "prob": 14.52
-          },
-          {
-            "score": "0-0",
-            "prob": 10.84
-          },
-          {
-            "score": "1-0",
-            "prob": 10.75
-          },
-          {
-            "score": "2-1",
-            "prob": 8.71
-          },
-          {
-            "score": "2-0",
-            "prob": 8.42
-          }
-        ],
-        "monte_carlo": {
-          "simulations": 10000,
-          "home_win": 43.27,
-          "draw": 27.82,
-          "away_win": 28.91,
-          "confidence_interval": "±1.0%",
-          "histogram": {
-            "0": 9.42,
-            "1": 22.26,
-            "2": 25.91,
-            "3": 20.5,
-            "4": 12.3,
-            "5": 6.11,
-            "6": 2.39,
-            "7": 0.84,
-            "8": 0.27
-          },
-          "top_scores": [
-            {
-              "score": "1-1",
-              "prob": 13.19
-            },
-            {
-              "score": "1-0",
-              "prob": 12.34
-            },
-            {
-              "score": "0-1",
-              "prob": 9.92
-            },
-            {
-              "score": "0-0",
-              "prob": 9.42
-            },
-            {
-              "score": "2-1",
-              "prob": 8.44
-            }
-          ]
-        }
-      },
-      "markets": {
-        "over_under_2_5": {
-          "over": 42.58,
-          "under": 57.42
-        },
-        "btts": {
-          "yes": 48.52,
-          "no": 51.48
-        }
-      },
-      "value_bets": [
-        {
-          "market": "1X2",
-          "pick": "Home Win",
-          "our_prob": 42.86,
-          "implied_prob": 28.57,
-          "value": 14.29,
-          "kelly_pct": 20.0,
-          "half_kelly_pct": 10.0,
-          "rating": "STRONG_VALUE",
-          "odds": 3.5
-        },
-        {
-          "market": "O/U 2.5",
-          "pick": "Under 2.5",
-          "our_prob": 57.42,
-          "implied_prob": 50.0,
-          "value": 7.42,
-          "kelly_pct": 14.84,
-          "half_kelly_pct": 7.42,
-          "rating": "GOOD_VALUE",
-          "odds": 2.0
-        },
-        {
-          "market": "1X2",
-          "pick": "Draw",
-          "our_prob": 29.23,
-          "implied_prob": 25.0,
-          "value": 4.23,
-          "kelly_pct": 5.64,
-          "half_kelly_pct": 2.82,
-          "rating": "SLIGHT_VALUE",
-          "odds": 4.0
-        },
-        {
-          "market": "BTTS",
-          "pick": "No",
-          "our_prob": 51.48,
-          "implied_prob": 50.0,
-          "value": 1.48,
-          "kelly_pct": 2.96,
-          "half_kelly_pct": 1.48,
-          "rating": "SLIGHT_VALUE",
-          "odds": 2.0
-        }
-      ],
-      "breakdown": {
-        "form": {
-          "home_last5": [
-            "D",
-            "L",
-            "W",
-            "W",
-            "D"
-          ],
-          "away_last5": [
-            "W",
-            "W",
-            "W",
-            "W",
-            "W"
-          ],
-          "home_form_score": 53,
-          "away_form_score": 100
-        },
-        "h2h": {
-          "home_wins": 0,
-          "draws": 0,
-          "away_wins": 2,
-          "avg_goals": 4.5,
-          "matches": 2
-        },
-        "xg": {
-          "home_xg": 1.057,
-          "home_xga": 0.39,
-          "away_xg": 1.263,
-          "away_xga": 0.31,
-          "home_source": "real",
-          "away_source": "real",
-          "is_proxy": false
-        },
-        "standings": {
-          "home_pos": null,
-          "away_pos": null,
-          "points_diff": null
-        },
-        "injuries": {
-          "home_missing": [],
-          "away_missing": []
-        },
-        "referee": null,
-        "fatigue": {
-          "home_rest_days": 4,
-          "away_rest_days": 5,
-          "home_status": "NORMAL",
-          "away_status": "FRESH"
-        },
-        "weather": null,
-        "factors_used": {
-          "weights": {
-            "form": 0.45,
-            "xg": 0.2,
-            "attack_defense": 0.18,
-            "home": 0.07,
-            "h2h": 0.05,
-            "fatigue": 0.05
-          },
-          "form": {
-            "home_form_score": 1.4,
-            "away_form_score": 1.0,
-            "home_matches": [
-              {
-                "opponent": "Argentina",
-                "position": 1,
-                "position_estimated": false,
-                "venue": "home",
-                "outcome": "W",
-                "score": "1-0",
-                "points": 3
-              },
-              {
-                "opponent": "Paraguay",
-                "position": 6,
-                "position_estimated": false,
-                "venue": "away",
-                "outcome": "D",
-                "score": "0-0",
-                "points": 1
-              },
-              {
-                "opponent": "Peru",
-                "position": 9,
-                "position_estimated": false,
-                "venue": "away",
-                "outcome": "D",
-                "score": "0-0",
-                "points": 1
-              },
-              {
-                "opponent": "Brazil",
-                "position": 5,
-                "position_estimated": false,
-                "venue": "home",
-                "outcome": "D",
-                "score": "0-0",
-                "points": 1
-              },
-              {
-                "opponent": "Chile",
-                "position": 10,
-                "position_estimated": false,
-                "venue": "away",
-                "outcome": "D",
-                "score": "0-0",
-                "points": 1
-              }
-            ],
-            "away_matches": [
-              {
-                "opponent": "Colombia",
-                "position": 3,
-                "position_estimated": false,
-                "venue": "home",
-                "outcome": "L",
-                "score": "0-2",
-                "points": 0
-              },
-              {
-                "opponent": "Peru",
-                "position": 9,
-                "position_estimated": false,
-                "venue": "home",
-                "outcome": "W",
-                "score": "2-0",
-                "points": 2
-              }
-            ]
-          },
-          "home_factors": {
-            "form": {
-              "weight": 0.45,
-              "weight_norm": 0.45,
-              "mult": 0.98,
-              "contribution": -0.014
-            },
-            "xg": {
-              "weight": 0.2,
-              "weight_norm": 0.2,
-              "mult": 0.705,
-              "contribution": -0.089
-            },
-            "attack_defense": {
-              "weight": 0.18,
-              "weight_norm": 0.18,
-              "mult": 0.805,
-              "contribution": -0.053
-            },
-            "home": {
-              "weight": 0.07,
-              "weight_norm": 0.07,
-              "mult": 1.2,
-              "contribution": 0.021
-            },
-            "h2h": {
-              "weight": 0.05,
-              "weight_norm": 0.05,
-              "mult": 0.85,
-              "contribution": -0.011
-            },
-            "fatigue": {
-              "weight": 0.05,
-              "weight_norm": 0.05,
-              "mult": 1.0,
-              "contribution": 0.0
-            }
-          },
-          "away_factors": {
-            "form": {
-              "weight": 0.45,
-              "weight_norm": 0.45,
-              "mult": 0.9,
-              "contribution": -0.052
-            },
-            "xg": {
-              "weight": 0.2,
-              "weight_norm": 0.2,
-              "mult": 1.098,
-              "contribution": 0.023
-            },
-            "attack_defense": {
-              "weight": 0.18,
-              "weight_norm": 0.18,
-              "mult": 0.6,
-              "contribution": -0.083
-            },
-            "home": {
-              "weight": 0.07,
-              "weight_norm": 0.07,
-              "mult": 0.85,
-              "contribution": -0.012
-            },
-            "h2h": {
-              "weight": 0.05,
-              "weight_norm": 0.05,
-              "mult": 1.15,
-              "contribution": 0.009
-            },
-            "fatigue": {
-              "weight": 0.05,
-              "weight_norm": 0.05,
-              "mult": 1.0,
-              "contribution": 0.0
-            }
-          },
-          "base": {
-            "home_goals": 1.5,
-            "away_goals": 1.15
-          },
-          "lambda": {
-            "home": 1.355,
-            "away": 1.035
-          }
-        },
-        "positions_estimated": 0,
-        "notes": []
-      },
-      "poisson_matrix": [
-        [
-          10.836,
-          7.812,
-          4.905,
-          1.692,
-          0.438,
-          0.091,
-          0.018
-        ],
-        [
-          10.75,
-          14.521,
-          6.647,
-          2.292,
-          0.593,
-          0.123,
-          0.025
-        ],
-        [
-          8.415,
-          8.707,
-          4.504,
-          1.553,
-          0.402,
-          0.083,
-          0.017
-        ],
-        [
-          3.801,
-          3.933,
-          2.034,
-          0.702,
-          0.181,
-          0.038,
-          0.008
-        ],
-        [
-          1.288,
-          1.332,
-          0.689,
-          0.238,
-          0.061,
-          0.013,
-          0.003
-        ],
-        [
-          0.349,
-          0.361,
-          0.187,
-          0.064,
-          0.017,
-          0.003,
-          0.001
-        ],
-        [
-          0.097,
-          0.1,
-          0.052,
-          0.018,
-          0.005,
-          0.001,
-          0.0
-        ]
-      ],
-      "poisson_matrix_sum": 100.0,
-      "odds": {
-        "home": 3.5,
-        "draw": 4.0,
-        "away": 1.95,
-        "over_2_5": 1.8,
-        "under_2_5": 2.0,
-        "btts_yes": 1.75,
-        "btts_no": 2.0
-      },
-      "implied_probs": {
         "home": 28.57,
-        "draw": 25.0,
+        "draw": 25.64,
         "away": 51.28
       },
       "data_sources": [
@@ -19109,7 +18217,7 @@
         "flashscore-standings",
         "flashscore-stats"
       ],
-      "computed_at": "2026-06-22T23:36:25.369662+00:00"
+      "computed_at": "2026-06-23T12:52:12.088191+00:00"
     }
   ]
 }
