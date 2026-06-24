@@ -8,6 +8,38 @@
       "home_goals": 3,
       "away_goals": 2,
       "status": "FINISHED"
+    },
+    {
+      "id": "537400",
+      "home_team": "Jordan",
+      "away_team": "Algeria",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537405",
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan",
+      "home_goals": 5,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537411",
+      "home_team": "England",
+      "away_team": "Ghana",
+      "home_goals": 0,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537412",
+      "home_team": "Panama",
+      "away_team": "Croatia",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
     }
   ]
 }
