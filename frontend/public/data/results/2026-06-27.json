@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-27",
+  "results": [
+    {
+      "id": "537373",
+      "home_team": "Uruguay",
+      "away_team": "Spain",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537374",
+      "home_team": "Cape Verde Islands",
+      "away_team": "Saudi Arabia",
+      "home_goals": 0,
+      "away_goals": 0,
+      "status": "FINISHED"
+    }
+  ]
+}
