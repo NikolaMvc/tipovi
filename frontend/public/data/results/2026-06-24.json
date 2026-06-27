@@ -10,14 +10,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "537337",
-      "home_team": "Switzerland",
-      "away_team": "Canada",
-      "home_goals": 2,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "537338",
       "home_team": "Bosnia-Herzegovina",
       "away_team": "Qatar",
@@ -26,11 +18,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "537343",
-      "home_team": "Scotland",
-      "away_team": "Brazil",
-      "home_goals": 0,
-      "away_goals": 3,
+      "id": "537337",
+      "home_team": "Switzerland",
+      "away_team": "Canada",
+      "home_goals": 2,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -39,6 +31,14 @@
       "away_team": "Haiti",
       "home_goals": 4,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537343",
+      "home_team": "Scotland",
+      "away_team": "Brazil",
+      "home_goals": 0,
+      "away_goals": 3,
       "status": "FINISHED"
     }
   ]

@@ -2,14 +2,6 @@
   "date": "2026-06-25",
   "results": [
     {
-      "id": "537331",
-      "home_team": "Czechia",
-      "away_team": "Mexico",
-      "home_goals": 0,
-      "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
       "id": "537332",
       "home_team": "South Africa",
       "away_team": "South Korea",
@@ -18,11 +10,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "537355",
-      "home_team": "Ecuador",
-      "away_team": "Germany",
-      "home_goals": 2,
-      "away_goals": 1,
+      "id": "537331",
+      "home_team": "Czechia",
+      "away_team": "Mexico",
+      "home_goals": 0,
+      "away_goals": 3,
       "status": "FINISHED"
     },
     {
@@ -34,11 +26,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "537361",
-      "home_team": "Tunisia",
-      "away_team": "Netherlands",
-      "home_goals": 1,
-      "away_goals": 3,
+      "id": "537355",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
+      "home_goals": 2,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -47,6 +39,14 @@
       "away_team": "Sweden",
       "home_goals": 1,
       "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537361",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
+      "home_goals": 1,
+      "away_goals": 3,
       "status": "FINISHED"
     }
   ]
