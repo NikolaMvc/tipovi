@@ -18,19 +18,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "537396",
-      "home_team": "Senegal",
-      "away_team": "Iraq",
-      "home_goals": 5,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "537395",
       "home_team": "Norway",
       "away_team": "France",
       "home_goals": 1,
       "away_goals": 4,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537396",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "home_goals": 5,
+      "away_goals": 0,
       "status": "FINISHED"
     }
   ]
