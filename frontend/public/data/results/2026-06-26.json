@@ -2,6 +2,14 @@
   "date": "2026-06-26",
   "results": [
     {
+      "id": "537350",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "home_goals": 0,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
       "id": "537349",
       "home_team": "Turkey",
       "away_team": "United States",
@@ -10,10 +18,10 @@
       "status": "FINISHED"
     },
     {
-      "id": "537350",
-      "home_team": "Paraguay",
-      "away_team": "Australia",
-      "home_goals": 0,
+      "id": "537396",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "home_goals": 5,
       "away_goals": 0,
       "status": "FINISHED"
     },
@@ -23,14 +31,6 @@
       "away_team": "France",
       "home_goals": 1,
       "away_goals": 4,
-      "status": "FINISHED"
-    },
-    {
-      "id": "537396",
-      "home_team": "Senegal",
-      "away_team": "Iraq",
-      "home_goals": 5,
-      "away_goals": 0,
       "status": "FINISHED"
     }
   ]
