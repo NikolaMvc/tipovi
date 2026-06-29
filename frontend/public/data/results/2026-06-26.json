@@ -2,19 +2,19 @@
   "date": "2026-06-26",
   "results": [
     {
-      "id": "537350",
-      "home_team": "Paraguay",
-      "away_team": "Australia",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "537349",
       "home_team": "Turkey",
       "away_team": "United States",
       "home_goals": 3,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537350",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "home_goals": 0,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {

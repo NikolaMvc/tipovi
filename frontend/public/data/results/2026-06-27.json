@@ -18,19 +18,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "537368",
-      "home_team": "Egypt",
-      "away_team": "Iran",
-      "home_goals": 1,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "537367",
       "home_team": "New Zealand",
       "away_team": "Belgium",
       "home_goals": 1,
       "away_goals": 5,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537368",
+      "home_team": "Egypt",
+      "away_team": "Iran",
+      "home_goals": 1,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
