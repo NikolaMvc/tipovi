@@ -2,14 +2,6 @@
   "date": "2026-06-27",
   "results": [
     {
-      "id": "537374",
-      "home_team": "Cape Verde Islands",
-      "away_team": "Saudi Arabia",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "537373",
       "home_team": "Uruguay",
       "away_team": "Spain",
@@ -18,11 +10,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "537368",
-      "home_team": "Egypt",
-      "away_team": "Iran",
-      "home_goals": 1,
-      "away_goals": 1,
+      "id": "537374",
+      "home_team": "Cape Verde Islands",
+      "away_team": "Saudi Arabia",
+      "home_goals": 0,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -34,10 +26,10 @@
       "status": "FINISHED"
     },
     {
-      "id": "537414",
-      "home_team": "Croatia",
-      "away_team": "Ghana",
-      "home_goals": 2,
+      "id": "537368",
+      "home_team": "Egypt",
+      "away_team": "Iran",
+      "home_goals": 1,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -50,10 +42,10 @@
       "status": "FINISHED"
     },
     {
-      "id": "537408",
-      "home_team": "Congo DR",
-      "away_team": "Uzbekistan",
-      "home_goals": 3,
+      "id": "537414",
+      "home_team": "Croatia",
+      "away_team": "Ghana",
+      "home_goals": 2,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -63,6 +55,14 @@
       "away_team": "Portugal",
       "home_goals": 0,
       "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537408",
+      "home_team": "Congo DR",
+      "away_team": "Uzbekistan",
+      "home_goals": 3,
+      "away_goals": 1,
       "status": "FINISHED"
     }
   ]

@@ -2,18 +2,18 @@
   "date": "2026-06-28",
   "results": [
     {
-      "id": "537402",
-      "home_team": "Algeria",
-      "away_team": "Austria",
-      "home_goals": 3,
-      "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
       "id": "537401",
       "home_team": "Jordan",
       "away_team": "Argentina",
       "home_goals": 1,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537402",
+      "home_team": "Algeria",
+      "away_team": "Austria",
+      "home_goals": 3,
       "away_goals": 3,
       "status": "FINISHED"
     },
