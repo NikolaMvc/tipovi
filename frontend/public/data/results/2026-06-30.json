@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-30",
+  "results": [
+    {
+      "id": "537418",
+      "home_team": "Netherlands",
+      "away_team": "Morocco",
+      "home_goals": 3,
+      "away_goals": 4,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537424",
+      "home_team": "Ivory Coast",
+      "away_team": "Norway",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537416",
+      "home_team": "France",
+      "away_team": "Sweden",
+      "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    }
+  ]
+}
