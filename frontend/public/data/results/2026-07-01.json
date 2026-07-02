@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-01",
+  "results": [
+    {
+      "id": "537425",
+      "home_team": "Mexico",
+      "away_team": "Ecuador",
+      "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537426",
+      "home_team": "England",
+      "away_team": "Congo DR",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537422",
+      "home_team": "Belgium",
+      "away_team": "Senegal",
+      "home_goals": 3,
+      "away_goals": 2,
+      "status": "FINISHED"
+    }
+  ]
+}
