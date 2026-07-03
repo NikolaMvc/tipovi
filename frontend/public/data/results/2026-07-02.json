@@ -8,6 +8,22 @@
       "home_goals": 2,
       "away_goals": 0,
       "status": "FINISHED"
+    },
+    {
+      "id": "537420",
+      "home_team": "Spain",
+      "away_team": "Austria",
+      "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537419",
+      "home_team": "Portugal",
+      "away_team": "Croatia",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
     }
   ]
 }
