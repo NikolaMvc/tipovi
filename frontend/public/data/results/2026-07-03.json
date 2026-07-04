@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-03",
+  "results": [
+    {
+      "id": "537429",
+      "home_team": "Switzerland",
+      "away_team": "Algeria",
+      "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537428",
+      "home_team": "Australia",
+      "away_team": "Egypt",
+      "home_goals": 3,
+      "away_goals": 5,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537427",
+      "home_team": "Argentina",
+      "away_team": "Cape Verde Islands",
+      "home_goals": 3,
+      "away_goals": 2,
+      "status": "FINISHED"
+    }
+  ]
+}
