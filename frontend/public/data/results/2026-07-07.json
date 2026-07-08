@@ -8,6 +8,22 @@
       "home_goals": 1,
       "away_goals": 4,
       "status": "FINISHED"
+    },
+    {
+      "id": "537381",
+      "home_team": "Argentina",
+      "away_team": "Egypt",
+      "home_goals": 3,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "537382",
+      "home_team": "Switzerland",
+      "away_team": "Colombia",
+      "home_goals": 4,
+      "away_goals": 3,
+      "status": "FINISHED"
     }
   ]
 }
