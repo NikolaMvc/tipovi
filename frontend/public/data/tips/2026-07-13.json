@@ -83,7 +83,8 @@
       "pick": "Home Win",
       "probability": 48.91,
       "odds": 1.86,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "2-3"
     },
     {
       "match_id": "67Sw4PlS",
