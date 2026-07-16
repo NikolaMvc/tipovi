@@ -85,7 +85,8 @@
       "pick": "Home Win",
       "probability": 50.15,
       "odds": 1.78,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "1-3"
     },
     {
       "match_id": "IVKcipOO",
