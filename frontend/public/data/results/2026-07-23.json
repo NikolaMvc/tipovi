@@ -2,19 +2,19 @@
   "date": "2026-07-23",
   "results": [
     {
-      "id": "554922",
-      "home_team": "Chapecoense AF",
-      "away_team": "CR Flamengo",
-      "home_goals": 0,
-      "away_goals": 4,
-      "status": "FINISHED"
-    },
-    {
       "id": "554928",
       "home_team": "São Paulo FC",
       "away_team": "CA Paranaense",
       "home_goals": 1,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554922",
+      "home_team": "Chapecoense AF",
+      "away_team": "CR Flamengo",
+      "home_goals": 0,
+      "away_goals": 4,
       "status": "FINISHED"
     },
     {
