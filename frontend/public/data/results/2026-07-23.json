@@ -10,19 +10,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "554926",
-      "home_team": "SC Internacional",
-      "away_team": "Cruzeiro EC",
-      "home_goals": 1,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "554922",
       "home_team": "Chapecoense AF",
       "away_team": "CR Flamengo",
       "home_goals": 0,
       "away_goals": 4,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554926",
+      "home_team": "SC Internacional",
+      "away_team": "Cruzeiro EC",
+      "home_goals": 1,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
