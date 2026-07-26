@@ -10,14 +10,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "554922",
-      "home_team": "Chapecoense AF",
-      "away_team": "CR Flamengo",
-      "home_goals": 0,
-      "away_goals": 4,
-      "status": "FINISHED"
-    },
-    {
       "id": "554926",
       "home_team": "SC Internacional",
       "away_team": "Cruzeiro EC",
@@ -26,11 +18,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "554771",
-      "home_team": "Botafogo FR",
-      "away_team": "EC Vitória",
+      "id": "554922",
+      "home_team": "Chapecoense AF",
+      "away_team": "CR Flamengo",
       "home_goals": 0,
-      "away_goals": 0,
+      "away_goals": 4,
       "status": "FINISHED"
     },
     {
@@ -38,6 +30,14 @@
       "home_team": "SC Corinthians Paulista",
       "away_team": "Clube do Remo",
       "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554771",
+      "home_team": "Botafogo FR",
+      "away_team": "EC Vitória",
+      "home_goals": 0,
       "away_goals": 0,
       "status": "FINISHED"
     }
