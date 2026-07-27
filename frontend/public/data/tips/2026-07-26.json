@@ -11,7 +11,8 @@
       "pick": "Home Win",
       "probability": 57.48,
       "odds": 1.45,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "1-1"
     },
     {
       "match_id": "MTUAFA8r",
