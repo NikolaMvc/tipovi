@@ -2,19 +2,19 @@
   "date": "2026-07-25",
   "results": [
     {
-      "id": "554930",
-      "home_team": "CA Paranaense",
-      "away_team": "SC Internacional",
-      "home_goals": 2,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "554938",
       "home_team": "Santos FC",
       "away_team": "Chapecoense AF",
       "home_goals": 2,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554930",
+      "home_team": "CA Paranaense",
+      "away_team": "SC Internacional",
+      "home_goals": 2,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
