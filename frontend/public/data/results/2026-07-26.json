@@ -26,19 +26,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "554934",
-      "home_team": "CR Flamengo",
-      "away_team": "São Paulo FC",
-      "home_goals": 1,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "554932",
       "home_team": "RB Bragantino",
       "away_team": "Coritiba FBC",
       "home_goals": 0,
       "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554934",
+      "home_team": "CR Flamengo",
+      "away_team": "São Paulo FC",
+      "home_goals": 1,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
