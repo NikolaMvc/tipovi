@@ -18,14 +18,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "554935",
-      "home_team": "Grêmio FBPA",
-      "away_team": "Fluminense FC",
-      "home_goals": 1,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "554932",
       "home_team": "RB Bragantino",
       "away_team": "Coritiba FBC",
@@ -42,11 +34,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "554937",
-      "home_team": "Clube do Remo",
-      "away_team": "EC Vitória",
-      "home_goals": 2,
-      "away_goals": 0,
+      "id": "554935",
+      "home_team": "Grêmio FBPA",
+      "away_team": "Fluminense FC",
+      "home_goals": 1,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -55,6 +47,14 @@
       "away_team": "CA Mineiro",
       "home_goals": 1,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554937",
+      "home_team": "Clube do Remo",
+      "away_team": "EC Vitória",
+      "home_goals": 2,
+      "away_goals": 0,
       "status": "FINISHED"
     }
   ]
