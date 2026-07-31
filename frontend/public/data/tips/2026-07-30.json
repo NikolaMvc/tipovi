@@ -183,7 +183,8 @@
       "pick": "Home Win",
       "probability": 48.97,
       "odds": 1.84,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "0-0"
     },
     {
       "match_id": "6V8piG9k",
