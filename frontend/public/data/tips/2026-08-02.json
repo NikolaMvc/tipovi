@@ -11,7 +11,8 @@
       "pick": "Home Win",
       "probability": 59.45,
       "odds": 1.08,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "5-0"
     },
     {
       "match_id": "8xq9Q2rm",
@@ -62,7 +63,8 @@
       "pick": "Home Win",
       "probability": 55.3,
       "odds": 1.1,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "4-0"
     },
     {
       "match_id": "tjPmEbXP",
@@ -86,7 +88,8 @@
       "pick": "Home Win",
       "probability": 54.47,
       "odds": 1.89,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "0-1"
     },
     {
       "match_id": "UgScCdiR",
@@ -124,7 +127,8 @@
       "pick": "Home Win",
       "probability": 53.97,
       "odds": 1.43,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "2-0"
     },
     {
       "match_id": "4EY9cAtH",
@@ -188,7 +192,8 @@
       "pick": "Home Win",
       "probability": 53.0,
       "odds": 1.36,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "3-2"
     },
     {
       "match_id": "feWUtFXI",
@@ -200,7 +205,8 @@
       "pick": "Home Win",
       "probability": 51.83,
       "odds": 1.35,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "2-1"
     },
     {
       "match_id": "OOPVfasp",
@@ -212,7 +218,8 @@
       "pick": "Home Win",
       "probability": 51.72,
       "odds": 1.54,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "0-0"
     },
     {
       "match_id": "rF1gjw53",
@@ -224,7 +231,8 @@
       "pick": "Home Win",
       "probability": 51.69,
       "odds": 1.62,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "2-4"
     },
     {
       "match_id": "vijUqSN9",
@@ -236,7 +244,8 @@
       "pick": "Home Win",
       "probability": 51.64,
       "odds": 1.62,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "1-2"
     },
     {
       "match_id": "ttMR2CSH",
@@ -248,7 +257,8 @@
       "pick": "Home Win",
       "probability": 51.57,
       "odds": 1.16,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "16-1"
     }
   ]
 }
