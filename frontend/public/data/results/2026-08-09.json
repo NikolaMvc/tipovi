@@ -18,19 +18,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "558221",
-      "home_team": "PEC Zwolle",
-      "away_team": "AFC Ajax",
-      "home_goals": 0,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "558220",
       "home_team": "FC Groningen",
       "away_team": "FC Utrecht",
       "home_goals": 2,
       "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558221",
+      "home_team": "PEC Zwolle",
+      "away_team": "AFC Ajax",
+      "home_goals": 0,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -58,14 +58,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "554950",
-      "home_team": "EC Bahia",
-      "away_team": "CR Vasco da Gama",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "554957",
       "home_team": "SE Palmeiras",
       "away_team": "SC Internacional",
@@ -74,11 +66,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "567262",
-      "home_team": "Sport Lisboa e Benfica",
-      "away_team": "Académico de Viseu FC",
-      "home_goals": 2,
-      "away_goals": 2,
+      "id": "554950",
+      "home_team": "EC Bahia",
+      "away_team": "CR Vasco da Gama",
+      "home_goals": 0,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -98,10 +90,10 @@
       "status": "FINISHED"
     },
     {
-      "id": "554952",
-      "home_team": "RB Bragantino",
-      "away_team": "SC Corinthians Paulista",
-      "home_goals": 0,
+      "id": "567262",
+      "home_team": "Sport Lisboa e Benfica",
+      "away_team": "Académico de Viseu FC",
+      "home_goals": 2,
       "away_goals": 2,
       "status": "FINISHED"
     },
@@ -109,6 +101,14 @@
       "id": "554959",
       "home_team": "Santos FC",
       "away_team": "CA Paranaense",
+      "home_goals": 0,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554952",
+      "home_team": "RB Bragantino",
+      "away_team": "SC Corinthians Paulista",
       "home_goals": 0,
       "away_goals": 2,
       "status": "FINISHED"
