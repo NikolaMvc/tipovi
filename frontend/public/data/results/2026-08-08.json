@@ -42,19 +42,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "558218",
-      "home_team": "AZ",
-      "away_team": "ADO Den Haag",
-      "home_goals": 2,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "554956",
       "home_team": "Grêmio FBPA",
       "away_team": "São Paulo FC",
       "home_goals": 2,
       "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558218",
+      "home_team": "AZ",
+      "away_team": "ADO Den Haag",
+      "home_goals": 2,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
