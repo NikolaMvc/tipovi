@@ -2,19 +2,19 @@
   "date": "2026-08-08",
   "results": [
     {
-      "id": "567263",
-      "home_team": "CS Marítimo",
-      "away_team": "Casa Pia AC",
-      "home_goals": 1,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "558215",
       "home_team": "NEC",
       "away_team": "Telstar 1963",
       "home_goals": 1,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567263",
+      "home_team": "CS Marítimo",
+      "away_team": "Casa Pia AC",
+      "home_goals": 1,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {

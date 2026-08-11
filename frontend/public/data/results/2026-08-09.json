@@ -74,19 +74,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "567259",
-      "home_team": "Moreirense FC",
-      "away_team": "Sporting Clube de Braga",
-      "home_goals": 2,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "567261",
       "home_team": "Gil Vicente FC",
       "away_team": "Rio Ave FC",
       "home_goals": 1,
       "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567259",
+      "home_team": "Moreirense FC",
+      "away_team": "Sporting Clube de Braga",
+      "home_goals": 2,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
