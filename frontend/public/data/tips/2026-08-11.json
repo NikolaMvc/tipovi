@@ -167,7 +167,8 @@
       "pick": "Home Win",
       "probability": 48.16,
       "odds": 1.62,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "1-2"
     },
     {
       "match_id": "KKMm2BoA",
