@@ -24,6 +24,14 @@
       "home_goals": 2,
       "away_goals": 2,
       "status": "FINISHED"
+    },
+    {
+      "id": "567268",
+      "home_team": "Sporting Clube de Portugal",
+      "away_team": "Vitória SC",
+      "home_goals": 3,
+      "away_goals": 2,
+      "status": "FINISHED"
     }
   ]
 }

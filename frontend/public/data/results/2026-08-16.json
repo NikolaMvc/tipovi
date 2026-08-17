@@ -8,6 +8,142 @@
       "home_goals": 1,
       "away_goals": 1,
       "status": "FINISHED"
+    },
+    {
+      "id": "558228",
+      "home_team": "ADO Den Haag",
+      "away_team": "FC Groningen",
+      "home_goals": 1,
+      "away_goals": 4,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561770",
+      "home_team": "Watford FC",
+      "away_team": "Southampton FC",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558229",
+      "home_team": "Feyenoord Rotterdam",
+      "away_team": "Go Ahead Eagles",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558230",
+      "home_team": "FC Twente '65",
+      "away_team": "PEC Zwolle",
+      "home_goals": 3,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554962",
+      "home_team": "Chapecoense AF",
+      "away_team": "EC Bahia",
+      "home_goals": 3,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567270",
+      "home_team": "CD Nacional",
+      "away_team": "GD Estoril Praia",
+      "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558231",
+      "home_team": "AFC Ajax",
+      "away_team": "SC Heerenveen",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561771",
+      "home_team": "Burnley FC",
+      "away_team": "West Ham United FC",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564629",
+      "home_team": "Real Racing Club de Santander",
+      "away_team": "Villarreal CF",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564632",
+      "home_team": "RCD Espanyol de Barcelona",
+      "away_team": "Levante UD",
+      "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567272",
+      "home_team": "FC Arouca",
+      "away_team": "Moreirense FC",
+      "home_goals": 4,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554968",
+      "home_team": "CR Vasco da Gama",
+      "away_team": "Santos FC",
+      "home_goals": 0,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554961",
+      "home_team": "CA Mineiro",
+      "away_team": "Grêmio FBPA",
+      "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567269",
+      "home_team": "FC Famalicão",
+      "away_team": "CS Marítimo",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554969",
+      "home_team": "EC Vitória",
+      "away_team": "Botafogo FR",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554966",
+      "home_team": "Mirassol FC",
+      "away_team": "CR Flamengo",
+      "home_goals": 1,
+      "away_goals": 5,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554963",
+      "home_team": "SC Corinthians Paulista",
+      "away_team": "Cruzeiro EC",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
     }
   ]
 }
