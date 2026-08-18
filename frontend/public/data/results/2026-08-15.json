@@ -10,27 +10,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "561764",
-      "home_team": "Bristol City FC",
-      "away_team": "Millwall FC",
-      "home_goals": 0,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561766",
-      "home_team": "Stoke City FC",
-      "away_team": "Swansea City AFC",
-      "home_goals": 1,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561768",
-      "home_team": "Portsmouth FC",
-      "away_team": "Queens Park Rangers FC",
-      "home_goals": 1,
-      "away_goals": 3,
+      "id": "561767",
+      "home_team": "Charlton Athletic FC",
+      "away_team": "Derby County FC",
+      "home_goals": 2,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -50,11 +34,27 @@
       "status": "FINISHED"
     },
     {
-      "id": "561767",
-      "home_team": "Charlton Athletic FC",
-      "away_team": "Derby County FC",
-      "home_goals": 2,
-      "away_goals": 1,
+      "id": "561768",
+      "home_team": "Portsmouth FC",
+      "away_team": "Queens Park Rangers FC",
+      "home_goals": 1,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561764",
+      "home_team": "Bristol City FC",
+      "away_team": "Millwall FC",
+      "home_goals": 0,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561766",
+      "home_team": "Stoke City FC",
+      "away_team": "Swansea City AFC",
+      "home_goals": 1,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -122,19 +122,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "554964",
-      "home_team": "Fluminense FC",
-      "away_team": "SE Palmeiras",
-      "home_goals": 3,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "564633",
       "home_team": "Sevilla FC",
       "away_team": "Rayo Vallecano de Madrid",
       "home_goals": 2,
       "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554964",
+      "home_team": "Fluminense FC",
+      "away_team": "SE Palmeiras",
+      "home_goals": 3,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
