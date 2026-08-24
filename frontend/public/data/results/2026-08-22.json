@@ -34,14 +34,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "558232",
-      "home_team": "Fortuna Sittard",
-      "away_team": "AZ",
-      "home_goals": 0,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "564641",
       "home_team": "Athletic Club",
       "away_team": "Sevilla FC",
@@ -66,14 +58,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "558629",
-      "home_team": "Udinese Calcio",
-      "away_team": "Como 1907",
-      "home_goals": 1,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "558632",
       "home_team": "FC Internazionale Milano",
       "away_team": "AC Monza",
@@ -82,11 +66,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "558234",
-      "home_team": "Sparta Rotterdam",
-      "away_team": "FC Utrecht",
-      "home_goals": 3,
-      "away_goals": 3,
+      "id": "558629",
+      "home_team": "Udinese Calcio",
+      "away_team": "Como 1907",
+      "home_goals": 1,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -106,35 +90,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "559711",
-      "home_team": "Le Mans FC",
-      "away_team": "Stade Brestois 29",
-      "home_goals": 2,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "559718",
-      "home_team": "Toulouse FC",
-      "away_team": "Olympique Lyonnais",
-      "home_goals": 0,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "559714",
       "home_team": "ES Troyes AC",
       "away_team": "Paris FC",
       "home_goals": 0,
       "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "558636",
-      "home_team": "Parma Calcio 1913",
-      "away_team": "Cagliari Calcio",
-      "home_goals": 0,
-      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -146,19 +106,35 @@
       "status": "FINISHED"
     },
     {
+      "id": "559718",
+      "home_team": "Toulouse FC",
+      "away_team": "Olympique Lyonnais",
+      "home_goals": 0,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558636",
+      "home_team": "Parma Calcio 1913",
+      "away_team": "Cagliari Calcio",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559711",
+      "home_team": "Le Mans FC",
+      "away_team": "Stade Brestois 29",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "554975",
       "home_team": "Fluminense FC",
       "away_team": "Clube do Remo",
       "home_goals": 2,
       "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "558235",
-      "home_team": "SC Heerenveen",
-      "away_team": "PEC Zwolle",
-      "home_goals": 0,
-      "away_goals": 2,
       "status": "FINISHED"
     },
     {

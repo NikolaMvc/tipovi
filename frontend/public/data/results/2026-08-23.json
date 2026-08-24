@@ -2,30 +2,6 @@
   "date": "2026-08-23",
   "results": [
     {
-      "id": "558236",
-      "home_team": "Go Ahead Eagles",
-      "away_team": "ADO Den Haag",
-      "home_goals": 3,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "558237",
-      "home_team": "PSV",
-      "away_team": "FC Groningen",
-      "home_goals": 5,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "559717",
-      "home_team": "Angers SCO",
-      "away_team": "Lille OSC",
-      "home_goals": 0,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "560549",
       "home_team": "Brighton & Hove Albion FC",
       "away_team": "Aston Villa FC",
@@ -42,11 +18,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "558238",
-      "home_team": "SC Cambuur-Leeuwarden",
-      "away_team": "Feyenoord Rotterdam",
-      "home_goals": 2,
-      "away_goals": 5,
+      "id": "559717",
+      "home_team": "Angers SCO",
+      "away_team": "Lille OSC",
+      "home_goals": 0,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -98,14 +74,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "559713",
-      "home_team": "Paris Saint-Germain FC",
-      "away_team": "Stade Rennais FC 1901",
-      "home_goals": 2,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "558633",
       "home_team": "Atalanta BC",
       "away_team": "US Sassuolo Calcio",
@@ -122,6 +90,22 @@
       "status": "FINISHED"
     },
     {
+      "id": "559713",
+      "home_team": "Paris Saint-Germain FC",
+      "away_team": "Stade Rennais FC 1901",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554977",
+      "home_team": "SE Palmeiras",
+      "away_team": "CR Vasco da Gama",
+      "home_goals": 4,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
       "id": "554979",
       "home_team": "EC Vitória",
       "away_team": "EC Bahia",
@@ -135,14 +119,6 @@
       "away_team": "Grêmio FBPA",
       "home_goals": 1,
       "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "554977",
-      "home_team": "SE Palmeiras",
-      "away_team": "CR Vasco da Gama",
-      "home_goals": 4,
-      "away_goals": 1,
       "status": "FINISHED"
     },
     {
