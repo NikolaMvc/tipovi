@@ -2,59 +2,11 @@
   "date": "2026-08-22",
   "results": [
     {
-      "id": "561784",
-      "home_team": "Millwall FC",
-      "away_team": "Norwich City FC",
-      "home_goals": 3,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "560543",
       "home_team": "Hull City AFC",
       "away_team": "Manchester United FC",
       "home_goals": 2,
       "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561773",
-      "home_team": "Birmingham City FC",
-      "away_team": "Bristol City FC",
-      "home_goals": 2,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561781",
-      "home_team": "Lincoln City FC",
-      "away_team": "Portsmouth FC",
-      "home_goals": 1,
-      "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561780",
-      "home_team": "Blackburn Rovers FC",
-      "away_team": "Middlesbrough FC",
-      "home_goals": 2,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561775",
-      "home_team": "West Ham United FC",
-      "away_team": "Charlton Athletic FC",
-      "home_goals": 1,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561782",
-      "home_team": "Southampton FC",
-      "away_team": "Stoke City FC",
-      "home_goals": 3,
-      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -66,43 +18,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "561778",
-      "home_team": "Preston North End FC",
-      "away_team": "Wolverhampton Wanderers FC",
-      "home_goals": 1,
-      "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561774",
-      "home_team": "Swansea City AFC",
-      "away_team": "Sheffield United FC",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "560544",
       "home_team": "Ipswich Town FC",
       "away_team": "Sunderland AFC",
       "home_goals": 2,
       "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561777",
-      "home_team": "Derby County FC",
-      "away_team": "Cardiff City FC",
-      "home_goals": 2,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561783",
-      "home_team": "Queens Park Rangers FC",
-      "away_team": "Bolton Wanderers FC",
-      "home_goals": 0,
-      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -114,26 +34,10 @@
       "status": "FINISHED"
     },
     {
-      "id": "561779",
-      "home_team": "Wrexham AFC",
-      "away_team": "Watford FC",
-      "home_goals": 1,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "558232",
       "home_team": "Fortuna Sittard",
       "away_team": "AZ",
       "home_goals": 0,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "567283",
-      "home_team": "CS Marítimo",
-      "away_team": "Académico de Viseu FC",
-      "home_goals": 2,
       "away_goals": 2,
       "status": "FINISHED"
     },
@@ -162,18 +66,18 @@
       "status": "FINISHED"
     },
     {
-      "id": "558632",
-      "home_team": "FC Internazionale Milano",
-      "away_team": "AC Monza",
-      "home_goals": 4,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "558629",
       "home_team": "Udinese Calcio",
       "away_team": "Como 1907",
       "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558632",
+      "home_team": "FC Internazionale Milano",
+      "away_team": "AC Monza",
+      "home_goals": 4,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -186,43 +90,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "567279",
-      "home_team": "GD Estoril Praia",
-      "away_team": "Rio Ave FC",
-      "home_goals": 0,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "564643",
       "home_team": "Valencia CF",
       "away_team": "RC Celta de Vigo",
       "home_goals": 0,
       "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "559714",
-      "home_team": "ES Troyes AC",
-      "away_team": "Paris FC",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "559716",
-      "home_team": "OGC Nice",
-      "away_team": "FC Lorient",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "559711",
-      "home_team": "Le Mans FC",
-      "away_team": "Stade Brestois 29",
-      "home_goals": 2,
-      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -234,11 +106,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "558636",
-      "home_team": "Parma Calcio 1913",
-      "away_team": "Cagliari Calcio",
-      "home_goals": 0,
-      "away_goals": 1,
+      "id": "559711",
+      "home_team": "Le Mans FC",
+      "away_team": "Stade Brestois 29",
+      "home_goals": 2,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -250,11 +122,27 @@
       "status": "FINISHED"
     },
     {
-      "id": "558235",
-      "home_team": "SC Heerenveen",
-      "away_team": "PEC Zwolle",
+      "id": "559714",
+      "home_team": "ES Troyes AC",
+      "away_team": "Paris FC",
       "home_goals": 0,
-      "away_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558636",
+      "home_team": "Parma Calcio 1913",
+      "away_team": "Cagliari Calcio",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559716",
+      "home_team": "OGC Nice",
+      "away_team": "FC Lorient",
+      "home_goals": 0,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -266,19 +154,19 @@
       "status": "FINISHED"
     },
     {
+      "id": "558235",
+      "home_team": "SC Heerenveen",
+      "away_team": "PEC Zwolle",
+      "home_goals": 0,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "564645",
       "home_team": "RCD Espanyol de Barcelona",
       "away_team": "Real Madrid CF",
       "home_goals": 1,
       "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "567275",
-      "home_team": "Sporting Clube de Portugal",
-      "away_team": "FC Alverca",
-      "home_goals": 3,
-      "away_goals": 1,
       "status": "FINISHED"
     },
     {

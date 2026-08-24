@@ -18,18 +18,18 @@
       "status": "FINISHED"
     },
     {
-      "id": "560542",
-      "home_team": "Arsenal FC",
-      "away_team": "Coventry City FC",
-      "home_goals": 3,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "564647",
       "home_team": "Real Betis Balompié",
       "away_team": "Real Sociedad de Fútbol",
       "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560542",
+      "home_team": "Arsenal FC",
+      "away_team": "Coventry City FC",
+      "home_goals": 3,
       "away_goals": 0,
       "status": "FINISHED"
     }
