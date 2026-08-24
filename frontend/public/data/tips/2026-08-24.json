@@ -107,7 +107,8 @@
       "pick": "Home Win",
       "probability": 50.66,
       "odds": 1.51,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "2-0"
     },
     {
       "match_id": "GYOhKTUN",
