@@ -2,11 +2,35 @@
   "date": "2026-08-23",
   "results": [
     {
-      "id": "560549",
-      "home_team": "Brighton & Hove Albion FC",
-      "away_team": "Aston Villa FC",
-      "home_goals": 4,
-      "away_goals": 0,
+      "id": "558236",
+      "home_team": "Go Ahead Eagles",
+      "away_team": "ADO Den Haag",
+      "home_goals": 3,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561776",
+      "home_team": "West Bromwich Albion FC",
+      "away_team": "Burnley FC",
+      "home_goals": 3,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558237",
+      "home_team": "PSV",
+      "away_team": "FC Groningen",
+      "home_goals": 5,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559717",
+      "home_team": "Angers SCO",
+      "away_team": "Lille OSC",
+      "home_goals": 0,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -18,11 +42,27 @@
       "status": "FINISHED"
     },
     {
-      "id": "559717",
-      "home_team": "Angers SCO",
-      "away_team": "Lille OSC",
-      "home_goals": 0,
-      "away_goals": 2,
+      "id": "560549",
+      "home_team": "Brighton & Hove Albion FC",
+      "away_team": "Aston Villa FC",
+      "home_goals": 4,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567278",
+      "home_team": "Vitória SC",
+      "away_team": "CD Nacional",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558238",
+      "home_team": "SC Cambuur-Leeuwarden",
+      "away_team": "Feyenoord Rotterdam",
+      "home_goals": 2,
+      "away_goals": 5,
       "status": "FINISHED"
     },
     {
@@ -66,6 +106,14 @@
       "status": "FINISHED"
     },
     {
+      "id": "567281",
+      "home_team": "CD Santa Clara",
+      "away_team": "FC Famalicão",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
       "id": "564644",
       "home_team": "Getafe CF",
       "away_team": "Real Racing Club de Santander",
@@ -82,6 +130,14 @@
       "status": "FINISHED"
     },
     {
+      "id": "559713",
+      "home_team": "Stade Rennais FC 1901",
+      "away_team": "Paris Saint-Germain FC",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "558634",
       "home_team": "Torino FC",
       "away_team": "AC Milan",
@@ -90,11 +146,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "559713",
-      "home_team": "Paris Saint-Germain FC",
-      "away_team": "Stade Rennais FC 1901",
-      "home_goals": 2,
-      "away_goals": 2,
+      "id": "554971",
+      "home_team": "RB Bragantino",
+      "away_team": "Grêmio FBPA",
+      "home_goals": 1,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -114,19 +170,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "554971",
-      "home_team": "RB Bragantino",
-      "away_team": "Grêmio FBPA",
-      "home_goals": 1,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "564642",
       "home_team": "Elche CF",
       "away_team": "FC Barcelona",
       "home_goals": 0,
       "away_goals": 5,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567280",
+      "home_team": "FC Porto",
+      "away_team": "FC Arouca",
+      "home_goals": 2,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
