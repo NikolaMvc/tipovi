@@ -26,11 +26,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "559717",
-      "home_team": "Angers SCO",
-      "away_team": "Lille OSC",
-      "home_goals": 0,
-      "away_goals": 2,
+      "id": "560549",
+      "home_team": "Brighton & Hove Albion FC",
+      "away_team": "Aston Villa FC",
+      "home_goals": 4,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -42,11 +42,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "560549",
-      "home_team": "Brighton & Hove Albion FC",
-      "away_team": "Aston Villa FC",
-      "home_goals": 4,
-      "away_goals": 0,
+      "id": "559717",
+      "home_team": "Angers SCO",
+      "away_team": "Lille OSC",
+      "home_goals": 0,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -90,19 +90,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "558635",
-      "home_team": "Frosinone Calcio",
-      "away_team": "Juventus FC",
-      "home_goals": 0,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "558637",
       "home_team": "Venezia FC",
       "away_team": "US Lecce",
       "home_goals": 0,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558635",
+      "home_team": "Frosinone Calcio",
+      "away_team": "Juventus FC",
+      "home_goals": 0,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -122,14 +122,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "558633",
-      "home_team": "Atalanta BC",
-      "away_team": "US Sassuolo Calcio",
-      "home_goals": 2,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "559713",
       "home_team": "Stade Rennais FC 1901",
       "away_team": "Paris Saint-Germain FC",
@@ -143,6 +135,14 @@
       "away_team": "AC Milan",
       "home_goals": 1,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558633",
+      "home_team": "Atalanta BC",
+      "away_team": "US Sassuolo Calcio",
+      "home_goals": 2,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -170,14 +170,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "564642",
-      "home_team": "Elche CF",
-      "away_team": "FC Barcelona",
-      "home_goals": 0,
-      "away_goals": 5,
-      "status": "FINISHED"
-    },
-    {
       "id": "567280",
       "home_team": "FC Porto",
       "away_team": "FC Arouca",
@@ -186,11 +178,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "554972",
-      "home_team": "Chapecoense AF",
-      "away_team": "São Paulo FC",
-      "home_goals": 1,
-      "away_goals": 0,
+      "id": "564642",
+      "home_team": "Elche CF",
+      "away_team": "FC Barcelona",
+      "home_goals": 0,
+      "away_goals": 5,
       "status": "FINISHED"
     },
     {
@@ -199,6 +191,14 @@
       "away_team": "Mirassol FC",
       "home_goals": 1,
       "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554972",
+      "home_team": "Chapecoense AF",
+      "away_team": "São Paulo FC",
+      "home_goals": 1,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
