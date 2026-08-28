@@ -23,7 +23,8 @@
       "pick": "Home Win",
       "probability": 55.44,
       "odds": 1.06,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "4-1"
     },
     {
       "match_id": "GOdCRPI5",
