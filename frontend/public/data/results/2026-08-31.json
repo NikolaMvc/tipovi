@@ -2,6 +2,62 @@
   "date": "2026-08-31",
   "results": [
     {
+      "id": "558621",
+      "home_team": "US Lecce",
+      "away_team": "AS Roma",
+      "home_goals": 0,
+      "away_goals": 4,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564657",
+      "home_team": "CA Osasuna",
+      "away_team": "Getafe CF",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558628",
+      "home_team": "Atalanta BC",
+      "away_team": "Bologna FC 1909",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560557",
+      "home_team": "Aston Villa FC",
+      "away_team": "Arsenal FC",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567292",
+      "home_team": "Sporting Clube de Braga",
+      "away_team": "Vitória SC",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567288",
+      "home_team": "Sport Lisboa e Benfica",
+      "away_team": "GD Estoril Praia",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564650",
+      "home_team": "FC Barcelona",
+      "away_team": "Rayo Vallecano de Madrid",
+      "home_goals": 5,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "554987",
       "home_team": "Clube do Remo",
       "away_team": "Coritiba FBC",
