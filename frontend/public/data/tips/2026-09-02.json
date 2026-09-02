@@ -35,7 +35,8 @@
       "pick": "Home Win",
       "probability": 53.73,
       "odds": 1.16,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "1-1"
     },
     {
       "match_id": "2u2pMi6e",
@@ -59,7 +60,8 @@
       "pick": "Home Win",
       "probability": 53.41,
       "odds": 1.32,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "1-5"
     },
     {
       "match_id": "SzV1mG4F",
@@ -95,7 +97,8 @@
       "pick": "Home Win",
       "probability": 51.09,
       "odds": 1.86,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "2-1"
     },
     {
       "match_id": "CzXlmeGc",
@@ -119,7 +122,8 @@
       "pick": "Home Win",
       "probability": 50.87,
       "odds": 1.37,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "3-0"
     },
     {
       "match_id": "Mg2nwePE",
@@ -131,7 +135,8 @@
       "pick": "Home Win",
       "probability": 50.0,
       "odds": 2.58,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "0-2"
     },
     {
       "match_id": "dWWsjlif",
@@ -179,7 +184,8 @@
       "pick": "Home Win",
       "probability": 49.53,
       "odds": 1.18,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "2-0"
     },
     {
       "match_id": "vseCqVCD",
@@ -191,7 +197,8 @@
       "pick": "Home Win",
       "probability": 49.23,
       "odds": 1.42,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "3-0"
     },
     {
       "match_id": "rmuprDX8",
@@ -203,7 +210,8 @@
       "pick": "Home Win",
       "probability": 48.34,
       "odds": 3.82,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "1-1"
     },
     {
       "match_id": "CAeAQxM0",
@@ -240,7 +248,8 @@
       "pick": "Home Win",
       "probability": 47.59,
       "odds": 2.15,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "1-0"
     }
   ]
 }
