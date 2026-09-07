@@ -24,7 +24,8 @@
       "pick": "Home Win",
       "probability": 56.62,
       "odds": 1.22,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "0-2"
     },
     {
       "match_id": "SMDbxRG7",
@@ -49,7 +50,8 @@
       "pick": "Home Win",
       "probability": 53.25,
       "odds": 1.71,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "3-1"
     },
     {
       "match_id": "pzOCZhm4",
@@ -216,7 +218,8 @@
       "pick": "Home Win",
       "probability": 49.69,
       "odds": 2.7,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "4-2"
     },
     {
       "match_id": "zu3Fu5hf",
@@ -254,7 +257,8 @@
       "pick": "Home Win",
       "probability": 49.19,
       "odds": 3.92,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "2-2"
     }
   ]
 }
