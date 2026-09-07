@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-06",
+  "tips": [
+    {
+      "match_id": "6sxSzoqm",
+      "home_team": "Alianza Lima W",
+      "away_team": "Atl. Andahuaylas W",
+      "league": "PERU: Liga Women - Clausura",
+      "date": "2026-09-06T20:15:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 53.95,
+      "odds": 1.18,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "CEmUEM0J",
+      "home_team": "Luis Angel Firpo",
+      "away_team": "Inter Santa Tecla",
+      "league": "EL SALVADOR: Primera Division - Apertura",
+      "date": "2026-09-06T23:30:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 46.79,
+      "odds": 2.04,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "pnQa35E4",
+      "home_team": "City London",
+      "away_team": "Hope Internacional",
+      "league": "BRAZIL: Paranaense 3 - Play Offs",
+      "date": "2026-09-06T22:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 42.35,
+      "odds": 2.23,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "zeFfggaE",
+      "home_team": "Defensores W",
+      "away_team": "Flamengo FBC W",
+      "league": "PERU: Liga Women - Clausura",
+      "date": "2026-09-06T18:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 42.35,
+      "odds": 3.19,
+      "status": "PENDING"
+    }
+  ]
+}

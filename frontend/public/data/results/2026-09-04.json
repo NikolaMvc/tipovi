@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-04",
+  "results": [
+    {
+      "id": "559699",
+      "home_team": "Olympique Lyonnais",
+      "away_team": "AJ Auxerre",
+      "home_goals": 3,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558250",
+      "home_team": "Sparta Rotterdam",
+      "away_team": "PEC Zwolle",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "565791",
+      "home_team": "VfB Stuttgart",
+      "away_team": "1. FC Köln",
+      "home_goals": 4,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558609",
+      "home_team": "Genoa CFC",
+      "away_team": "Como 1907",
+      "home_goals": 1,
+      "away_goals": 4,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564667",
+      "home_team": "Real Betis Balompié",
+      "away_team": "Real Madrid CF",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560566",
+      "home_team": "Ipswich Town FC",
+      "away_team": "Liverpool FC",
+      "home_goals": 0,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559697",
+      "home_team": "Paris Saint-Germain FC",
+      "away_team": "AS Monaco FC",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567299",
+      "home_team": "FC Porto",
+      "away_team": "Moreirense FC",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    }
+  ]
+}

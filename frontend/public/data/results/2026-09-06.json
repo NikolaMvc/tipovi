@@ -1,0 +1,237 @@
+{
+  "date": "2026-09-06",
+  "results": [
+    {
+      "id": "554995",
+      "home_team": "Fluminense FC",
+      "away_team": "CR Vasco da Gama",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558255",
+      "home_team": "FC Groningen",
+      "away_team": "FC Twente '65",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561819",
+      "home_team": "Birmingham City FC",
+      "away_team": "Wolverhampton Wanderers FC",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558257",
+      "home_team": "Telstar 1963",
+      "away_team": "SC Cambuur-Leeuwarden",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558256",
+      "home_team": "SC Heerenveen",
+      "away_team": "AZ",
+      "home_goals": 2,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560567",
+      "home_team": "Everton FC",
+      "away_team": "Manchester United FC",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558615",
+      "home_team": "Frosinone Calcio",
+      "away_team": "Venezia FC",
+      "home_goals": 3,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558612",
+      "home_team": "Parma Calcio 1913",
+      "away_team": "AC Monza",
+      "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559700",
+      "home_team": "ES Troyes AC",
+      "away_team": "RC Strasbourg Alsace",
+      "home_goals": 2,
+      "away_goals": 6,
+      "status": "FINISHED"
+    },
+    {
+      "id": "565788",
+      "home_team": "Hamburger SV",
+      "away_team": "1. FSV Mainz 05",
+      "home_goals": 0,
+      "away_goals": 5,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554993",
+      "home_team": "Coritiba FBC",
+      "away_team": "Mirassol FC",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564659",
+      "home_team": "Valencia CF",
+      "away_team": "FC Barcelona",
+      "home_goals": 0,
+      "away_goals": 5,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567300",
+      "home_team": "CD Santa Clara",
+      "away_team": "Rio Ave FC",
+      "home_goals": 4,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558258",
+      "home_team": "ADO Den Haag",
+      "away_team": "Fortuna Sittard",
+      "home_goals": 2,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559698",
+      "home_team": "Angers SCO",
+      "away_team": "Stade Rennais FC 1901",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "565786",
+      "home_team": "Eintracht Frankfurt",
+      "away_team": "FC Augsburg",
+      "home_goals": 1,
+      "away_goals": 4,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560570",
+      "home_team": "Arsenal FC",
+      "away_team": "Chelsea FC",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558613",
+      "home_team": "Bologna FC 1909",
+      "away_team": "US Sassuolo Calcio",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564664",
+      "home_team": "Deportivo Alavés",
+      "away_team": "CA Osasuna",
+      "home_goals": 5,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564666",
+      "home_team": "Málaga CF",
+      "away_team": "Levante UD",
+      "home_goals": 0,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567294",
+      "home_team": "Vitória SC",
+      "away_team": "Casa Pia AC",
+      "home_goals": 0,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558618",
+      "home_team": "Juventus FC",
+      "away_team": "AC Milan",
+      "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559694",
+      "home_team": "Olympique de Marseille",
+      "away_team": "Paris FC",
+      "home_goals": 2,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554994",
+      "home_team": "Cruzeiro EC",
+      "away_team": "CA Paranaense",
+      "home_goals": 3,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554996",
+      "home_team": "SC Internacional",
+      "away_team": "Santos FC",
+      "home_goals": 2,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564661",
+      "home_team": "RCD Espanyol de Barcelona",
+      "away_team": "Sevilla FC",
+      "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554997",
+      "home_team": "Clube do Remo",
+      "away_team": "CR Flamengo",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567301",
+      "home_team": "Gil Vicente FC",
+      "away_team": "Académico de Viseu FC",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "554990",
+      "home_team": "Botafogo FR",
+      "away_team": "SE Palmeiras",
+      "home_goals": 0,
+      "away_goals": 0,
+      "status": "FINISHED"
+    }
+  ]
+}

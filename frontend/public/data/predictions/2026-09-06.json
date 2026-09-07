@@ -1,0 +1,1875 @@
+{
+  "date": "2026-09-06",
+  "generated_at": "2026-09-07T00:12:40.137306+00:00",
+  "count": 4,
+  "matches": [
+    {
+      "match": {
+        "home_team": "City London",
+        "away_team": "Hope Internacional",
+        "league": "BRAZIL: Paranaense 3 - Play Offs",
+        "date": "2026-09-06T22:00:00+00:00",
+        "venue": "",
+        "status": "UPCOMING",
+        "event_id": "pnQa35E4",
+        "id": "pnQa35E4"
+      },
+      "prediction": {
+        "home_win_prob": 42.35,
+        "draw_prob": 26.92,
+        "away_win_prob": 30.73,
+        "predicted_outcome": "HOME_WIN",
+        "confidence": "MEDIUM",
+        "confidence_score": 50,
+        "missing_data": [
+          "h2h",
+          "injuries",
+          "referee",
+          "weather"
+        ],
+        "proxy_factors": [
+          "xg"
+        ],
+        "lambda": {
+          "home": 1.491,
+          "away": 1.2458
+        },
+        "predicted_goals": {
+          "home": 1.478,
+          "away": 1.227
+        },
+        "most_likely_scores": [
+          {
+            "score": "1-1",
+            "prob": 13.6
+          },
+          {
+            "score": "2-1",
+            "prob": 8.97
+          },
+          {
+            "score": "1-0",
+            "prob": 8.09
+          },
+          {
+            "score": "0-0",
+            "prob": 8.04
+          },
+          {
+            "score": "1-2",
+            "prob": 7.49
+          }
+        ],
+        "monte_carlo": {
+          "simulations": 10000,
+          "home_win": 43.36,
+          "draw": 25.32,
+          "away_win": 31.32,
+          "confidence_interval": "±1.0%",
+          "histogram": {
+            "0": 6.91,
+            "1": 18.03,
+            "2": 24.47,
+            "3": 21.69,
+            "4": 15.01,
+            "5": 8.07,
+            "6": 3.66,
+            "7": 1.46,
+            "8": 0.7
+          },
+          "top_scores": [
+            {
+              "score": "1-1",
+              "prob": 12.0
+            },
+            {
+              "score": "1-0",
+              "prob": 10.0
+            },
+            {
+              "score": "2-1",
+              "prob": 9.06
+            },
+            {
+              "score": "0-1",
+              "prob": 8.03
+            },
+            {
+              "score": "2-0",
+              "prob": 7.58
+            }
+          ]
+        }
+      },
+      "markets": {
+        "over_under_2_5": {
+          "over": 51.06,
+          "under": 48.94
+        },
+        "btts": {
+          "yes": 55.52,
+          "no": 44.48
+        }
+      },
+      "value_bets": [
+        {
+          "market": "O/U 2.5",
+          "pick": "Over 2.5",
+          "our_prob": 51.06,
+          "implied_prob": 42.92,
+          "value": 8.14,
+          "kelly_pct": 14.26,
+          "half_kelly_pct": 7.13,
+          "rating": "GOOD_VALUE",
+          "odds": 2.33
+        },
+        {
+          "market": "BTTS",
+          "pick": "Yes",
+          "our_prob": 55.52,
+          "implied_prob": 51.02,
+          "value": 4.5,
+          "kelly_pct": 9.19,
+          "half_kelly_pct": 4.59,
+          "rating": "SLIGHT_VALUE",
+          "odds": 1.96
+        }
+      ],
+      "breakdown": {
+        "form": {
+          "home_last5": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "away_last5": [
+            "W",
+            "W",
+            "D",
+            "W",
+            "L"
+          ],
+          "home_form_score": 20,
+          "away_form_score": 83
+        },
+        "h2h": {
+          "home_wins": 0,
+          "draws": 0,
+          "away_wins": 0,
+          "avg_goals": null,
+          "matches": 0
+        },
+        "xg": {
+          "home_xg": 0.0,
+          "home_xga": 1.0,
+          "away_xg": 2.0,
+          "away_xga": 0.667,
+          "home_source": "goals",
+          "away_source": "goals",
+          "is_proxy": true
+        },
+        "standings": {
+          "home_pos": null,
+          "away_pos": null,
+          "points_diff": null
+        },
+        "injuries": {
+          "home_missing": [],
+          "away_missing": []
+        },
+        "referee": null,
+        "fatigue": {
+          "home_rest_days": 7,
+          "away_rest_days": 7,
+          "home_status": "FRESH",
+          "away_status": "FRESH"
+        },
+        "weather": null,
+        "factors_used": {
+          "weights": {
+            "form": 0.45,
+            "xg": 0.2,
+            "attack_defense": 0.18,
+            "home": 0.07,
+            "h2h": 0.05,
+            "fatigue": 0.05
+          },
+          "form": {
+            "home_form_score": 1.8,
+            "away_form_score": 2.2,
+            "home_matches": [
+              {
+                "opponent": "CA Cambe",
+                "position": 2,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "L",
+                "score": "0-1",
+                "points": 1
+              },
+              {
+                "opponent": "Parana S.T.C.",
+                "position": 1,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "L",
+                "score": "0-1",
+                "points": 1
+              },
+              {
+                "opponent": "Londrinense",
+                "position": 4,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "L",
+                "score": "0-1",
+                "points": 1
+              },
+              {
+                "opponent": "Parana S.T.C.",
+                "position": 1,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "2-0",
+                "points": 3
+              },
+              {
+                "opponent": "Londrinense",
+                "position": 4,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "2-0",
+                "points": 3
+              }
+            ],
+            "away_matches": [
+              {
+                "opponent": "Iraty",
+                "position": 2,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "4-1",
+                "points": 3
+              },
+              {
+                "opponent": "Samas",
+                "position": 4,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "2-1",
+                "points": 3
+              },
+              {
+                "opponent": "AA Iguacu",
+                "position": 1,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "D",
+                "score": "0-0",
+                "points": 1
+              },
+              {
+                "opponent": "Samas",
+                "position": 4,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "1-0",
+                "points": 3
+              },
+              {
+                "opponent": "AA Iguacu",
+                "position": 1,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "L",
+                "score": "0-1",
+                "points": 1
+              }
+            ]
+          },
+          "home_factors": {
+            "form": {
+              "weight": 0.45,
+              "weight_norm": 0.474,
+              "mult": 1.06,
+              "contribution": 0.043
+            },
+            "xg": {
+              "weight": 0.2,
+              "weight_norm": 0.211,
+              "mult": 0.7,
+              "contribution": -0.095
+            },
+            "attack_defense": {
+              "weight": 0.18,
+              "weight_norm": 0.189,
+              "mult": 1.068,
+              "contribution": 0.019
+            },
+            "home": {
+              "weight": 0.07,
+              "weight_norm": 0.074,
+              "mult": 1.2,
+              "contribution": 0.022
+            },
+            "fatigue": {
+              "weight": 0.05,
+              "weight_norm": 0.053,
+              "mult": 1.02,
+              "contribution": 0.002
+            }
+          },
+          "away_factors": {
+            "form": {
+              "weight": 0.45,
+              "weight_norm": 0.474,
+              "mult": 1.14,
+              "contribution": 0.076
+            },
+            "xg": {
+              "weight": 0.2,
+              "weight_norm": 0.211,
+              "mult": 1.4,
+              "contribution": 0.097
+            },
+            "attack_defense": {
+              "weight": 0.18,
+              "weight_norm": 0.189,
+              "mult": 0.698,
+              "contribution": -0.066
+            },
+            "home": {
+              "weight": 0.07,
+              "weight_norm": 0.074,
+              "mult": 0.85,
+              "contribution": -0.013
+            },
+            "fatigue": {
+              "weight": 0.05,
+              "weight_norm": 0.053,
+              "mult": 1.02,
+              "contribution": 0.001
+            }
+          },
+          "base": {
+            "home_goals": 1.5,
+            "away_goals": 1.15
+          },
+          "lambda": {
+            "home": 1.491,
+            "away": 1.246
+          }
+        },
+        "positions_estimated": 0,
+        "notes": []
+      },
+      "poisson_matrix": [
+        [
+          8.042,
+          6.506,
+          5.027,
+          2.087,
+          0.65,
+          0.162,
+          0.041
+        ],
+        [
+          8.094,
+          13.597,
+          7.495,
+          3.112,
+          0.969,
+          0.242,
+          0.061
+        ],
+        [
+          7.2,
+          8.97,
+          5.587,
+          2.32,
+          0.723,
+          0.18,
+          0.045
+        ],
+        [
+          3.579,
+          4.458,
+          2.777,
+          1.153,
+          0.359,
+          0.089,
+          0.022
+        ],
+        [
+          1.334,
+          1.662,
+          1.035,
+          0.43,
+          0.134,
+          0.033,
+          0.008
+        ],
+        [
+          0.398,
+          0.496,
+          0.309,
+          0.128,
+          0.04,
+          0.01,
+          0.002
+        ],
+        [
+          0.125,
+          0.155,
+          0.097,
+          0.04,
+          0.013,
+          0.003,
+          0.001
+        ]
+      ],
+      "poisson_matrix_sum": 100.0,
+      "odds": {
+        "home": 2.23,
+        "draw": 3.36,
+        "away": 3.0,
+        "over_2_5": 2.33,
+        "under_2_5": 1.54,
+        "btts_yes": 1.96,
+        "btts_no": 1.73
+      },
+      "implied_probs": {
+        "home": 44.84,
+        "draw": 29.76,
+        "away": 33.33
+      },
+      "data_sources": [
+        "flashscore",
+        "flashscore-odds",
+        "flashscore-feed",
+        "flashscore-standings",
+        "flashscore-stats"
+      ],
+      "computed_at": "2026-09-07T00:12:28.980141+00:00"
+    },
+    {
+      "match": {
+        "home_team": "Luis Angel Firpo",
+        "away_team": "Inter Santa Tecla",
+        "league": "EL SALVADOR: Primera Division - Apertura",
+        "date": "2026-09-06T23:30:00+00:00",
+        "venue": "",
+        "status": "UPCOMING",
+        "event_id": "CEmUEM0J",
+        "id": "CEmUEM0J"
+      },
+      "prediction": {
+        "home_win_prob": 46.79,
+        "draw_prob": 26.99,
+        "away_win_prob": 26.22,
+        "predicted_outcome": "HOME_WIN",
+        "confidence": "MEDIUM",
+        "confidence_score": 66,
+        "missing_data": [
+          "injuries",
+          "referee",
+          "weather"
+        ],
+        "proxy_factors": [
+          "xg"
+        ],
+        "lambda": {
+          "home": 1.5357,
+          "away": 1.1068
+        },
+        "predicted_goals": {
+          "home": 1.55,
+          "away": 1.095
+        },
+        "most_likely_scores": [
+          {
+            "score": "1-1",
+            "prob": 13.67
+          },
+          {
+            "score": "1-0",
+            "prob": 9.36
+          },
+          {
+            "score": "2-1",
+            "prob": 9.29
+          },
+          {
+            "score": "0-0",
+            "prob": 8.69
+          },
+          {
+            "score": "2-0",
+            "prob": 8.39
+          }
+        ],
+        "monte_carlo": {
+          "simulations": 10000,
+          "home_win": 47.97,
+          "draw": 25.4,
+          "away_win": 26.63,
+          "confidence_interval": "±1.0%",
+          "histogram": {
+            "0": 7.21,
+            "1": 18.92,
+            "2": 24.81,
+            "3": 21.49,
+            "4": 14.79,
+            "5": 7.35,
+            "6": 3.43,
+            "7": 1.31,
+            "8": 0.69
+          },
+          "top_scores": [
+            {
+              "score": "1-1",
+              "prob": 12.08
+            },
+            {
+              "score": "1-0",
+              "prob": 10.99
+            },
+            {
+              "score": "2-1",
+              "prob": 9.72
+            },
+            {
+              "score": "2-0",
+              "prob": 8.49
+            },
+            {
+              "score": "0-1",
+              "prob": 7.93
+            }
+          ]
+        }
+      },
+      "markets": {
+        "over_under_2_5": {
+          "over": 49.14,
+          "under": 50.86
+        },
+        "btts": {
+          "yes": 53.48,
+          "no": 46.52
+        }
+      },
+      "value_bets": [
+        {
+          "market": "O/U 2.5",
+          "pick": "Over 2.5",
+          "our_prob": 49.14,
+          "implied_prob": 47.39,
+          "value": 1.75,
+          "kelly_pct": 3.32,
+          "half_kelly_pct": 1.66,
+          "rating": "SLIGHT_VALUE",
+          "odds": 2.11
+        },
+        {
+          "market": "BTTS",
+          "pick": "Yes",
+          "our_prob": 53.48,
+          "implied_prob": 51.81,
+          "value": 1.67,
+          "kelly_pct": 3.46,
+          "half_kelly_pct": 1.73,
+          "rating": "SLIGHT_VALUE",
+          "odds": 1.93
+        }
+      ],
+      "breakdown": {
+        "form": {
+          "home_last5": [
+            "L",
+            "D",
+            "W",
+            "W",
+            "D"
+          ],
+          "away_last5": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "D"
+          ],
+          "home_form_score": 50,
+          "away_form_score": 97
+        },
+        "h2h": {
+          "home_wins": 2,
+          "draws": 2,
+          "away_wins": 0,
+          "avg_goals": 1.75,
+          "matches": 4
+        },
+        "xg": {
+          "home_xg": 1.123,
+          "home_xga": 0.642,
+          "away_xg": 0.998,
+          "away_xga": 0.762,
+          "home_source": "proxy",
+          "away_source": "proxy",
+          "is_proxy": true
+        },
+        "standings": {
+          "home_pos": null,
+          "away_pos": null,
+          "points_diff": null
+        },
+        "injuries": {
+          "home_missing": [],
+          "away_missing": []
+        },
+        "referee": null,
+        "fatigue": {
+          "home_rest_days": 7,
+          "away_rest_days": 8,
+          "home_status": "FRESH",
+          "away_status": "FRESH"
+        },
+        "weather": null,
+        "factors_used": {
+          "weights": {
+            "form": 0.45,
+            "xg": 0.2,
+            "attack_defense": 0.18,
+            "home": 0.07,
+            "h2h": 0.05,
+            "fatigue": 0.05
+          },
+          "form": {
+            "home_form_score": 2.0,
+            "away_form_score": 2.2,
+            "home_matches": [
+              {
+                "opponent": "FAS",
+                "position": 1,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "L",
+                "score": "1-3",
+                "points": 1
+              },
+              {
+                "opponent": "Platense Municipal",
+                "position": 5,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "1-0",
+                "points": 3
+              },
+              {
+                "opponent": "Inca Aruba",
+                "position": 12,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "D",
+                "score": "0-0",
+                "points": 1
+              },
+              {
+                "opponent": "Municipal Limeno",
+                "position": 3,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "2-0",
+                "points": 3
+              },
+              {
+                "opponent": "Fuerte San Francisco",
+                "position": 11,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "4-0",
+                "points": 2
+              }
+            ],
+            "away_matches": [
+              {
+                "opponent": "Platense Municipal",
+                "position": 5,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "3-0",
+                "points": 3
+              },
+              {
+                "opponent": "Inca Aruba",
+                "position": 12,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "4-1",
+                "points": 2
+              },
+              {
+                "opponent": "Municipal Limeno",
+                "position": 3,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "1-0",
+                "points": 3
+              },
+              {
+                "opponent": "Alianza FC",
+                "position": 7,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "2-0",
+                "points": 2
+              },
+              {
+                "opponent": "Fuerte San Francisco",
+                "position": 11,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "D",
+                "score": "2-2",
+                "points": 1
+              }
+            ]
+          },
+          "home_factors": {
+            "form": {
+              "weight": 0.45,
+              "weight_norm": 0.45,
+              "mult": 1.1,
+              "contribution": 0.067
+            },
+            "xg": {
+              "weight": 0.2,
+              "weight_norm": 0.2,
+              "mult": 0.749,
+              "contribution": -0.075
+            },
+            "attack_defense": {
+              "weight": 0.18,
+              "weight_norm": 0.18,
+              "mult": 1.037,
+              "contribution": 0.01
+            },
+            "home": {
+              "weight": 0.07,
+              "weight_norm": 0.07,
+              "mult": 1.2,
+              "contribution": 0.021
+            },
+            "h2h": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 1.15,
+              "contribution": 0.011
+            },
+            "fatigue": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 1.02,
+              "contribution": 0.002
+            }
+          },
+          "away_factors": {
+            "form": {
+              "weight": 0.45,
+              "weight_norm": 0.45,
+              "mult": 1.14,
+              "contribution": 0.072
+            },
+            "xg": {
+              "weight": 0.2,
+              "weight_norm": 0.2,
+              "mult": 0.868,
+              "contribution": -0.03
+            },
+            "attack_defense": {
+              "weight": 0.18,
+              "weight_norm": 0.18,
+              "mult": 0.683,
+              "contribution": -0.066
+            },
+            "home": {
+              "weight": 0.07,
+              "weight_norm": 0.07,
+              "mult": 0.85,
+              "contribution": -0.012
+            },
+            "h2h": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 0.85,
+              "contribution": -0.009
+            },
+            "fatigue": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 1.02,
+              "contribution": 0.001
+            }
+          },
+          "base": {
+            "home_goals": 1.5,
+            "away_goals": 1.15
+          },
+          "lambda": {
+            "home": 1.536,
+            "away": 1.107
+          }
+        },
+        "positions_estimated": 0,
+        "notes": []
+      },
+      "poisson_matrix": [
+        [
+          8.691,
+          6.306,
+          4.36,
+          1.609,
+          0.445,
+          0.099,
+          0.022
+        ],
+        [
+          9.359,
+          13.672,
+          6.696,
+          2.47,
+          0.684,
+          0.151,
+          0.033
+        ],
+        [
+          8.394,
+          9.29,
+          5.141,
+          1.897,
+          0.525,
+          0.116,
+          0.025
+        ],
+        [
+          4.297,
+          4.756,
+          2.632,
+          0.971,
+          0.269,
+          0.059,
+          0.013
+        ],
+        [
+          1.65,
+          1.826,
+          1.01,
+          0.373,
+          0.103,
+          0.023,
+          0.005
+        ],
+        [
+          0.507,
+          0.561,
+          0.31,
+          0.114,
+          0.032,
+          0.007,
+          0.002
+        ],
+        [
+          0.165,
+          0.182,
+          0.101,
+          0.037,
+          0.01,
+          0.002,
+          0.0
+        ]
+      ],
+      "poisson_matrix_sum": 100.0,
+      "odds": {
+        "home": 2.04,
+        "draw": 3.45,
+        "away": 3.45,
+        "over_2_5": 2.11,
+        "under_2_5": 1.73,
+        "btts_yes": 1.93,
+        "btts_no": 1.82
+      },
+      "implied_probs": {
+        "home": 49.02,
+        "draw": 28.99,
+        "away": 28.99
+      },
+      "data_sources": [
+        "flashscore",
+        "flashscore-odds",
+        "flashscore-feed",
+        "flashscore-standings",
+        "flashscore-stats"
+      ],
+      "computed_at": "2026-09-07T00:12:29.151818+00:00"
+    },
+    {
+      "match": {
+        "home_team": "Defensores W",
+        "away_team": "Flamengo FBC W",
+        "league": "PERU: Liga Women - Clausura",
+        "date": "2026-09-06T18:00:00+00:00",
+        "venue": "",
+        "status": "UPCOMING",
+        "event_id": "zeFfggaE",
+        "id": "zeFfggaE"
+      },
+      "prediction": {
+        "home_win_prob": 42.35,
+        "draw_prob": 27.62,
+        "away_win_prob": 30.03,
+        "predicted_outcome": "HOME_WIN",
+        "confidence": "MEDIUM",
+        "confidence_score": 66,
+        "missing_data": [
+          "injuries",
+          "referee",
+          "weather"
+        ],
+        "proxy_factors": [
+          "xg"
+        ],
+        "lambda": {
+          "home": 1.4655,
+          "away": 1.208
+        },
+        "predicted_goals": {
+          "home": 1.483,
+          "away": 1.199
+        },
+        "most_likely_scores": [
+          {
+            "score": "1-1",
+            "prob": 13.81
+          },
+          {
+            "score": "2-1",
+            "prob": 8.95
+          },
+          {
+            "score": "1-0",
+            "prob": 8.53
+          },
+          {
+            "score": "0-0",
+            "prob": 8.49
+          },
+          {
+            "score": "2-0",
+            "prob": 7.41
+          }
+        ],
+        "monte_carlo": {
+          "simulations": 10000,
+          "home_win": 43.2,
+          "draw": 26.35,
+          "away_win": 30.45,
+          "confidence_interval": "±1.0%",
+          "histogram": {
+            "0": 6.89,
+            "1": 18.04,
+            "2": 24.99,
+            "3": 21.8,
+            "4": 15.08,
+            "5": 7.58,
+            "6": 3.63,
+            "7": 1.35,
+            "8": 0.64
+          },
+          "top_scores": [
+            {
+              "score": "1-1",
+              "prob": 12.49
+            },
+            {
+              "score": "1-0",
+              "prob": 10.01
+            },
+            {
+              "score": "2-1",
+              "prob": 8.69
+            },
+            {
+              "score": "0-1",
+              "prob": 8.03
+            },
+            {
+              "score": "2-0",
+              "prob": 7.57
+            }
+          ]
+        }
+      },
+      "markets": {
+        "over_under_2_5": {
+          "over": 50.04,
+          "under": 49.96
+        },
+        "btts": {
+          "yes": 54.66,
+          "no": 45.34
+        }
+      },
+      "value_bets": [
+        {
+          "market": "O/U 2.5",
+          "pick": "Under 2.5",
+          "our_prob": 49.96,
+          "implied_prob": 36.5,
+          "value": 13.46,
+          "kelly_pct": 21.2,
+          "half_kelly_pct": 10.6,
+          "rating": "STRONG_VALUE",
+          "odds": 2.74
+        },
+        {
+          "market": "1X2",
+          "pick": "Home Win",
+          "our_prob": 42.35,
+          "implied_prob": 31.35,
+          "value": 11.0,
+          "kelly_pct": 16.03,
+          "half_kelly_pct": 8.01,
+          "rating": "STRONG_VALUE",
+          "odds": 3.19
+        },
+        {
+          "market": "1X2",
+          "pick": "Draw",
+          "our_prob": 27.62,
+          "implied_prob": 24.27,
+          "value": 3.35,
+          "kelly_pct": 4.42,
+          "half_kelly_pct": 2.21,
+          "rating": "SLIGHT_VALUE",
+          "odds": 4.12
+        }
+      ],
+      "breakdown": {
+        "form": {
+          "home_last5": [
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "away_last5": [
+            "W",
+            "L",
+            "L",
+            "L",
+            "D"
+          ],
+          "home_form_score": 0,
+          "away_form_score": 37
+        },
+        "h2h": {
+          "home_wins": 1,
+          "draws": 0,
+          "away_wins": 2,
+          "avg_goals": 3.67,
+          "matches": 3
+        },
+        "xg": {
+          "home_xg": 0.667,
+          "home_xga": 3.333,
+          "away_xg": 1.0,
+          "away_xga": 2.0,
+          "home_source": "goals",
+          "away_source": "goals",
+          "is_proxy": true
+        },
+        "standings": {
+          "home_pos": null,
+          "away_pos": null,
+          "points_diff": null
+        },
+        "injuries": {
+          "home_missing": [],
+          "away_missing": []
+        },
+        "referee": null,
+        "fatigue": {
+          "home_rest_days": 9,
+          "away_rest_days": 8,
+          "home_status": "FRESH",
+          "away_status": "FRESH"
+        },
+        "weather": null,
+        "factors_used": {
+          "weights": {
+            "form": 0.45,
+            "xg": 0.2,
+            "attack_defense": 0.18,
+            "home": 0.07,
+            "h2h": 0.05,
+            "fatigue": 0.05
+          },
+          "form": {
+            "home_form_score": 0.6,
+            "away_form_score": 1.2,
+            "home_matches": [
+              {
+                "opponent": "Carlos Mannucci W",
+                "position": 6,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "L",
+                "score": "0-1",
+                "points": 1
+              },
+              {
+                "opponent": "U. de Deportes W",
+                "position": 3,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "L",
+                "score": "0-6",
+                "points": 0
+              },
+              {
+                "opponent": "Yanapuma W",
+                "position": 9,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "L",
+                "score": "2-3",
+                "points": 0
+              },
+              {
+                "opponent": "FBC Melgar W",
+                "position": 4,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "L",
+                "score": "0-8",
+                "points": 1
+              },
+              {
+                "opponent": "Sporting Cristal W",
+                "position": 2,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "L",
+                "score": "2-4",
+                "points": 1
+              }
+            ],
+            "away_matches": [
+              {
+                "opponent": "Yanapuma W",
+                "position": 9,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "3-0",
+                "points": 2
+              },
+              {
+                "opponent": "FBC Melgar W",
+                "position": 4,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "L",
+                "score": "0-5",
+                "points": 1
+              },
+              {
+                "opponent": "Sporting Cristal W",
+                "position": 2,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "L",
+                "score": "0-1",
+                "points": 1
+              },
+              {
+                "opponent": "Alianza Lima W",
+                "position": 1,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "L",
+                "score": "0-2",
+                "points": 1
+              },
+              {
+                "opponent": "Carlos Mannucci W",
+                "position": 6,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "D",
+                "score": "2-2",
+                "points": 1
+              }
+            ]
+          },
+          "home_factors": {
+            "form": {
+              "weight": 0.45,
+              "weight_norm": 0.45,
+              "mult": 0.82,
+              "contribution": -0.121
+            },
+            "xg": {
+              "weight": 0.2,
+              "weight_norm": 0.2,
+              "mult": 0.7,
+              "contribution": -0.09
+            },
+            "attack_defense": {
+              "weight": 0.18,
+              "weight_norm": 0.18,
+              "mult": 1.6,
+              "contribution": 0.162
+            },
+            "home": {
+              "weight": 0.07,
+              "weight_norm": 0.07,
+              "mult": 1.2,
+              "contribution": 0.021
+            },
+            "h2h": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 0.9,
+              "contribution": -0.007
+            },
+            "fatigue": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 1.02,
+              "contribution": 0.002
+            }
+          },
+          "away_factors": {
+            "form": {
+              "weight": 0.45,
+              "weight_norm": 0.45,
+              "mult": 0.94,
+              "contribution": -0.031
+            },
+            "xg": {
+              "weight": 0.2,
+              "weight_norm": 0.2,
+              "mult": 0.87,
+              "contribution": -0.03
+            },
+            "attack_defense": {
+              "weight": 0.18,
+              "weight_norm": 0.18,
+              "mult": 1.6,
+              "contribution": 0.124
+            },
+            "home": {
+              "weight": 0.07,
+              "weight_norm": 0.07,
+              "mult": 0.85,
+              "contribution": -0.012
+            },
+            "h2h": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 1.1,
+              "contribution": 0.006
+            },
+            "fatigue": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 1.02,
+              "contribution": 0.001
+            }
+          },
+          "base": {
+            "home_goals": 1.5,
+            "away_goals": 1.15
+          },
+          "lambda": {
+            "home": 1.465,
+            "away": 1.208
+          }
+        },
+        "positions_estimated": 0,
+        "notes": []
+      },
+      "poisson_matrix": [
+        [
+          8.489,
+          6.748,
+          5.035,
+          2.028,
+          0.612,
+          0.148,
+          0.036
+        ],
+        [
+          8.525,
+          13.805,
+          7.379,
+          2.971,
+          0.897,
+          0.217,
+          0.052
+        ],
+        [
+          7.411,
+          8.952,
+          5.407,
+          2.177,
+          0.658,
+          0.159,
+          0.038
+        ],
+        [
+          3.62,
+          4.373,
+          2.641,
+          1.064,
+          0.321,
+          0.078,
+          0.019
+        ],
+        [
+          1.326,
+          1.602,
+          0.968,
+          0.39,
+          0.118,
+          0.028,
+          0.007
+        ],
+        [
+          0.389,
+          0.47,
+          0.284,
+          0.114,
+          0.034,
+          0.008,
+          0.002
+        ],
+        [
+          0.119,
+          0.144,
+          0.087,
+          0.035,
+          0.011,
+          0.003,
+          0.001
+        ]
+      ],
+      "poisson_matrix_sum": 100.0,
+      "odds": {
+        "home": 3.19,
+        "draw": 4.12,
+        "away": 1.9,
+        "over_2_5": 1.35,
+        "under_2_5": 2.74,
+        "btts_yes": null,
+        "btts_no": null
+      },
+      "implied_probs": {
+        "home": 31.35,
+        "draw": 24.27,
+        "away": 52.63
+      },
+      "data_sources": [
+        "flashscore",
+        "flashscore-odds",
+        "flashscore-feed",
+        "flashscore-standings",
+        "flashscore-stats"
+      ],
+      "computed_at": "2026-09-07T00:12:29.594201+00:00"
+    },
+    {
+      "match": {
+        "home_team": "Alianza Lima W",
+        "away_team": "Atl. Andahuaylas W",
+        "league": "PERU: Liga Women - Clausura",
+        "date": "2026-09-06T20:15:00+00:00",
+        "venue": "",
+        "status": "UPCOMING",
+        "event_id": "6sxSzoqm",
+        "id": "6sxSzoqm"
+      },
+      "prediction": {
+        "home_win_prob": 53.95,
+        "draw_prob": 23.61,
+        "away_win_prob": 22.44,
+        "predicted_outcome": "HOME_WIN",
+        "confidence": "MEDIUM",
+        "confidence_score": 66,
+        "missing_data": [
+          "injuries",
+          "referee",
+          "weather"
+        ],
+        "proxy_factors": [
+          "xg"
+        ],
+        "lambda": {
+          "home": 1.926,
+          "away": 1.1793
+        },
+        "predicted_goals": {
+          "home": 1.917,
+          "away": 1.19
+        },
+        "most_likely_scores": [
+          {
+            "score": "1-1",
+            "prob": 11.5
+          },
+          {
+            "score": "2-1",
+            "prob": 9.8
+          },
+          {
+            "score": "2-0",
+            "prob": 8.31
+          },
+          {
+            "score": "1-0",
+            "prob": 7.31
+          },
+          {
+            "score": "3-1",
+            "prob": 6.29
+          }
+        ],
+        "monte_carlo": {
+          "simulations": 10000,
+          "home_win": 54.45,
+          "draw": 22.45,
+          "away_win": 23.1,
+          "confidence_interval": "±1.0%",
+          "histogram": {
+            "0": 4.53,
+            "1": 14.14,
+            "2": 21.32,
+            "3": 21.87,
+            "4": 17.54,
+            "5": 11.08,
+            "6": 5.73,
+            "7": 2.51,
+            "8": 1.28
+          },
+          "top_scores": [
+            {
+              "score": "1-1",
+              "prob": 10.2
+            },
+            {
+              "score": "2-1",
+              "prob": 9.61
+            },
+            {
+              "score": "1-0",
+              "prob": 8.85
+            },
+            {
+              "score": "2-0",
+              "prob": 8.07
+            },
+            {
+              "score": "3-1",
+              "prob": 6.27
+            }
+          ]
+        }
+      },
+      "markets": {
+        "over_under_2_5": {
+          "over": 60.0,
+          "under": 40.0
+        },
+        "btts": {
+          "yes": 60.08,
+          "no": 39.92
+        }
+      },
+      "value_bets": [
+        {
+          "market": "1X2",
+          "pick": "Away Win",
+          "our_prob": 22.44,
+          "implied_prob": 7.58,
+          "value": 14.86,
+          "kelly_pct": 16.08,
+          "half_kelly_pct": 8.04,
+          "rating": "STRONG_VALUE",
+          "odds": 13.2
+        },
+        {
+          "market": "1X2",
+          "pick": "Draw",
+          "our_prob": 23.61,
+          "implied_prob": 15.82,
+          "value": 7.79,
+          "kelly_pct": 9.25,
+          "half_kelly_pct": 4.63,
+          "rating": "GOOD_VALUE",
+          "odds": 6.32
+        }
+      ],
+      "breakdown": {
+        "form": {
+          "home_last5": [
+            "W",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "away_last5": [
+            "W",
+            "W",
+            "W",
+            "D",
+            "D"
+          ],
+          "home_form_score": 100,
+          "away_form_score": 90
+        },
+        "h2h": {
+          "home_wins": 0,
+          "draws": 1,
+          "away_wins": 0,
+          "avg_goals": 2.0,
+          "matches": 1
+        },
+        "xg": {
+          "home_xg": 3.667,
+          "home_xga": 0.667,
+          "away_xg": 2.333,
+          "away_xga": 0.0,
+          "home_source": "goals",
+          "away_source": "goals",
+          "is_proxy": true
+        },
+        "standings": {
+          "home_pos": null,
+          "away_pos": null,
+          "points_diff": null
+        },
+        "injuries": {
+          "home_missing": [],
+          "away_missing": []
+        },
+        "referee": null,
+        "fatigue": {
+          "home_rest_days": 7,
+          "away_rest_days": 15,
+          "home_status": "FRESH",
+          "away_status": "FRESH"
+        },
+        "weather": null,
+        "factors_used": {
+          "weights": {
+            "form": 0.45,
+            "xg": 0.2,
+            "attack_defense": 0.18,
+            "home": 0.07,
+            "h2h": 0.05,
+            "fatigue": 0.05
+          },
+          "form": {
+            "home_form_score": 2.4,
+            "away_form_score": 1.8,
+            "home_matches": [
+              {
+                "opponent": "U. de Deportes W",
+                "position": 3,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "3-2",
+                "points": 3
+              },
+              {
+                "opponent": "Carlos Mannucci W",
+                "position": 6,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "6-0",
+                "points": 2
+              },
+              {
+                "opponent": "UNSAAC W",
+                "position": 11,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "2-0",
+                "points": 2
+              },
+              {
+                "opponent": "Yanapuma W",
+                "position": 9,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "2-0",
+                "points": 2
+              },
+              {
+                "opponent": "Flamengo FBC W",
+                "position": 8,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "2-0",
+                "points": 3
+              }
+            ],
+            "away_matches": [
+              {
+                "opponent": "Sporting Cristal W",
+                "position": 2,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "W",
+                "score": "2-0",
+                "points": 3
+              },
+              {
+                "opponent": "Carlos Mannucci W",
+                "position": 6,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "3-0",
+                "points": 2
+              },
+              {
+                "opponent": "Killas W",
+                "position": 7,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "W",
+                "score": "2-0",
+                "points": 2
+              },
+              {
+                "opponent": "UNSAAC W",
+                "position": 11,
+                "position_estimated": false,
+                "venue": "away",
+                "outcome": "D",
+                "score": "1-1",
+                "points": 1
+              },
+              {
+                "opponent": "U. de Deportes W",
+                "position": 3,
+                "position_estimated": false,
+                "venue": "home",
+                "outcome": "D",
+                "score": "0-0",
+                "points": 1
+              }
+            ]
+          },
+          "home_factors": {
+            "form": {
+              "weight": 0.45,
+              "weight_norm": 0.45,
+              "mult": 1.18,
+              "contribution": 0.121
+            },
+            "xg": {
+              "weight": 0.2,
+              "weight_norm": 0.2,
+              "mult": 1.4,
+              "contribution": 0.12
+            },
+            "attack_defense": {
+              "weight": 0.18,
+              "weight_norm": 0.18,
+              "mult": 1.6,
+              "contribution": 0.162
+            },
+            "home": {
+              "weight": 0.07,
+              "weight_norm": 0.07,
+              "mult": 1.2,
+              "contribution": 0.021
+            },
+            "h2h": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 1.0,
+              "contribution": 0.0
+            },
+            "fatigue": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 1.02,
+              "contribution": 0.002
+            }
+          },
+          "away_factors": {
+            "form": {
+              "weight": 0.45,
+              "weight_norm": 0.45,
+              "mult": 1.06,
+              "contribution": 0.031
+            },
+            "xg": {
+              "weight": 0.2,
+              "weight_norm": 0.2,
+              "mult": 1.4,
+              "contribution": 0.092
+            },
+            "attack_defense": {
+              "weight": 0.18,
+              "weight_norm": 0.18,
+              "mult": 0.6,
+              "contribution": -0.083
+            },
+            "home": {
+              "weight": 0.07,
+              "weight_norm": 0.07,
+              "mult": 0.85,
+              "contribution": -0.012
+            },
+            "h2h": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 1.0,
+              "contribution": 0.0
+            },
+            "fatigue": {
+              "weight": 0.05,
+              "weight_norm": 0.05,
+              "mult": 1.02,
+              "contribution": 0.001
+            }
+          },
+          "base": {
+            "home_goals": 1.5,
+            "away_goals": 1.15
+          },
+          "lambda": {
+            "home": 1.926,
+            "away": 1.179
+          }
+        },
+        "positions_estimated": 0,
+        "notes": []
+      },
+      "poisson_matrix": [
+        [
+          5.804,
+          3.961,
+          3.116,
+          1.225,
+          0.361,
+          0.085,
+          0.02
+        ],
+        [
+          7.307,
+          11.501,
+          6.002,
+          2.359,
+          0.696,
+          0.164,
+          0.039
+        ],
+        [
+          8.311,
+          9.801,
+          5.779,
+          2.272,
+          0.67,
+          0.158,
+          0.037
+        ],
+        [
+          5.336,
+          6.293,
+          3.71,
+          1.459,
+          0.43,
+          0.101,
+          0.024
+        ],
+        [
+          2.569,
+          3.03,
+          1.787,
+          0.702,
+          0.207,
+          0.049,
+          0.011
+        ],
+        [
+          0.99,
+          1.167,
+          0.688,
+          0.271,
+          0.08,
+          0.019,
+          0.004
+        ],
+        [
+          0.432,
+          0.509,
+          0.3,
+          0.118,
+          0.035,
+          0.008,
+          0.002
+        ]
+      ],
+      "poisson_matrix_sum": 100.0,
+      "odds": {
+        "home": 1.18,
+        "draw": 6.32,
+        "away": 13.2,
+        "over_2_5": 1.47,
+        "under_2_5": 2.35,
+        "btts_yes": null,
+        "btts_no": null
+      },
+      "implied_probs": {
+        "home": 84.75,
+        "draw": 15.82,
+        "away": 7.58
+      },
+      "data_sources": [
+        "flashscore",
+        "flashscore-odds",
+        "flashscore-feed",
+        "flashscore-standings",
+        "flashscore-stats"
+      ],
+      "computed_at": "2026-09-07T00:12:29.601899+00:00"
+    }
+  ]
+}
