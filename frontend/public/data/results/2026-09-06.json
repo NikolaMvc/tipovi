@@ -26,19 +26,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "558256",
-      "home_team": "SC Heerenveen",
-      "away_team": "AZ",
-      "home_goals": 2,
-      "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
       "id": "558257",
       "home_team": "Telstar 1963",
       "away_team": "SC Cambuur-Leeuwarden",
       "home_goals": 2,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558256",
+      "home_team": "SC Heerenveen",
+      "away_team": "AZ",
+      "home_goals": 2,
+      "away_goals": 3,
       "status": "FINISHED"
     },
     {
@@ -186,6 +186,14 @@
       "status": "FINISHED"
     },
     {
+      "id": "554997",
+      "home_team": "Clube do Remo",
+      "away_team": "CR Flamengo",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
       "id": "564661",
       "home_team": "RCD Espanyol de Barcelona",
       "away_team": "Sevilla FC",
@@ -194,10 +202,10 @@
       "status": "FINISHED"
     },
     {
-      "id": "554997",
-      "home_team": "Clube do Remo",
-      "away_team": "CR Flamengo",
-      "home_goals": 0,
+      "id": "554994",
+      "home_team": "Cruzeiro EC",
+      "away_team": "CA Paranaense",
+      "home_goals": 3,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -207,14 +215,6 @@
       "away_team": "Santos FC",
       "home_goals": 2,
       "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
-      "id": "554994",
-      "home_team": "Cruzeiro EC",
-      "away_team": "CA Paranaense",
-      "home_goals": 3,
-      "away_goals": 1,
       "status": "FINISHED"
     },
     {

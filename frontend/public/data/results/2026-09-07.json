@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-07",
+  "results": [
+    {
+      "id": "558610",
+      "home_team": "Cagliari Calcio",
+      "away_team": "US Lecce",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564665",
+      "home_team": "Getafe CF",
+      "away_team": "RC Celta de Vigo",
+      "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558617",
+      "home_team": "Udinese Calcio",
+      "away_team": "SS Lazio",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567295",
+      "home_team": "GD Estoril Praia",
+      "away_team": "FC Arouca",
+      "home_goals": 0,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564658",
+      "home_team": "Elche CF",
+      "away_team": "Real Sociedad de Fútbol",
+      "home_goals": 2,
+      "away_goals": 3,
+      "status": "FINISHED"
+    }
+  ]
+}
