@@ -42,18 +42,18 @@
       "status": "FINISHED"
     },
     {
-      "id": "561842",
-      "home_team": "West Ham United FC",
-      "away_team": "Wrexham AFC",
-      "home_goals": 6,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "564669",
       "home_team": "Sevilla FC",
       "away_team": "Valencia CF",
       "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561842",
+      "home_team": "West Ham United FC",
+      "away_team": "Wrexham AFC",
+      "home_goals": 6,
       "away_goals": 0,
       "status": "FINISHED"
     }
