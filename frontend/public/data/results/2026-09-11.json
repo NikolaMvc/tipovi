@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-11",
+  "results": [
+    {
+      "id": "576252",
+      "home_team": "CAR Independiente del Valle",
+      "away_team": "CR Flamengo",
+      "home_goals": 0,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558899",
+      "home_team": "AZ",
+      "away_team": "Willem II Tilburg",
+      "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "565797",
+      "home_team": "1. FC Union Berlin",
+      "away_team": "FC Schalke 04",
+      "home_goals": 1,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559689",
+      "home_team": "Stade Rennais FC 1901",
+      "away_team": "Olympique de Marseille",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558606",
+      "home_team": "Venezia FC",
+      "away_team": "ACF Fiorentina",
+      "home_goals": 2,
+      "away_goals": 4,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561842",
+      "home_team": "West Ham United FC",
+      "away_team": "Wrexham AFC",
+      "home_goals": 6,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564669",
+      "home_team": "Sevilla FC",
+      "away_team": "Valencia CF",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    }
+  ]
+}
