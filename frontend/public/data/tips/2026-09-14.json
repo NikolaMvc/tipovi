@@ -128,7 +128,8 @@
       "pick": "Home Win",
       "probability": 51.23,
       "odds": 1.41,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "2-1"
     },
     {
       "match_id": "zorKqtLb",
