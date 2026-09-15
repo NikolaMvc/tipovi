@@ -42,14 +42,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "558605",
-      "home_team": "US Lecce",
-      "away_team": "AC Monza",
-      "home_goals": 3,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "559685",
       "home_team": "Lille OSC",
       "away_team": "ES Troyes AC",
@@ -63,6 +55,14 @@
       "away_team": "Brighton & Hove Albion FC",
       "home_goals": 0,
       "away_goals": 5,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558605",
+      "home_team": "US Lecce",
+      "away_team": "AC Monza",
+      "home_goals": 3,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -130,19 +130,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "567310",
-      "home_team": "FC Arouca",
-      "away_team": "CD Santa Clara",
-      "home_goals": 1,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "567304",
       "home_team": "Sport Lisboa e Benfica",
       "away_team": "Gil Vicente FC",
       "home_goals": 3,
       "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567310",
+      "home_team": "FC Arouca",
+      "away_team": "CD Santa Clara",
+      "home_goals": 1,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -170,19 +170,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "555007",
-      "home_team": "Mirassol FC",
-      "away_team": "EC Vitória",
-      "home_goals": 2,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "564674",
       "home_team": "Real Sociedad de Fútbol",
       "away_team": "Club Atlético de Madrid",
       "home_goals": 0,
       "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555007",
+      "home_team": "Mirassol FC",
+      "away_team": "EC Vitória",
+      "home_goals": 2,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
