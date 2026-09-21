@@ -82,14 +82,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "558592",
-      "home_team": "Frosinone Calcio",
-      "away_team": "Como 1907",
-      "home_goals": 2,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "559676",
       "home_team": "AJ Auxerre",
       "away_team": "Stade Brestois 29",
@@ -110,6 +102,14 @@
       "home_team": "Leeds United FC",
       "away_team": "Crystal Palace FC",
       "home_goals": 0,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558592",
+      "home_team": "Frosinone Calcio",
+      "away_team": "Como 1907",
+      "home_goals": 2,
       "away_goals": 0,
       "status": "FINISHED"
     },
@@ -285,6 +285,14 @@
       "id": "555013",
       "home_team": "CR Flamengo",
       "away_team": "RB Bragantino",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555010",
+      "home_team": "CA Paranaense",
+      "away_team": "EC Bahia",
       "home_goals": 2,
       "away_goals": 1,
       "status": "FINISHED"
