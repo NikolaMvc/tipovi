@@ -42,14 +42,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "561850",
-      "home_team": "Norwich City FC",
-      "away_team": "Bolton Wanderers FC",
-      "home_goals": 3,
-      "away_goals": 4,
-      "status": "FINISHED"
-    },
-    {
       "id": "558884",
       "home_team": "AZ",
       "away_team": "Telstar 1963",
@@ -66,27 +58,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "560590",
-      "home_team": "Manchester City FC",
-      "away_team": "Sunderland AFC",
-      "home_goals": 5,
-      "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
-      "id": "560582",
-      "home_team": "AFC Bournemouth",
-      "away_team": "Liverpool FC",
-      "home_goals": 0,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "559676",
-      "home_team": "AJ Auxerre",
-      "away_team": "Stade Brestois 29",
-      "home_goals": 2,
-      "away_goals": 1,
+      "id": "561850",
+      "home_team": "Norwich City FC",
+      "away_team": "Bolton Wanderers FC",
+      "home_goals": 3,
+      "away_goals": 4,
       "status": "FINISHED"
     },
     {
@@ -98,18 +74,42 @@
       "status": "FINISHED"
     },
     {
-      "id": "560585",
-      "home_team": "Leeds United FC",
-      "away_team": "Crystal Palace FC",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "558592",
       "home_team": "Frosinone Calcio",
       "away_team": "Como 1907",
       "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560582",
+      "home_team": "AFC Bournemouth",
+      "away_team": "Liverpool FC",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560590",
+      "home_team": "Manchester City FC",
+      "away_team": "Sunderland AFC",
+      "home_goals": 5,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559676",
+      "home_team": "AJ Auxerre",
+      "away_team": "Stade Brestois 29",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560585",
+      "home_team": "Leeds United FC",
+      "away_team": "Crystal Palace FC",
+      "home_goals": 0,
       "away_goals": 0,
       "status": "FINISHED"
     },
@@ -138,19 +138,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "567317",
-      "home_team": "CF Estrela da Amadora",
-      "away_team": "Académico de Viseu FC",
-      "home_goals": 0,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "567315",
       "home_team": "Vitória SC",
       "away_team": "Moreirense FC",
       "home_goals": 1,
       "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567317",
+      "home_team": "CF Estrela da Amadora",
+      "away_team": "Académico de Viseu FC",
+      "home_goals": 0,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -210,19 +210,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "567314",
-      "home_team": "CD Santa Clara",
-      "away_team": "Sporting Clube de Braga",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "567319",
       "home_team": "GD Estoril Praia",
       "away_team": "Casa Pia AC",
       "home_goals": 1,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567314",
+      "home_team": "CD Santa Clara",
+      "away_team": "Sporting Clube de Braga",
+      "home_goals": 0,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -234,14 +234,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "558597",
-      "home_team": "AC Milan",
-      "away_team": "US Lecce",
-      "home_goals": 3,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "559675",
       "home_team": "Olympique de Marseille",
       "away_team": "Paris Saint-Germain FC",
@@ -250,11 +242,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "555012",
-      "home_team": "SC Corinthians Paulista",
-      "away_team": "Fluminense FC",
-      "home_goals": 1,
-      "away_goals": 3,
+      "id": "558597",
+      "home_team": "AC Milan",
+      "away_team": "US Lecce",
+      "home_goals": 3,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -270,6 +262,14 @@
       "home_team": "Valencia CF",
       "away_team": "Real Sociedad de Fútbol",
       "home_goals": 2,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555012",
+      "home_team": "SC Corinthians Paulista",
+      "away_team": "Fluminense FC",
+      "home_goals": 1,
       "away_goals": 3,
       "status": "FINISHED"
     },

@@ -2,14 +2,6 @@
   "date": "2026-09-19",
   "results": [
     {
-      "id": "561852",
-      "home_team": "Cardiff City FC",
-      "away_team": "Charlton Athletic FC",
-      "home_goals": 3,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "561847",
       "home_team": "Stoke City FC",
       "away_team": "Sheffield United FC",
@@ -23,6 +15,14 @@
       "away_team": "West Ham United FC",
       "home_goals": 2,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561852",
+      "home_team": "Cardiff City FC",
+      "away_team": "Charlton Athletic FC",
+      "home_goals": 3,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -58,22 +58,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "565809",
-      "home_team": "Borussia Mönchengladbach",
-      "away_team": "1. FSV Mainz 05",
-      "home_goals": 3,
-      "away_goals": 4,
-      "status": "FINISHED"
-    },
-    {
-      "id": "565811",
-      "home_team": "Eintracht Frankfurt",
-      "away_team": "SC Freiburg",
-      "home_goals": 2,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "565808",
       "home_team": "Hamburger SV",
       "away_team": "1. FC Köln",
@@ -90,65 +74,17 @@
       "status": "FINISHED"
     },
     {
-      "id": "560584",
-      "home_team": "Everton FC",
-      "away_team": "Ipswich Town FC",
-      "home_goals": 1,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561848",
-      "home_team": "Burnley FC",
-      "away_team": "Derby County FC",
-      "home_goals": 1,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "560586",
-      "home_team": "Brighton & Hove Albion FC",
-      "away_team": "Arsenal FC",
+      "id": "565809",
+      "home_team": "Borussia Mönchengladbach",
+      "away_team": "1. FSV Mainz 05",
       "home_goals": 3,
-      "away_goals": 0,
+      "away_goals": 4,
       "status": "FINISHED"
     },
     {
-      "id": "561854",
-      "home_team": "Portsmouth FC",
-      "away_team": "Blackburn Rovers FC",
-      "home_goals": 2,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561846",
-      "home_team": "Wrexham AFC",
-      "away_team": "Southampton FC",
-      "home_goals": 2,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "560588",
-      "home_team": "Newcastle United FC",
-      "away_team": "Hull City AFC",
-      "home_goals": 2,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561856",
-      "home_team": "Lincoln City FC",
-      "away_team": "Swansea City AFC",
-      "home_goals": 1,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561853",
-      "home_team": "Queens Park Rangers FC",
-      "away_team": "Preston North End FC",
+      "id": "565811",
+      "home_team": "Eintracht Frankfurt",
+      "away_team": "SC Freiburg",
       "home_goals": 2,
       "away_goals": 2,
       "status": "FINISHED"
@@ -162,19 +98,75 @@
       "status": "FINISHED"
     },
     {
+      "id": "561853",
+      "home_team": "Queens Park Rangers FC",
+      "away_team": "Preston North End FC",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560588",
+      "home_team": "Newcastle United FC",
+      "away_team": "Hull City AFC",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560584",
+      "home_team": "Everton FC",
+      "away_team": "Ipswich Town FC",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560586",
+      "home_team": "Brighton & Hove Albion FC",
+      "away_team": "Arsenal FC",
+      "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561846",
+      "home_team": "Wrexham AFC",
+      "away_team": "Southampton FC",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561848",
+      "home_team": "Burnley FC",
+      "away_team": "Derby County FC",
+      "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561856",
+      "home_team": "Lincoln City FC",
+      "away_team": "Swansea City AFC",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561854",
+      "home_team": "Portsmouth FC",
+      "away_team": "Blackburn Rovers FC",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "564691",
       "home_team": "Athletic Club",
       "away_team": "Deportivo Alavés",
       "home_goals": 0,
       "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "567312",
-      "home_team": "Gil Vicente FC",
-      "away_team": "CS Marítimo",
-      "home_goals": 1,
-      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -191,6 +183,14 @@
       "away_team": "FC Famalicão",
       "home_goals": 0,
       "away_goals": 4,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567312",
+      "home_team": "Gil Vicente FC",
+      "away_team": "CS Marítimo",
+      "home_goals": 1,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -218,17 +218,17 @@
       "status": "FINISHED"
     },
     {
-      "id": "560589",
-      "home_team": "Nottingham Forest FC",
-      "away_team": "Coventry City FC",
+      "id": "565806",
+      "home_team": "VfB Stuttgart",
+      "away_team": "Borussia Dortmund",
       "home_goals": 0,
       "away_goals": 1,
       "status": "FINISHED"
     },
     {
-      "id": "565806",
-      "home_team": "VfB Stuttgart",
-      "away_team": "Borussia Dortmund",
+      "id": "560589",
+      "home_team": "Nottingham Forest FC",
+      "away_team": "Coventry City FC",
       "home_goals": 0,
       "away_goals": 1,
       "status": "FINISHED"
@@ -258,14 +258,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "559681",
-      "home_team": "Angers SCO",
-      "away_team": "ES Troyes AC",
-      "home_goals": 2,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "559677",
       "home_team": "Le Mans FC",
       "away_team": "FC Lorient",
@@ -282,14 +274,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "558594",
-      "home_team": "Venezia FC",
-      "away_team": "SS Lazio",
-      "home_goals": 0,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "559680",
       "home_team": "Toulouse FC",
       "away_team": "Le Havre AC",
@@ -298,11 +282,27 @@
       "status": "FINISHED"
     },
     {
-      "id": "564690",
-      "home_team": "Sevilla FC",
-      "away_team": "FC Barcelona",
+      "id": "558594",
+      "home_team": "Venezia FC",
+      "away_team": "SS Lazio",
+      "home_goals": 0,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559681",
+      "home_team": "Angers SCO",
+      "away_team": "ES Troyes AC",
+      "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555011",
+      "home_team": "CA Mineiro",
+      "away_team": "Chapecoense AF",
       "home_goals": 1,
-      "away_goals": 3,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -314,11 +314,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "555011",
-      "home_team": "CA Mineiro",
-      "away_team": "Chapecoense AF",
+      "id": "564690",
+      "home_team": "Sevilla FC",
+      "away_team": "FC Barcelona",
       "home_goals": 1,
-      "away_goals": 1,
+      "away_goals": 3,
       "status": "FINISHED"
     },
     {
