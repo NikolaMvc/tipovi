@@ -47,7 +47,8 @@
       "pick": "Home Win",
       "probability": 52.24,
       "odds": 1.09,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "4-3"
     },
     {
       "match_id": "dd2FlTLa",
@@ -215,7 +216,8 @@
       "pick": "Home Win",
       "probability": 48.44,
       "odds": 2.2,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "2-2"
     },
     {
       "match_id": "jDGCXk3b",
