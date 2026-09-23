@@ -66,18 +66,34 @@
       "status": "FINISHED"
     },
     {
-      "id": "560585",
-      "home_team": "Leeds United FC",
-      "away_team": "Crystal Palace FC",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "559676",
       "home_team": "AJ Auxerre",
       "away_team": "Stade Brestois 29",
       "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560590",
+      "home_team": "Manchester City FC",
+      "away_team": "Sunderland AFC",
+      "home_goals": 5,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558590",
+      "home_team": "Parma Calcio 1913",
+      "away_team": "Genoa CFC",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560582",
+      "home_team": "AFC Bournemouth",
+      "away_team": "Liverpool FC",
+      "home_goals": 0,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -90,27 +106,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "560582",
-      "home_team": "AFC Bournemouth",
-      "away_team": "Liverpool FC",
+      "id": "560585",
+      "home_team": "Leeds United FC",
+      "away_team": "Crystal Palace FC",
       "home_goals": 0,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "558590",
-      "home_team": "Parma Calcio 1913",
-      "away_team": "Genoa CFC",
-      "home_goals": 2,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "560590",
-      "home_team": "Manchester City FC",
-      "away_team": "Sunderland AFC",
-      "home_goals": 5,
-      "away_goals": 3,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -170,19 +170,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "565805",
-      "home_team": "FC Schalke 04",
-      "away_team": "SV 07 Elversberg",
-      "home_goals": 0,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "560583",
       "home_team": "Fulham FC",
       "away_team": "Manchester United FC",
       "home_goals": 1,
       "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "565805",
+      "home_team": "FC Schalke 04",
+      "away_team": "SV 07 Elversberg",
+      "home_goals": 0,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -194,14 +194,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "564696",
-      "home_team": "Villarreal CF",
-      "away_team": "Levante UD",
-      "home_goals": 3,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "564695",
       "home_team": "RC Deportivo La Coruña",
       "away_team": "Real Betis Balompié",
@@ -210,11 +202,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "567314",
-      "home_team": "CD Santa Clara",
-      "away_team": "Sporting Clube de Braga",
-      "home_goals": 0,
-      "away_goals": 0,
+      "id": "564696",
+      "home_team": "Villarreal CF",
+      "away_team": "Levante UD",
+      "home_goals": 3,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -226,6 +218,14 @@
       "status": "FINISHED"
     },
     {
+      "id": "567314",
+      "home_team": "CD Santa Clara",
+      "away_team": "Sporting Clube de Braga",
+      "home_goals": 0,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
       "id": "565803",
       "home_team": "SC Paderborn 07",
       "away_team": "TSG 1899 Hoffenheim",
@@ -234,19 +234,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "559675",
-      "home_team": "Olympique de Marseille",
-      "away_team": "Paris Saint-Germain FC",
-      "home_goals": 1,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "558597",
       "home_team": "AC Milan",
       "away_team": "US Lecce",
       "home_goals": 3,
       "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559675",
+      "home_team": "Olympique de Marseille",
+      "away_team": "Paris Saint-Germain FC",
+      "home_goals": 1,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
