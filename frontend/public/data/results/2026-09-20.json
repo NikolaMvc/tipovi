@@ -50,6 +50,14 @@
       "status": "FINISHED"
     },
     {
+      "id": "558882",
+      "home_team": "FC Twente '65",
+      "away_team": "PSV",
+      "home_goals": 3,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "558884",
       "home_team": "AZ",
       "away_team": "Telstar 1963",
@@ -58,11 +66,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "558882",
-      "home_team": "FC Twente '65",
-      "away_team": "PSV",
-      "home_goals": 3,
-      "away_goals": 2,
+      "id": "560590",
+      "home_team": "Manchester City FC",
+      "away_team": "Sunderland AFC",
+      "home_goals": 5,
+      "away_goals": 3,
       "status": "FINISHED"
     },
     {
@@ -74,11 +82,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "560590",
-      "home_team": "Manchester City FC",
-      "away_team": "Sunderland AFC",
-      "home_goals": 5,
-      "away_goals": 3,
+      "id": "560585",
+      "home_team": "Leeds United FC",
+      "away_team": "Crystal Palace FC",
+      "home_goals": 0,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -102,14 +110,6 @@
       "home_team": "Frosinone Calcio",
       "away_team": "Como 1907",
       "home_goals": 2,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
-      "id": "560585",
-      "home_team": "Leeds United FC",
-      "away_team": "Crystal Palace FC",
-      "home_goals": 0,
       "away_goals": 0,
       "status": "FINISHED"
     },
@@ -250,14 +250,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "564689",
-      "home_team": "Valencia CF",
-      "away_team": "Real Sociedad de Fútbol",
-      "home_goals": 2,
-      "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
       "id": "555019",
       "home_team": "EC Vitória",
       "away_team": "Cruzeiro EC",
@@ -270,6 +262,14 @@
       "home_team": "SC Corinthians Paulista",
       "away_team": "Fluminense FC",
       "home_goals": 1,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564689",
+      "home_team": "Valencia CF",
+      "away_team": "Real Sociedad de Fútbol",
+      "home_goals": 2,
       "away_goals": 3,
       "status": "FINISHED"
     },
