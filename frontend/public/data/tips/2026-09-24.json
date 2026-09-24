@@ -23,7 +23,8 @@
       "pick": "Home Win",
       "probability": 52.77,
       "odds": 1.51,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "2-0"
     },
     {
       "match_id": "fHnQRGFN",
@@ -47,7 +48,8 @@
       "pick": "Home Win",
       "probability": 49.82,
       "odds": 1.86,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "2-2"
     },
     {
       "match_id": "06W8UcfS",
@@ -71,7 +73,8 @@
       "pick": "Home Win",
       "probability": 49.19,
       "odds": 1.6,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "1-0"
     },
     {
       "match_id": "Q3QB50wC",
@@ -83,7 +86,8 @@
       "pick": "Home Win",
       "probability": 49.0,
       "odds": 1.69,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "0-0"
     },
     {
       "match_id": "UyJc8BCi",
@@ -143,7 +147,8 @@
       "pick": "Home Win",
       "probability": 48.06,
       "odds": 1.76,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "2-0"
     },
     {
       "match_id": "YDZojogM",
@@ -155,7 +160,8 @@
       "pick": "Home Win",
       "probability": 48.04,
       "odds": 1.68,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "1-0"
     },
     {
       "match_id": "E9CIgmNt",
@@ -167,7 +173,8 @@
       "pick": "Home Win",
       "probability": 47.89,
       "odds": 1.65,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "2-2"
     },
     {
       "match_id": "OxkPEQUP",
@@ -191,7 +198,8 @@
       "pick": "Home Win",
       "probability": 47.19,
       "odds": 1.74,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "3-1"
     },
     {
       "match_id": "OleyTTeC",
@@ -203,7 +211,8 @@
       "pick": "Home Win",
       "probability": 46.63,
       "odds": 1.79,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "4-0"
     },
     {
       "match_id": "fXDqNGy4",
@@ -227,7 +236,8 @@
       "pick": "Home Win",
       "probability": 45.91,
       "odds": 1.83,
-      "status": "PENDING"
+      "status": "LOST",
+      "final_score": "4-4"
     },
     {
       "match_id": "MeNs0kWo",
