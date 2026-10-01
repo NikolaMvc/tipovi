@@ -239,7 +239,8 @@
       "pick": "Home Win",
       "probability": 46.99,
       "odds": 1.8,
-      "status": "PENDING"
+      "status": "WON",
+      "final_score": "3-1"
     }
   ]
 }
