@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-08",
+  "results": [
+    {
+      "id": "555023",
+      "home_team": "Cruzeiro EC",
+      "away_team": "São Paulo FC",
+      "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555028",
+      "home_team": "Santos FC",
+      "away_team": "CR Flamengo",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555020",
+      "home_team": "CA Paranaense",
+      "away_team": "CA Mineiro",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    }
+  ]
+}
