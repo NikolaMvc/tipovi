@@ -2,18 +2,18 @@
   "date": "2026-10-09",
   "results": [
     {
-      "id": "555026",
-      "home_team": "SE Palmeiras",
-      "away_team": "EC Bahia",
-      "home_goals": 1,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "555024",
       "home_team": "Fluminense FC",
       "away_team": "Coritiba FBC",
       "home_goals": 4,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555026",
+      "home_team": "SE Palmeiras",
+      "away_team": "EC Bahia",
+      "home_goals": 1,
       "away_goals": 0,
       "status": "FINISHED"
     },
@@ -50,17 +50,17 @@
       "status": "FINISHED"
     },
     {
-      "id": "561862",
-      "home_team": "West Ham United FC",
-      "away_team": "Queens Park Rangers FC",
+      "id": "564706",
+      "home_team": "Málaga CF",
+      "away_team": "RCD Espanyol de Barcelona",
       "home_goals": 1,
       "away_goals": 1,
       "status": "FINISHED"
     },
     {
-      "id": "564706",
-      "home_team": "Málaga CF",
-      "away_team": "RCD Espanyol de Barcelona",
+      "id": "561862",
+      "home_team": "West Ham United FC",
+      "away_team": "Queens Park Rangers FC",
       "home_goals": 1,
       "away_goals": 1,
       "status": "FINISHED"
