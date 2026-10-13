@@ -2,10 +2,10 @@
   "date": "2026-10-10",
   "results": [
     {
-      "id": "560593",
-      "home_team": "Arsenal FC",
-      "away_team": "Leeds United FC",
-      "home_goals": 2,
+      "id": "561863",
+      "home_team": "Charlton Athletic FC",
+      "away_team": "Bristol City FC",
+      "home_goals": 1,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -18,18 +18,18 @@
       "status": "FINISHED"
     },
     {
-      "id": "561863",
-      "home_team": "Charlton Athletic FC",
-      "away_team": "Bristol City FC",
-      "home_goals": 1,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "561857",
       "home_team": "West Bromwich Albion FC",
       "away_team": "Birmingham City FC",
       "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560593",
+      "home_team": "Arsenal FC",
+      "away_team": "Leeds United FC",
+      "home_goals": 2,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -39,22 +39,6 @@
       "away_team": "ACF Fiorentina",
       "home_goals": 2,
       "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "565812",
-      "home_team": "1. FSV Mainz 05",
-      "away_team": "Bayer 04 Leverkusen",
-      "home_goals": 3,
-      "away_goals": 4,
-      "status": "FINISHED"
-    },
-    {
-      "id": "565818",
-      "home_team": "TSG 1899 Hoffenheim",
-      "away_team": "Hamburger SV",
-      "home_goals": 2,
-      "away_goals": 3,
       "status": "FINISHED"
     },
     {
@@ -82,27 +66,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "560601",
-      "home_team": "Aston Villa FC",
-      "away_team": "Brentford FC",
-      "home_goals": 2,
-      "away_goals": 2,
+      "id": "565812",
+      "home_team": "1. FSV Mainz 05",
+      "away_team": "Bayer 04 Leverkusen",
+      "home_goals": 3,
+      "away_goals": 4,
       "status": "FINISHED"
     },
     {
-      "id": "560599",
-      "home_team": "Ipswich Town FC",
-      "away_team": "Fulham FC",
+      "id": "565818",
+      "home_team": "TSG 1899 Hoffenheim",
+      "away_team": "Hamburger SV",
       "home_goals": 2,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "560595",
-      "home_team": "Chelsea FC",
-      "away_team": "AFC Bournemouth",
-      "home_goals": 5,
-      "away_goals": 1,
+      "away_goals": 3,
       "status": "FINISHED"
     },
     {
@@ -114,18 +90,18 @@
       "status": "FINISHED"
     },
     {
-      "id": "561867",
-      "home_team": "Preston North End FC",
-      "away_team": "Millwall FC",
-      "home_goals": 0,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "561865",
       "home_team": "Blackburn Rovers FC",
       "away_team": "Cardiff City FC",
       "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561867",
+      "home_team": "Preston North End FC",
+      "away_team": "Millwall FC",
+      "home_goals": 0,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -146,14 +122,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "561866",
-      "home_team": "Bolton Wanderers FC",
-      "away_team": "Stoke City FC",
-      "home_goals": 1,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
       "id": "561868",
       "home_team": "Middlesbrough FC",
       "away_team": "Wolverhampton Wanderers FC",
@@ -167,6 +135,38 @@
       "away_team": "Wrexham AFC",
       "home_goals": 1,
       "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561866",
+      "home_team": "Bolton Wanderers FC",
+      "away_team": "Stoke City FC",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560599",
+      "home_team": "Ipswich Town FC",
+      "away_team": "Fulham FC",
+      "home_goals": 2,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560595",
+      "home_team": "Chelsea FC",
+      "away_team": "AFC Bournemouth",
+      "home_goals": 5,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560601",
+      "home_team": "Aston Villa FC",
+      "away_team": "Brentford FC",
+      "home_goals": 2,
+      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -202,10 +202,10 @@
       "status": "FINISHED"
     },
     {
-      "id": "564700",
-      "home_team": "FC Barcelona",
-      "away_team": "Getafe CF",
-      "home_goals": 3,
+      "id": "565815",
+      "home_team": "RB Leipzig",
+      "away_team": "Eintracht Frankfurt",
+      "home_goals": 6,
       "away_goals": 0,
       "status": "FINISHED"
     },
@@ -218,10 +218,10 @@
       "status": "FINISHED"
     },
     {
-      "id": "565815",
-      "home_team": "RB Leipzig",
-      "away_team": "Eintracht Frankfurt",
-      "home_goals": 6,
+      "id": "564700",
+      "home_team": "FC Barcelona",
+      "away_team": "Getafe CF",
+      "home_goals": 3,
       "away_goals": 0,
       "status": "FINISHED"
     },
@@ -266,6 +266,14 @@
       "status": "FINISHED"
     },
     {
+      "id": "559673",
+      "home_team": "AS Monaco FC",
+      "away_team": "Toulouse FC",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "559668",
       "home_team": "FC Lorient",
       "away_team": "Paris FC",
@@ -282,11 +290,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "559673",
-      "home_team": "AS Monaco FC",
-      "away_team": "Toulouse FC",
-      "home_goals": 2,
-      "away_goals": 2,
+      "id": "564702",
+      "home_team": "Real Madrid CF",
+      "away_team": "Villarreal CF",
+      "home_goals": 1,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -295,14 +303,6 @@
       "away_team": "NEC",
       "home_goals": 1,
       "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "564702",
-      "home_team": "Real Madrid CF",
-      "away_team": "Villarreal CF",
-      "home_goals": 1,
-      "away_goals": 0,
       "status": "FINISHED"
     },
     {
