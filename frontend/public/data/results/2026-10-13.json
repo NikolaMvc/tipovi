@@ -26,6 +26,14 @@
       "status": "FINISHED"
     },
     {
+      "id": "561873",
+      "home_team": "Burnley FC",
+      "away_team": "Charlton Athletic FC",
+      "home_goals": 2,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "561869",
       "home_team": "Wolverhampton Wanderers FC",
       "away_team": "Bolton Wanderers FC",
@@ -42,11 +50,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "561873",
-      "home_team": "Burnley FC",
-      "away_team": "Charlton Athletic FC",
-      "home_goals": 2,
-      "away_goals": 2,
+      "id": "561872",
+      "home_team": "Cardiff City FC",
+      "away_team": "Watford FC",
+      "home_goals": 5,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -63,22 +71,6 @@
       "away_team": "West Bromwich Albion FC",
       "home_goals": 1,
       "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561872",
-      "home_team": "Cardiff City FC",
-      "away_team": "Watford FC",
-      "home_goals": 5,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561875",
-      "home_team": "Birmingham City FC",
-      "away_team": "Preston North End FC",
-      "home_goals": 4,
-      "away_goals": 0,
       "status": "FINISHED"
     },
     {
@@ -102,6 +94,14 @@
       "home_team": "Arsenal FC",
       "away_team": "Lille OSC",
       "home_goals": 3,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561875",
+      "home_team": "Birmingham City FC",
+      "away_team": "Preston North End FC",
+      "home_goals": 4,
       "away_goals": 0,
       "status": "FINISHED"
     },
@@ -130,18 +130,18 @@
       "status": "FINISHED"
     },
     {
-      "id": "561876",
-      "home_team": "Stoke City FC",
-      "away_team": "Middlesbrough FC",
-      "home_goals": 2,
-      "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
       "id": "575347",
       "home_team": "Viking FK",
       "away_team": "FC Bayern München",
       "home_goals": 3,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561876",
+      "home_team": "Stoke City FC",
+      "away_team": "Middlesbrough FC",
+      "home_goals": 2,
       "away_goals": 3,
       "status": "FINISHED"
     }

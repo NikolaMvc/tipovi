@@ -58,6 +58,14 @@
       "status": "FINISHED"
     },
     {
+      "id": "558581",
+      "home_team": "US Lecce",
+      "away_team": "Bologna FC 1909",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "560594",
       "home_team": "Hull City AFC",
       "away_team": "Everton FC",
@@ -66,11 +74,11 @@
       "status": "FINISHED"
     },
     {
-      "id": "558581",
-      "home_team": "US Lecce",
-      "away_team": "Bologna FC 1909",
-      "home_goals": 1,
-      "away_goals": 2,
+      "id": "558583",
+      "home_team": "SS Lazio",
+      "away_team": "AC Monza",
+      "home_goals": 3,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -86,14 +94,6 @@
       "home_team": "OGC Nice",
       "away_team": "RC Strasbourg Alsace",
       "home_goals": 2,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "558583",
-      "home_team": "SS Lazio",
-      "away_team": "AC Monza",
-      "home_goals": 3,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -226,19 +226,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "555035",
-      "home_team": "CR Flamengo",
-      "away_team": "Fluminense FC",
-      "home_goals": 1,
-      "away_goals": 0,
-      "status": "FINISHED"
-    },
-    {
       "id": "555037",
       "home_team": "SE Palmeiras",
       "away_team": "SC Corinthians Paulista",
       "home_goals": 4,
       "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555035",
+      "home_team": "CR Flamengo",
+      "away_team": "Fluminense FC",
+      "home_goals": 1,
+      "away_goals": 0,
       "status": "FINISHED"
     },
     {
