@@ -66,6 +66,14 @@
       "status": "FINISHED"
     },
     {
+      "id": "558581",
+      "home_team": "US Lecce",
+      "away_team": "Bologna FC 1909",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "560596",
       "home_team": "Crystal Palace FC",
       "away_team": "Nottingham Forest FC",
@@ -79,14 +87,6 @@
       "away_team": "RC Strasbourg Alsace",
       "home_goals": 2,
       "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "558581",
-      "home_team": "US Lecce",
-      "away_team": "Bologna FC 1909",
-      "home_goals": 1,
-      "away_goals": 2,
       "status": "FINISHED"
     },
     {
@@ -178,14 +178,6 @@
       "status": "FINISHED"
     },
     {
-      "id": "558584",
-      "home_team": "Cagliari Calcio",
-      "away_team": "Juventus FC",
-      "home_goals": 1,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "559671",
       "home_team": "ES Troyes AC",
       "away_team": "Olympique de Marseille",
@@ -194,10 +186,10 @@
       "status": "FINISHED"
     },
     {
-      "id": "555030",
-      "home_team": "CA Mineiro",
-      "away_team": "Santos FC",
-      "home_goals": 2,
+      "id": "558584",
+      "home_team": "Cagliari Calcio",
+      "away_team": "Juventus FC",
+      "home_goals": 1,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -207,6 +199,14 @@
       "away_team": "Valencia CF",
       "home_goals": 2,
       "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555030",
+      "home_team": "CA Mineiro",
+      "away_team": "Santos FC",
+      "home_goals": 2,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {

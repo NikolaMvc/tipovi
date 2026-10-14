@@ -18,6 +18,14 @@
       "status": "FINISHED"
     },
     {
+      "id": "560597",
+      "home_team": "Coventry City FC",
+      "away_team": "Newcastle United FC",
+      "home_goals": 4,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
       "id": "555034",
       "home_team": "Coritiba FBC",
       "away_team": "Botafogo FR",
@@ -31,14 +39,6 @@
       "away_team": "Sevilla FC",
       "home_goals": 3,
       "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
-      "id": "560597",
-      "home_team": "Coventry City FC",
-      "away_team": "Newcastle United FC",
-      "home_goals": 4,
-      "away_goals": 1,
       "status": "FINISHED"
     },
     {
