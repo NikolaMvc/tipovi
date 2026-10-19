@@ -90,6 +90,22 @@
       "status": "FINISHED"
     },
     {
+      "id": "561881",
+      "home_team": "Norwich City FC",
+      "away_team": "Portsmouth FC",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561891",
+      "home_team": "West Bromwich Albion FC",
+      "away_team": "Blackburn Rovers FC",
+      "home_goals": 3,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
       "id": "560611",
       "home_team": "Brentford FC",
       "away_team": "Liverpool FC",
@@ -109,46 +125,6 @@
       "id": "561885",
       "home_team": "Bristol City FC",
       "away_team": "Sheffield United FC",
-      "home_goals": 0,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561881",
-      "home_team": "Norwich City FC",
-      "away_team": "Portsmouth FC",
-      "home_goals": 0,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561891",
-      "home_team": "West Bromwich Albion FC",
-      "away_team": "Blackburn Rovers FC",
-      "home_goals": 3,
-      "away_goals": 2,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561892",
-      "home_team": "Wrexham AFC",
-      "away_team": "Preston North End FC",
-      "home_goals": 4,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561888",
-      "home_team": "Derby County FC",
-      "away_team": "Stoke City FC",
-      "home_goals": 0,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
-      "id": "561890",
-      "home_team": "Swansea City AFC",
-      "away_team": "West Ham United FC",
       "home_goals": 0,
       "away_goals": 1,
       "status": "FINISHED"
@@ -175,6 +151,30 @@
       "away_team": "Bolton Wanderers FC",
       "home_goals": 0,
       "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561892",
+      "home_team": "Wrexham AFC",
+      "away_team": "Preston North End FC",
+      "home_goals": 4,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561888",
+      "home_team": "Derby County FC",
+      "away_team": "Stoke City FC",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561890",
+      "home_team": "Swansea City AFC",
+      "away_team": "West Ham United FC",
+      "home_goals": 0,
+      "away_goals": 1,
       "status": "FINISHED"
     },
     {
@@ -210,18 +210,18 @@
       "status": "FINISHED"
     },
     {
-      "id": "560607",
-      "home_team": "Newcastle United FC",
-      "away_team": "Aston Villa FC",
-      "home_goals": 0,
-      "away_goals": 1,
-      "status": "FINISHED"
-    },
-    {
       "id": "565825",
       "home_team": "FC Bayern München",
       "away_team": "RB Leipzig",
       "home_goals": 6,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560607",
+      "home_team": "Newcastle United FC",
+      "away_team": "Aston Villa FC",
+      "home_goals": 0,
       "away_goals": 1,
       "status": "FINISHED"
     },
@@ -250,19 +250,19 @@
       "status": "FINISHED"
     },
     {
-      "id": "559659",
-      "home_team": "ES Troyes AC",
-      "away_team": "Racing Club de Lens",
-      "home_goals": 1,
-      "away_goals": 3,
-      "status": "FINISHED"
-    },
-    {
       "id": "558572",
       "home_team": "AS Roma",
       "away_team": "Genoa CFC",
       "home_goals": 2,
       "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559659",
+      "home_team": "ES Troyes AC",
+      "away_team": "Racing Club de Lens",
+      "home_goals": 1,
+      "away_goals": 3,
       "status": "FINISHED"
     },
     {
