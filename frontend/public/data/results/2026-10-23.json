@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-23",
+  "results": [
+    {
+      "id": "576425",
+      "home_team": "CR Flamengo",
+      "away_team": "Estudiantes de La Plata",
+      "home_goals": 2,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558863",
+      "home_team": "Go Ahead Eagles",
+      "away_team": "Telstar 1963",
+      "home_goals": 3,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "565833",
+      "home_team": "VfB Stuttgart",
+      "away_team": "Borussia Mönchengladbach",
+      "home_goals": 2,
+      "away_goals": 3,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558567",
+      "home_team": "Torino FC",
+      "away_team": "AC Monza",
+      "home_goals": 3,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559654",
+      "home_team": "Stade Brestois 29",
+      "away_team": "OGC Nice",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "560620",
+      "home_team": "Ipswich Town FC",
+      "away_team": "Nottingham Forest FC",
+      "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564719",
+      "home_team": "Deportivo Alavés",
+      "away_team": "Málaga CF",
+      "home_goals": 1,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "561894",
+      "home_team": "Bolton Wanderers FC",
+      "away_team": "Middlesbrough FC",
+      "home_goals": 1,
+      "away_goals": 5,
+      "status": "FINISHED"
+    },
+    {
+      "id": "567329",
+      "home_team": "Vitória SC",
+      "away_team": "CS Marítimo",
+      "home_goals": 5,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555052",
+      "home_team": "Cruzeiro EC",
+      "away_team": "Clube do Remo",
+      "home_goals": 1,
+      "away_goals": 0,
+      "status": "FINISHED"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-25",
+  "tips": [
+    {
+      "match_id": "xxw0oV5e",
+      "home_team": "Jalapa",
+      "away_team": "UNAN-Managua",
+      "league": "NICARAGUA: Liga Primera - Apertura",
+      "date": "2026-10-25T21:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 47.98,
+      "odds": 2.0,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "AqzJOf23",
+      "home_team": "Devonshire Cougars",
+      "away_team": "Paget",
+      "league": "BERMUDA: Premier League",
+      "date": "2026-10-25T21:30:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 47.33,
+      "odds": 1.91,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "G4o7tZk4",
+      "home_team": "Club Tijuana U21",
+      "away_team": "Santos Laguna U21",
+      "league": "MEXICO: Liga MX U21 - Apertura",
+      "date": "2026-10-25T22:45:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 41.8,
+      "odds": 1.95,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "Y5cNGp5d",
+      "home_team": "Urana",
+      "away_team": "Espoir",
+      "league": "NIGER: Super Ligue",
+      "date": "2026-10-25T15:15:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 39.96,
+      "odds": 3.11,
+      "status": "PENDING"
+    },
+    {
+      "match_id": "rDYxF8tA",
+      "home_team": "Delfines Del Este",
+      "away_team": "Salcedo",
+      "league": "DOMINICAN REPUBLIC: LDF - Apertura",
+      "date": "2026-10-25T20:00:00+00:00",
+      "market": "1X2",
+      "pick": "Home Win",
+      "probability": 37.52,
+      "odds": 2.52,
+      "status": "PENDING"
+    }
+  ]
+}
