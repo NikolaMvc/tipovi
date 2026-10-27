@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-26",
+  "results": [
+    {
+      "id": "567331",
+      "home_team": "CD Santa Clara",
+      "away_team": "Sport Lisboa e Benfica",
+      "home_goals": 1,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "559648",
+      "home_team": "Paris Saint-Germain FC",
+      "away_team": "Olympique Lyonnais",
+      "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "564721",
+      "home_team": "Sevilla FC",
+      "away_team": "CA Osasuna",
+      "home_goals": 2,
+      "away_goals": 0,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555051",
+      "home_team": "Coritiba FBC",
+      "away_team": "Grêmio FBPA",
+      "home_goals": 0,
+      "away_goals": 1,
+      "status": "FINISHED"
+    },
+    {
+      "id": "555053",
+      "home_team": "CR Flamengo",
+      "away_team": "CA Mineiro",
+      "home_goals": 3,
+      "away_goals": 2,
+      "status": "FINISHED"
+    }
+  ]
+}
