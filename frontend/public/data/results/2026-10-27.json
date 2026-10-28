@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-27",
+  "results": [
+    {
+      "id": "558556",
+      "home_team": "US Sassuolo Calcio",
+      "away_team": "SS Lazio",
+      "home_goals": 2,
+      "away_goals": 6,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558555",
+      "home_team": "AS Roma",
+      "away_team": "Cagliari Calcio",
+      "home_goals": 4,
+      "away_goals": 2,
+      "status": "FINISHED"
+    },
+    {
+      "id": "558557",
+      "home_team": "Torino FC",
+      "away_team": "Como 1907",
+      "home_goals": 1,
+      "away_goals": 3,
+      "status": "FINISHED"
+    }
+  ]
+}
